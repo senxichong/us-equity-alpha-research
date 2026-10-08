@@ -1,0 +1,496 @@
+{
+  "survivorship_biased": true,
+  "candidate_selection_biased": true,
+  "point_in_time_membership": false,
+  "phase": 3,
+  "factor_version": "1.0.0",
+  "factors": [
+    {
+      "name": "RET_5",
+      "lookback_sessions": 6,
+      "minimum_history": 6,
+      "source_fields": [
+        "adj_close"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "P[t]/P[t-5]-1; all 6 prices required",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 1.0
+    },
+    {
+      "name": "RET_10",
+      "lookback_sessions": 11,
+      "minimum_history": 11,
+      "source_fields": [
+        "adj_close"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "P[t]/P[t-10]-1; all 11 prices required",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 1.0
+    },
+    {
+      "name": "RET_20",
+      "lookback_sessions": 21,
+      "minimum_history": 21,
+      "source_fields": [
+        "adj_close"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "P[t]/P[t-20]-1; all 21 prices required",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 1.0
+    },
+    {
+      "name": "RET_60",
+      "lookback_sessions": 61,
+      "minimum_history": 61,
+      "source_fields": [
+        "adj_close"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "P[t]/P[t-60]-1; all 61 prices required",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 1.0
+    },
+    {
+      "name": "REV_5",
+      "lookback_sessions": 6,
+      "minimum_history": 6,
+      "source_fields": [
+        "adj_close"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "-RET_5; exact sign reversal, not an independent signal",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 1.0
+    },
+    {
+      "name": "VOL_10",
+      "lookback_sessions": 11,
+      "minimum_history": 11,
+      "source_fields": [
+        "adj_close"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "sample std (ddof=1) of 10 one-session returns ending t; not annualized",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 1.0
+    },
+    {
+      "name": "VOL_20",
+      "lookback_sessions": 21,
+      "minimum_history": 21,
+      "source_fields": [
+        "adj_close"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "sample std (ddof=1) of 20 one-session returns ending t; not annualized",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 1.0
+    },
+    {
+      "name": "VOL_60",
+      "lookback_sessions": 61,
+      "minimum_history": 61,
+      "source_fields": [
+        "adj_close"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "sample std (ddof=1) of 60 one-session returns ending t; not annualized",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 1.0
+    },
+    {
+      "name": "ILLIQ_20",
+      "lookback_sessions": 21,
+      "minimum_history": 21,
+      "source_fields": [
+        "adj_close",
+        "close",
+        "volume"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "mean(abs(P[s]/P[s-1]-1)/(close[s]*volume[s])), s=t-19..t",
+      "units": "inverse vendor USD-volume proxy",
+      "diagnostic_extreme_absolute_threshold": 1e-06
+    },
+    {
+      "name": "DOLLAR_VOLUME_20",
+      "lookback_sessions": 20,
+      "minimum_history": 20,
+      "source_fields": [
+        "close",
+        "volume"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "mean(close[s]*volume[s]), s=t-19..t; vendor basis",
+      "units": "vendor USD-volume proxy",
+      "diagnostic_extreme_absolute_threshold": 100000000000.0
+    },
+    {
+      "name": "VOLUME_RATIO_20",
+      "lookback_sessions": 21,
+      "minimum_history": 21,
+      "source_fields": [
+        "volume"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "volume[t]/mean(volume[t-20:t-1]); current volume excluded from reference",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 10.0
+    },
+    {
+      "name": "VOLUME_SURPRISE_20",
+      "lookback_sessions": 21,
+      "minimum_history": 21,
+      "source_fields": [
+        "volume"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "(volume[t]-mean(volume[t-20:t-1]))/sample_std(volume[t-20:t-1], ddof=1); zero std -> NaN",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 10.0
+    },
+    {
+      "name": "PRICE_MA20",
+      "lookback_sessions": 20,
+      "minimum_history": 20,
+      "source_fields": [
+        "adj_close"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "P[t]/mean(P[t-19:t])-1",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 1.0
+    },
+    {
+      "name": "PRICE_MA60",
+      "lookback_sessions": 60,
+      "minimum_history": 60,
+      "source_fields": [
+        "adj_close"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "P[t]/mean(P[t-59:t])-1",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 1.0
+    },
+    {
+      "name": "DIST_52W_HIGH",
+      "lookback_sessions": 252,
+      "minimum_history": 252,
+      "source_fields": [
+        "adj_close"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "P[t]/max(P[t-251:t])-1; 252-session adjusted CLOSE high, not intraday high",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 1.0
+    },
+    {
+      "name": "INTRADAY_RANGE",
+      "lookback_sessions": 1,
+      "minimum_history": 1,
+      "source_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "(high[t]-low[t])/close[t]; same vendor OHLC basis",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 1.0
+    },
+    {
+      "name": "OPEN_CLOSE_RETURN",
+      "lookback_sessions": 1,
+      "minimum_history": 1,
+      "source_fields": [
+        "open",
+        "close"
+      ],
+      "uses_current_day": true,
+      "observable_after_close": true,
+      "missing_value_rule": "require every input in exact trailing exchange-session window; no fill",
+      "preprocessing": {
+        "winsor_quantiles": [
+          0.01,
+          0.99
+        ],
+        "quantile_interpolation": "linear",
+        "zscore_ddof": 0,
+        "minimum_cross_section": 2,
+        "membership": "eligible_at_t AND individual raw factor finite",
+        "zero_variance": "NaN",
+        "fit_scope": "same date only",
+        "target_filter": false,
+        "neutralization": null
+      },
+      "description": "close[t]/open[t]-1; same vendor OHLC basis",
+      "units": "dimensionless",
+      "diagnostic_extreme_absolute_threshold": 1.0
+    }
+  ],
+  "deferred": {
+    "market_beta": "No approved frozen broad-market benchmark; no download authorized",
+    "size": "No PIT shares/market cap",
+    "neutralization": "No certified PIT industry or market cap"
+  }
+}

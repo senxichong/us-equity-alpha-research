@@ -84,3 +84,22 @@ Eligibility requires a valid current bar, 252 cumulative valid observations thro
 ```
 
 This command reads the frozen panel and writes a separate mask/breadth artifact; it never downloads or rebuilds prices. See [POINT_IN_TIME_ELIGIBILITY.md](POINT_IN_TIME_ELIGIBILITY.md) and [PHASE2_5_REPORT.md](PHASE2_5_REPORT.md). Global survivorship and candidate/quarantine selection bias remain. No point-in-time index membership is claimed and no factor research is performed.
+
+## Phase 3 — frozen factors and future labels
+
+The separately authorized Phase 3 adds 17 past-only factors and 1/5/10/20-session adjusted-open target proxies. `survivorship_biased=true` and `candidate_selection_biased=true` remain mandatory. Signals form after close(t); entry is scheduled open(t+1), exit open(t+h+1). See [timing](TIMING_CONVENTION.md), [factor definitions](FACTOR_DEFINITIONS.md), [source timing audit](TIMING_AUDIT.md), and [Phase 3 report](PHASE3_REPORT.md).
+
+```powershell
+.\.venv\Scripts\python.exe scripts/run_phase3.py
+```
+
+This offline command runs the **entire** test suite, reads the authoritative Phase 2 loader with eligibility, verifies the frozen Phase 2.5 mask, and writes a separate timestamped Phase 3 matrix plus descriptive diagnostics. It never downloads or rebuilds upstream data. Run from the repository root with the locked environment. Each invocation creates a new Phase 3 snapshot; preserve prior snapshots for reproducibility.
+
+```python
+from src.factors.dataset import load_factor_panel
+matrix, metadata = load_factor_panel()
+# Per-factor research participation: eligible_at_t & factor_available_NAME.
+# Target/complete-case flags do not define cross-sectional preprocessing membership.
+```
+
+Raw and winsorized factors, z-scores, signal/entry/exit timestamps and independent eligibility/availability flags remain accessible. Missing sessions are not filled. The matrix preserves all source keys, including warm-up and terminal rows with unavailable labels. No IC, RankIC, predictive evaluation, models or portfolios are implemented in Phase 3.
