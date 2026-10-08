@@ -1,0 +1,375 @@
+{
+  "observations": 30842,
+  "stock_count": 14,
+  "missing_values": {
+    "ticker": 0,
+    "date": 0,
+    "open": 0,
+    "high": 0,
+    "low": 0,
+    "close": 0,
+    "adj_close": 0,
+    "volume": 0
+  },
+  "duplicate_excess_rows": 0,
+  "unsorted_tickers": [],
+  "unexpected_tickers": [],
+  "missing_tickers": [],
+  "issue_counts": {
+    "extreme_observed_adj_close_change": 15
+  },
+  "coverage": [
+    {
+      "ticker": "AAPL",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    },
+    {
+      "ticker": "MSFT",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    },
+    {
+      "ticker": "AMZN",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    },
+    {
+      "ticker": "GOOGL",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    },
+    {
+      "ticker": "META",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    },
+    {
+      "ticker": "JPM",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    },
+    {
+      "ticker": "XOM",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    },
+    {
+      "ticker": "JNJ",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    },
+    {
+      "ticker": "NVDA",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    },
+    {
+      "ticker": "WMT",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    },
+    {
+      "ticker": "TSLA",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    },
+    {
+      "ticker": "GME",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    },
+    {
+      "ticker": "GE",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    },
+    {
+      "ticker": "O",
+      "rows": 2203,
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-07",
+      "expected_sessions": 2203,
+      "observed_sessions": 2203,
+      "missing_sessions": 0,
+      "missing_dates": []
+    }
+  ],
+  "issues": [
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 24930,
+      "ticker": "GME",
+      "date": "2020-10-08 00:00:00",
+      "values": {
+        "open": 2.384999990463257,
+        "high": 3.4100000858306885,
+        "low": 2.297499895095825,
+        "close": 3.372499942779541,
+        "adj_close": 3.372499942779541,
+        "volume": 305814400.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 24996,
+      "ticker": "GME",
+      "date": "2021-01-13 00:00:00",
+      "values": {
+        "open": 5.105000019073486,
+        "high": 9.662500381469727,
+        "low": 5.007500171661377,
+        "close": 7.849999904632568,
+        "adj_close": 7.849999904632568,
+        "volume": 578006800.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 25002,
+      "ticker": "GME",
+      "date": "2021-01-22 00:00:00",
+      "values": {
+        "open": 10.647500038146973,
+        "high": 19.190000534057617,
+        "low": 10.579999923706055,
+        "close": 16.252500534057617,
+        "adj_close": 16.252500534057617,
+        "volume": 788631600.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 25004,
+      "ticker": "GME",
+      "date": "2021-01-26 00:00:00",
+      "values": {
+        "open": 22.139999389648438,
+        "high": 37.5,
+        "low": 20.049999237060547,
+        "close": 36.994998931884766,
+        "adj_close": 36.994998931884766,
+        "volume": 714352000.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 25005,
+      "ticker": "GME",
+      "date": "2021-01-27 00:00:00",
+      "values": {
+        "open": 88.7074966430664,
+        "high": 95.0,
+        "low": 62.25,
+        "close": 86.87750244140625,
+        "adj_close": 86.87750244140625,
+        "volume": 373586800.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 25006,
+      "ticker": "GME",
+      "date": "2021-01-28 00:00:00",
+      "values": {
+        "open": 66.25,
+        "high": 120.75,
+        "low": 28.0625,
+        "close": 48.400001525878906,
+        "adj_close": 48.400001525878906,
+        "volume": 235263200.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 25007,
+      "ticker": "GME",
+      "date": "2021-01-29 00:00:00",
+      "values": {
+        "open": 94.92749786376953,
+        "high": 103.49500274658203,
+        "low": 62.5,
+        "close": 81.25,
+        "adj_close": 81.25,
+        "volume": 202264400.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 25009,
+      "ticker": "GME",
+      "date": "2021-02-02 00:00:00",
+      "values": {
+        "open": 35.189998626708984,
+        "high": 39.5,
+        "low": 18.55500030517578,
+        "close": 22.5,
+        "adj_close": 22.5,
+        "volume": 312732400.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 25011,
+      "ticker": "GME",
+      "date": "2021-02-04 00:00:00",
+      "values": {
+        "open": 22.797500610351562,
+        "high": 22.875,
+        "low": 13.332500457763672,
+        "close": 13.375,
+        "adj_close": 13.375,
+        "volume": 249709200.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 25024,
+      "ticker": "GME",
+      "date": "2021-02-24 00:00:00",
+      "values": {
+        "open": 11.175000190734863,
+        "high": 22.927499771118164,
+        "low": 11.175000190734863,
+        "close": 22.927499771118164,
+        "adj_close": 22.927499771118164,
+        "volume": 332446800.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 25032,
+      "ticker": "GME",
+      "date": "2021-03-08 00:00:00",
+      "values": {
+        "open": 38.72249984741211,
+        "high": 52.717498779296875,
+        "low": 36.525001525878906,
+        "close": 48.625,
+        "adj_close": 48.625,
+        "volume": 254262400.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 25045,
+      "ticker": "GME",
+      "date": "2021-03-25 00:00:00",
+      "values": {
+        "open": 30.872499465942383,
+        "high": 46.875,
+        "low": 29.225000381469727,
+        "close": 45.9375,
+        "adj_close": 45.9375,
+        "volume": 203849200.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 25833,
+      "ticker": "GME",
+      "date": "2024-05-13 00:00:00",
+      "values": {
+        "open": 26.34000015258789,
+        "high": 38.20000076293945,
+        "low": 24.770000457763672,
+        "close": 30.450000762939453,
+        "adj_close": 30.450000762939453,
+        "volume": 187241700.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 25834,
+      "ticker": "GME",
+      "date": "2024-05-14 00:00:00",
+      "values": {
+        "open": 64.83000183105469,
+        "high": 64.83000183105469,
+        "low": 36.0,
+        "close": 48.75,
+        "adj_close": 48.75,
+        "volume": 206979100.0
+      }
+    },
+    {
+      "code": "extreme_observed_adj_close_change",
+      "row": 25850,
+      "ticker": "GME",
+      "date": "2024-06-06 00:00:00",
+      "values": {
+        "open": 31.56999969482422,
+        "high": 47.5,
+        "low": 31.280000686645508,
+        "close": 46.54999923706055,
+        "adj_close": 46.54999923706055,
+        "volume": 206685800.0
+      }
+    }
+  ]
+}

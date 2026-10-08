@@ -1,0 +1,40 @@
+data_source: yahoo_chart
+start_date: '2018-01-01'
+end_date: '2026-10-08'
+ideal_start_date: '2010-01-01'
+universe_mode: prototype_current_sp500
+universe_label: SURVIVORSHIP-BIASED PROTOTYPE UNIVERSE
+tickers:
+- AAPL
+- MSFT
+- AMZN
+- GOOGL
+- META
+- JPM
+- XOM
+- JNJ
+- NVDA
+- WMT
+- TSLA
+- GME
+- GE
+- O
+diagnostic_tickers:
+- FB
+- TWTR
+- SIVBQ
+cache_directory: data/raw/sample
+processed_directory: data/processed
+adjustment_method: vendor_adj_close_ratio
+prediction_horizon: 5
+random_seed: 42
+calendar: XNYS
+exchange_timezone: America/New_York
+request_timeout_seconds: 25
+max_attempts: 2
+request_pause_seconds: 1.5
+extreme_return_threshold: 0.4
+ohlc_relative_tolerance: 1.0e-06
+dividend_factor_tolerance: 0.0001
+pit_verified: false
+pit_membership_path: null

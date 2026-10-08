@@ -65,3 +65,22 @@ The loader verifies the frozen Parquet hash and bias metadata. It retains explic
 For incremental updates, advance `phase2.end_date` (exclusive), run the downloader and rebuild. A calendar check excludes unfinished sessions. Existing same-range requests use cache; `--retry-failed` retries negative caches; `--refresh` creates new full snapshots and retains all previous data. Material overlap revisions or newly observed corporate actions force a full history rebase. Original payloads and per-attempt sidecars remain in `data/raw/full/`. Do not run multiple download processes against the same store concurrently.
 
 The gate in PHASE2_REPORT applies only to this explicitly biased dataset. This delivery stops after Phase 2; factors and later research remain unimplemented.
+
+## Phase 2.5 — historical research participation
+
+The accepted Phase 2 price panel remains frozen. Use the trailing eligibility mask for later cross-sectional research:
+
+```python
+from src.data.panel import load_research_panel
+panel, metadata = load_research_panel(with_eligibility=True)
+# is_research_eligible is known only after this session's complete bar is available.
+```
+
+Eligibility requires a valid current bar, 252 cumulative valid observations through the current date, and a complete backward 60-session window with median vendor Close × Volume at least USD 10m. Missing observations are not filled. The loader attaches fields in memory and does not rewrite Phase 2. Preserve the session grid for future target alignment; the mask determines cross-sectional participation only.
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q --junitxml=reports/phase2_5/pytest.xml
+.\.venv\Scripts\python.exe scripts/run_phase2_5.py
+```
+
+This command reads the frozen panel and writes a separate mask/breadth artifact; it never downloads or rebuilds prices. See [POINT_IN_TIME_ELIGIBILITY.md](POINT_IN_TIME_ELIGIBILITY.md) and [PHASE2_5_REPORT.md](PHASE2_5_REPORT.md). Global survivorship and candidate/quarantine selection bias remain. No point-in-time index membership is claimed and no factor research is performed.

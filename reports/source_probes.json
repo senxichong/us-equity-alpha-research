@@ -1,0 +1,209 @@
+[
+  {
+    "name": "stooq_aapl",
+    "url": "https://stooq.com/q/d/l/?s=aapl.us&i=d&d1=20180101&d2=20261007",
+    "retrieved_at_utc": "2026-10-08T08:02:35.567054+00:00",
+    "status": 200,
+    "bytes": 796,
+    "sha256": "34d5a9991f74287f1a0f43d208735ad409a07704b323d3ab5ec2899396255d00",
+    "content_type": "text/html; charset=utf-8",
+    "body": "data\\raw\\probes\\stooq_aapl.body",
+    "columns": [
+      "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex",
+      "nofollow\"></head><body><noscript>This site requires JavaScript to verify your browser. Please enable JavaScript and reload.</noscript><script nonce=\"7Y8f0BSKpIHAiLdhaKgobw\">"
+    ],
+    "rows": 0,
+    "elapsed_seconds": 1.781,
+    "data_success": false,
+    "message": "HTTP 200 HTML browser challenge; no OHLCV observations"
+  },
+  {
+    "name": "alpha_vantage_demo",
+    "url": "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&apikey=demo",
+    "retrieved_at_utc": "2026-10-08T08:02:37.358415+00:00",
+    "status": 200,
+    "bytes": 34189,
+    "sha256": "cbd1279802fdfc5df8273f6c2cf286e67342e97230f3191ed4003b3648f722e0",
+    "content_type": "application/json",
+    "body": "data\\raw\\probes\\alpha_vantage_demo.body",
+    "response_keys": [
+      "Meta Data",
+      "Time Series (Daily)"
+    ],
+    "observations": 100,
+    "message": null,
+    "elapsed_seconds": 1.359
+  },
+  {
+    "name": "alpha_vantage_full",
+    "url": "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&outputsize=full&apikey=demo",
+    "retrieved_at_utc": "2026-10-08T08:05:27.676503+00:00",
+    "status": 200,
+    "bytes": 2316114,
+    "sha256": "29fe3bee4788225d369ac25fbcdc3bf23538f13370f7c5465dc8e81308059ec4",
+    "content_type": "application/json",
+    "body": "data\\raw\\probes\\alpha_vantage_full.body",
+    "response_keys": [
+      "Meta Data",
+      "Time Series (Daily)"
+    ],
+    "observations": 6774,
+    "message": null,
+    "elapsed_seconds": 3.516
+  },
+  {
+    "name": "alpha_vantage_aapl",
+    "url": "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=AAPL&apikey=demo",
+    "retrieved_at_utc": "2026-10-08T08:05:31.202561+00:00",
+    "status": 200,
+    "bytes": 220,
+    "sha256": "e8ddc218d89ff77ad7e395782b4c4d28d10d328ae90c3ba597a8e7d3689b9585",
+    "content_type": "application/json",
+    "body": "data\\raw\\probes\\alpha_vantage_aapl.body",
+    "response_keys": [
+      "Information"
+    ],
+    "observations": 0,
+    "message": "The **demo** API key is for demo purposes only. Please claim your free API key at (https://www.alphavantage.co/support/#api-key) to explore our full API offerings. It takes fewer than 20 seconds.",
+    "elapsed_seconds": 0.797
+  },
+  {
+    "name": "sec_companyfacts",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+    "retrieved_at_utc": "2026-10-08T08:02:38.731650+00:00",
+    "status": 200,
+    "bytes": 3789099,
+    "sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43",
+    "content_type": "application/json",
+    "body": "data\\raw\\probes\\sec_companyfacts.body",
+    "response_keys": [
+      "cik",
+      "entityName",
+      "facts"
+    ],
+    "entity_name": "Apple Inc.",
+    "taxonomy_tags": {
+      "dei": 2,
+      "us-gaap": 503
+    },
+    "elapsed_seconds": 2.141
+  },
+  {
+    "name": "sec_submissions",
+    "url": "https://data.sec.gov/submissions/CIK0000320193.json",
+    "retrieved_at_utc": "2026-10-08T08:02:40.877831+00:00",
+    "status": 200,
+    "bytes": 163743,
+    "sha256": "e89635068cd46772d1d3859ce2bc839fab781630787943a1874f258fa354e7a9",
+    "content_type": "application/json",
+    "body": "data\\raw\\probes\\sec_submissions.body",
+    "response_keys": [
+      "cik",
+      "entityType",
+      "sic",
+      "sicDescription",
+      "ownerOrg",
+      "insiderTransactionForOwnerExists",
+      "insiderTransactionForIssuerExists",
+      "name",
+      "tickers",
+      "exchanges",
+      "ein",
+      "lei",
+      "description",
+      "website",
+      "investorWebsite",
+      "category",
+      "fiscalYearEnd",
+      "stateOfIncorporation",
+      "stateOfIncorporationDescription",
+      "addresses",
+      "phone",
+      "flags",
+      "formerNames",
+      "filings"
+    ],
+    "entity_name": "Apple Inc.",
+    "elapsed_seconds": 0.937
+  },
+  {
+    "name": "nasdaq_directory",
+    "url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+    "retrieved_at_utc": "2026-10-08T08:02:41.817026+00:00",
+    "status": 200,
+    "bytes": 349272,
+    "sha256": "ff14c85b9704eb9256d7bf9342f5247e5385cec9ee660d823a1252adc25b5fa6",
+    "content_type": "text/plain",
+    "body": "data\\raw\\probes\\nasdaq_directory.body",
+    "line_count": 5629,
+    "header": "Symbol|Security Name|Market Category|Test Issue|Financial Status|Round Lot Size|ETF|NextShares",
+    "elapsed_seconds": 2.297
+  },
+  {
+    "name": "sp500_current",
+    "url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+    "retrieved_at_utc": "2026-10-08T08:02:44.126678+00:00",
+    "status": 200,
+    "bytes": 570553,
+    "sha256": "233c30f9a2ba86b57c5895eaa490570ef51de3e034fccbfd7e5fe1dc266a4297",
+    "content_type": "text/html; charset=UTF-8",
+    "body": "data\\raw\\probes\\sp500_current.body",
+    "rows": 503,
+    "columns": [
+      "Symbol",
+      "Security",
+      "GICS Sector",
+      "GICS Sub-Industry",
+      "Headquarters Location",
+      "Date added",
+      "CIK",
+      "Founded"
+    ],
+    "elapsed_seconds": 1.437
+  },
+  {
+    "name": "sp500_history_commit",
+    "url": "https://api.github.com/repos/fja05680/sp500/commits/master",
+    "retrieved_at_utc": "2026-10-08T08:02:45.566505+00:00",
+    "status": 200,
+    "bytes": 45703,
+    "sha256": "7e0e4526d87bf6e82e548c0d63a77bf7412236b2383fc0aca889d98a476fb490",
+    "content_type": "application/json; charset=utf-8",
+    "body": "data\\raw\\probes\\sp500_history_commit.body",
+    "commit": "a2430f2af0c79ddf0748e91de11bdeb1616ab5a7",
+    "elapsed_seconds": 1.14
+  },
+  {
+    "name": "sp500_history",
+    "url": "https://raw.githubusercontent.com/fja05680/sp500/a2430f2af0c79ddf0748e91de11bdeb1616ab5a7/S%26P%20500%20Historical%20Components%20%26%20Changes%20%28Updated%29.csv",
+    "retrieved_at_utc": "2026-10-08T08:02:46.723861+00:00",
+    "status": 200,
+    "bytes": 5530907,
+    "sha256": "36326709d46d6cd25834de5df457b16f5f96fad3a06b9beac28f7b88aa0b0d54",
+    "content_type": "text/plain; charset=utf-8",
+    "body": "data\\raw\\probes\\sp500_history.body",
+    "elapsed_seconds": 1.422
+  },
+  {
+    "name": "history_readme",
+    "url": "https://raw.githubusercontent.com/fja05680/sp500/a2430f2af0c79ddf0748e91de11bdeb1616ab5a7/README.md",
+    "retrieved_at_utc": "2026-10-08T08:02:48.158191+00:00",
+    "status": 200,
+    "bytes": 4847,
+    "sha256": "1b328209e11f1f02c27d1345cb078b0d147b47295fee36928cab59fef0b9df04",
+    "content_type": "text/plain; charset=utf-8",
+    "body": "data\\raw\\probes\\history_readme.body",
+    "elapsed_seconds": 1.219
+  },
+  {
+    "name": "history_license",
+    "url": "https://raw.githubusercontent.com/fja05680/sp500/a2430f2af0c79ddf0748e91de11bdeb1616ab5a7/LICENSE",
+    "retrieved_at_utc": "2026-10-08T08:02:49.370897+00:00",
+    "status": 200,
+    "bytes": 1100,
+    "sha256": "a0a71da320f7c856f189569ddb5c46a576cf02caae28ead6c40a27c0de006992",
+    "content_type": "text/plain; charset=utf-8",
+    "body": "data\\raw\\probes\\history_license.body",
+    "elapsed_seconds": 1.125
+  }
+]

@@ -1,0 +1,593 @@
+{
+  "created_at_utc": "2026-10-08T08:06:43.859883+00:00",
+  "config": {
+    "data_source": "yahoo_yfinance",
+    "start_date": "2018-01-01",
+    "end_date": "2026-10-08",
+    "ideal_start_date": "2010-01-01",
+    "universe_mode": "prototype_current_sp500",
+    "universe_label": "SURVIVORSHIP-BIASED PROTOTYPE UNIVERSE",
+    "tickers": [
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "META",
+      "JPM",
+      "XOM",
+      "JNJ",
+      "NVDA",
+      "WMT",
+      "TSLA",
+      "GME",
+      "GE",
+      "O"
+    ],
+    "diagnostic_tickers": [
+      "FB",
+      "TWTR",
+      "SIVBQ"
+    ],
+    "cache_directory": "data/raw/sample",
+    "processed_directory": "data/processed",
+    "adjustment_method": "vendor_adj_close_ratio",
+    "prediction_horizon": 5,
+    "random_seed": 42,
+    "calendar": "XNYS",
+    "exchange_timezone": "America/New_York",
+    "request_timeout_seconds": 25,
+    "max_attempts": 2,
+    "request_pause_seconds": 1.5,
+    "extreme_return_threshold": 0.4,
+    "ohlc_relative_tolerance": 1e-06,
+    "dividend_factor_tolerance": 0.0001,
+    "pit_verified": false,
+    "pit_membership_path": null
+  },
+  "effective_request": {
+    "data_source": "yahoo_yfinance",
+    "start_date": "2018-01-01",
+    "end_date": "2026-10-08",
+    "ideal_start_date": "2010-01-01",
+    "universe_mode": "prototype_current_sp500",
+    "universe_label": "SURVIVORSHIP-BIASED PROTOTYPE UNIVERSE",
+    "tickers": [
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "META",
+      "JPM",
+      "XOM",
+      "JNJ",
+      "NVDA",
+      "WMT",
+      "TSLA",
+      "GME",
+      "GE",
+      "O"
+    ],
+    "diagnostic_tickers": [
+      "FB",
+      "TWTR",
+      "SIVBQ"
+    ],
+    "cache_directory": "data/raw/sample",
+    "processed_directory": "data/processed",
+    "adjustment_method": "vendor_adj_close_ratio",
+    "prediction_horizon": 5,
+    "random_seed": 42,
+    "calendar": "XNYS",
+    "exchange_timezone": "America/New_York",
+    "request_timeout_seconds": 25,
+    "max_attempts": 2,
+    "request_pause_seconds": 1.5,
+    "extreme_return_threshold": 0.4,
+    "ohlc_relative_tolerance": 1e-06,
+    "dividend_factor_tolerance": 0.0001,
+    "pit_verified": false,
+    "pit_membership_path": null
+  },
+  "universe_label": "SURVIVORSHIP-BIASED PROTOTYPE UNIVERSE",
+  "sample_type": "Deliberate stress sample; not the full index universe",
+  "last_complete_requested_session": "2026-10-07",
+  "downloads": [
+    {
+      "request": {
+        "ticker": "AAPL",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:03:58.761284+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 2.516
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "AAPL"
+    },
+    {
+      "request": {
+        "ticker": "MSFT",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:02.809623+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.656
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "MSFT"
+    },
+    {
+      "request": {
+        "ticker": "AMZN",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:04.974495+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.641
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "AMZN"
+    },
+    {
+      "request": {
+        "ticker": "GOOGL",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:07.124368+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.64
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "GOOGL"
+    },
+    {
+      "request": {
+        "ticker": "META",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:09.281420+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.656
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "META"
+    },
+    {
+      "request": {
+        "ticker": "JPM",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:11.453365+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.64
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "JPM"
+    },
+    {
+      "request": {
+        "ticker": "XOM",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:13.596768+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.641
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "XOM"
+    },
+    {
+      "request": {
+        "ticker": "JNJ",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:15.746690+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.64
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "JNJ"
+    },
+    {
+      "request": {
+        "ticker": "NVDA",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:17.905751+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.656
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "NVDA"
+    },
+    {
+      "request": {
+        "ticker": "WMT",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:20.065465+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.641
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "WMT"
+    },
+    {
+      "request": {
+        "ticker": "TSLA",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:22.212922+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.641
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "TSLA"
+    },
+    {
+      "request": {
+        "ticker": "GME",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:24.356122+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.688
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "GME"
+    },
+    {
+      "request": {
+        "ticker": "GE",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:26.556427+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.641
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "GE"
+    },
+    {
+      "request": {
+        "ticker": "O",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:28.700088+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.64
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "O"
+    }
+  ],
+  "diagnostic_downloads": [
+    {
+      "request": {
+        "ticker": "FB",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:30.855929+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.672
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "FB"
+    },
+    {
+      "request": {
+        "ticker": "TWTR",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:33.029941+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.641
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "TWTR"
+    },
+    {
+      "request": {
+        "ticker": "SIVBQ",
+        "start": "2018-01-01",
+        "end": "2026-10-08",
+        "interval": "1d",
+        "auto_adjust": false,
+        "back_adjust": false,
+        "repair": false,
+        "actions": true,
+        "keepna": true,
+        "prepost": false,
+        "rounding": false
+      },
+      "source": "Yahoo Finance via yfinance",
+      "yfinance_version": "1.7.0",
+      "retrieved_at_utc": "2026-10-08T08:04:35.201116+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "YFRateLimitError: Too Many Requests. Rate limited. Try after a while.",
+          "seconds": 0.64
+        }
+      ],
+      "status": "failed",
+      "cache_hit": true,
+      "ticker": "SIVBQ"
+    }
+  ],
+  "processed_directory": "data\\processed\\20261008T080643826863Z",
+  "run_directory": "reports\\runs\\20261008T080643826863Z"
+}

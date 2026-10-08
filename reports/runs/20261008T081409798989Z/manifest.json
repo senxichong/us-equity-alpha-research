@@ -1,0 +1,1712 @@
+{
+  "created_at_utc": "2026-10-08T08:14:09.877698+00:00",
+  "config": {
+    "data_source": "yahoo_chart",
+    "start_date": "2018-01-01",
+    "end_date": "2026-10-08",
+    "ideal_start_date": "2010-01-01",
+    "universe_mode": "prototype_current_sp500",
+    "universe_label": "SURVIVORSHIP-BIASED PROTOTYPE UNIVERSE",
+    "tickers": [
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "META",
+      "JPM",
+      "XOM",
+      "JNJ",
+      "NVDA",
+      "WMT",
+      "TSLA",
+      "GME",
+      "GE",
+      "O"
+    ],
+    "diagnostic_tickers": [
+      "FB",
+      "TWTR",
+      "SIVBQ"
+    ],
+    "cache_directory": "data/raw/sample",
+    "processed_directory": "data/processed",
+    "adjustment_method": "vendor_adj_close_ratio",
+    "prediction_horizon": 5,
+    "random_seed": 42,
+    "calendar": "XNYS",
+    "exchange_timezone": "America/New_York",
+    "request_timeout_seconds": 25,
+    "max_attempts": 2,
+    "request_pause_seconds": 1.5,
+    "extreme_return_threshold": 0.4,
+    "ohlc_relative_tolerance": 1e-06,
+    "dividend_factor_tolerance": 0.0001,
+    "pit_verified": false,
+    "pit_membership_path": null
+  },
+  "effective_request": {
+    "data_source": "yahoo_chart",
+    "start_date": "2018-01-01",
+    "end_date": "2026-10-08",
+    "ideal_start_date": "2010-01-01",
+    "universe_mode": "prototype_current_sp500",
+    "universe_label": "SURVIVORSHIP-BIASED PROTOTYPE UNIVERSE",
+    "tickers": [
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "META",
+      "JPM",
+      "XOM",
+      "JNJ",
+      "NVDA",
+      "WMT",
+      "TSLA",
+      "GME",
+      "GE",
+      "O"
+    ],
+    "diagnostic_tickers": [
+      "FB",
+      "TWTR",
+      "SIVBQ"
+    ],
+    "cache_directory": "data/raw/sample",
+    "processed_directory": "data/processed",
+    "adjustment_method": "vendor_adj_close_ratio",
+    "prediction_horizon": 5,
+    "random_seed": 42,
+    "calendar": "XNYS",
+    "exchange_timezone": "America/New_York",
+    "request_timeout_seconds": 25,
+    "max_attempts": 2,
+    "request_pause_seconds": 1.5,
+    "extreme_return_threshold": 0.4,
+    "ohlc_relative_tolerance": 1e-06,
+    "dividend_factor_tolerance": 0.0001,
+    "pit_verified": false,
+    "pit_membership_path": null
+  },
+  "universe_label": "SURVIVORSHIP-BIASED PROTOTYPE UNIVERSE",
+  "sample_type": "Deliberate stress sample; not the full index universe",
+  "last_complete_requested_session": "2026-10-07",
+  "downloads": [
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "AAPL",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:11:06.194838+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 2.422
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T081106194838Z.response.json",
+      "response_sha256": "a3b83266bf76dc11d2c2b5b04024d23338bcb89e495f19c92d9116bb6cf41e83",
+      "file": "20261008T081106194838Z.parquet",
+      "sha256": "e360363cb3fe461eb6e8c1d1ca65b2641732e528291fc8cb6047ddf84d423e42",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "Volume",
+        "High",
+        "Close",
+        "Low",
+        "Open",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "AAPL",
+        "exchangeName": "NMS",
+        "fullExchangeName": "NasdaqGS",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": 345479400,
+        "regularMarketTime": 1791403201,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 336.67,
+        "regularMarketChangePercent": 0.911,
+        "fulldayPrice": 337.52,
+        "fulldayChange": 0.85,
+        "fulldayChangePercent": 0.252,
+        "fiftyTwoWeekHigh": 345.34,
+        "fiftyTwoWeekLow": 243.42,
+        "regularMarketDayHigh": 338.67,
+        "regularMarketDayLow": 332.79,
+        "regularMarketVolume": 33380854,
+        "longName": "Apple Inc.",
+        "shortName": "Apple Inc.",
+        "chartPreviousClose": 42.307,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "start": 1791446400,
+            "end": 1791466200,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "start": 1791466200,
+            "end": 1791489600,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "start": 1791489600,
+            "end": 1791504000,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "AAPL"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "MSFT",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:07:27.900195+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 2.375
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080727900195Z.response.json",
+      "response_sha256": "5b2c506558564e82879ea16cbe4ff8b990dad17f0cef2b15933ed83244b17e86",
+      "file": "20261008T080727900195Z.parquet",
+      "sha256": "37eab66b3e218a69412be40cd7a7312afe27d79f901e42dce12b8115a4135084",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "Open",
+        "Close",
+        "Volume",
+        "Low",
+        "High",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "MSFT",
+        "exchangeName": "NMS",
+        "fullExchangeName": "NasdaqGS",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": 511108200,
+        "regularMarketTime": 1791403201,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 529.76,
+        "regularMarketChangePercent": 0.087,
+        "fulldayPrice": 530.745,
+        "fulldayChange": 0.985,
+        "fulldayChangePercent": 0.186,
+        "fiftyTwoWeekHigh": 553.72,
+        "fiftyTwoWeekLow": 349.2,
+        "regularMarketDayHigh": 531.73,
+        "regularMarketDayLow": 524.69,
+        "regularMarketVolume": 16040951,
+        "longName": "Microsoft Corporation",
+        "shortName": "Microsoft Corporation",
+        "chartPreviousClose": 85.54,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "start": 1791446400,
+            "end": 1791466200,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "start": 1791466200,
+            "end": 1791489600,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "start": 1791489600,
+            "end": 1791504000,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "MSFT"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "AMZN",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:07:31.793285+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 2.625
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080731793285Z.response.json",
+      "response_sha256": "6aad36debe74cb4eb8fb6d362cf55d1a6b890e1f41c0cc3be2406b3bd70c2ec8",
+      "file": "20261008T080731793285Z.parquet",
+      "sha256": "ac5539302546ec7ced92bd906df21201a31289a44685cdf141bc8078c9c64d60",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "High",
+        "Open",
+        "Low",
+        "Close",
+        "Volume",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "AMZN",
+        "exchangeName": "NMS",
+        "fullExchangeName": "NasdaqGS",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": 863703000,
+        "regularMarketTime": 1791403201,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 259.92,
+        "regularMarketChangePercent": 1.416,
+        "fulldayPrice": 259.19,
+        "fulldayChange": -0.73,
+        "fulldayChangePercent": -0.281,
+        "fiftyTwoWeekHigh": 287.2,
+        "fiftyTwoWeekLow": 196.0,
+        "regularMarketDayHigh": 260.14,
+        "regularMarketDayLow": 253.17,
+        "regularMarketVolume": 34897703,
+        "longName": "Amazon.com, Inc.",
+        "shortName": "Amazon.com, Inc.",
+        "chartPreviousClose": 58.473,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "start": 1791446400,
+            "end": 1791466200,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "start": 1791466200,
+            "end": 1791489600,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "start": 1791489600,
+            "end": 1791504000,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "AMZN"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "GOOGL",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:07:35.939292+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 3.719
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080735939292Z.response.json",
+      "response_sha256": "af2396d80c8d15a8fe1c6816ea85d1f2840f617db94194240b52f85451d1ce80",
+      "file": "20261008T080735939292Z.parquet",
+      "sha256": "03f63267f47273b7466aabeb331d57e71f37e45d887c98607eebcb5ab2f1f305",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "High",
+        "Close",
+        "Open",
+        "Volume",
+        "Low",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "GOOGL",
+        "exchangeName": "NMS",
+        "fullExchangeName": "NasdaqGS",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": 1092922200,
+        "regularMarketTime": 1791403201,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 350.5,
+        "regularMarketChangePercent": 0.811,
+        "fulldayPrice": 349.45,
+        "fulldayChange": -1.05,
+        "fulldayChangePercent": -0.3,
+        "fiftyTwoWeekHigh": 408.61,
+        "fiftyTwoWeekLow": 235.84,
+        "regularMarketDayHigh": 350.8,
+        "regularMarketDayLow": 343.066,
+        "regularMarketVolume": 20474140,
+        "longName": "Alphabet Inc.",
+        "shortName": "Alphabet Inc.",
+        "chartPreviousClose": 52.67,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "end": 1791466200,
+            "start": 1791446400,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "end": 1791489600,
+            "start": 1791466200,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "end": 1791504000,
+            "start": 1791489600,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "GOOGL"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "META",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:07:41.164155+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 2.64
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080741164155Z.response.json",
+      "response_sha256": "5eadd718e817ea0aecc50aed15ac65a8ea61c3f52d908510598eda8d34051774",
+      "file": "20261008T080741164155Z.parquet",
+      "sha256": "74a8525e529137c5964e6ca7df0bda3fe4f45abd3907745c473b832042b9d653",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "High",
+        "Open",
+        "Close",
+        "Volume",
+        "Low",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "META",
+        "exchangeName": "NMS",
+        "fullExchangeName": "NasdaqGS",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": 1337347800,
+        "regularMarketTime": 1791403201,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 721.31,
+        "regularMarketChangePercent": -2.378,
+        "fulldayPrice": 721.21,
+        "fulldayChange": -0.1,
+        "fulldayChangePercent": -0.014,
+        "fiftyTwoWeekHigh": 779.82,
+        "fiftyTwoWeekLow": 520.26,
+        "regularMarketDayHigh": 738.0,
+        "regularMarketDayLow": 720.15,
+        "regularMarketVolume": 12743601,
+        "longName": "Meta Platforms, Inc.",
+        "shortName": "Meta Platforms, Inc.",
+        "chartPreviousClose": 176.46,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "start": 1791446400,
+            "end": 1791466200,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "start": 1791466200,
+            "end": 1791489600,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "start": 1791489600,
+            "end": 1791504000,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "META"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "JPM",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:07:45.338416+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 2.422
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/JPM?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080745338416Z.response.json",
+      "response_sha256": "ddd60bb12fe533619f741b18d475fd6ddc6d3e5660197c78136bc4a38d4260a8",
+      "file": "20261008T080745338416Z.parquet",
+      "sha256": "25479249143eb27710d59440cb470a99cb9e16e04c3bf7f288eaf1903bb0163a",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "Open",
+        "Low",
+        "High",
+        "Close",
+        "Volume",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "JPM",
+        "exchangeName": "NYQ",
+        "fullExchangeName": "NYSE",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": 322151400,
+        "regularMarketTime": 1791403202,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 329.58,
+        "regularMarketChangePercent": -0.513,
+        "fulldayPrice": 327.3,
+        "fulldayChange": -2.2,
+        "fulldayChangePercent": -0.668,
+        "fiftyTwoWeekHigh": 366.5,
+        "fiftyTwoWeekLow": 279.1,
+        "regularMarketDayHigh": 329.87,
+        "regularMarketDayLow": 325.08,
+        "regularMarketVolume": 6651143,
+        "longName": "JPMorgan Chase & Co.",
+        "shortName": "JP Morgan Chase & Co.",
+        "chartPreviousClose": 106.94,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "end": 1791466200,
+            "start": 1791446400,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "end": 1791489600,
+            "start": 1791466200,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "end": 1791504000,
+            "start": 1791489600,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "JPM"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "XOM",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:07:49.288085+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 2.437
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XOM?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080749288085Z.response.json",
+      "response_sha256": "7bfffa6e7ff92a1f1ab4d99421496401dfa7f7b8a84eaebed1ad60dae37f9900",
+      "file": "20261008T080749288085Z.parquet",
+      "sha256": "a45b284912d0186c110a943c8df71a37780f61622b76c53bbf51c0f9633c14ec",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "Close",
+        "Open",
+        "Volume",
+        "High",
+        "Low",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "XOM",
+        "exchangeName": "NYQ",
+        "fullExchangeName": "NYSE",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": -252322200,
+        "regularMarketTime": 1791403416,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 164.05,
+        "regularMarketChangePercent": -0.261,
+        "fulldayPrice": 164.99,
+        "fulldayChange": 0.94,
+        "fulldayChangePercent": 0.573,
+        "fiftyTwoWeekHigh": 176.41,
+        "fiftyTwoWeekLow": 110.39,
+        "regularMarketDayHigh": 166.85,
+        "regularMarketDayLow": 163.465,
+        "regularMarketVolume": 9439618,
+        "longName": "ExxonMobil Holdings Corporation",
+        "shortName": "ExxonMobil Holdings Corporation",
+        "chartPreviousClose": 83.64,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "start": 1791446400,
+            "end": 1791466200,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "start": 1791466200,
+            "end": 1791489600,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "start": 1791489600,
+            "end": 1791504000,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "XOM"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "JNJ",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:07:53.254727+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 2.407
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/JNJ?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080753254727Z.response.json",
+      "response_sha256": "138bc9c0a488c43e143c35077856291adfd1bcc8d5c0ee2b0440fa7e5c239fb2",
+      "file": "20261008T080753254727Z.parquet",
+      "sha256": "20760f00e3646f7579767ae131eea20fd83bb9c542a3bce5036377fe1af75e32",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "Open",
+        "Volume",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "JNJ",
+        "exchangeName": "NYQ",
+        "fullExchangeName": "NYSE",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": -252322200,
+        "regularMarketTime": 1791403202,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 258.45,
+        "regularMarketChangePercent": 1.44,
+        "fulldayPrice": 258.31,
+        "fulldayChange": -0.02,
+        "fulldayChangePercent": -0.008,
+        "fiftyTwoWeekHigh": 281.07,
+        "fiftyTwoWeekLow": 184.66,
+        "regularMarketDayHigh": 260.68,
+        "regularMarketDayLow": 255.73,
+        "regularMarketVolume": 5277426,
+        "longName": "Johnson & Johnson",
+        "shortName": "Johnson & Johnson",
+        "chartPreviousClose": 139.72,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "start": 1791446400,
+            "end": 1791466200,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "start": 1791466200,
+            "end": 1791489600,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "start": 1791489600,
+            "end": 1791504000,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "JNJ"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "NVDA",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:07:57.191997+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 2.469
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080757191997Z.response.json",
+      "response_sha256": "c01632da414853a2239ecf3fc7f5c3270476e2737b91c965bbfb1da484cefdb5",
+      "file": "20261008T080757191997Z.parquet",
+      "sha256": "17c65fb5a2aff8f1611367020aa8c1e9a60a490dd6d0ef2858d40de5987f98a5",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "High",
+        "Low",
+        "Open",
+        "Close",
+        "Volume",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "NVDA",
+        "exchangeName": "NMS",
+        "fullExchangeName": "NasdaqGS",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": 917015400,
+        "regularMarketTime": 1791403200,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 237.47,
+        "regularMarketChangePercent": -0.74,
+        "fulldayPrice": 235.9,
+        "fulldayChange": -1.57,
+        "fulldayChangePercent": -0.661,
+        "fiftyTwoWeekHigh": 243.37,
+        "fiftyTwoWeekLow": 164.27,
+        "regularMarketDayHigh": 239.08,
+        "regularMarketDayLow": 236.38,
+        "regularMarketVolume": 81027431,
+        "longName": "NVIDIA Corporation",
+        "shortName": "NVIDIA Corporation",
+        "chartPreviousClose": 4.838,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "end": 1791466200,
+            "start": 1791446400,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "end": 1791489600,
+            "start": 1791466200,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "end": 1791504000,
+            "start": 1791489600,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "NVDA"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "WMT",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:08:01.188834+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 2.406
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/WMT?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080801187962Z.response.json",
+      "response_sha256": "1bab1f6d437b28c9173940059e3e14e2a1d8e120bdd3152d85dac47d83dec3b0",
+      "file": "20261008T080801187962Z.parquet",
+      "sha256": "84364d4b91c906f0417f67f856c8a51cbae2b2a62796f0acd565b88c965f34fd",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "Open",
+        "High",
+        "Volume",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "WMT",
+        "exchangeName": "NMS",
+        "fullExchangeName": "NasdaqGS",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": 83597400,
+        "regularMarketTime": 1791403200,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 108.16,
+        "regularMarketChangePercent": 0.896,
+        "fulldayPrice": 108.18,
+        "fulldayChange": 0.02,
+        "fulldayChangePercent": 0.018,
+        "fiftyTwoWeekHigh": 135.16,
+        "fiftyTwoWeekLow": 98.88,
+        "regularMarketDayHigh": 108.8,
+        "regularMarketDayLow": 107.4,
+        "regularMarketVolume": 15924441,
+        "longName": "Walmart Inc.",
+        "shortName": "Walmart Inc.",
+        "chartPreviousClose": 32.917,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "start": 1791446400,
+            "end": 1791466200,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "start": 1791466200,
+            "end": 1791489600,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "start": 1791489600,
+            "end": 1791504000,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "WMT"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "TSLA",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:08:05.104528+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 2.188
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080805104528Z.response.json",
+      "response_sha256": "39630acf484c763eb8007362cea7fdec032d003bd9cf78cda1f98a7e78b9acb3",
+      "file": "20261008T080805104528Z.parquet",
+      "sha256": "fff45e2633aee12c0654c253be8dd167231cde9b4c0401a3932df847a3b00162",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "Close",
+        "High",
+        "Low",
+        "Open",
+        "Volume",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "TSLA",
+        "exchangeName": "NMS",
+        "fullExchangeName": "NasdaqGS",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": 1277818200,
+        "regularMarketTime": 1791403200,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 377.81,
+        "regularMarketChangePercent": -0.754,
+        "fulldayPrice": 375.82,
+        "fulldayChange": -1.99,
+        "fulldayChangePercent": -0.527,
+        "fiftyTwoWeekHigh": 498.83,
+        "fiftyTwoWeekLow": 297.38,
+        "regularMarketDayHigh": 382.35,
+        "regularMarketDayLow": 374.43,
+        "regularMarketVolume": 25496215,
+        "longName": "Tesla, Inc.",
+        "shortName": "Tesla, Inc.",
+        "chartPreviousClose": 20.757,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "end": 1791466200,
+            "start": 1791446400,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "end": 1791489600,
+            "start": 1791466200,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "end": 1791504000,
+            "start": 1791489600,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "TSLA"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "GME",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:08:08.811908+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 2.313
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/GME?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080808811908Z.response.json",
+      "response_sha256": "09bef9190497f632cc77bb70923c58ed2b86bd9cdc8a0155521b08893813fee4",
+      "file": "20261008T080808811908Z.parquet",
+      "sha256": "0f2e129bc7c2e5d23da1b9afa4c164b00d91e8614511277a6ac8f7e0702e2430",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "Open",
+        "Volume",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "GME",
+        "exchangeName": "NYQ",
+        "fullExchangeName": "NYSE",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": 1013610600,
+        "regularMarketTime": 1791403203,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 24.58,
+        "regularMarketChangePercent": -0.727,
+        "fulldayPrice": 24.335,
+        "fulldayChange": -0.25,
+        "fulldayChangePercent": -1.019,
+        "fiftyTwoWeekHigh": 26.88,
+        "fiftyTwoWeekLow": 17.79,
+        "regularMarketDayHigh": 24.74,
+        "regularMarketDayLow": 24.413,
+        "regularMarketVolume": 7567400,
+        "longName": "GameStop Corp.",
+        "shortName": "GameStop Corporation",
+        "chartPreviousClose": 4.488,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "start": 1791446400,
+            "end": 1791466200,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "start": 1791466200,
+            "end": 1791489600,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "start": 1791489600,
+            "end": 1791504000,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "GME"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "GE",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:08:12.640370+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 2.61
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/GE?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080812640370Z.response.json",
+      "response_sha256": "fba653bed3069018a9fe006a92e9f4d57e2282f4929eb46f883e2018135a8b2c",
+      "file": "20261008T080812640370Z.parquet",
+      "sha256": "2bbfb5f976dd8dfc5fe5dce3e8fec3d264c932538a0fba45da833e557577dbe9",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "Open",
+        "Low",
+        "High",
+        "Close",
+        "Volume",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "GE",
+        "exchangeName": "NYQ",
+        "fullExchangeName": "NYSE",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": -252322200,
+        "regularMarketTime": 1791403203,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 303.62,
+        "regularMarketChangePercent": -1.865,
+        "fulldayPrice": 303.01,
+        "fulldayChange": -0.6,
+        "fulldayChangePercent": -0.198,
+        "fiftyTwoWeekHigh": 388.84,
+        "fiftyTwoWeekLow": 268.91,
+        "regularMarketDayHigh": 308.55,
+        "regularMarketDayLow": 302.98,
+        "regularMarketVolume": 3800907,
+        "longName": "GE Aerospace",
+        "shortName": "GE Aerospace",
+        "chartPreviousClose": 83.628,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "start": 1791446400,
+            "end": 1791466200,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "start": 1791466200,
+            "end": 1791489600,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "start": 1791489600,
+            "end": 1791504000,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "GE"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "O",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:08:16.770841+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 2.391
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/O?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080816770841Z.response.json",
+      "response_sha256": "5e1eb985fc0712b7e9d870fb92ea9e251dd88da5ac450a5f194a21895f3e18c0",
+      "file": "20261008T080816770841Z.parquet",
+      "sha256": "1095515fe20874b47039c20cf9c5313061a4f0be7fa811d487832517697ae243",
+      "rows": 2203,
+      "first_timestamp": "2018-01-02 09:30:00-05:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "High",
+        "Volume",
+        "Open",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "O",
+        "exchangeName": "NYQ",
+        "fullExchangeName": "NYSE",
+        "instrumentType": "EQUITY",
+        "firstTradeDate": 782487000,
+        "regularMarketTime": 1791403202,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 53.35,
+        "regularMarketChangePercent": -1.659,
+        "fulldayPrice": 53.49,
+        "fulldayChange": 0.14,
+        "fulldayChangePercent": 0.262,
+        "fiftyTwoWeekHigh": 67.94,
+        "fiftyTwoWeekLow": 53.32,
+        "regularMarketDayHigh": 54.3,
+        "regularMarketDayLow": 53.32,
+        "regularMarketVolume": 6493749,
+        "longName": "Realty Income Corporation",
+        "shortName": "Realty Income Corporation",
+        "chartPreviousClose": 55.252,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "end": 1791466200,
+            "start": 1791446400,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "end": 1791489600,
+            "start": 1791466200,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "end": 1791504000,
+            "start": 1791489600,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "5y",
+          "10y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "O"
+    }
+  ],
+  "diagnostic_downloads": [
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "FB",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:08:20.699047+00:00",
+      "status": "ok",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true,
+          "seconds": 1.656
+        }
+      ],
+      "http_status": 200,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/FB?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080820699047Z.response.json",
+      "response_sha256": "4f7f1c1cc5d0057b2c6b7185d11b2310306d7df631b136b48d67395b13de8c2b",
+      "file": "20261008T080820699047Z.parquet",
+      "sha256": "a0cbd953ac248b9b24ccbcd1c58cc1f82faf7d27d1bc5acd5b95b865c25831a1",
+      "rows": 323,
+      "first_timestamp": "2025-06-26 09:30:00-04:00",
+      "last_timestamp": "2026-10-07 09:30:00-04:00",
+      "timezone": "America/New_York",
+      "columns": [
+        "High",
+        "Close",
+        "Volume",
+        "Open",
+        "Low",
+        "Adj Close",
+        "Dividends",
+        "Stock Splits"
+      ],
+      "vendor_metadata": {
+        "currency": "USD",
+        "symbol": "FB",
+        "exchangeName": "BTS",
+        "fullExchangeName": "Cboe US",
+        "instrumentType": "ETF",
+        "firstTradeDate": 1750944600,
+        "regularMarketTime": 1791402146,
+        "hasPrePostMarketData": true,
+        "gmtoffset": -14400,
+        "timezone": "EDT",
+        "exchangeTimezoneName": "America/New_York",
+        "regularMarketPrice": 45.8798,
+        "regularMarketChangePercent": -0.0072,
+        "fulldayPrice": 45.8798,
+        "fulldayChange": -0.005,
+        "fulldayChangePercent": -0.0109,
+        "fiftyTwoWeekHigh": 49.67,
+        "fiftyTwoWeekLow": 40.934,
+        "regularMarketDayHigh": 45.93,
+        "regularMarketDayLow": 45.83,
+        "regularMarketVolume": 1084,
+        "longName": "ProShares S&P 500 Dynamic Daily Buffer ETF",
+        "shortName": "ProShares S&P 500 Dynamic Buffe",
+        "chartPreviousClose": 40.14,
+        "priceHint": 2,
+        "currentTradingPeriod": {
+          "pre": {
+            "timezone": "EDT",
+            "start": 1791446400,
+            "end": 1791466200,
+            "gmtoffset": -14400
+          },
+          "regular": {
+            "timezone": "EDT",
+            "start": 1791466200,
+            "end": 1791489600,
+            "gmtoffset": -14400
+          },
+          "post": {
+            "timezone": "EDT",
+            "start": 1791489600,
+            "end": 1791504000,
+            "gmtoffset": -14400
+          }
+        },
+        "dataGranularity": "1d",
+        "range": "",
+        "validRanges": [
+          "1d",
+          "5d",
+          "1mo",
+          "3mo",
+          "6mo",
+          "1y",
+          "2y",
+          "ytd",
+          "max"
+        ]
+      },
+      "cache_hit": true,
+      "ticker": "FB"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "TWTR",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:08:23.867053+00:00",
+      "status": "failed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "HTTPError: 404 Client Error: Not Found for url: https://query1.finance.yahoo.com/v8/finance/chart/TWTR?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+          "seconds": 1.593
+        }
+      ],
+      "http_status": 404,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TWTR?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080823867053Z.response.json",
+      "response_sha256": "f0b5f9feeac9f1fc93c31b1edc03fbc1fda4acb3ec5e233ebb39d6f8b66e1769",
+      "cache_hit": true,
+      "ticker": "TWTR"
+    },
+    {
+      "request": {
+        "source": "yahoo_chart",
+        "ticker": "SIVBQ",
+        "period1": 1514764800,
+        "period2": 1791417600,
+        "interval": "1d",
+        "events": "div,splits"
+      },
+      "source": "Yahoo Finance public chart endpoint (requests)",
+      "retrieved_at_utc": "2026-10-08T08:08:26.976381+00:00",
+      "status": "failed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error": "HTTPError: 404 Client Error: Not Found for url: https://query1.finance.yahoo.com/v8/finance/chart/SIVBQ?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+          "seconds": 1.672
+        }
+      ],
+      "http_status": 404,
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SIVBQ?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+      "response_file": "20261008T080826976381Z.response.json",
+      "response_sha256": "f0b5f9feeac9f1fc93c31b1edc03fbc1fda4acb3ec5e233ebb39d6f8b66e1769",
+      "cache_hit": true,
+      "ticker": "SIVBQ"
+    }
+  ],
+  "processed_directory": "data\\processed\\20261008T081409798989Z",
+  "run_directory": "reports\\runs\\20261008T081409798989Z"
+}

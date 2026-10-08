@@ -1,0 +1,54 @@
+{
+  "survivorship_biased": true,
+  "interim": true,
+  "downloaded_at_review": 161,
+  "counts": {
+    "quarantined": 31,
+    "unverified_noninteger_distribution_event": 23,
+    "validated": 130,
+    "unreviewed_extreme_change": 10,
+    "dividend_factor_mismatch": 1
+  },
+  "examples": {
+    "unverified_noninteger_distribution_event": [
+      "A",
+      "ABT",
+      "ADP",
+      "AME",
+      "AOS",
+      "APD",
+      "APTV",
+      "BAX",
+      "BDX",
+      "BF-B",
+      "CMCSA",
+      "COP",
+      "DD",
+      "DELL",
+      "DHR",
+      "DLTR",
+      "DOC",
+      "DOV",
+      "DRI",
+      "DTE",
+      "EBAY",
+      "ECHO",
+      "EQT"
+    ],
+    "unreviewed_extreme_change": [
+      "AMD",
+      "APA",
+      "APP",
+      "BE",
+      "BIIB",
+      "CNC",
+      "CVNA",
+      "DHR",
+      "DXCM",
+      "ECHO"
+    ],
+    "dividend_factor_mismatch": [
+      "CMCSA"
+    ]
+  }
+}

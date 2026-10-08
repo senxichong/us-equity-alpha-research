@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="19" time="1.526" timestamp="2026-10-08T16:14:10.462549+08:00" hostname="电脑而已"><testcase classname="tests.test_data" name="test_return_alignment_and_ticker_boundaries" time="0.010" /><testcase classname="tests.test_data" name="test_missing_session_is_not_bridged" time="0.005" /><testcase classname="tests.test_data" name="test_duplicate_detection" time="0.012" /><testcase classname="tests.test_data" name="test_ohlc_violation" time="0.011" /><testcase classname="tests.test_data" name="test_date_sorting_is_reported_without_mutation" time="0.010" /><testcase classname="tests.test_data" name="test_missing_values_and_calendar" time="0.011" /><testcase classname="tests.test_data" name="test_split_adjustment_excludes_ex_date" time="0.002" /><testcase classname="tests.test_data" name="test_reverse_split" time="0.001" /><testcase classname="tests.test_data" name="test_dividend_adjustment_and_no_double_count" time="0.005" /><testcase classname="tests.test_data" name="test_invalid_values_and_extreme_move" time="0.011" /><testcase classname="tests.test_data" name="test_empty_download_validation" time="0.009" /><testcase classname="tests.test_data" name="test_infinite_value_serializable" time="0.010" /><testcase classname="tests.test_data" name="test_timezone_preserves_exchange_date" time="0.082" /><testcase classname="tests.test_data" name="test_universe_fails_closed" time="0.000" /><testcase classname="tests.test_data" name="test_candidate_never_future_fills" time="0.004" /><testcase classname="tests.test_data" name="test_cache_prevents_network_and_detects_corruption" time="0.107" /><testcase classname="tests.test_data" name="test_chart_event_alignment" time="0.002" /><testcase classname="tests.test_data" name="test_missing_split_previous_close_is_reportable" time="0.003" /><testcase classname="tests.test_data" name="test_chart_primary_cache_no_network" time="0.002"><failure message="NameError: name 'json' is not defined. Did you forget to import 'json'">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000011A6CF4E930&gt;
+tmp_path = WindowsPath('C:/Users/lenovo/AppData/Local/Temp/pytest-of-lenovo/pytest-12/test_chart_primary_cache_no_ne0')
+
+    def test_chart_primary_cache_no_network(monkeypatch, tmp_path):
+        from src.data.download import download_chart
+        cfg = {'cache_directory': str(tmp_path), 'start_date': '2024-01-01', 'end_date': '2024-01-05', 'request_timeout_seconds': 1}
+        payload = {'chart': {'error': None, 'result': [{'meta': {'currency': 'USD', 'exchangeTimezoneName': 'America/New_York'}, 'timestamp': [1704205800], 'indicators': {'quote': [{'open': [50], 'high': [51], 'low': [49], 'close': [50], 'volume': [10]}], 'adjclose': [{'adjclose': [50]}]}}]}}
+        import json
+&gt;       class Response:
+
+tests\test_data.py:179: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    class Response:
+        status_code = 200
+&gt;       content = json.dumps(payload).encode()
+                  ^^^^
+E       NameError: name 'json' is not defined. Did you forget to import 'json'
+
+tests\test_data.py:181: NameError</failure></testcase></testsuite></testsuites>

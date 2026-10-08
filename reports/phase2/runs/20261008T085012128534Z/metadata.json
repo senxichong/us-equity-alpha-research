@@ -1,0 +1,3044 @@
+{
+  "survivorship_biased": true,
+  "universe_mode": "prototype_current_sp500",
+  "security_identity_verified": false,
+  "dataset_id": "20261008T085012128534Z",
+  "source": "yahoo_chart",
+  "data_role": "validated_survivorship_biased_prototype",
+  "config": {
+    "data_source": "yahoo_chart",
+    "start_date": "2018-01-01",
+    "end_date": "2026-10-08",
+    "ideal_start_date": "2010-01-01",
+    "universe_mode": "prototype_current_sp500",
+    "universe_label": "SURVIVORSHIP-BIASED PROTOTYPE UNIVERSE",
+    "tickers": [
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "META",
+      "JPM",
+      "XOM",
+      "JNJ",
+      "NVDA",
+      "WMT",
+      "TSLA",
+      "GME",
+      "GE",
+      "O"
+    ],
+    "diagnostic_tickers": [
+      "FB",
+      "TWTR",
+      "SIVBQ"
+    ],
+    "cache_directory": "data/raw/sample",
+    "processed_directory": "data/processed",
+    "adjustment_method": "vendor_adj_close_ratio",
+    "prediction_horizon": 5,
+    "random_seed": 42,
+    "calendar": "XNYS",
+    "exchange_timezone": "America/New_York",
+    "request_timeout_seconds": 25,
+    "max_attempts": 2,
+    "request_pause_seconds": 1.5,
+    "extreme_return_threshold": 0.4,
+    "ohlc_relative_tolerance": 1e-06,
+    "dividend_factor_tolerance": 0.0001,
+    "pit_verified": false,
+    "pit_membership_path": null,
+    "phase2": {
+      "start_date": "2010-01-01",
+      "end_date": "2026-10-08",
+      "survivorship_biased": true,
+      "raw_directory": "data/raw/full",
+      "processed_directory": "data/processed/phase2",
+      "roster_path": "data/raw/probes/sp500_current.parquet",
+      "target_stocks": 450,
+      "minimum_stocks": 300,
+      "liquidity_window_sessions": 60,
+      "minimum_median_daily_dollar_volume": 10000000,
+      "minimum_history_sessions": 252,
+      "max_active_missing_rate": 0.005,
+      "max_trailing_missing_sessions": 2,
+      "first_trade_grace_days": 10,
+      "quarantine_extreme_changes": true,
+      "quarantine_complex_actions": true,
+      "known_unresolved_tickers": [
+        "IBM"
+      ],
+      "overlap_calendar_days": 45,
+      "full_refresh_after_days": 30,
+      "revision_relative_tolerance": 5e-06,
+      "max_attempts": 3,
+      "request_pause_seconds": 1.5,
+      "retry_base_seconds": 3,
+      "max_rate_limit_wait_seconds": 45,
+      "request_timeout_seconds": 30
+    }
+  },
+  "roster_sha256": "f96781f06a19da95d210a62631e7cad2726c4c14d76dbfa8c0219d92c99f2765",
+  "requested_start": "2010-01-01",
+  "requested_end_exclusive": "2026-10-08",
+  "last_complete_session": "2026-10-07",
+  "candidate_count": 503,
+  "download_or_processing_failures": 1,
+  "validated_count": 393,
+  "quarantined_count": 109,
+  "liquidity_eligible_count": 393,
+  "stock_count": 393,
+  "selected_tickers": [
+    "MU",
+    "NVDA",
+    "SNDK",
+    "AAPL",
+    "TSLA",
+    "MSFT",
+    "INTC",
+    "META",
+    "AMZN",
+    "AVGO",
+    "MRVL",
+    "PLTR",
+    "ORCL",
+    "STX",
+    "LITE",
+    "AMAT",
+    "LLY",
+    "LRCX",
+    "CRM",
+    "WMT",
+    "V",
+    "XOM",
+    "GEV",
+    "BRK-B",
+    "PANW",
+    "CAT",
+    "CSCO",
+    "NOW",
+    "COST",
+    "GS",
+    "BAC",
+    "QCOM",
+    "KLAC",
+    "CRWD",
+    "UNH",
+    "JNJ",
+    "COHR",
+    "CVX",
+    "MA",
+    "TXN",
+    "GLW",
+    "HD",
+    "KO",
+    "COIN",
+    "C",
+    "BA",
+    "MCD",
+    "ADI",
+    "UBER",
+    "ADBE",
+    "ABBV",
+    "TMO",
+    "WFC",
+    "PG",
+    "BKNG",
+    "INTU",
+    "NKE",
+    "PEP",
+    "AMGN",
+    "ANET",
+    "ACN",
+    "TJX",
+    "MS",
+    "APH",
+    "LIN",
+    "ISRG",
+    "NEE",
+    "TER",
+    "DDOG",
+    "MPWR",
+    "BSX",
+    "DIS",
+    "AXP",
+    "FCX",
+    "PM",
+    "CIEN",
+    "MPC",
+    "GILD",
+    "DASH",
+    "ETN",
+    "NEM",
+    "AZO",
+    "SCHW",
+    "ON",
+    "TMUS",
+    "MCK",
+    "NXPI",
+    "SYK",
+    "COF",
+    "CEG",
+    "DE",
+    "CDNS",
+    "MDT",
+    "CVS",
+    "UNP",
+    "ABNB",
+    "SNPS",
+    "FTNT",
+    "SBUX",
+    "VST",
+    "MCHP",
+    "PSX",
+    "LOW",
+    "BLK",
+    "BMY",
+    "WELL",
+    "F",
+    "PYPL",
+    "PWR",
+    "SLB",
+    "LMT",
+    "FIX",
+    "RCL",
+    "TRV",
+    "TGT",
+    "WDAY",
+    "SHW",
+    "CMI",
+    "PH",
+    "MO",
+    "EQIX",
+    "CB",
+    "BX",
+    "HCA",
+    "PGR",
+    "GM",
+    "CMG",
+    "ROST",
+    "CSX",
+    "REGN",
+    "TTWO",
+    "CCL",
+    "CME",
+    "DAL",
+    "AON",
+    "ORLY",
+    "EXPE",
+    "WM",
+    "URI",
+    "ICE",
+    "SO",
+    "MDLZ",
+    "PLD",
+    "DVN",
+    "DUK",
+    "TWLO",
+    "UPS",
+    "ADSK",
+    "ELV",
+    "BNY",
+    "MNST",
+    "AEP",
+    "TDG",
+    "CI",
+    "UAL",
+    "NTAP",
+    "USB",
+    "AMT",
+    "CRH",
+    "BKR",
+    "AXON",
+    "KKR",
+    "HUM",
+    "HBAN",
+    "MRSH",
+    "EOG",
+    "ALL",
+    "CL",
+    "CAH",
+    "XEL",
+    "LULU",
+    "PNC",
+    "GD",
+    "KR",
+    "AKAM",
+    "APO",
+    "CTAS",
+    "KVUE",
+    "TEL",
+    "LHX",
+    "CTSH",
+    "COR",
+    "IBKR",
+    "ZTS",
+    "SWKS",
+    "MCO",
+    "KEYS",
+    "KHC",
+    "DLR",
+    "EMR",
+    "MLM",
+    "TPR",
+    "VEEV",
+    "NSC",
+    "CARR",
+    "HAL",
+    "FICO",
+    "AJG",
+    "FAST",
+    "KDP",
+    "GIS",
+    "DHI",
+    "KMI",
+    "MSCI",
+    "IR",
+    "TFC",
+    "ECL",
+    "CHTR",
+    "IQV",
+    "XYZ",
+    "GWW",
+    "PAYX",
+    "JBL",
+    "NRG",
+    "ITW",
+    "TSCO",
+    "STT",
+    "NUE",
+    "RSG",
+    "LYV",
+    "EW",
+    "ROK",
+    "P",
+    "CASY",
+    "FOXA",
+    "WAT",
+    "NDAQ",
+    "VMRK",
+    "FITB",
+    "EME",
+    "CF",
+    "ADM",
+    "CPRT",
+    "SRE",
+    "ROP",
+    "ULTA",
+    "BBY",
+    "AIG",
+    "CBOE",
+    "DG",
+    "ETR",
+    "AMP",
+    "AWK",
+    "OTIS",
+    "CMS",
+    "ALB",
+    "IDXX",
+    "EXE",
+    "PSA",
+    "DOW",
+    "RMD",
+    "SYY",
+    "VMC",
+    "CNP",
+    "KEY",
+    "CFG",
+    "D",
+    "RF",
+    "CRL",
+    "EIX",
+    "DPZ",
+    "ARES",
+    "CBRE",
+    "STLD",
+    "WAB",
+    "DECK",
+    "STZ",
+    "EFX",
+    "JBHT",
+    "EL",
+    "MTD",
+    "MTB",
+    "WEC",
+    "WSM",
+    "CCI",
+    "TYL",
+    "CLX",
+    "CHRW",
+    "LYB",
+    "NVR",
+    "VRSK",
+    "XYL",
+    "ED",
+    "HSY",
+    "GPN",
+    "GEHC",
+    "AFL",
+    "DGX",
+    "PEG",
+    "FIS",
+    "VICI",
+    "SYF",
+    "GRMN",
+    "CDW",
+    "FFIV",
+    "ACGL",
+    "LVS",
+    "RL",
+    "TECH",
+    "LUV",
+    "PODD",
+    "RVTY",
+    "HIG",
+    "FDS",
+    "VRSN",
+    "HST",
+    "ZBRA",
+    "GNRC",
+    "OMC",
+    "CPAY",
+    "IT",
+    "WST",
+    "FE",
+    "PTC",
+    "NTRS",
+    "PRU",
+    "PHM",
+    "CSGP",
+    "TDY",
+    "CHD",
+    "LII",
+    "BG",
+    "GDDY",
+    "INCY",
+    "AEE",
+    "MOS",
+    "BR",
+    "TSN",
+    "TROW",
+    "ALLE",
+    "EXPD",
+    "ATO",
+    "PPG",
+    "GEN",
+    "EXR",
+    "EVRG",
+    "LNT",
+    "WYNN",
+    "SBAC",
+    "ES",
+    "COO",
+    "MKC",
+    "SJM",
+    "SWK",
+    "STE",
+    "VLTO",
+    "PFG",
+    "BRO",
+    "TRMB",
+    "HAS",
+    "JKHY",
+    "VTRS",
+    "ESS",
+    "ALGN",
+    "AVY",
+    "IVZ",
+    "IFF",
+    "TXT",
+    "MAA",
+    "GPC",
+    "IEX",
+    "HII",
+    "PKG",
+    "WY",
+    "EG",
+    "INVH",
+    "SKYD",
+    "UDR",
+    "BEN",
+    "TPL",
+    "UHS",
+    "DVA",
+    "PNW",
+    "BALL",
+    "SNA",
+    "AES",
+    "KIM",
+    "NDSN",
+    "MGM",
+    "NWSA",
+    "REG",
+    "FRT",
+    "AIZ",
+    "CPT",
+    "CINF",
+    "HRL",
+    "L",
+    "ARE",
+    "BXP",
+    "SOLV",
+    "FOX",
+    "ERIE",
+    "NWS"
+  ],
+  "date_min": "2010-01-04",
+  "date_max": "2026-10-07",
+  "panel_rows": 1563421,
+  "observations": 1563421,
+  "valid_observations": 1563389,
+  "missing_or_nontrading_rows": 32,
+  "active_grid_missing_rate": 2.0467935380169512e-05,
+  "calendar_sessions": 4216,
+  "pre_history_slots": 93467,
+  "selected_split_events": 118,
+  "selected_dividend_events": 18905,
+  "selected_complex_events": 0,
+  "selected_dividend_mismatches": 0,
+  "selection_as_of": "2026-10-07",
+  "selection_bias": "Current roster plus latest-window liquidity and full-period data-quality screening; not historical eligibility.",
+  "run_directory": "reports\\phase2\\runs\\20261008T085012128534Z",
+  "row_validation_passed": true,
+  "dataset_gate_passed": true,
+  "input_snapshots": [
+    {
+      "ticker": "A",
+      "snapshot_path": "data\\raw\\full\\A\\20261008T082713600935Z.parquet",
+      "snapshot_sha256": "7841d9a6c81da7271e0f501241f0c6c41c29b559dbb8c4dd028cd717e9c48f1c"
+    },
+    {
+      "ticker": "AAPL",
+      "snapshot_path": "data\\raw\\full\\AAPL\\20261008T082715559122Z.parquet",
+      "snapshot_sha256": "5d1ae1c7984f12cf9037b0b309f0604cc25add4363229e1d19d36ae7c81988b6"
+    },
+    {
+      "ticker": "ABBV",
+      "snapshot_path": "data\\raw\\full\\ABBV\\20261008T082717574992Z.parquet",
+      "snapshot_sha256": "22c55ea8a1e4c53062bda1d401595bc6bd3d7bc068a220d8000e7f20a83f1e5f"
+    },
+    {
+      "ticker": "ABNB",
+      "snapshot_path": "data\\raw\\full\\ABNB\\20261008T082719394564Z.parquet",
+      "snapshot_sha256": "3e0dc01ae4eaa911b2126326971a56b2d9d9121eb893570d57962f4a2a5960f4"
+    },
+    {
+      "ticker": "ABT",
+      "snapshot_path": "data\\raw\\full\\ABT\\20261008T082721413021Z.parquet",
+      "snapshot_sha256": "f75e76cce951f832745632627e42b76b1066ff31f8084e0c95a0499e37100613"
+    },
+    {
+      "ticker": "ACGL",
+      "snapshot_path": "data\\raw\\full\\ACGL\\20261008T082723327290Z.parquet",
+      "snapshot_sha256": "fd1ceb7b714dd2abd7057adcd01863fc59674d7d512bd13438afaf120a159fcc"
+    },
+    {
+      "ticker": "ACN",
+      "snapshot_path": "data\\raw\\full\\ACN\\20261008T082725364790Z.parquet",
+      "snapshot_sha256": "322b6f50d5855ec3267db5815c679b70a855ba6164d3f2bb4a8610d347263ff4"
+    },
+    {
+      "ticker": "ADBE",
+      "snapshot_path": "data\\raw\\full\\ADBE\\20261008T082727334681Z.parquet",
+      "snapshot_sha256": "2a69fe25cc3aa9565fd036861a22e4267b7f030cf2ba75ba322a66f8c1e0d999"
+    },
+    {
+      "ticker": "ADI",
+      "snapshot_path": "data\\raw\\full\\ADI\\20261008T082729389402Z.parquet",
+      "snapshot_sha256": "3e04e2a3498d8c1e9b894be862e34d8b98ad0c9e9b863f822d55fd80139cd046"
+    },
+    {
+      "ticker": "ADM",
+      "snapshot_path": "data\\raw\\full\\ADM\\20261008T082731451325Z.parquet",
+      "snapshot_sha256": "36f4355276382747aba080e0c649e266a3c2367912a309b497d7889b7935917b"
+    },
+    {
+      "ticker": "ADP",
+      "snapshot_path": "data\\raw\\full\\ADP\\20261008T082733545175Z.parquet",
+      "snapshot_sha256": "d78a346460a0428130fcf0ffb1d3319b22876fcbdb8234f1cf3239487e65031a"
+    },
+    {
+      "ticker": "ADSK",
+      "snapshot_path": "data\\raw\\full\\ADSK\\20261008T082735499631Z.parquet",
+      "snapshot_sha256": "6c1a95841ecea63e4070ed6b32fce039a7955f0274e2b169125b21011026b5b5"
+    },
+    {
+      "ticker": "AEE",
+      "snapshot_path": "data\\raw\\full\\AEE\\20261008T082737871767Z.parquet",
+      "snapshot_sha256": "6051fde68daf7b93755eee70c836a3898e441b0389d0da5773c5735bf7feaa7e"
+    },
+    {
+      "ticker": "AEP",
+      "snapshot_path": "data\\raw\\full\\AEP\\20261008T082740107810Z.parquet",
+      "snapshot_sha256": "1b80a6fb7956bc4e643ab15fde75754ea27dc384b67bcfa8074fef8635bd8cf0"
+    },
+    {
+      "ticker": "AES",
+      "snapshot_path": "data\\raw\\full\\AES\\20261008T082742204278Z.parquet",
+      "snapshot_sha256": "5c002ee9350adeeedc24501995241e11ea4957712a6407292a9fb021eeb22c85"
+    },
+    {
+      "ticker": "AFL",
+      "snapshot_path": "data\\raw\\full\\AFL\\20261008T082744248031Z.parquet",
+      "snapshot_sha256": "b66fce4061aff8b612bc875f215cf5483e830b0893d0d7985270e2fca99e9673"
+    },
+    {
+      "ticker": "AIG",
+      "snapshot_path": "data\\raw\\full\\AIG\\20261008T082746554689Z.parquet",
+      "snapshot_sha256": "3312c3be1dd161b0e8f9e98f94d9d534da84aabe9f0a2c0809fd00c9ca9170bd"
+    },
+    {
+      "ticker": "AIZ",
+      "snapshot_path": "data\\raw\\full\\AIZ\\20261008T082748723982Z.parquet",
+      "snapshot_sha256": "8bd0d035a33d9ff1b8b93f0c6641313828fb979e7f36bee7b2ac98579735fafb"
+    },
+    {
+      "ticker": "AJG",
+      "snapshot_path": "data\\raw\\full\\AJG\\20261008T082751033862Z.parquet",
+      "snapshot_sha256": "741a7d3062752ddd339d56f4ae3ec346731b05d861dc4af7414e458323648734"
+    },
+    {
+      "ticker": "AKAM",
+      "snapshot_path": "data\\raw\\full\\AKAM\\20261008T082753087818Z.parquet",
+      "snapshot_sha256": "3c37ffbfd11a4543726d17b0231fee8e020f640b70c940de7624bea3cdaef6fd"
+    },
+    {
+      "ticker": "ALB",
+      "snapshot_path": "data\\raw\\full\\ALB\\20261008T082755876905Z.parquet",
+      "snapshot_sha256": "b6d8c7c85121b6b37464c7f8319fb7384fcfddca630f66195c0e7460bc33bbf8"
+    },
+    {
+      "ticker": "ALGN",
+      "snapshot_path": "data\\raw\\full\\ALGN\\20261008T082758052462Z.parquet",
+      "snapshot_sha256": "55ab04518595c6455ce9d710a436a694252593d40f862889a4d5f7de1b73fad2"
+    },
+    {
+      "ticker": "ALL",
+      "snapshot_path": "data\\raw\\full\\ALL\\20261008T082800480137Z.parquet",
+      "snapshot_sha256": "8e3558759b9d9a7f7868fef7595dd59c78f51577b40efab8275bb3eb5720f59b"
+    },
+    {
+      "ticker": "ALLE",
+      "snapshot_path": "data\\raw\\full\\ALLE\\20261008T082802624858Z.parquet",
+      "snapshot_sha256": "5fbcf5101c6c3a0c135775fd015dc7db918aea542a67044df77c80487c3db6c1"
+    },
+    {
+      "ticker": "AMAT",
+      "snapshot_path": "data\\raw\\full\\AMAT\\20261008T082804893645Z.parquet",
+      "snapshot_sha256": "58a5bc2ef8b0043d6fdcc260ebe4c1a4911e34c22b8bda1725578974eb4f00d7"
+    },
+    {
+      "ticker": "AMD",
+      "snapshot_path": "data\\raw\\full\\AMD\\20261008T082810158733Z.parquet",
+      "snapshot_sha256": "9cad2433ff898838cf0e7440575ebdfbca878a46e6f1de1627da200dfdd32db7"
+    },
+    {
+      "ticker": "AME",
+      "snapshot_path": "data\\raw\\full\\AME\\20261008T082812419727Z.parquet",
+      "snapshot_sha256": "5f237c4e72ae7b4ccc189db3fedcb9cfad309dfa5f6d11434b256b9069188f5c"
+    },
+    {
+      "ticker": "AMGN",
+      "snapshot_path": "data\\raw\\full\\AMGN\\20261008T082815306561Z.parquet",
+      "snapshot_sha256": "77429d4c411fabebe60cc0462d8adcbfb3bb999dcba5d9f1436e8bd585fda606"
+    },
+    {
+      "ticker": "AMP",
+      "snapshot_path": "data\\raw\\full\\AMP\\20261008T082817853084Z.parquet",
+      "snapshot_sha256": "421c207d41dcce9c345d4f343e7f2ccb530670156d4b3283b07db6d25efd68ac"
+    },
+    {
+      "ticker": "AMT",
+      "snapshot_path": "data\\raw\\full\\AMT\\20261008T082820229773Z.parquet",
+      "snapshot_sha256": "dbb4cd69e07e3ae2d89e95521b1fec8325c92f9db82f11a269d4ec065f53812d"
+    },
+    {
+      "ticker": "AMZN",
+      "snapshot_path": "data\\raw\\full\\AMZN\\20261008T082822515850Z.parquet",
+      "snapshot_sha256": "7fa07f385c5499eb74c110c71b03ba71a90b3642c9cb792849e4151906fa7175"
+    },
+    {
+      "ticker": "ANET",
+      "snapshot_path": "data\\raw\\full\\ANET\\20261008T082824724569Z.parquet",
+      "snapshot_sha256": "d528cdd261afe4e531a213ddc29831aa59b8140446bdf29dfa5a9c6601779acf"
+    },
+    {
+      "ticker": "AON",
+      "snapshot_path": "data\\raw\\full\\AON\\20261008T082827123447Z.parquet",
+      "snapshot_sha256": "5df96be80311ef132f3a2006f0f8e38a57c068ba052f3ba013e86c5e0ca44847"
+    },
+    {
+      "ticker": "AOS",
+      "snapshot_path": "data\\raw\\full\\AOS\\20261008T082829500426Z.parquet",
+      "snapshot_sha256": "f1ccf94e5bf83cd33bb42191ad2a268e7cc08e9c6b0fd05c2f2796d6e15a2916"
+    },
+    {
+      "ticker": "APA",
+      "snapshot_path": "data\\raw\\full\\APA\\20261008T082832063535Z.parquet",
+      "snapshot_sha256": "b4c93b37250c8236fd7d0f2be3e4ad578fbf56a9ba8463c8233401fc61a054ba"
+    },
+    {
+      "ticker": "APD",
+      "snapshot_path": "data\\raw\\full\\APD\\20261008T082834459681Z.parquet",
+      "snapshot_sha256": "6970dcec2bef0745e75f86245610f9971c4e5b044f8b7ae556773bb13fe585f4"
+    },
+    {
+      "ticker": "APH",
+      "snapshot_path": "data\\raw\\full\\APH\\20261008T082836795717Z.parquet",
+      "snapshot_sha256": "60f1a8959c6fc760ca1b010dc16c8610a10fcfcc7843ec858b814ea69adc8fea"
+    },
+    {
+      "ticker": "APO",
+      "snapshot_path": "data\\raw\\full\\APO\\20261008T082838983411Z.parquet",
+      "snapshot_sha256": "9292a0db09dcd7d628cf69c3917feed84f1b7223cfbebe08e963dda895e485ae"
+    },
+    {
+      "ticker": "APP",
+      "snapshot_path": "data\\raw\\full\\APP\\20261008T082840935484Z.parquet",
+      "snapshot_sha256": "393da1b2c825f501a8a36696c1a02ba34d2539008215c9404d5d0d9cb304f0a7"
+    },
+    {
+      "ticker": "APTV",
+      "snapshot_path": "data\\raw\\full\\APTV\\20261008T082843123686Z.parquet",
+      "snapshot_sha256": "e81ab2a2f0cc68160ff03ceacec9dbf823641a45f8586ce68127eb4b82d6a1dd"
+    },
+    {
+      "ticker": "ARE",
+      "snapshot_path": "data\\raw\\full\\ARE\\20261008T082845428947Z.parquet",
+      "snapshot_sha256": "29784ceaa633fd993c735e3de95a65ab6d46584a033383b0e78542fdd583345f"
+    },
+    {
+      "ticker": "ARES",
+      "snapshot_path": "data\\raw\\full\\ARES\\20261008T082847694094Z.parquet",
+      "snapshot_sha256": "b1ee9cb089790fcc12a2ab7eb23239d900fa834c8f84e929217211b4e31811b8"
+    },
+    {
+      "ticker": "ATO",
+      "snapshot_path": "data\\raw\\full\\ATO\\20261008T082849971774Z.parquet",
+      "snapshot_sha256": "e387764b81502e3e2287ec193770675253685e015dcdfc7aa2a8c88b4d42c83c"
+    },
+    {
+      "ticker": "AVGO",
+      "snapshot_path": "data\\raw\\full\\AVGO\\20261008T082852269239Z.parquet",
+      "snapshot_sha256": "7b1a8e05b1adc693582f6870189ee9d5749859e478df0c7f2b851d18dc183b14"
+    },
+    {
+      "ticker": "AVY",
+      "snapshot_path": "data\\raw\\full\\AVY\\20261008T082854567856Z.parquet",
+      "snapshot_sha256": "09305119bc5c27945986f0e155e8fb28f165d1b60cec183111300053bb50902f"
+    },
+    {
+      "ticker": "AWK",
+      "snapshot_path": "data\\raw\\full\\AWK\\20261008T082857007261Z.parquet",
+      "snapshot_sha256": "59376645fa2ef7ecb4e9227669dfdc423b30f664f96b54c787366c4efead20c5"
+    },
+    {
+      "ticker": "AXON",
+      "snapshot_path": "data\\raw\\full\\AXON\\20261008T082859092650Z.parquet",
+      "snapshot_sha256": "8faa391598fda3eab97e4980fd37885e0c4d5a5883742051bf60f32f5a3044ce"
+    },
+    {
+      "ticker": "AXP",
+      "snapshot_path": "data\\raw\\full\\AXP\\20261008T082901376049Z.parquet",
+      "snapshot_sha256": "1d04a1c61fbcd42c783ad6c2b290c7b57074ed34e8942e5b3d4f9b7282a52df9"
+    },
+    {
+      "ticker": "AZO",
+      "snapshot_path": "data\\raw\\full\\AZO\\20261008T082903847722Z.parquet",
+      "snapshot_sha256": "052ed6270b6b9c5c6f3a98b6bb489bb2644cb895054754c78a41f8a7717ec39c"
+    },
+    {
+      "ticker": "BA",
+      "snapshot_path": "data\\raw\\full\\BA\\20261008T082906133402Z.parquet",
+      "snapshot_sha256": "2b541fa8f7d271e66fc232ffd40f0ac4ae8275fd6ac874f46f3e3a7d2aa96f27"
+    },
+    {
+      "ticker": "BAC",
+      "snapshot_path": "data\\raw\\full\\BAC\\20261008T082908550709Z.parquet",
+      "snapshot_sha256": "03c60e24ef34fe8a987559fb868eb1dba882a9061f66b52c7583e5adce232e0e"
+    },
+    {
+      "ticker": "BALL",
+      "snapshot_path": "data\\raw\\full\\BALL\\20261008T082911136057Z.parquet",
+      "snapshot_sha256": "b8055e49a12b808a5d228e2faa3bf4fb4ddd39348d7673d4b118bf7b4b0cbf62"
+    },
+    {
+      "ticker": "BAX",
+      "snapshot_path": "data\\raw\\full\\BAX\\20261008T082913420740Z.parquet",
+      "snapshot_sha256": "5c602326fef019dd9ee6e4b82bcea4da7021dcc681f3e21dc3d3a047c7bdf22f"
+    },
+    {
+      "ticker": "BBY",
+      "snapshot_path": "data\\raw\\full\\BBY\\20261008T084904740051Z.parquet",
+      "snapshot_sha256": "90e1c50ee6aefc7e0b33108739675f7058e68f7c682442847a107ff856e71806"
+    },
+    {
+      "ticker": "BDX",
+      "snapshot_path": "data\\raw\\full\\BDX\\20261008T082917833431Z.parquet",
+      "snapshot_sha256": "c0863992d67676fa89b0997083a7ff4cebdb944a15b9d465decfbf2b22d809bd"
+    },
+    {
+      "ticker": "BE",
+      "snapshot_path": "data\\raw\\full\\BE\\20261008T082920509133Z.parquet",
+      "snapshot_sha256": "a2a1d31ce4482ad8a022b9bfb0afac5a5d3aec9d77072ef675d36709389acf03"
+    },
+    {
+      "ticker": "BEN",
+      "snapshot_path": "data\\raw\\full\\BEN\\20261008T082922726901Z.parquet",
+      "snapshot_sha256": "bcb73e1a2b21798f3d07defe10bdfb9d8fb4be83364dc8419579c5fc263af9ba"
+    },
+    {
+      "ticker": "BF-B",
+      "snapshot_path": "data\\raw\\full\\BF-B\\20261008T082925001393Z.parquet",
+      "snapshot_sha256": "80c2a66b72130eee3119eb3d207d3c71823daa038bce130069b7190180fe052c"
+    },
+    {
+      "ticker": "BG",
+      "snapshot_path": "data\\raw\\full\\BG\\20261008T082927195800Z.parquet",
+      "snapshot_sha256": "6d23910a60fdd2779d4a431c457f94597625caf4aee8dc40ba9dfb098251588a"
+    },
+    {
+      "ticker": "BIIB",
+      "snapshot_path": "data\\raw\\full\\BIIB\\20261008T082929332323Z.parquet",
+      "snapshot_sha256": "93d2267716c882028b3c389548dcc91b8d860f9679567dd8748719ad28749a9a"
+    },
+    {
+      "ticker": "BKNG",
+      "snapshot_path": "data\\raw\\full\\BKNG\\20261008T082931727935Z.parquet",
+      "snapshot_sha256": "ada56da981abc014d473601f39d1fa5108fc163fa0860ed7c02dd4bec0cc2a82"
+    },
+    {
+      "ticker": "BKR",
+      "snapshot_path": "data\\raw\\full\\BKR\\20261008T082934196414Z.parquet",
+      "snapshot_sha256": "f37862460a85fda625740ec518095856ca8a7f343cafe4364f171c3a5bb8e568"
+    },
+    {
+      "ticker": "BLK",
+      "snapshot_path": "data\\raw\\full\\BLK\\20261008T082936324056Z.parquet",
+      "snapshot_sha256": "897335e4342ba81b81f94416e7a5aebf7c8458e518fbb854b276720668ad2cf8"
+    },
+    {
+      "ticker": "BMY",
+      "snapshot_path": "data\\raw\\full\\BMY\\20261008T082938811566Z.parquet",
+      "snapshot_sha256": "cab1065612b0acdaa16cc241c50f2d5d1343c00efe8db721fcffbaa795dd2bd7"
+    },
+    {
+      "ticker": "BNY",
+      "snapshot_path": "data\\raw\\full\\BNY\\20261008T082941064369Z.parquet",
+      "snapshot_sha256": "2a7611a2aca321ed7bfa26c20841e6005456258b3e9f092a6663d45fe60ba3a7"
+    },
+    {
+      "ticker": "BR",
+      "snapshot_path": "data\\raw\\full\\BR\\20261008T082943170653Z.parquet",
+      "snapshot_sha256": "90f2e1c265e69def5dfebba4af1f5f479310980e8c8171e25f2f4d2ce4f5289d"
+    },
+    {
+      "ticker": "BRK-B",
+      "snapshot_path": "data\\raw\\full\\BRK-B\\20261008T082945226948Z.parquet",
+      "snapshot_sha256": "32b5f2c9ed59b8b170ef0fdd24766e2a52482c02fbe902e72dd5f87b8bb75c83"
+    },
+    {
+      "ticker": "BRO",
+      "snapshot_path": "data\\raw\\full\\BRO\\20261008T082947393391Z.parquet",
+      "snapshot_sha256": "e3272c8e32335e77b2a10cf38041bff033bfcd291bb6b48a6063d61c0385d337"
+    },
+    {
+      "ticker": "BSX",
+      "snapshot_path": "data\\raw\\full\\BSX\\20261008T082949420629Z.parquet",
+      "snapshot_sha256": "8352584b48744dfea01e87f939506c363fdbb3843a4b15638aa15f95f28563bd"
+    },
+    {
+      "ticker": "BX",
+      "snapshot_path": "data\\raw\\full\\BX\\20261008T082951550066Z.parquet",
+      "snapshot_sha256": "02552dc2853ce60124d74015e0ff9c1bca575ca157aae92d8afa56fedf5b5e25"
+    },
+    {
+      "ticker": "BXP",
+      "snapshot_path": "data\\raw\\full\\BXP\\20261008T082953698669Z.parquet",
+      "snapshot_sha256": "c1eb63719121e18fc7c88cf73184c3459f450567bcfbc182273c5d1d21531b9c"
+    },
+    {
+      "ticker": "C",
+      "snapshot_path": "data\\raw\\full\\C\\20261008T082955988330Z.parquet",
+      "snapshot_sha256": "178792dcc87c6f0bcc79fa83bdfe65078375298b99f0f621933b33cf6f807ef2"
+    },
+    {
+      "ticker": "CAH",
+      "snapshot_path": "data\\raw\\full\\CAH\\20261008T082959088924Z.parquet",
+      "snapshot_sha256": "be3fe6047be7f613c29c9b347b575e57513df539b879954590475c9c3c5a5cf8"
+    },
+    {
+      "ticker": "CARR",
+      "snapshot_path": "data\\raw\\full\\CARR\\20261008T083001352210Z.parquet",
+      "snapshot_sha256": "c21b6626133d6e58eefc8974d5c4816604aacb12398fbdc54a80a4b057d639de"
+    },
+    {
+      "ticker": "CASY",
+      "snapshot_path": "data\\raw\\full\\CASY\\20261008T083003649493Z.parquet",
+      "snapshot_sha256": "320c55bf18282e3e86e56cb4542714b9eae2481c75ca139ce53e075b6a657eeb"
+    },
+    {
+      "ticker": "CAT",
+      "snapshot_path": "data\\raw\\full\\CAT\\20261008T083005803220Z.parquet",
+      "snapshot_sha256": "e52cab45b8bc0bf46a39a14d435d61bf4ddf67df01c1fefe0e4247738470dc17"
+    },
+    {
+      "ticker": "CB",
+      "snapshot_path": "data\\raw\\full\\CB\\20261008T083008218254Z.parquet",
+      "snapshot_sha256": "e29b1c5b72e78b41dcb1870bf3ef34bab8fd4a9eefe168d6019bd051bb2eaaf3"
+    },
+    {
+      "ticker": "CBOE",
+      "snapshot_path": "data\\raw\\full\\CBOE\\20261008T083011236706Z.parquet",
+      "snapshot_sha256": "0e0c7550acbf20da90da5f216030cadee56ff55acfccc7a20cf3fb06a2c214a3"
+    },
+    {
+      "ticker": "CBRE",
+      "snapshot_path": "data\\raw\\full\\CBRE\\20261008T083013238413Z.parquet",
+      "snapshot_sha256": "02f07f068ef6d81f8e00d073c5544d942e600ff3cef32e38da128aa36278b18b"
+    },
+    {
+      "ticker": "CCI",
+      "snapshot_path": "data\\raw\\full\\CCI\\20261008T083016739912Z.parquet",
+      "snapshot_sha256": "5b2adffe66595de7defa3d3bf8128502842c2803f80e2cdaf19899c01f2c411f"
+    },
+    {
+      "ticker": "CCL",
+      "snapshot_path": "data\\raw\\full\\CCL\\20261008T083019892164Z.parquet",
+      "snapshot_sha256": "fc73f80c1c592826152da9a823613e4669e7f8e4ad0d09c32839c23aca456c05"
+    },
+    {
+      "ticker": "CDNS",
+      "snapshot_path": "data\\raw\\full\\CDNS\\20261008T083022473734Z.parquet",
+      "snapshot_sha256": "5e757454b159373d471b4b0bc9f0c9b9faa14576755e491d8622b857d82a9084"
+    },
+    {
+      "ticker": "CDW",
+      "snapshot_path": "data\\raw\\full\\CDW\\20261008T083024928289Z.parquet",
+      "snapshot_sha256": "3e335dea52ea2076b02b86fa9b5ff2c183fd68de53151bd2b70862875027a41e"
+    },
+    {
+      "ticker": "CEG",
+      "snapshot_path": "data\\raw\\full\\CEG\\20261008T083027661752Z.parquet",
+      "snapshot_sha256": "0e4439f4d64505d61a09c09dde9ae5db8f40f6e787ad547d5a6d186d1ac99d13"
+    },
+    {
+      "ticker": "CF",
+      "snapshot_path": "data\\raw\\full\\CF\\20261008T083031141515Z.parquet",
+      "snapshot_sha256": "7d8ee148c102751d47c3a9bd0f1f1f30202a9d1818b86ed8ec0d61e53b883226"
+    },
+    {
+      "ticker": "CFG",
+      "snapshot_path": "data\\raw\\full\\CFG\\20261008T083033807431Z.parquet",
+      "snapshot_sha256": "12360f79fe16777017b62ef9bd4d557e88936b8a77b8d1f78f50f59f4c007b4c"
+    },
+    {
+      "ticker": "CHD",
+      "snapshot_path": "data\\raw\\full\\CHD\\20261008T083036519087Z.parquet",
+      "snapshot_sha256": "7aa1b76d01b6334c04acacb989ff599b55d46b159aca9b2d4617d893448075e2"
+    },
+    {
+      "ticker": "CHRW",
+      "snapshot_path": "data\\raw\\full\\CHRW\\20261008T083039502649Z.parquet",
+      "snapshot_sha256": "922d7c426a0b9c2b1c2927f5d23978272f0b69331d103b6e9bd70fcf50b352b2"
+    },
+    {
+      "ticker": "CHTR",
+      "snapshot_path": "data\\raw\\full\\CHTR\\20261008T083042075482Z.parquet",
+      "snapshot_sha256": "33d4c792b837fec79d70fe1d7663af6800f7f2c9878dfdcd67f5875b13e45c83"
+    },
+    {
+      "ticker": "CI",
+      "snapshot_path": "data\\raw\\full\\CI\\20261008T083044543753Z.parquet",
+      "snapshot_sha256": "d7d20e954a3bd1c3f48859ec9c3be63b9e4ea75e06ce6c160df8559afd6c52db"
+    },
+    {
+      "ticker": "CIEN",
+      "snapshot_path": "data\\raw\\full\\CIEN\\20261008T083046938607Z.parquet",
+      "snapshot_sha256": "fbac73b124aaadabc4de350cae861a5e0d58c72dee2fcff96eaa41b1ea11a6fc"
+    },
+    {
+      "ticker": "CINF",
+      "snapshot_path": "data\\raw\\full\\CINF\\20261008T083049799384Z.parquet",
+      "snapshot_sha256": "b1cb5caa8cd6421468a0ec1f6b5b0089acfb416f78cf63273ea9fb6f14d6382d"
+    },
+    {
+      "ticker": "CL",
+      "snapshot_path": "data\\raw\\full\\CL\\20261008T083052409150Z.parquet",
+      "snapshot_sha256": "cf3529608612cd0c76515ced76992a06b1556f00a3bd3849daba9d49c99a5f19"
+    },
+    {
+      "ticker": "CLX",
+      "snapshot_path": "data\\raw\\full\\CLX\\20261008T083055034268Z.parquet",
+      "snapshot_sha256": "6f3cfe699793140f110a2cbdc13d6d31168ee5875b706481486f661201affb24"
+    },
+    {
+      "ticker": "CMCSA",
+      "snapshot_path": "data\\raw\\full\\CMCSA\\20261008T083057569218Z.parquet",
+      "snapshot_sha256": "2a35920ea11fc488f9aa37595634dfb3480d0661b8a8a1573583018d35950e05"
+    },
+    {
+      "ticker": "CME",
+      "snapshot_path": "data\\raw\\full\\CME\\20261008T083059931034Z.parquet",
+      "snapshot_sha256": "8680689b84b8cbf09a2ce787ebfa5811c1ba0a47b8eea84a5eae60338e55f7c1"
+    },
+    {
+      "ticker": "CMG",
+      "snapshot_path": "data\\raw\\full\\CMG\\20261008T083102858546Z.parquet",
+      "snapshot_sha256": "ced3bc65dafa1f3fb5bb46dbccff4c135ddacb90bdaf1d5f6beffa5f5c8b1847"
+    },
+    {
+      "ticker": "CMI",
+      "snapshot_path": "data\\raw\\full\\CMI\\20261008T083105671268Z.parquet",
+      "snapshot_sha256": "bd6ef67b3dc8a1bd954bf60aaaf54f2b48f5c903458a18ac4ea3127bc5290fc5"
+    },
+    {
+      "ticker": "CMS",
+      "snapshot_path": "data\\raw\\full\\CMS\\20261008T083108185971Z.parquet",
+      "snapshot_sha256": "42be9fd57655643bc76f6108f93ec88119403508bff9ec61adb01f893ec74607"
+    },
+    {
+      "ticker": "CNC",
+      "snapshot_path": "data\\raw\\full\\CNC\\20261008T083110768747Z.parquet",
+      "snapshot_sha256": "8b5a7fbe7af9bf63b0b499c106b2e77ffa7e80a7e9c31f4ce153d212015f9e53"
+    },
+    {
+      "ticker": "CNP",
+      "snapshot_path": "data\\raw\\full\\CNP\\20261008T083113482524Z.parquet",
+      "snapshot_sha256": "7945c7b6c2c163dc906da4ef588443a6263f1a631463554536ee79d8cfa813a0"
+    },
+    {
+      "ticker": "COF",
+      "snapshot_path": "data\\raw\\full\\COF\\20261008T083116531804Z.parquet",
+      "snapshot_sha256": "0c06e756a7ef206a44c2f549e2ef7f25cfec7cfef221dfb5eb7d3154a1d0be9e"
+    },
+    {
+      "ticker": "COHR",
+      "snapshot_path": "data\\raw\\full\\COHR\\20261008T083118750553Z.parquet",
+      "snapshot_sha256": "a900afca5d1fbfc80a8521c37c4e1fb7b95d1a35a7dbb3bf64c9409ec273d66a"
+    },
+    {
+      "ticker": "COIN",
+      "snapshot_path": "data\\raw\\full\\COIN\\20261008T083120860007Z.parquet",
+      "snapshot_sha256": "f1130ad2f962095ee77af50e8ae95690450176b1106b9327857f5818f9bf276c"
+    },
+    {
+      "ticker": "COO",
+      "snapshot_path": "data\\raw\\full\\COO\\20261008T083123758507Z.parquet",
+      "snapshot_sha256": "c91300a5052f64fcd24d2a3e63dab6aed638916db764cd632395adbf512ff0bb"
+    },
+    {
+      "ticker": "COP",
+      "snapshot_path": "data\\raw\\full\\COP\\20261008T083126591063Z.parquet",
+      "snapshot_sha256": "3757f617628e3bec3284ce7addf1ba0ef4dc8a45f43b9560bea2079a00ba207a"
+    },
+    {
+      "ticker": "COR",
+      "snapshot_path": "data\\raw\\full\\COR\\20261008T083129285691Z.parquet",
+      "snapshot_sha256": "9272d6e41ed4948bef61399fecbe969ad4391603a01ec763d34b1affd62f86c3"
+    },
+    {
+      "ticker": "COST",
+      "snapshot_path": "data\\raw\\full\\COST\\20261008T083131760440Z.parquet",
+      "snapshot_sha256": "2b36208e6a1379b7a72b37621b049ddaaed304484f2728ad457680c830799b2c"
+    },
+    {
+      "ticker": "CPAY",
+      "snapshot_path": "data\\raw\\full\\CPAY\\20261008T083134802832Z.parquet",
+      "snapshot_sha256": "798269fb0cc37069f71e5473ad914bd7891b92b13c4e04697038612c039a13b4"
+    },
+    {
+      "ticker": "CPRT",
+      "snapshot_path": "data\\raw\\full\\CPRT\\20261008T083137645714Z.parquet",
+      "snapshot_sha256": "930f345458e56517470940c870f9f6b9585d9c1a9911d2fa9648afff5d526745"
+    },
+    {
+      "ticker": "CPT",
+      "snapshot_path": "data\\raw\\full\\CPT\\20261008T083140708867Z.parquet",
+      "snapshot_sha256": "6becd9f4c9c6dadd8a79fffc9ab35be9b35dff1130258e6ba82eb0699f25000a"
+    },
+    {
+      "ticker": "CRH",
+      "snapshot_path": "data\\raw\\full\\CRH\\20261008T083143985432Z.parquet",
+      "snapshot_sha256": "9a0ac7643f844a1adce5fe29290ce5201cbcb54325a9d3d2ef3d83b4423d2d49"
+    },
+    {
+      "ticker": "CRL",
+      "snapshot_path": "data\\raw\\full\\CRL\\20261008T083146699090Z.parquet",
+      "snapshot_sha256": "e43d52b1a30f935c7a57848f54d91727f1cc188f97ad923a69bea93d6caf0b1b"
+    },
+    {
+      "ticker": "CRM",
+      "snapshot_path": "data\\raw\\full\\CRM\\20261008T083149781754Z.parquet",
+      "snapshot_sha256": "8a5f1a856742218198303a3071375ea802605884e578d3f2c039e5c89ef9f9e0"
+    },
+    {
+      "ticker": "CRWD",
+      "snapshot_path": "data\\raw\\full\\CRWD\\20261008T083152844759Z.parquet",
+      "snapshot_sha256": "b8f1fa751965b74a0650d486f03d21503b127451475cbd356d1aaaeea3613f30"
+    },
+    {
+      "ticker": "CSCO",
+      "snapshot_path": "data\\raw\\full\\CSCO\\20261008T083155894639Z.parquet",
+      "snapshot_sha256": "6dbdbbce9f4d5fe77e589433a1c6a70037830089d29efd2e4fb0d24708282f28"
+    },
+    {
+      "ticker": "CSGP",
+      "snapshot_path": "data\\raw\\full\\CSGP\\20261008T083158824966Z.parquet",
+      "snapshot_sha256": "7093aecdfa77736698e8ee5a08e01942c3453107b47f02fd7c43476bea391af9"
+    },
+    {
+      "ticker": "CSX",
+      "snapshot_path": "data\\raw\\full\\CSX\\20261008T083201646118Z.parquet",
+      "snapshot_sha256": "278bf0174a60f0917b1ca0a3d28efda0ec459f585a984f4d830cbdd0256f59a0"
+    },
+    {
+      "ticker": "CTAS",
+      "snapshot_path": "data\\raw\\full\\CTAS\\20261008T083204808788Z.parquet",
+      "snapshot_sha256": "6524062c799ca7eb7ded4a376143d8cba4dc193d55ba5a468b4bc77d1e6728e6"
+    },
+    {
+      "ticker": "CTSH",
+      "snapshot_path": "data\\raw\\full\\CTSH\\20261008T083209951984Z.parquet",
+      "snapshot_sha256": "59a652a65076c8e5bf47f23b84ca8280eb1bc55c64630777eeb7a0f2f655f88d"
+    },
+    {
+      "ticker": "CVNA",
+      "snapshot_path": "data\\raw\\full\\CVNA\\20261008T083212970399Z.parquet",
+      "snapshot_sha256": "25b7bee43532e8fecbe4ebd6e400eeb101761951532770ac12241baf74f0119f"
+    },
+    {
+      "ticker": "CVS",
+      "snapshot_path": "data\\raw\\full\\CVS\\20261008T083218556912Z.parquet",
+      "snapshot_sha256": "b1dfec2ba672903bb68c35e23c808fd8219d29e921abecea6b086f2277819e51"
+    },
+    {
+      "ticker": "CVX",
+      "snapshot_path": "data\\raw\\full\\CVX\\20261008T083221772497Z.parquet",
+      "snapshot_sha256": "a2e123130cd29bd30c4ad2b4b05b67563a9da790322b8e51d4306bd9391308f7"
+    },
+    {
+      "ticker": "D",
+      "snapshot_path": "data\\raw\\full\\D\\20261008T083225773606Z.parquet",
+      "snapshot_sha256": "3d1903f4ae1ddc6f4ee7110905d30c648b54d6272733327b4b26f99ce3e3a2aa"
+    },
+    {
+      "ticker": "DAL",
+      "snapshot_path": "data\\raw\\full\\DAL\\20261008T083229338941Z.parquet",
+      "snapshot_sha256": "6a8a00a23c3c7d91df885f3bfdb0f76cfa528e908667bb4156f64e8a762bb360"
+    },
+    {
+      "ticker": "DASH",
+      "snapshot_path": "data\\raw\\full\\DASH\\20261008T083232152318Z.parquet",
+      "snapshot_sha256": "858a21d3f66d841eff9c6417af2d6834aefd8ef68cf516f5bd5211ba1c3bb599"
+    },
+    {
+      "ticker": "DD",
+      "snapshot_path": "data\\raw\\full\\DD\\20261008T083236117250Z.parquet",
+      "snapshot_sha256": "8fe555e2981586a31b6e14b56ad9e0fea5a569a195ee447a5dbe9809df0aff91"
+    },
+    {
+      "ticker": "DDOG",
+      "snapshot_path": "data\\raw\\full\\DDOG\\20261008T083238785691Z.parquet",
+      "snapshot_sha256": "a178a2cfc78be93df221b74f687d923f52a2244eedf8100859aebd0fc926cc5d"
+    },
+    {
+      "ticker": "DE",
+      "snapshot_path": "data\\raw\\full\\DE\\20261008T083243753976Z.parquet",
+      "snapshot_sha256": "c5850bbc4b18179ba41d642512c50e78021eb9e043dae60bcdc8b0d4e99adda3"
+    },
+    {
+      "ticker": "DECK",
+      "snapshot_path": "data\\raw\\full\\DECK\\20261008T083246434352Z.parquet",
+      "snapshot_sha256": "75337113b1a68000e1a81e6fe16e700882af3f4ce33af14cea98ba22461a3979"
+    },
+    {
+      "ticker": "DELL",
+      "snapshot_path": "data\\raw\\full\\DELL\\20261008T083249220880Z.parquet",
+      "snapshot_sha256": "8ba8fbc88365673057e4a89001077fec55ee2cc4a1f2bfc69d1a38c4a1371d45"
+    },
+    {
+      "ticker": "DG",
+      "snapshot_path": "data\\raw\\full\\DG\\20261008T083253761705Z.parquet",
+      "snapshot_sha256": "ff3d4fdfc39912f3880a230e7831342769ad38443c508a621f0ec3e3714c04fc"
+    },
+    {
+      "ticker": "DGX",
+      "snapshot_path": "data\\raw\\full\\DGX\\20261008T083256298898Z.parquet",
+      "snapshot_sha256": "8c4bbe4d2973328348374e080eab0150192c7c5ae8b0b66e2b9a326efa0a915d"
+    },
+    {
+      "ticker": "DHI",
+      "snapshot_path": "data\\raw\\full\\DHI\\20261008T083258825624Z.parquet",
+      "snapshot_sha256": "ea6742ddcbe90fba24f2c90a15b1d80b50e89652dd013ad4cf23ac29e3063b85"
+    },
+    {
+      "ticker": "DHR",
+      "snapshot_path": "data\\raw\\full\\DHR\\20261008T083301342403Z.parquet",
+      "snapshot_sha256": "7289ef444b22ba950eecbe7bc4d107d32be8353d5bccace49bd0fa9d64d4d630"
+    },
+    {
+      "ticker": "DIS",
+      "snapshot_path": "data\\raw\\full\\DIS\\20261008T083303682972Z.parquet",
+      "snapshot_sha256": "c31823b0045a5a4dbc72a8f9cde25f315bc940f28f571dd6fe5ede8fdc16b9b7"
+    },
+    {
+      "ticker": "DLR",
+      "snapshot_path": "data\\raw\\full\\DLR\\20261008T083306018722Z.parquet",
+      "snapshot_sha256": "80f82f1e2c638f2fd5165aff1422e739aebb3fafe22746bc651732a8f74cecd2"
+    },
+    {
+      "ticker": "DLTR",
+      "snapshot_path": "data\\raw\\full\\DLTR\\20261008T083308516169Z.parquet",
+      "snapshot_sha256": "df6564f22a0b5fb5aa5be13fac955dc9eb64bac2dfd9350d2451d90da6009f69"
+    },
+    {
+      "ticker": "DOC",
+      "snapshot_path": "data\\raw\\full\\DOC\\20261008T083310991129Z.parquet",
+      "snapshot_sha256": "f1685c8fc28fa53938341b42e7eef915db73551bbafc8b78777c072cdce6e536"
+    },
+    {
+      "ticker": "DOV",
+      "snapshot_path": "data\\raw\\full\\DOV\\20261008T083313457000Z.parquet",
+      "snapshot_sha256": "270024caa32a81641c23da700c74a887ad9eab36d15bf2f6e0fab4bca92f1f7a"
+    },
+    {
+      "ticker": "DOW",
+      "snapshot_path": "data\\raw\\full\\DOW\\20261008T083315549422Z.parquet",
+      "snapshot_sha256": "0eb5f3e53d0a8d233f0426c6470c5b41a5ee4dde1d0d26adcdb0f45822a0a7c5"
+    },
+    {
+      "ticker": "DPZ",
+      "snapshot_path": "data\\raw\\full\\DPZ\\20261008T083318089887Z.parquet",
+      "snapshot_sha256": "b220480c4fa65cb6eb8f43e70799f8cd604dd3c6903738b529a6e3d3edc5515d"
+    },
+    {
+      "ticker": "DRI",
+      "snapshot_path": "data\\raw\\full\\DRI\\20261008T083320552438Z.parquet",
+      "snapshot_sha256": "1acc230d0d76ec6a85180240f17028b01f701049d69c68e1871cf0a90124ef29"
+    },
+    {
+      "ticker": "DTE",
+      "snapshot_path": "data\\raw\\full\\DTE\\20261008T083322902200Z.parquet",
+      "snapshot_sha256": "f2a9d6528b7a4db7fd6c75e05bdf11f2f1f6cea7f85ae4d5278bf46d540fba64"
+    },
+    {
+      "ticker": "DUK",
+      "snapshot_path": "data\\raw\\full\\DUK\\20261008T083325240466Z.parquet",
+      "snapshot_sha256": "894e38b472e5617633b35705fd142615944a5395a55a3be4be9935909a13f4bb"
+    },
+    {
+      "ticker": "DVA",
+      "snapshot_path": "data\\raw\\full\\DVA\\20261008T083327681626Z.parquet",
+      "snapshot_sha256": "f6d73e817870dec127ca491118044a2d28ad59fb32055f2fab6ff8dddb679c5a"
+    },
+    {
+      "ticker": "DVN",
+      "snapshot_path": "data\\raw\\full\\DVN\\20261008T083329937564Z.parquet",
+      "snapshot_sha256": "89518f6d37398ffb0771ea4e08eddd8582cdc5f6f00f90021312d88eeb1dffca"
+    },
+    {
+      "ticker": "DXCM",
+      "snapshot_path": "data\\raw\\full\\DXCM\\20261008T083332077827Z.parquet",
+      "snapshot_sha256": "df8d8d8f0d36d5eff2cf5ca809b0609139f6010da8bba346855fa02bc7a280e5"
+    },
+    {
+      "ticker": "EBAY",
+      "snapshot_path": "data\\raw\\full\\EBAY\\20261008T083334334435Z.parquet",
+      "snapshot_sha256": "fe88730dc27f407d495ec1cdad74f325e28dbad0f32ccc7fe6bc16cadd9c0071"
+    },
+    {
+      "ticker": "ECHO",
+      "snapshot_path": "data\\raw\\full\\ECHO\\20261008T083337344768Z.parquet",
+      "snapshot_sha256": "d58c3c7089a3262e21604b3313dfc410011ea64c1177bbefec005162a5ce44b4"
+    },
+    {
+      "ticker": "ECL",
+      "snapshot_path": "data\\raw\\full\\ECL\\20261008T083341957404Z.parquet",
+      "snapshot_sha256": "780b4f2b114f20e0cd4899d258b385d8094289936116db38980ee9ff32204fbf"
+    },
+    {
+      "ticker": "ED",
+      "snapshot_path": "data\\raw\\full\\ED\\20261008T083347104568Z.parquet",
+      "snapshot_sha256": "7b979d66a30c24be2cd46b17651dde8392bbc610486165642b594e4487aa015a"
+    },
+    {
+      "ticker": "EFX",
+      "snapshot_path": "data\\raw\\full\\EFX\\20261008T083351108603Z.parquet",
+      "snapshot_sha256": "d0714bbefd8dc98a44f12ff6bc4c4d595c3682046326592bede1829b15eca355"
+    },
+    {
+      "ticker": "EG",
+      "snapshot_path": "data\\raw\\full\\EG\\20261008T083354707833Z.parquet",
+      "snapshot_sha256": "24d5c09c0a18e21ac3890222a93b750a1df24e26bde773f4a7fb66eaa161aede"
+    },
+    {
+      "ticker": "EIX",
+      "snapshot_path": "data\\raw\\full\\EIX\\20261008T083358266985Z.parquet",
+      "snapshot_sha256": "1e2bcd79ee62c0e97865c09dda5cf6c967483d4e7b7d276e2ccaba39ae35fe82"
+    },
+    {
+      "ticker": "EL",
+      "snapshot_path": "data\\raw\\full\\EL\\20261008T083401314391Z.parquet",
+      "snapshot_sha256": "aa9d84d4dbb9690c2de20df644e51a44bddac828b0eb346873eacd96a20aa7c5"
+    },
+    {
+      "ticker": "ELV",
+      "snapshot_path": "data\\raw\\full\\ELV\\20261008T083404238896Z.parquet",
+      "snapshot_sha256": "4946010c171a12013d7f733562edb66900ffe740077c872bb766f90e65d17191"
+    },
+    {
+      "ticker": "EME",
+      "snapshot_path": "data\\raw\\full\\EME\\20261008T083406924826Z.parquet",
+      "snapshot_sha256": "f1b9c10b383799db9c3a34ad3fd100a37aef59e2fde83f8bbd04d7c4db613309"
+    },
+    {
+      "ticker": "EMR",
+      "snapshot_path": "data\\raw\\full\\EMR\\20261008T083409502893Z.parquet",
+      "snapshot_sha256": "2b3e44e335763dddd1a5594eade53c115b3253a5c4a567f8fe48566124331d2c"
+    },
+    {
+      "ticker": "EOG",
+      "snapshot_path": "data\\raw\\full\\EOG\\20261008T083411970588Z.parquet",
+      "snapshot_sha256": "dafc3cd1d7896c12df3cda65e21fca5304ba31fbf68450ca134c0db1ba5e527c"
+    },
+    {
+      "ticker": "EQIX",
+      "snapshot_path": "data\\raw\\full\\EQIX\\20261008T083414405583Z.parquet",
+      "snapshot_sha256": "5c054768ab5bfa0f745f85d5b8a832e7adba7df663645b6dfc061e34602cba8d"
+    },
+    {
+      "ticker": "EQT",
+      "snapshot_path": "data\\raw\\full\\EQT\\20261008T083416861100Z.parquet",
+      "snapshot_sha256": "fd2cc370a12a5e978d7a877ca98fbd7af72133b54d03cb5ad324857b00c17acb"
+    },
+    {
+      "ticker": "ERIE",
+      "snapshot_path": "data\\raw\\full\\ERIE\\20261008T084911602623Z.parquet",
+      "snapshot_sha256": "892c9234a27c357d9e543056f725c0815a5488f76ff2d93a7847a6373922c768"
+    },
+    {
+      "ticker": "ES",
+      "snapshot_path": "data\\raw\\full\\ES\\20261008T083421279511Z.parquet",
+      "snapshot_sha256": "0e32ab9a8f456b22ae8a94a4e6057637ec5064c72b13fef23e2362951ca283c7"
+    },
+    {
+      "ticker": "ESS",
+      "snapshot_path": "data\\raw\\full\\ESS\\20261008T083423489826Z.parquet",
+      "snapshot_sha256": "d46993b12c46ba109841ad75211e520d17877d7ca666037098897953aef13d2c"
+    },
+    {
+      "ticker": "ETN",
+      "snapshot_path": "data\\raw\\full\\ETN\\20261008T083425781381Z.parquet",
+      "snapshot_sha256": "477bda3f463eb38cb3b87141324a8e6c2f8640dceeaf3008fbcffbd7fdbeffdc"
+    },
+    {
+      "ticker": "ETR",
+      "snapshot_path": "data\\raw\\full\\ETR\\20261008T083428017306Z.parquet",
+      "snapshot_sha256": "732c929b7a19566fa6872521b4a27d8e75765f90da61bef666d458cb7c099863"
+    },
+    {
+      "ticker": "EVRG",
+      "snapshot_path": "data\\raw\\full\\EVRG\\20261008T083430208309Z.parquet",
+      "snapshot_sha256": "7e1a7ce9322fda29fe49882e0f91efcb24ae283e3b10e96901136a84027685af"
+    },
+    {
+      "ticker": "EW",
+      "snapshot_path": "data\\raw\\full\\EW\\20261008T083432332852Z.parquet",
+      "snapshot_sha256": "dc7351517cb511e9a9db96d9dc6bef345c780b6577df3b76316ef755d55af46b"
+    },
+    {
+      "ticker": "EXC",
+      "snapshot_path": "data\\raw\\full\\EXC\\20261008T083434647351Z.parquet",
+      "snapshot_sha256": "18cf982d8b4e79be2196bcfc4d9bffca2cab77755a585102b61d5aa13f0c9224"
+    },
+    {
+      "ticker": "EXE",
+      "snapshot_path": "data\\raw\\full\\EXE\\20261008T083436652960Z.parquet",
+      "snapshot_sha256": "31ed30ca41438a4a9ffa7678f34306b526ff65004e6fa586b39d2ed8a4b1fe11"
+    },
+    {
+      "ticker": "EXPD",
+      "snapshot_path": "data\\raw\\full\\EXPD\\20261008T083438859054Z.parquet",
+      "snapshot_sha256": "4a05231eb1d2dd0f48b23228ca60f932b1be05f69dae352c5dc85430896afe37"
+    },
+    {
+      "ticker": "EXPE",
+      "snapshot_path": "data\\raw\\full\\EXPE\\20261008T083441005981Z.parquet",
+      "snapshot_sha256": "d38b1d4a65a9619edb1306a47817f68ac2c6935af47ed378d28f5da7417f31d4"
+    },
+    {
+      "ticker": "EXR",
+      "snapshot_path": "data\\raw\\full\\EXR\\20261008T083443202459Z.parquet",
+      "snapshot_sha256": "0b87a5f40d5ce592264bb114a1e29edade9f5615c4760199c7f2a4be40117fd2"
+    },
+    {
+      "ticker": "F",
+      "snapshot_path": "data\\raw\\full\\F\\20261008T083445464142Z.parquet",
+      "snapshot_sha256": "557983ce56c240436a4c9fe4553910769b147500c3df8cb08223cad1070a9756"
+    },
+    {
+      "ticker": "FANG",
+      "snapshot_path": "data\\raw\\full\\FANG\\20261008T083447691208Z.parquet",
+      "snapshot_sha256": "3efeee366241992a2419da6124c235f9fda7e9772bdfb39f428b466b8322d872"
+    },
+    {
+      "ticker": "FAST",
+      "snapshot_path": "data\\raw\\full\\FAST\\20261008T083450050497Z.parquet",
+      "snapshot_sha256": "d3040ba530192fa3fc5372e5dfe58d6d92b8ca0f06fda279672ed30228e0289d"
+    },
+    {
+      "ticker": "FCX",
+      "snapshot_path": "data\\raw\\full\\FCX\\20261008T083452347148Z.parquet",
+      "snapshot_sha256": "f9a02f0fbf8f8775154d8265b8264472ea666abe2116daa3287028f39962efee"
+    },
+    {
+      "ticker": "FDS",
+      "snapshot_path": "data\\raw\\full\\FDS\\20261008T083454651680Z.parquet",
+      "snapshot_sha256": "72fc35b5e01bf5083a5b10a2229197c60f0b4322b3fa8e28df3b5f53a96f146d"
+    },
+    {
+      "ticker": "FDX",
+      "snapshot_path": "data\\raw\\full\\FDX\\20261008T083457125561Z.parquet",
+      "snapshot_sha256": "596680f18e6cb933d1847ab74f1c58491d13a4bcddc7a88a4be88115e645137b"
+    },
+    {
+      "ticker": "FDXF",
+      "snapshot_path": "data\\raw\\full\\FDXF\\20261008T083459005777Z.parquet",
+      "snapshot_sha256": "db97102dc3985d6c046ae11de1b74a244cfe0a56502062af9c89ab70f40de28e"
+    },
+    {
+      "ticker": "FE",
+      "snapshot_path": "data\\raw\\full\\FE\\20261008T083501190610Z.parquet",
+      "snapshot_sha256": "d3fbbbe6395a2bf9cd5eca69f896f86d3ceb8b01e70815a8652ca1e79a168f8a"
+    },
+    {
+      "ticker": "FERG",
+      "snapshot_path": "data\\raw\\full\\FERG\\20261008T083503281603Z.parquet",
+      "snapshot_sha256": "6d94e173c8a624623cf9b53bfb6e51ff078ce39b4a5b8b411d04fee77c7bfe62"
+    },
+    {
+      "ticker": "FFIV",
+      "snapshot_path": "data\\raw\\full\\FFIV\\20261008T083505979012Z.parquet",
+      "snapshot_sha256": "9fe0e965a826011336298d1654a7cd2fca1e02cd5bc84e365cffee9d3f83e65a"
+    },
+    {
+      "ticker": "FICO",
+      "snapshot_path": "data\\raw\\full\\FICO\\20261008T083508404829Z.parquet",
+      "snapshot_sha256": "1373b716bed1cfd87d55a03ab08f2d26d1cb426d3b359cc44f4f3b79b40015a7"
+    },
+    {
+      "ticker": "FIS",
+      "snapshot_path": "data\\raw\\full\\FIS\\20261008T083510615640Z.parquet",
+      "snapshot_sha256": "7979c6e0b8699925a8b33bbee4e5680e1ef8e599a3efb25a6f5bf6687111a272"
+    },
+    {
+      "ticker": "FISV",
+      "snapshot_path": "data\\raw\\full\\FISV\\20261008T083512887171Z.parquet",
+      "snapshot_sha256": "528dc865f93456960c01eb2bfe60059b6fb2d8cc40f14c6fcb2b89b8123fe463"
+    },
+    {
+      "ticker": "FITB",
+      "snapshot_path": "data\\raw\\full\\FITB\\20261008T083515093770Z.parquet",
+      "snapshot_sha256": "d20499e3429fa2c070cc353569f75039074a395220f02588c196e4447d85d334"
+    },
+    {
+      "ticker": "FIX",
+      "snapshot_path": "data\\raw\\full\\FIX\\20261008T083517335087Z.parquet",
+      "snapshot_sha256": "4737741afd330de5b85b3d4ef1849a827fc69717757ce98db08b3e68d6e66cd8"
+    },
+    {
+      "ticker": "FLEX",
+      "snapshot_path": "data\\raw\\full\\FLEX\\20261008T083519748902Z.parquet",
+      "snapshot_sha256": "d4ea096df7e90203b8ebee6973c5656a0f582013488aaef528274186dd0960e5"
+    },
+    {
+      "ticker": "FOX",
+      "snapshot_path": "data\\raw\\full\\FOX\\20261008T083521752653Z.parquet",
+      "snapshot_sha256": "3cf407327ea9e4a3e96002327945a1df6cfc7c71311f3e482b3c046f92adab7e"
+    },
+    {
+      "ticker": "FOXA",
+      "snapshot_path": "data\\raw\\full\\FOXA\\20261008T083523748141Z.parquet",
+      "snapshot_sha256": "c31704fd1de51a3f6019085ac5aaeec47eae2c4f9bc72fad7419e3d068e69fe1"
+    },
+    {
+      "ticker": "FRT",
+      "snapshot_path": "data\\raw\\full\\FRT\\20261008T083525865100Z.parquet",
+      "snapshot_sha256": "e4540a96e1db2f4b046d02328fbb9e4a92856f6ffde6da9cb4bf13d7e5666167"
+    },
+    {
+      "ticker": "FSLR",
+      "snapshot_path": "data\\raw\\full\\FSLR\\20261008T083528049061Z.parquet",
+      "snapshot_sha256": "c4196d440cb8a05b0c5b0f65ff196b02dbaedf518bf6ba06a003a98908fb976f"
+    },
+    {
+      "ticker": "FTNT",
+      "snapshot_path": "data\\raw\\full\\FTNT\\20261008T083530098912Z.parquet",
+      "snapshot_sha256": "b2a9848ca38639b3d3e2ffbdd2953841ea30bb2ff6943bafdbe42aae48f84c0e"
+    },
+    {
+      "ticker": "FTV",
+      "snapshot_path": "data\\raw\\full\\FTV\\20261008T083532162324Z.parquet",
+      "snapshot_sha256": "c0b6e408e3aa331a820b553d87baa0bdf12df1ff2a2c538cae22ce9ee1cd845c"
+    },
+    {
+      "ticker": "GD",
+      "snapshot_path": "data\\raw\\full\\GD\\20261008T083534279746Z.parquet",
+      "snapshot_sha256": "4b6fc17ac0109c265708c9a5f0886d58505b6acbca18d4c3f253d5a2495d84af"
+    },
+    {
+      "ticker": "GDDY",
+      "snapshot_path": "data\\raw\\full\\GDDY\\20261008T083536232515Z.parquet",
+      "snapshot_sha256": "3369716190795d60af7966953592c454588b06a09bb2355bc6b3991f5ab2762e"
+    },
+    {
+      "ticker": "GE",
+      "snapshot_path": "data\\raw\\full\\GE\\20261008T083538574935Z.parquet",
+      "snapshot_sha256": "9c3fdb64c3e4f2fee597653035af2b4a3a825a375455e5cb4b77ced88100cbd2"
+    },
+    {
+      "ticker": "GEHC",
+      "snapshot_path": "data\\raw\\full\\GEHC\\20261008T083540438300Z.parquet",
+      "snapshot_sha256": "f35f88e7f87e20ee8a1318dd7cf9643b6a6686e20c00b9cf5a04cf1d79f62091"
+    },
+    {
+      "ticker": "GEN",
+      "snapshot_path": "data\\raw\\full\\GEN\\20261008T083543256978Z.parquet",
+      "snapshot_sha256": "56d950e955603c57a4dbb126c822b5646f9cc269a02d36464a8df3da886c8df3"
+    },
+    {
+      "ticker": "GEV",
+      "snapshot_path": "data\\raw\\full\\GEV\\20261008T083545134892Z.parquet",
+      "snapshot_sha256": "a91466d661fca976581d4d40f4a959bed7a1af850f76b4a589ec6e4573e83393"
+    },
+    {
+      "ticker": "GILD",
+      "snapshot_path": "data\\raw\\full\\GILD\\20261008T083547458163Z.parquet",
+      "snapshot_sha256": "f51a81fa222093f6084dcc53dd302a5f9e9c494e92fb85f40e4c7744c53bb144"
+    },
+    {
+      "ticker": "GIS",
+      "snapshot_path": "data\\raw\\full\\GIS\\20261008T083549678259Z.parquet",
+      "snapshot_sha256": "e5494844805627aca0821d764a52cbcc3297e97da8bfd6bdd03b4d60a2950c54"
+    },
+    {
+      "ticker": "GL",
+      "snapshot_path": "data\\raw\\full\\GL\\20261008T083552183010Z.parquet",
+      "snapshot_sha256": "10ba312e8aca5a45efded11983a4c811ad193824466e52085b4ce0d308df3e85"
+    },
+    {
+      "ticker": "GLW",
+      "snapshot_path": "data\\raw\\full\\GLW\\20261008T083554469274Z.parquet",
+      "snapshot_sha256": "e0cb79d421202963b07b224645402427e52092ee42f494532772b3299298475e"
+    },
+    {
+      "ticker": "GM",
+      "snapshot_path": "data\\raw\\full\\GM\\20261008T083556612747Z.parquet",
+      "snapshot_sha256": "769ea7ed7e2ea3b3f3d37322cb472a2d012e794f774f1e5d374bc5bf19fcf13f"
+    },
+    {
+      "ticker": "GNRC",
+      "snapshot_path": "data\\raw\\full\\GNRC\\20261008T083558909891Z.parquet",
+      "snapshot_sha256": "4f6c0d7b1d40f783b9fce93b47edbf0a4bb0c58955699251eb05d9fdc556c414"
+    },
+    {
+      "ticker": "GOOG",
+      "snapshot_path": "data\\raw\\full\\GOOG\\20261008T083601318510Z.parquet",
+      "snapshot_sha256": "361bc664543bdef323ba35b8eb046a24f6354c248b6a9315bc745e9b42e764b9"
+    },
+    {
+      "ticker": "GOOGL",
+      "snapshot_path": "data\\raw\\full\\GOOGL\\20261008T083603466862Z.parquet",
+      "snapshot_sha256": "b8911ec1e5d509476dcc7f8e51afae85940f4addae8c2e4cbe72ccaac7ee3c20"
+    },
+    {
+      "ticker": "GPC",
+      "snapshot_path": "data\\raw\\full\\GPC\\20261008T083605692111Z.parquet",
+      "snapshot_sha256": "0b11d72265a8573cd0279e716197065de9ff5a4adfd3c0d53e4809b0f934d5f0"
+    },
+    {
+      "ticker": "GPN",
+      "snapshot_path": "data\\raw\\full\\GPN\\20261008T083608271694Z.parquet",
+      "snapshot_sha256": "65466a34374f8e841903c5e61ab22022eb4585fc22a508f062fd85d5aeb28987"
+    },
+    {
+      "ticker": "GRMN",
+      "snapshot_path": "data\\raw\\full\\GRMN\\20261008T083610686479Z.parquet",
+      "snapshot_sha256": "8a9e842becccb97f7395caef6b1b2de90b29df256de6586a0df7945921700e98"
+    },
+    {
+      "ticker": "GS",
+      "snapshot_path": "data\\raw\\full\\GS\\20261008T083613116171Z.parquet",
+      "snapshot_sha256": "2a73792c5728c1b13df625b83a5c8592153eac5b5bfa2e522758f5f601566ccf"
+    },
+    {
+      "ticker": "GWW",
+      "snapshot_path": "data\\raw\\full\\GWW\\20261008T083616442365Z.parquet",
+      "snapshot_sha256": "1011cfca252b83c1446a631ba6317d5e574608f2dbf74a01b1030eb10d135cdd"
+    },
+    {
+      "ticker": "HAL",
+      "snapshot_path": "data\\raw\\full\\HAL\\20261008T083618975151Z.parquet",
+      "snapshot_sha256": "a29d94cbf7b5244ae4c630586fb4def73f8680ab2bb17d7a9cdfbdc2148f4eba"
+    },
+    {
+      "ticker": "HAS",
+      "snapshot_path": "data\\raw\\full\\HAS\\20261008T083621383309Z.parquet",
+      "snapshot_sha256": "06e522e2bf754f8bc2930d5d433811f325552f4ce4e8ef5376f4b213f8ae5736"
+    },
+    {
+      "ticker": "HBAN",
+      "snapshot_path": "data\\raw\\full\\HBAN\\20261008T083623658759Z.parquet",
+      "snapshot_sha256": "6e94381d225955aa608ad6aea02161fbab36c4ebe960cf7cd4e3d4dc26b7a5b3"
+    },
+    {
+      "ticker": "HCA",
+      "snapshot_path": "data\\raw\\full\\HCA\\20261008T083626275463Z.parquet",
+      "snapshot_sha256": "82b4aaaea87d6b36f299ae5ddc9cbe2109e009e797638fb5a8562f09560cfb7f"
+    },
+    {
+      "ticker": "HD",
+      "snapshot_path": "data\\raw\\full\\HD\\20261008T083630458988Z.parquet",
+      "snapshot_sha256": "02d87a4419b8af61e29eae98879500b24cb0f6c2baf7a4ce351b26f0ed746f87"
+    },
+    {
+      "ticker": "HIG",
+      "snapshot_path": "data\\raw\\full\\HIG\\20261008T083633221504Z.parquet",
+      "snapshot_sha256": "53379dbb263bd6c0f063085bb7f904a1988d326be03d4f837eeb27f6c1224b95"
+    },
+    {
+      "ticker": "HII",
+      "snapshot_path": "data\\raw\\full\\HII\\20261008T083635679286Z.parquet",
+      "snapshot_sha256": "8a819d211e43c729c64b3d8bfd504af172d9f115c04ae6abafadf06192a0fcee"
+    },
+    {
+      "ticker": "HLT",
+      "snapshot_path": "data\\raw\\full\\HLT\\20261008T083638137405Z.parquet",
+      "snapshot_sha256": "4468f4693258ccdefcf3e7368b367a1de86c67f615e717986ad047b7f73c6b5b"
+    },
+    {
+      "ticker": "HON",
+      "snapshot_path": "data\\raw\\full\\HON\\20261008T083640973041Z.parquet",
+      "snapshot_sha256": "95a8bfe4ddc50d7e6a481ab7af8d03e1fa1ae038238aa16fc8c519ea2e1f5ced"
+    },
+    {
+      "ticker": "HONA",
+      "snapshot_path": "data\\raw\\full\\HONA\\20261008T083642885068Z.parquet",
+      "snapshot_sha256": "b376b662482c167858de37e47e5634a3a21b32aca4c7d16105f99a0efc5c08d5"
+    },
+    {
+      "ticker": "HOOD",
+      "snapshot_path": "data\\raw\\full\\HOOD\\20261008T083645547653Z.parquet",
+      "snapshot_sha256": "94b382c4e28f9f220505754e24961e5891002ac4ee38f10ab1a24918194f304f"
+    },
+    {
+      "ticker": "HPE",
+      "snapshot_path": "data\\raw\\full\\HPE\\20261008T083648714193Z.parquet",
+      "snapshot_sha256": "adbc7f019b84b8b20b740553560d5971de448fb6051fb4be144c322df4e7f8fd"
+    },
+    {
+      "ticker": "HPQ",
+      "snapshot_path": "data\\raw\\full\\HPQ\\20261008T083652327526Z.parquet",
+      "snapshot_sha256": "e45ed94de24c58c4afa55a25a285fc560f0cdc918f65c2a6675e9339712a8e4b"
+    },
+    {
+      "ticker": "HRL",
+      "snapshot_path": "data\\raw\\full\\HRL\\20261008T083656186512Z.parquet",
+      "snapshot_sha256": "ef708027fcc2c9b1dfe77a49fcbb78ae24fb52e8b09602696e381bb1d0772c89"
+    },
+    {
+      "ticker": "HSIC",
+      "snapshot_path": "data\\raw\\full\\HSIC\\20261008T083659181576Z.parquet",
+      "snapshot_sha256": "639e198c1f2c30cf2e4d329406a848669e2556e2d4d7518f01009a5e9a7b9104"
+    },
+    {
+      "ticker": "HST",
+      "snapshot_path": "data\\raw\\full\\HST\\20261008T083702780985Z.parquet",
+      "snapshot_sha256": "aa237e11a212769d5208e2b95cbe990e46dc406eeda9b6f658ebb9bd1d179446"
+    },
+    {
+      "ticker": "HSY",
+      "snapshot_path": "data\\raw\\full\\HSY\\20261008T083706090648Z.parquet",
+      "snapshot_sha256": "2f1f7a060ea66bf6cc8b57810009be97f987116e97aa5806844e1bb83d7f97dc"
+    },
+    {
+      "ticker": "HUBB",
+      "snapshot_path": "data\\raw\\full\\HUBB\\20261008T083708936057Z.parquet",
+      "snapshot_sha256": "f938d9bbc6127b373c052d4999cc339cf6865be05ec97b574402ca1a4b93f320"
+    },
+    {
+      "ticker": "HUM",
+      "snapshot_path": "data\\raw\\full\\HUM\\20261008T083712292339Z.parquet",
+      "snapshot_sha256": "16a258ec6d413432782fb326ba7848ac234cde32392e2e1b87a6dedb68c2a188"
+    },
+    {
+      "ticker": "HWM",
+      "snapshot_path": "data\\raw\\full\\HWM\\20261008T083715184375Z.parquet",
+      "snapshot_sha256": "793a8362647932ef6a7e31658c9d6cd35b23911f699e4c314e914930cf521cfe"
+    },
+    {
+      "ticker": "IBKR",
+      "snapshot_path": "data\\raw\\full\\IBKR\\20261008T083718401185Z.parquet",
+      "snapshot_sha256": "bc7d670f4f44fdb8cd1bcf6e9f613e6104232832d2533c7cb83d142d7ad93c95"
+    },
+    {
+      "ticker": "IBM",
+      "snapshot_path": "data\\raw\\full\\IBM\\20261008T083722185912Z.parquet",
+      "snapshot_sha256": "4d482310b4b6ed57024d3fb46f36d314b4fecd550070becc1637397a9688578e"
+    },
+    {
+      "ticker": "ICE",
+      "snapshot_path": "data\\raw\\full\\ICE\\20261008T083725222852Z.parquet",
+      "snapshot_sha256": "1ba85a8af7f53ede12acefc36a31b78fbdd199d4a23a6e93ea49d49393ca7fab"
+    },
+    {
+      "ticker": "IDXX",
+      "snapshot_path": "data\\raw\\full\\IDXX\\20261008T083727822327Z.parquet",
+      "snapshot_sha256": "3489befdcb915ad3e69431e1d5e80882d873c1c116c1f8660b0069b10c1d44ae"
+    },
+    {
+      "ticker": "IEX",
+      "snapshot_path": "data\\raw\\full\\IEX\\20261008T083730402915Z.parquet",
+      "snapshot_sha256": "67de35b7ad8b637eedc8532c44d7ca09201af590abade67835e835fd7b1e5893"
+    },
+    {
+      "ticker": "IFF",
+      "snapshot_path": "data\\raw\\full\\IFF\\20261008T083732901295Z.parquet",
+      "snapshot_sha256": "1bd66050c80abc8335d706a44c1c5a20a8e4ca79a4c2532886b286ef5945c2a9"
+    },
+    {
+      "ticker": "ILMN",
+      "snapshot_path": "data\\raw\\full\\ILMN\\20261008T083736172677Z.parquet",
+      "snapshot_sha256": "d11d0213682aea49e779d9cf71b1c79830ecf8a288d777efdf3a0cdf7ccbc140"
+    },
+    {
+      "ticker": "INCY",
+      "snapshot_path": "data\\raw\\full\\INCY\\20261008T083738560413Z.parquet",
+      "snapshot_sha256": "b5cf272841583fd857f6398b0377f853751ff830093b2bef17ee5e0c55eb4324"
+    },
+    {
+      "ticker": "INTC",
+      "snapshot_path": "data\\raw\\full\\INTC\\20261008T083741044808Z.parquet",
+      "snapshot_sha256": "f0fc88a8285a529e11a76e522295da079d66eed2ebff9bb0a3d9426d6a9c2d76"
+    },
+    {
+      "ticker": "INTU",
+      "snapshot_path": "data\\raw\\full\\INTU\\20261008T083744468206Z.parquet",
+      "snapshot_sha256": "eafa4edd23be3f824ed70e73553265037ea20878ca0fea06ff96b389e7ea5f08"
+    },
+    {
+      "ticker": "INVH",
+      "snapshot_path": "data\\raw\\full\\INVH\\20261008T083746750713Z.parquet",
+      "snapshot_sha256": "e570ea953738f6b87165c1cb354f5de706c928056c6f42764bdfffb116604489"
+    },
+    {
+      "ticker": "IP",
+      "snapshot_path": "data\\raw\\full\\IP\\20261008T083749581492Z.parquet",
+      "snapshot_sha256": "8c8f14bfbb5e09f348db56b3bca60338d0960054e59b91d20b8a2fff3efef4ab"
+    },
+    {
+      "ticker": "IQV",
+      "snapshot_path": "data\\raw\\full\\IQV\\20261008T083752391831Z.parquet",
+      "snapshot_sha256": "a7b0c47cba34d4b3851e3429a61df87eaac1c2850bd403e24b0f04cb809fb6a9"
+    },
+    {
+      "ticker": "IR",
+      "snapshot_path": "data\\raw\\full\\IR\\20261008T083754515828Z.parquet",
+      "snapshot_sha256": "6f6c4a40f5fda4402f1f125bf9666699e266d438ed8a187db9379021fa9f2e6d"
+    },
+    {
+      "ticker": "IRM",
+      "snapshot_path": "data\\raw\\full\\IRM\\20261008T083757553943Z.parquet",
+      "snapshot_sha256": "d2a9e6fdfea7097c4fcd80ba52331054ca12cf42daf27d84cad3eadc71744690"
+    },
+    {
+      "ticker": "ISRG",
+      "snapshot_path": "data\\raw\\full\\ISRG\\20261008T083800684719Z.parquet",
+      "snapshot_sha256": "7363f691d24502fa5982606573d101e0023abcb1a49467f523cb72bd59ee8782"
+    },
+    {
+      "ticker": "IT",
+      "snapshot_path": "data\\raw\\full\\IT\\20261008T083803196145Z.parquet",
+      "snapshot_sha256": "f28fe4ae18750ce683fff848e403daf70374d01cb0279af665b8fc12eef8f912"
+    },
+    {
+      "ticker": "ITW",
+      "snapshot_path": "data\\raw\\full\\ITW\\20261008T083807717020Z.parquet",
+      "snapshot_sha256": "46df6e54744a892d125ad49969e7f555cb9c5257cf6c67c0d913f0cf20cfe723"
+    },
+    {
+      "ticker": "IVZ",
+      "snapshot_path": "data\\raw\\full\\IVZ\\20261008T083810100197Z.parquet",
+      "snapshot_sha256": "ebefa6a46d44c5776689ea77b201814b401b9861e81c2ea73d14fd2fca1dac6d"
+    },
+    {
+      "ticker": "J",
+      "snapshot_path": "data\\raw\\full\\J\\20261008T083812786219Z.parquet",
+      "snapshot_sha256": "b360dc46fac11c4b9ada4e430d8c42fa6a066b91f1cfe80944fc0339e9ea4d3e"
+    },
+    {
+      "ticker": "JBHT",
+      "snapshot_path": "data\\raw\\full\\JBHT\\20261008T083815456798Z.parquet",
+      "snapshot_sha256": "e28567f77bbbdc789e6836b367a25be2d28f332b5106c1fbcfa7bb3a0e6125dd"
+    },
+    {
+      "ticker": "JBL",
+      "snapshot_path": "data\\raw\\full\\JBL\\20261008T083817934211Z.parquet",
+      "snapshot_sha256": "0e86816ef86d2ceee10a0a94fa2bfd64d8bd42efb833e3be80b87c676b83f838"
+    },
+    {
+      "ticker": "JCI",
+      "snapshot_path": "data\\raw\\full\\JCI\\20261008T083821772066Z.parquet",
+      "snapshot_sha256": "ca5b88af309e00859f4f03f6bdd36a1a24ae52251655261f314a9ae4ba3b9d34"
+    },
+    {
+      "ticker": "JKHY",
+      "snapshot_path": "data\\raw\\full\\JKHY\\20261008T083824334885Z.parquet",
+      "snapshot_sha256": "1c1a71f9529da4b22c0383c433cc84d9ea4b692b04491f315ad74b7a7c3f6dfd"
+    },
+    {
+      "ticker": "JNJ",
+      "snapshot_path": "data\\raw\\full\\JNJ\\20261008T083827307588Z.parquet",
+      "snapshot_sha256": "6c978e99537f4997fa1d35de90cadacf40cdefc653e2e9876f5d10b04d2f5e2e"
+    },
+    {
+      "ticker": "JPM",
+      "snapshot_path": "data\\raw\\full\\JPM\\20261008T083829641864Z.parquet",
+      "snapshot_sha256": "812abfa890de78453b9b77d9a30db6961a9972153bcece587609f96ae2658ef2"
+    },
+    {
+      "ticker": "KDP",
+      "snapshot_path": "data\\raw\\full\\KDP\\20261008T083831899919Z.parquet",
+      "snapshot_sha256": "3eaa47757d07f0beda2c099867e60b90a4e9a0e7989093e74b961b32a88132c3"
+    },
+    {
+      "ticker": "KEY",
+      "snapshot_path": "data\\raw\\full\\KEY\\20261008T083834185075Z.parquet",
+      "snapshot_sha256": "dc41079014052e7ceb8d4aafee0aee066a2de929c6a9def77f19582549e8f9f1"
+    },
+    {
+      "ticker": "KEYS",
+      "snapshot_path": "data\\raw\\full\\KEYS\\20261008T083836311963Z.parquet",
+      "snapshot_sha256": "ea6596f8499cafd9182cd9b58739b4952b18f090113ca338bda5285e76bf91e2"
+    },
+    {
+      "ticker": "KHC",
+      "snapshot_path": "data\\raw\\full\\KHC\\20261008T083838581718Z.parquet",
+      "snapshot_sha256": "850c546b96f6d6842eab99e7dd4830cf0c3b391d37bfc3915f3d34040e1b8ea3"
+    },
+    {
+      "ticker": "KIM",
+      "snapshot_path": "data\\raw\\full\\KIM\\20261008T083841060950Z.parquet",
+      "snapshot_sha256": "97a06b3c5aff85801007839d948e2e0de4641424de8a94d603b7fc9bb64539e0"
+    },
+    {
+      "ticker": "KKR",
+      "snapshot_path": "data\\raw\\full\\KKR\\20261008T083844005447Z.parquet",
+      "snapshot_sha256": "6a1dec4243ca02d331e53a90b7cd077dcf87d2d8969927537fab7819bf238e1c"
+    },
+    {
+      "ticker": "KLAC",
+      "snapshot_path": "data\\raw\\full\\KLAC\\20261008T083846540863Z.parquet",
+      "snapshot_sha256": "b31e61565f796dbd2c43858634cdf2b62024829783df47df3981720807c82e41"
+    },
+    {
+      "ticker": "KMB",
+      "snapshot_path": "data\\raw\\full\\KMB\\20261008T083848889635Z.parquet",
+      "snapshot_sha256": "ea6888de5d54148c70e2410b27d6720e0351304eecf4e09ddece0aafc6af9b35"
+    },
+    {
+      "ticker": "KMI",
+      "snapshot_path": "data\\raw\\full\\KMI\\20261008T083851421632Z.parquet",
+      "snapshot_sha256": "e8839d9a2742f130f5f555f0b90feac807400de0595335b726342fe60036b1f8"
+    },
+    {
+      "ticker": "KO",
+      "snapshot_path": "data\\raw\\full\\KO\\20261008T083854652746Z.parquet",
+      "snapshot_sha256": "f6159bbb02ad60eb7ec1afc554412c985fd8f7cbf1f18b3a59e05861201dea48"
+    },
+    {
+      "ticker": "KR",
+      "snapshot_path": "data\\raw\\full\\KR\\20261008T083857850376Z.parquet",
+      "snapshot_sha256": "aa478fd45244195ee69d01c7cc57336092227a0d642aabb82dfe385f540803a2"
+    },
+    {
+      "ticker": "KVUE",
+      "snapshot_path": "data\\raw\\full\\KVUE\\20261008T083900295809Z.parquet",
+      "snapshot_sha256": "a5c2a03c7320a2cdee3a3c8afb63ffe73684d5a9ef636d0f9eda4b642bc5798b"
+    },
+    {
+      "ticker": "L",
+      "snapshot_path": "data\\raw\\full\\L\\20261008T083902920183Z.parquet",
+      "snapshot_sha256": "5a1af94684f16ae7e133d90107f7cf5212ddb5e93376e0120aee67af492bae7c"
+    },
+    {
+      "ticker": "LDOS",
+      "snapshot_path": "data\\raw\\full\\LDOS\\20261008T083905518362Z.parquet",
+      "snapshot_sha256": "92aeff5d4f478b1ad428679ec10c3faeb83444042a777c35155d8c744dcbeec6"
+    },
+    {
+      "ticker": "LEN",
+      "snapshot_path": "data\\raw\\full\\LEN\\20261008T083908199829Z.parquet",
+      "snapshot_sha256": "b69dfa0df5d02ed5c053045a400289ca048181f28204088a49c19d048405c1e4"
+    },
+    {
+      "ticker": "LH",
+      "snapshot_path": "data\\raw\\full\\LH\\20261008T083910999751Z.parquet",
+      "snapshot_sha256": "3f58f5580dfea054e6432883bcaa4d45efbd09e7aaaa49ab3d3e0d2ccc770577"
+    },
+    {
+      "ticker": "LHX",
+      "snapshot_path": "data\\raw\\full\\LHX\\20261008T083913742782Z.parquet",
+      "snapshot_sha256": "16b15461a439777c6c5d4d41babaf970b38c60bb0fae811b046257b2e7b9210c"
+    },
+    {
+      "ticker": "LII",
+      "snapshot_path": "data\\raw\\full\\LII\\20261008T083916300720Z.parquet",
+      "snapshot_sha256": "f4dc4642220d672cbda59c90784308b05114ad7041ac9acdc293e560ad316728"
+    },
+    {
+      "ticker": "LIN",
+      "snapshot_path": "data\\raw\\full\\LIN\\20261008T083918618392Z.parquet",
+      "snapshot_sha256": "8b77f222dc4e64027b7bcae83197b454429ae6ce3abe143dc0aa7fe9fbfa4c7d"
+    },
+    {
+      "ticker": "LITE",
+      "snapshot_path": "data\\raw\\full\\LITE\\20261008T083920948944Z.parquet",
+      "snapshot_sha256": "681f27dbad0c06225fab49b5ba6780efac0be7e4c4a2e0cd3c4f395e9dafc25d"
+    },
+    {
+      "ticker": "LLY",
+      "snapshot_path": "data\\raw\\full\\LLY\\20261008T083923340498Z.parquet",
+      "snapshot_sha256": "7dbbad6e27bfd1eb554bafbfad60a61604bfc1de132dc03f203ff61eb60afd07"
+    },
+    {
+      "ticker": "LMT",
+      "snapshot_path": "data\\raw\\full\\LMT\\20261008T083925982001Z.parquet",
+      "snapshot_sha256": "425499afba3d351840c617d748d670f9ada7a8b4145bd16b2c6a86dab2fe0fad"
+    },
+    {
+      "ticker": "LNT",
+      "snapshot_path": "data\\raw\\full\\LNT\\20261008T083928281735Z.parquet",
+      "snapshot_sha256": "513806efcbe2c64acd2d1a85364f9971cb80102e74474c9fac1fb3172be7a637"
+    },
+    {
+      "ticker": "LOW",
+      "snapshot_path": "data\\raw\\full\\LOW\\20261008T083930854529Z.parquet",
+      "snapshot_sha256": "a05ace95c38274b9d2c52b8893710bbb225d98f99bd3c19e42be9c137e55d864"
+    },
+    {
+      "ticker": "LRCX",
+      "snapshot_path": "data\\raw\\full\\LRCX\\20261008T083933176377Z.parquet",
+      "snapshot_sha256": "2a9576706d5e5e5cd1dc3d7682b4fe70793c28c159e7436df371d9ee2ffa8fbf"
+    },
+    {
+      "ticker": "LULU",
+      "snapshot_path": "data\\raw\\full\\LULU\\20261008T083935897755Z.parquet",
+      "snapshot_sha256": "96f770ba66dc6bfb8e0fa626361c735dd7e3c3097ab95d93311ae60b90fea705"
+    },
+    {
+      "ticker": "LUV",
+      "snapshot_path": "data\\raw\\full\\LUV\\20261008T083938234936Z.parquet",
+      "snapshot_sha256": "cb3717605a7cd4c6bb42e23b07512920725bc24893e09604c682de9eecc1b869"
+    },
+    {
+      "ticker": "LVS",
+      "snapshot_path": "data\\raw\\full\\LVS\\20261008T083940606360Z.parquet",
+      "snapshot_sha256": "d5f627ec9be8bc82520285ef87eac428c743dcdbf101881e93ddb9b4e8a593a8"
+    },
+    {
+      "ticker": "LYB",
+      "snapshot_path": "data\\raw\\full\\LYB\\20261008T083942920596Z.parquet",
+      "snapshot_sha256": "9b7db4e5f04b74e43d476f701d508b23b74225a7f021a1b8493b47c30ce9aab9"
+    },
+    {
+      "ticker": "LYV",
+      "snapshot_path": "data\\raw\\full\\LYV\\20261008T083945132054Z.parquet",
+      "snapshot_sha256": "773e0272621ca1d8325f530d794c84707b734fe43ccf1df92445bc8ca7500f3f"
+    },
+    {
+      "ticker": "MA",
+      "snapshot_path": "data\\raw\\full\\MA\\20261008T083947409842Z.parquet",
+      "snapshot_sha256": "ec548583e8fd5363ab4d1ef60742bdd95d8acafb1d1f72652321b1717ec3df8d"
+    },
+    {
+      "ticker": "MAA",
+      "snapshot_path": "data\\raw\\full\\MAA\\20261008T083949725170Z.parquet",
+      "snapshot_sha256": "2a49a46341801ea33c7566578d85a98582c2ace089ddb8f3d86875a919c2694c"
+    },
+    {
+      "ticker": "MAR",
+      "snapshot_path": "data\\raw\\full\\MAR\\20261008T083952038244Z.parquet",
+      "snapshot_sha256": "31367f5b3615cd4b048ac69959dbd276c0a1bb0592183dad47aaba3efed7a6c6"
+    },
+    {
+      "ticker": "MAS",
+      "snapshot_path": "data\\raw\\full\\MAS\\20261008T083954354416Z.parquet",
+      "snapshot_sha256": "f9a96cf7fa72a0f911b6b692e0f6cce15aa7eb02bf41b84fc976b974e14fbd97"
+    },
+    {
+      "ticker": "MCD",
+      "snapshot_path": "data\\raw\\full\\MCD\\20261008T083957958082Z.parquet",
+      "snapshot_sha256": "85ce0ed345b95084cfc607bf953418c03de7e80499dbbf7702561ece067590d7"
+    },
+    {
+      "ticker": "MCHP",
+      "snapshot_path": "data\\raw\\full\\MCHP\\20261008T084000489620Z.parquet",
+      "snapshot_sha256": "cfc44c27d278bf686fa0d9cdbd37429c3fd0b9e5668a69637060686271b83fb5"
+    },
+    {
+      "ticker": "MCK",
+      "snapshot_path": "data\\raw\\full\\MCK\\20261008T084002782050Z.parquet",
+      "snapshot_sha256": "d7626c1e519687bdeac9b6d39b183f8c9c7224c33de106263e23d1a9c336fb89"
+    },
+    {
+      "ticker": "MCO",
+      "snapshot_path": "data\\raw\\full\\MCO\\20261008T084005100592Z.parquet",
+      "snapshot_sha256": "41718f4ca1f7dc7853245bf734720ab8a1a10444a641664e725036062efa89dd"
+    },
+    {
+      "ticker": "MDLZ",
+      "snapshot_path": "data\\raw\\full\\MDLZ\\20261008T084007333057Z.parquet",
+      "snapshot_sha256": "b5d5f391cbb63e6f0f9a68e37d88e02a2263206da044a31096f4b941668f20ad"
+    },
+    {
+      "ticker": "MDT",
+      "snapshot_path": "data\\raw\\full\\MDT\\20261008T084009609014Z.parquet",
+      "snapshot_sha256": "6ef51289ed14e6316eea65ca82bc7818ed34f4bba72c05e7a56943e4a33c6ee8"
+    },
+    {
+      "ticker": "MET",
+      "snapshot_path": "data\\raw\\full\\MET\\20261008T084011925685Z.parquet",
+      "snapshot_sha256": "c2c0273e66de4b74088d9702962dfb7ab49c55c2e67dcb09e81d1d2b83eb299a"
+    },
+    {
+      "ticker": "META",
+      "snapshot_path": "data\\raw\\full\\META\\20261008T084014125172Z.parquet",
+      "snapshot_sha256": "a16101ffe1f37d39b22037d98b3734bfe2cdbf3822e02cf0d841cdaf3883b85e"
+    },
+    {
+      "ticker": "MGM",
+      "snapshot_path": "data\\raw\\full\\MGM\\20261008T084016330304Z.parquet",
+      "snapshot_sha256": "3ba2c91cb026e3f81e55af801f7b87992c35e8fac65e6cd63357c6edb9d41ade"
+    },
+    {
+      "ticker": "MKC",
+      "snapshot_path": "data\\raw\\full\\MKC\\20261008T084018761100Z.parquet",
+      "snapshot_sha256": "cfb75c2fa730baf687eb8cb60d4937502e82e0491d92e7c10adb5edc52fc1afe"
+    },
+    {
+      "ticker": "MLM",
+      "snapshot_path": "data\\raw\\full\\MLM\\20261008T084021208101Z.parquet",
+      "snapshot_sha256": "060e55c9bda238cad49a4d3f0eae7cd836cdc0a400741000581ec761c4d0c5ac"
+    },
+    {
+      "ticker": "MMM",
+      "snapshot_path": "data\\raw\\full\\MMM\\20261008T084023497159Z.parquet",
+      "snapshot_sha256": "c145bd615d1e16647edf6b25ad6246d699f40c4d5e9d39d31472a32451504386"
+    },
+    {
+      "ticker": "MNST",
+      "snapshot_path": "data\\raw\\full\\MNST\\20261008T084025724151Z.parquet",
+      "snapshot_sha256": "70032f4d7b85cd64b6d3c5282623908811ee6b6f9652510265afeef2c3d054a3"
+    },
+    {
+      "ticker": "MO",
+      "snapshot_path": "data\\raw\\full\\MO\\20261008T084028848023Z.parquet",
+      "snapshot_sha256": "e6c3c5e443305697a64edb6cc797842fad4f608c088b4aa67257fe9749717b0b"
+    },
+    {
+      "ticker": "MOS",
+      "snapshot_path": "data\\raw\\full\\MOS\\20261008T084031086094Z.parquet",
+      "snapshot_sha256": "15ece27d86258d40862d8063f26388ed317131649da825721b693ed69a7f7868"
+    },
+    {
+      "ticker": "MPC",
+      "snapshot_path": "data\\raw\\full\\MPC\\20261008T084033259401Z.parquet",
+      "snapshot_sha256": "a71812aad04d0e30e1ad4b250efd9fe7e12030f886575ef970499c7c4dccb986"
+    },
+    {
+      "ticker": "MPWR",
+      "snapshot_path": "data\\raw\\full\\MPWR\\20261008T084035440054Z.parquet",
+      "snapshot_sha256": "434ef8ab461f01445c0439c40532bbe28027c94c71000e4282e57d38733ea4a5"
+    },
+    {
+      "ticker": "MRK",
+      "snapshot_path": "data\\raw\\full\\MRK\\20261008T084037729665Z.parquet",
+      "snapshot_sha256": "9008eb046c5a3bcfce2e861dc266381087101c855475083db94f6510f4a0f329"
+    },
+    {
+      "ticker": "MRNA",
+      "snapshot_path": "data\\raw\\full\\MRNA\\20261008T084039728115Z.parquet",
+      "snapshot_sha256": "a4da519be1dad3ae8906f2430734d11ac4f5d08650eef064add3fc31e12f1a7a"
+    },
+    {
+      "ticker": "MRSH",
+      "snapshot_path": "data\\raw\\full\\MRSH\\20261008T084041902473Z.parquet",
+      "snapshot_sha256": "4be4cbeb3d21bb6fd239069f17916aa560d58fe62936fe9a43c7bf7e99d6f5a3"
+    },
+    {
+      "ticker": "MRVL",
+      "snapshot_path": "data\\raw\\full\\MRVL\\20261008T084044142811Z.parquet",
+      "snapshot_sha256": "7d715f20a7472b0a311466ef62a8ee7b66744eb66347a318bdb48e47a80deb70"
+    },
+    {
+      "ticker": "MS",
+      "snapshot_path": "data\\raw\\full\\MS\\20261008T084046426858Z.parquet",
+      "snapshot_sha256": "4a87eb570b7f4bcc15d8f3830bcb8153c74e4c068d8a802de6d95af207aa0cb1"
+    },
+    {
+      "ticker": "MSCI",
+      "snapshot_path": "data\\raw\\full\\MSCI\\20261008T084048648576Z.parquet",
+      "snapshot_sha256": "d47af0e6f221674fbae37ec87a7e679824ff1ec0376f7a929369d24fbc7e3ab5"
+    },
+    {
+      "ticker": "MSFT",
+      "snapshot_path": "data\\raw\\full\\MSFT\\20261008T084050877082Z.parquet",
+      "snapshot_sha256": "988298fd6b5f9e783b7c6c93e647781d7f4757bc216c5fcbea92e7a805d15bf5"
+    },
+    {
+      "ticker": "MSI",
+      "snapshot_path": "data\\raw\\full\\MSI\\20261008T084053144672Z.parquet",
+      "snapshot_sha256": "abc79a07711ec1b1e799c2974a123e2921c9cc3998fba910b7626fc2b1c9fa4b"
+    },
+    {
+      "ticker": "MTB",
+      "snapshot_path": "data\\raw\\full\\MTB\\20261008T084055433547Z.parquet",
+      "snapshot_sha256": "4f6f547d9b2cfd14c5a51e5d40c82255627bed2191ed7b2d181df7de0ce8576a"
+    },
+    {
+      "ticker": "MTD",
+      "snapshot_path": "data\\raw\\full\\MTD\\20261008T084057544518Z.parquet",
+      "snapshot_sha256": "220f4663b1c0e32f63a1acb4a558271185f799d2c5e066f8c36a644f77300e3e"
+    },
+    {
+      "ticker": "MU",
+      "snapshot_path": "data\\raw\\full\\MU\\20261008T084059750833Z.parquet",
+      "snapshot_sha256": "65a7350143c5cbfc49c6b2d96f834cd37ff9a39c449d5a5001d910339974e441"
+    },
+    {
+      "ticker": "NCLH",
+      "snapshot_path": "data\\raw\\full\\NCLH\\20261008T084101840476Z.parquet",
+      "snapshot_sha256": "a5ef664af019e190f41015f72de5061ce5ef93380177515f5661bd47ba3692da"
+    },
+    {
+      "ticker": "NDAQ",
+      "snapshot_path": "data\\raw\\full\\NDAQ\\20261008T084103991236Z.parquet",
+      "snapshot_sha256": "f8bc2c2d1f0ca0ddc6710874f69e150a7f7e7b2997cebefd71917f9e768299d6"
+    },
+    {
+      "ticker": "NDSN",
+      "snapshot_path": "data\\raw\\full\\NDSN\\20261008T084106217502Z.parquet",
+      "snapshot_sha256": "2416a03002d21df87ca8d12929053d425be22565a3c8d84d65ec11c77975c026"
+    },
+    {
+      "ticker": "NEE",
+      "snapshot_path": "data\\raw\\full\\NEE\\20261008T084108479702Z.parquet",
+      "snapshot_sha256": "109a37f3efcab4029bbb57b766045210b3b671ca024ab33ad5876df85952ec9e"
+    },
+    {
+      "ticker": "NEM",
+      "snapshot_path": "data\\raw\\full\\NEM\\20261008T084110704814Z.parquet",
+      "snapshot_sha256": "4775b133452f424d3ce433e5e53ad848fd4591fcacecc937cfa8c663005833c8"
+    },
+    {
+      "ticker": "NFLX",
+      "snapshot_path": "data\\raw\\full\\NFLX\\20261008T084112914434Z.parquet",
+      "snapshot_sha256": "9098af147c518ef2eca3a2837e267c9eaf5bdf0bada0e129cb45b2033abce373"
+    },
+    {
+      "ticker": "NI",
+      "snapshot_path": "data\\raw\\full\\NI\\20261008T084115183649Z.parquet",
+      "snapshot_sha256": "1287194839b50c03367fdc363551d753dd3b0342b9107252d179b4f5f641bf0b"
+    },
+    {
+      "ticker": "NKE",
+      "snapshot_path": "data\\raw\\full\\NKE\\20261008T084117678939Z.parquet",
+      "snapshot_sha256": "e733feec3056ef4f09ada92866ef62eaa5aa3d88d35ae28facdaa4bcff1ebfd3"
+    },
+    {
+      "ticker": "NOC",
+      "snapshot_path": "data\\raw\\full\\NOC\\20261008T084119978460Z.parquet",
+      "snapshot_sha256": "1c003a1165a1f7c6bcde5f9a52fc11a221881e1e117d98aa874840121104c0c3"
+    },
+    {
+      "ticker": "NOW",
+      "snapshot_path": "data\\raw\\full\\NOW\\20261008T084122134051Z.parquet",
+      "snapshot_sha256": "c55c5d8bd6bc2b033a06e85a71147280eddda4dbc379336564cbec2591e1039e"
+    },
+    {
+      "ticker": "NRG",
+      "snapshot_path": "data\\raw\\full\\NRG\\20261008T084124350748Z.parquet",
+      "snapshot_sha256": "eadf69af2d5b1bdaad6a5d48a85c9d1e099229b049b76d96528c7cc3e2540b2c"
+    },
+    {
+      "ticker": "NSC",
+      "snapshot_path": "data\\raw\\full\\NSC\\20261008T084126582735Z.parquet",
+      "snapshot_sha256": "8bedcb2578c66743d82441ab08e9c65e543a5496f3106e59e8bab3191833cdf2"
+    },
+    {
+      "ticker": "NTAP",
+      "snapshot_path": "data\\raw\\full\\NTAP\\20261008T084128796274Z.parquet",
+      "snapshot_sha256": "9c3d556e9cce1a10b59f98659f5177f7dcc76be2e87169aa2fdfaf1563603130"
+    },
+    {
+      "ticker": "NTRS",
+      "snapshot_path": "data\\raw\\full\\NTRS\\20261008T084131048898Z.parquet",
+      "snapshot_sha256": "cde01b274e2fe325e51b865c82f4a5c1e6d2b8b1b461a95ee7683b91aa472beb"
+    },
+    {
+      "ticker": "NUE",
+      "snapshot_path": "data\\raw\\full\\NUE\\20261008T084133306816Z.parquet",
+      "snapshot_sha256": "7ff66b17d8287d004f6fefa23d79c0aa2cccc3d3c3b842e1de94627e5d28f4f3"
+    },
+    {
+      "ticker": "NVDA",
+      "snapshot_path": "data\\raw\\full\\NVDA\\20261008T084135601471Z.parquet",
+      "snapshot_sha256": "6eb6ef6d3bd4922df80ba790b9000906103a8c16d2e66f45de0e284aef81058f"
+    },
+    {
+      "ticker": "NVR",
+      "snapshot_path": "data\\raw\\full\\NVR\\20261008T084137764799Z.parquet",
+      "snapshot_sha256": "45ce4d2f85bb023614296e0574803cbdda51a8f4d9edbed79c62616dee1e1eae"
+    },
+    {
+      "ticker": "NWS",
+      "snapshot_path": "data\\raw\\full\\NWS\\20261008T084139982873Z.parquet",
+      "snapshot_sha256": "be9184f86ca7b71de5b3ac358d51313b9284e2da885937ab276726499eb94cc9"
+    },
+    {
+      "ticker": "NWSA",
+      "snapshot_path": "data\\raw\\full\\NWSA\\20261008T084142195749Z.parquet",
+      "snapshot_sha256": "03b0b111636674fc9085bc8c473990a9409ef1f6b45fb7b41e144b6cb79075af"
+    },
+    {
+      "ticker": "NXPI",
+      "snapshot_path": "data\\raw\\full\\NXPI\\20261008T084144381379Z.parquet",
+      "snapshot_sha256": "4803b38ec137fdd0b8a85a7f7323cc1c5a690d3880f4ec2ea071d33a9f7615a8"
+    },
+    {
+      "ticker": "O",
+      "snapshot_path": "data\\raw\\full\\O\\20261008T084146714273Z.parquet",
+      "snapshot_sha256": "8c513cfff095689b739afd39d4994c52e5c6d2563eb6f1e213535a0dfe3adfb6"
+    },
+    {
+      "ticker": "ODFL",
+      "snapshot_path": "data\\raw\\full\\ODFL\\20261008T084149088382Z.parquet",
+      "snapshot_sha256": "db7ddeeefe1967885a7ce6f1a60724ea861455a6bf208a022e29eeb5fc9db8ca"
+    },
+    {
+      "ticker": "OKE",
+      "snapshot_path": "data\\raw\\full\\OKE\\20261008T084151392105Z.parquet",
+      "snapshot_sha256": "97eca100cc23782f09f1e669ecdeb19b2283685f6be8bb3d745abca023eaa7d8"
+    },
+    {
+      "ticker": "OMC",
+      "snapshot_path": "data\\raw\\full\\OMC\\20261008T084153635906Z.parquet",
+      "snapshot_sha256": "8c1da312bf99fd46f504005040f94e215df6052f45f61cf7107315f32940bbe1"
+    },
+    {
+      "ticker": "ON",
+      "snapshot_path": "data\\raw\\full\\ON\\20261008T084155807931Z.parquet",
+      "snapshot_sha256": "07b77e5b5990e8666a1ed26ae0cd5f0ba1afe2870514331351e15b454fb1daff"
+    },
+    {
+      "ticker": "ORCL",
+      "snapshot_path": "data\\raw\\full\\ORCL\\20261008T084158060848Z.parquet",
+      "snapshot_sha256": "f9f44a4e0d013b1c991d4213d069c07f7902a737e6c75031d1f32eefa108ba69"
+    },
+    {
+      "ticker": "ORLY",
+      "snapshot_path": "data\\raw\\full\\ORLY\\20261008T084200268405Z.parquet",
+      "snapshot_sha256": "43c32dd7a30e1b81ff1ac92c5b740b5e88712fc717807778a8d8c9fe77977b28"
+    },
+    {
+      "ticker": "OTIS",
+      "snapshot_path": "data\\raw\\full\\OTIS\\20261008T084202388494Z.parquet",
+      "snapshot_sha256": "101367c30d944aa6b036eb0f3d8370b5210ccdde7db4e14c2e5c7867c23fbf91"
+    },
+    {
+      "ticker": "OXY",
+      "snapshot_path": "data\\raw\\full\\OXY\\20261008T084204989622Z.parquet",
+      "snapshot_sha256": "ed7fa443118a7a592178d164696d24e09bf29a57b569a9dd0fd45c0d7acdc999"
+    },
+    {
+      "ticker": "P",
+      "snapshot_path": "data\\raw\\full\\P\\20261008T084207051463Z.parquet",
+      "snapshot_sha256": "acf959c8a9cadd73978830a7491dfdb8458c0b08a63fa0be340c9f9a516a39ec"
+    },
+    {
+      "ticker": "PANW",
+      "snapshot_path": "data\\raw\\full\\PANW\\20261008T084209147027Z.parquet",
+      "snapshot_sha256": "54c9f6410fa2e83dc9812500968e6131d91a05d8ea4b47261ea42e1a4954cf19"
+    },
+    {
+      "ticker": "PAYX",
+      "snapshot_path": "data\\raw\\full\\PAYX\\20261008T084211365586Z.parquet",
+      "snapshot_sha256": "59656aab4e22b74b9e8e980865a620d7fac737d8c4edd34c24518d02647e822b"
+    },
+    {
+      "ticker": "PCAR",
+      "snapshot_path": "data\\raw\\full\\PCAR\\20261008T084213778599Z.parquet",
+      "snapshot_sha256": "8a42e50a3fa59dd77078dcc4dd556353e61a4d548f95d2a719270f476462758f"
+    },
+    {
+      "ticker": "PCG",
+      "snapshot_path": "data\\raw\\full\\PCG\\20261008T084215999979Z.parquet",
+      "snapshot_sha256": "4fc98d1fb3ee716141e8bd8fa67b4db57b0977c439b563c7d5d72b0c1824e5ee"
+    },
+    {
+      "ticker": "PEG",
+      "snapshot_path": "data\\raw\\full\\PEG\\20261008T084218261545Z.parquet",
+      "snapshot_sha256": "4efc0318ae93c075e2f673cd04cbd9d84fcb55565352c5b3f81c524ccfe6c7e0"
+    },
+    {
+      "ticker": "PEP",
+      "snapshot_path": "data\\raw\\full\\PEP\\20261008T084221798345Z.parquet",
+      "snapshot_sha256": "cf7bef950f2506f1f7988f7f22d8c7b741d35f0c1f85b8a63e54f8b1d1d1f964"
+    },
+    {
+      "ticker": "PFE",
+      "snapshot_path": "data\\raw\\full\\PFE\\20261008T084224850847Z.parquet",
+      "snapshot_sha256": "d2b9225ef7cde8a9fa7586264867b808b697075bdea3f39e07c04d6a56fb23b7"
+    },
+    {
+      "ticker": "PFG",
+      "snapshot_path": "data\\raw\\full\\PFG\\20261008T084227691140Z.parquet",
+      "snapshot_sha256": "d6e814f4bb91818b6b90b20289589301fd2a0bdce437a4105d03a1643aba639b"
+    },
+    {
+      "ticker": "PG",
+      "snapshot_path": "data\\raw\\full\\PG\\20261008T084230480338Z.parquet",
+      "snapshot_sha256": "853640f97b9a420a4ed7bcad555033daf6bc314285ea35f68adbe18d6a41a55d"
+    },
+    {
+      "ticker": "PGR",
+      "snapshot_path": "data\\raw\\full\\PGR\\20261008T084233048756Z.parquet",
+      "snapshot_sha256": "332d29e1da6f136242034d72df68c3cef61dbb219d06d917a79d4530261a4c0b"
+    },
+    {
+      "ticker": "PH",
+      "snapshot_path": "data\\raw\\full\\PH\\20261008T084235904911Z.parquet",
+      "snapshot_sha256": "1395a8da07d4655718893ab7187ced970ccff59c8566d0780c07f36a5d93f621"
+    },
+    {
+      "ticker": "PHM",
+      "snapshot_path": "data\\raw\\full\\PHM\\20261008T084238773847Z.parquet",
+      "snapshot_sha256": "7161b4b21ba011559c4fb11b58ad0f557af9dc3a44d9042897e3b52f6d33ec7b"
+    },
+    {
+      "ticker": "PKG",
+      "snapshot_path": "data\\raw\\full\\PKG\\20261008T084241119106Z.parquet",
+      "snapshot_sha256": "d51fe555d3ec11b1bc72690421ef80fd7f71a89494c2b348c16ed068bceb3b00"
+    },
+    {
+      "ticker": "PLD",
+      "snapshot_path": "data\\raw\\full\\PLD\\20261008T084243431174Z.parquet",
+      "snapshot_sha256": "0963b48ed745221f933981df4745aeef0ad9cf917884430c8d2c417b6072c3f9"
+    },
+    {
+      "ticker": "PLTR",
+      "snapshot_path": "data\\raw\\full\\PLTR\\20261008T084245727666Z.parquet",
+      "snapshot_sha256": "5d95048d02081fa81359eb15f99b0163cd20387890ff274f90cb381a26fdd8a9"
+    },
+    {
+      "ticker": "PM",
+      "snapshot_path": "data\\raw\\full\\PM\\20261008T084248117226Z.parquet",
+      "snapshot_sha256": "5b2efa46e0adf6d4c17ecb558484a41627e170917a52a5a8a8b3f09e7a42f376"
+    },
+    {
+      "ticker": "PNC",
+      "snapshot_path": "data\\raw\\full\\PNC\\20261008T084250338432Z.parquet",
+      "snapshot_sha256": "b908b7d199a8f32a18e7000ddbe4c60b9fd31e79c8da31da9506b9ba6d3f97f8"
+    },
+    {
+      "ticker": "PNR",
+      "snapshot_path": "data\\raw\\full\\PNR\\20261008T084252851811Z.parquet",
+      "snapshot_sha256": "be44fabf006bd2fcfff51b3e4de96c940d2610fa938e08a42d39032f419e06b5"
+    },
+    {
+      "ticker": "PNW",
+      "snapshot_path": "data\\raw\\full\\PNW\\20261008T084255037337Z.parquet",
+      "snapshot_sha256": "b23268749d1bc37bb27f85b41027bbe4cea9d136e7f9b573b95a3d9e3b46d8a4"
+    },
+    {
+      "ticker": "PODD",
+      "snapshot_path": "data\\raw\\full\\PODD\\20261008T084257144316Z.parquet",
+      "snapshot_sha256": "55f7e4d8aa1e6546dc850c9e7ca2a357296ba3bbfa60dfb9a48612465b93dc11"
+    },
+    {
+      "ticker": "PPG",
+      "snapshot_path": "data\\raw\\full\\PPG\\20261008T084259954378Z.parquet",
+      "snapshot_sha256": "e2c50721290364b3b61d9eda0e605130f85803e69ade0f7c04f1a5073b0f76f6"
+    },
+    {
+      "ticker": "PPL",
+      "snapshot_path": "data\\raw\\full\\PPL\\20261008T084302450159Z.parquet",
+      "snapshot_sha256": "3e647a57ba9082cd688c5c4256e491ba2992e8bae7927bc8e5a6532c246f3f15"
+    },
+    {
+      "ticker": "PRU",
+      "snapshot_path": "data\\raw\\full\\PRU\\20261008T084305595156Z.parquet",
+      "snapshot_sha256": "34474c8d8f1d96a5d45e3817ea25436dda0ed2b21eee5c52b4ea3d345ae01b2b"
+    },
+    {
+      "ticker": "PSA",
+      "snapshot_path": "data\\raw\\full\\PSA\\20261008T084308017182Z.parquet",
+      "snapshot_sha256": "d8205fff5416911ddfc2158d2131ca647ecfa777821157af76b60c11e4f352e1"
+    },
+    {
+      "ticker": "PSX",
+      "snapshot_path": "data\\raw\\full\\PSX\\20261008T084310082982Z.parquet",
+      "snapshot_sha256": "49c7816e5e1985b5f0e0c10aefdb44e7b06b5023a57ed061b7e04acc2b500fc0"
+    },
+    {
+      "ticker": "PTC",
+      "snapshot_path": "data\\raw\\full\\PTC\\20261008T084312133017Z.parquet",
+      "snapshot_sha256": "6ef48e69a78869521789edfffff996944eb0046bc7a45bbd91665204491f8e21"
+    },
+    {
+      "ticker": "PWR",
+      "snapshot_path": "data\\raw\\full\\PWR\\20261008T084314225411Z.parquet",
+      "snapshot_sha256": "8f952f087c40b06ceab5a85bcd1e33bb88a7ad83cd54746a3c1e7e3ebfb38131"
+    },
+    {
+      "ticker": "PYPL",
+      "snapshot_path": "data\\raw\\full\\PYPL\\20261008T084317042317Z.parquet",
+      "snapshot_sha256": "9d49069a5294cebf6d80cb42d5374669d1a2147b4798dfbc548f8f5d819f836f"
+    },
+    {
+      "ticker": "Q",
+      "snapshot_path": "data\\raw\\full\\Q\\20261008T084319508535Z.parquet",
+      "snapshot_sha256": "d496af6fdc6352a2e5ff50753c9afeafbca304cf08dbacf661a3a497f642fcf6"
+    },
+    {
+      "ticker": "QCOM",
+      "snapshot_path": "data\\raw\\full\\QCOM\\20261008T084322269880Z.parquet",
+      "snapshot_sha256": "c0fa9cac57dff6db3f5eb8f6601d1c459b67e8d8c360de8e0fc807251ca1da98"
+    },
+    {
+      "ticker": "RCL",
+      "snapshot_path": "data\\raw\\full\\RCL\\20261008T084325120782Z.parquet",
+      "snapshot_sha256": "59af2ad3ceb18e29cca2b4ae4436ef38730d2325c3715bf92898c3aa1a76fdf4"
+    },
+    {
+      "ticker": "RDDT",
+      "snapshot_path": "data\\raw\\full\\RDDT\\20261008T084328623630Z.parquet",
+      "snapshot_sha256": "32bce670d3db785f41cae9de7bd9b201884f6fe79c59b1abf592a655034fd0d8"
+    },
+    {
+      "ticker": "REG",
+      "snapshot_path": "data\\raw\\full\\REG\\20261008T084333952544Z.parquet",
+      "snapshot_sha256": "0e781e7bc608ee88de3fa5954713c183620c7d00b0eff95d5413364133542abb"
+    },
+    {
+      "ticker": "REGN",
+      "snapshot_path": "data\\raw\\full\\REGN\\20261008T084337812704Z.parquet",
+      "snapshot_sha256": "027cf6bf86dd52d3c40ea5829218d5ac9e96c171f22bf123c24ec0d5c3080829"
+    },
+    {
+      "ticker": "RF",
+      "snapshot_path": "data\\raw\\full\\RF\\20261008T084341483413Z.parquet",
+      "snapshot_sha256": "71a4f77c5a6362a5400c449e36aef25307959d82e5b82951888b7004d257a55d"
+    },
+    {
+      "ticker": "RJF",
+      "snapshot_path": "data\\raw\\full\\RJF\\20261008T084346765510Z.parquet",
+      "snapshot_sha256": "a0132ca2da9652549494740173425a33e75db28ad077e11b75df8d7ea525dd25"
+    },
+    {
+      "ticker": "RL",
+      "snapshot_path": "data\\raw\\full\\RL\\20261008T084350019103Z.parquet",
+      "snapshot_sha256": "0cab6641110ca8e1dd7afe3137e9cbeb0c4be20851059bbc5780f0dd1a0003d5"
+    },
+    {
+      "ticker": "RMD",
+      "snapshot_path": "data\\raw\\full\\RMD\\20261008T084353690416Z.parquet",
+      "snapshot_sha256": "8fa09064c6c3fa57a8235d1e489e720022941897b1f028df7e533f765b916860"
+    },
+    {
+      "ticker": "ROK",
+      "snapshot_path": "data\\raw\\full\\ROK\\20261008T084356471551Z.parquet",
+      "snapshot_sha256": "816e316d93889f5f95cb55cc11d005a43a30be77acf45049cf9933c14ccf5dc7"
+    },
+    {
+      "ticker": "ROL",
+      "snapshot_path": "data\\raw\\full\\ROL\\20261008T084359605373Z.parquet",
+      "snapshot_sha256": "b071c528ad54ff462bcfc7195dbd664aad68200a86551bd9bf6bac4df008b961"
+    },
+    {
+      "ticker": "ROP",
+      "snapshot_path": "data\\raw\\full\\ROP\\20261008T084402176604Z.parquet",
+      "snapshot_sha256": "b77a92e3b6c15ab8174985d3699ace65b2672252210d4c43a6c7a6c8c143f449"
+    },
+    {
+      "ticker": "ROST",
+      "snapshot_path": "data\\raw\\full\\ROST\\20261008T084405656400Z.parquet",
+      "snapshot_sha256": "b9978c5078ffdf432e329e1ce1a49d983c0bdf601978335d4f9fde07e53c73ea"
+    },
+    {
+      "ticker": "RSG",
+      "snapshot_path": "data\\raw\\full\\RSG\\20261008T084408951827Z.parquet",
+      "snapshot_sha256": "e68fcb6835bc7a97519366eb259ed60d49906d281e78c8477041b7e761e925cb"
+    },
+    {
+      "ticker": "RTX",
+      "snapshot_path": "data\\raw\\full\\RTX\\20261008T084411673954Z.parquet",
+      "snapshot_sha256": "2563d04f6921921bd437911743484f0d04580a1d77a7e471669f4e9f2886f972"
+    },
+    {
+      "ticker": "RVTY",
+      "snapshot_path": "data\\raw\\full\\RVTY\\20261008T084414233647Z.parquet",
+      "snapshot_sha256": "239aaadadc07cc31528925ad264273a4fa739522a20cf9a5c86049761894bd95"
+    },
+    {
+      "ticker": "SBAC",
+      "snapshot_path": "data\\raw\\full\\SBAC\\20261008T084416756770Z.parquet",
+      "snapshot_sha256": "c7388a85ae88022fd10a80ede78226ff312b9dd9f8ab437ea0fd1020fc2290a7"
+    },
+    {
+      "ticker": "SBUX",
+      "snapshot_path": "data\\raw\\full\\SBUX\\20261008T084419288937Z.parquet",
+      "snapshot_sha256": "028b3cbc331101416927673096deb1ae36a31dda42a29cf2a230525f4d07db10"
+    },
+    {
+      "ticker": "SCHW",
+      "snapshot_path": "data\\raw\\full\\SCHW\\20261008T084421642895Z.parquet",
+      "snapshot_sha256": "a328cfe1bc174d22512a5ae514ac12e6b6ca6a1a23d8348d822153627b7ca399"
+    },
+    {
+      "ticker": "SHW",
+      "snapshot_path": "data\\raw\\full\\SHW\\20261008T084424191132Z.parquet",
+      "snapshot_sha256": "011ef31f5acb1b0934e11a02481b6975b1f3a1d25ddb74a3fe6df53f05a0bc27"
+    },
+    {
+      "ticker": "SJM",
+      "snapshot_path": "data\\raw\\full\\SJM\\20261008T084426584472Z.parquet",
+      "snapshot_sha256": "3abb36239fc31313b2c6aae365cc7c4de3647f245777d90fb73ec6861705bc1c"
+    },
+    {
+      "ticker": "SKYD",
+      "snapshot_path": "data\\raw\\full\\SKYD\\20261008T084428975127Z.parquet",
+      "snapshot_sha256": "3cca876f56cf1b74159bd9f13dcae80cdcb3675188e8252ae99ec5aae2f2b426"
+    },
+    {
+      "ticker": "SLB",
+      "snapshot_path": "data\\raw\\full\\SLB\\20261008T084431428228Z.parquet",
+      "snapshot_sha256": "903c145325873840644d7b2b96049e90a1a78a9cdc5b4799ca9333da41e1cca2"
+    },
+    {
+      "ticker": "SMCI",
+      "snapshot_path": "data\\raw\\full\\SMCI\\20261008T084434330494Z.parquet",
+      "snapshot_sha256": "f30d0223d46ac6be160c09d7f7926a9f910992832aed549816f833b0dc73e720"
+    },
+    {
+      "ticker": "SNA",
+      "snapshot_path": "data\\raw\\full\\SNA\\20261008T084437411896Z.parquet",
+      "snapshot_sha256": "d44ac57dcdbfb00e2e058b0cdf6ebe8ecc235ceabd99ffe1caea71d8cf30f80f"
+    },
+    {
+      "ticker": "SNDK",
+      "snapshot_path": "data\\raw\\full\\SNDK\\20261008T084439649902Z.parquet",
+      "snapshot_sha256": "a0e9415fc7a60eb5a1570b64e389647e6471270ce3973cba49339707d3cf42ae"
+    },
+    {
+      "ticker": "SNPS",
+      "snapshot_path": "data\\raw\\full\\SNPS\\20261008T084443419116Z.parquet",
+      "snapshot_sha256": "9d3b4159465378ee597dc17d3e2c8f1faff0c4829b3e677df14464b89332a56a"
+    },
+    {
+      "ticker": "SO",
+      "snapshot_path": "data\\raw\\full\\SO\\20261008T084447458689Z.parquet",
+      "snapshot_sha256": "8c86104afec78da045f819cab65f6298467b447ad877f22d9aaf1183097c15be"
+    },
+    {
+      "ticker": "SOLV",
+      "snapshot_path": "data\\raw\\full\\SOLV\\20261008T084449686041Z.parquet",
+      "snapshot_sha256": "8544b379ee855ec946c5f202287fec1f01af503098a33e74d809812179a18383"
+    },
+    {
+      "ticker": "SPG",
+      "snapshot_path": "data\\raw\\full\\SPG\\20261008T084452764332Z.parquet",
+      "snapshot_sha256": "ac9f4c7e97f07d810c8222e106d84a1fc3fa9021154bfc75f634c0be1b015fb2"
+    },
+    {
+      "ticker": "SPGI",
+      "snapshot_path": "data\\raw\\full\\SPGI\\20261008T084455718658Z.parquet",
+      "snapshot_sha256": "9b802cb376669363a3aae5a57c9fb3e28416626c4dfa9eed8fd50b5486a7b108"
+    },
+    {
+      "ticker": "SRE",
+      "snapshot_path": "data\\raw\\full\\SRE\\20261008T084458371271Z.parquet",
+      "snapshot_sha256": "8086f33e8e672446d8d6c19eab9ccaace81b77e0363b8d3bb1696ce96524879b"
+    },
+    {
+      "ticker": "STE",
+      "snapshot_path": "data\\raw\\full\\STE\\20261008T084500957088Z.parquet",
+      "snapshot_sha256": "1dcc36c1273921efd0d9a017a0fe42a8dcf81fff00524377420a5fc0c0a97279"
+    },
+    {
+      "ticker": "STLD",
+      "snapshot_path": "data\\raw\\full\\STLD\\20261008T084503477346Z.parquet",
+      "snapshot_sha256": "042d206ba826b2b1e86fa92d91f295ef9b6262d723c97c5ecede898bcbfb1ce2"
+    },
+    {
+      "ticker": "STT",
+      "snapshot_path": "data\\raw\\full\\STT\\20261008T084506001303Z.parquet",
+      "snapshot_sha256": "57ed1f33376e4ee07a29458005045905b32dd2b654bb525d65237a85fb0b5119"
+    },
+    {
+      "ticker": "STX",
+      "snapshot_path": "data\\raw\\full\\STX\\20261008T084508421979Z.parquet",
+      "snapshot_sha256": "3d308c09c810323205ea1e62266814da254ed79c9cb58aab115d2170e6f67b4e"
+    },
+    {
+      "ticker": "STZ",
+      "snapshot_path": "data\\raw\\full\\STZ\\20261008T084510794794Z.parquet",
+      "snapshot_sha256": "e53f08d63a35af3e791afbda0bc6de405ad955b85f52d88ecde399431d9b40fa"
+    },
+    {
+      "ticker": "SW",
+      "snapshot_path": "data\\raw\\full\\SW\\20261008T084513030271Z.parquet",
+      "snapshot_sha256": "12c73c9f0f40c0e1768ceb12416dfcd2868a6ee6b9667d487cc12ba5f052924f"
+    },
+    {
+      "ticker": "SWK",
+      "snapshot_path": "data\\raw\\full\\SWK\\20261008T084515494009Z.parquet",
+      "snapshot_sha256": "b88e7c858e60926d5c73e9c8b7c75ca5e95980e9fda5df16f52e009a6aa923d8"
+    },
+    {
+      "ticker": "SWKS",
+      "snapshot_path": "data\\raw\\full\\SWKS\\20261008T084517923760Z.parquet",
+      "snapshot_sha256": "4cb8d9ed389914609fbeb028fafcf49e1b9deed96e270d7dd94fea8fd7af66c3"
+    },
+    {
+      "ticker": "SYF",
+      "snapshot_path": "data\\raw\\full\\SYF\\20261008T084520238424Z.parquet",
+      "snapshot_sha256": "304d4fd30ffe7116ad697bd23cee479126d2a06276c9be0a0e203c042b952868"
+    },
+    {
+      "ticker": "SYK",
+      "snapshot_path": "data\\raw\\full\\SYK\\20261008T084522658245Z.parquet",
+      "snapshot_sha256": "64df2ec6e052c9cd24dcf9898b94f3e78b8f97379c05db645c25c8d2eb94ecb3"
+    },
+    {
+      "ticker": "SYY",
+      "snapshot_path": "data\\raw\\full\\SYY\\20261008T084525462822Z.parquet",
+      "snapshot_sha256": "6c5c9909c52019e9259417705ee4e93fcb7be6d755cedcafaee55dab5950292b"
+    },
+    {
+      "ticker": "T",
+      "snapshot_path": "data\\raw\\full\\T\\20261008T084527933342Z.parquet",
+      "snapshot_sha256": "f63a8afe46de107aa87e6b17ce3fd5e0adc198836ea82cef8658096e3e7c8fec"
+    },
+    {
+      "ticker": "TDG",
+      "snapshot_path": "data\\raw\\full\\TDG\\20261008T084530315028Z.parquet",
+      "snapshot_sha256": "13f3b10a0b463d611ffd9dc9f0ec1af16d2a6fc03f3f631089c906332361ca9d"
+    },
+    {
+      "ticker": "TDY",
+      "snapshot_path": "data\\raw\\full\\TDY\\20261008T084532597717Z.parquet",
+      "snapshot_sha256": "cab2b03debed728d3418a4a9839c2249f6a8f769eb5db1089fab8129eba20600"
+    },
+    {
+      "ticker": "TECH",
+      "snapshot_path": "data\\raw\\full\\TECH\\20261008T084535064964Z.parquet",
+      "snapshot_sha256": "b2dc2792652e9040b710284ea0ae46ff4c32305165b4a99564e2f30303261222"
+    },
+    {
+      "ticker": "TEL",
+      "snapshot_path": "data\\raw\\full\\TEL\\20261008T084537392867Z.parquet",
+      "snapshot_sha256": "b3538e12f68eb346a4fd41c1373d59128d0c8ffc088f1b6d50ff0800aea720fc"
+    },
+    {
+      "ticker": "TER",
+      "snapshot_path": "data\\raw\\full\\TER\\20261008T084539719228Z.parquet",
+      "snapshot_sha256": "1fec6a1cc5e3bda00c33d06b13e781850361fc9bd1d35a72b454b3def8f5f602"
+    },
+    {
+      "ticker": "TFC",
+      "snapshot_path": "data\\raw\\full\\TFC\\20261008T084542106021Z.parquet",
+      "snapshot_sha256": "340bd4307c96268a3709b7c082c8d6b87cf9cdad58b1ff8da922bcc7cc0f974b"
+    },
+    {
+      "ticker": "TGT",
+      "snapshot_path": "data\\raw\\full\\TGT\\20261008T084544663072Z.parquet",
+      "snapshot_sha256": "baa088911389b53c619f75080da5222f43353cf98a9af7b8ae4893d96565b646"
+    },
+    {
+      "ticker": "TJX",
+      "snapshot_path": "data\\raw\\full\\TJX\\20261008T084547137568Z.parquet",
+      "snapshot_sha256": "c5db964504f34934893c503aa64e3a7fe4c01d7902bb18d05655773f1812621e"
+    },
+    {
+      "ticker": "TKO",
+      "snapshot_path": "data\\raw\\full\\TKO\\20261008T084549543025Z.parquet",
+      "snapshot_sha256": "7d0130b5b46bb42d92c2db63b6e1cfdeb468cc80696a2c48c158e19ed3edd978"
+    },
+    {
+      "ticker": "TMO",
+      "snapshot_path": "data\\raw\\full\\TMO\\20261008T084552058818Z.parquet",
+      "snapshot_sha256": "8bdf2c010af9141e998aed4e3a661ee32f7f45f781a4c0ff46ad0c830d36f20c"
+    },
+    {
+      "ticker": "TMUS",
+      "snapshot_path": "data\\raw\\full\\TMUS\\20261008T084554408407Z.parquet",
+      "snapshot_sha256": "bec0813ca7d5aaaeb5c818e71b0b0b47a8019d3b1d16d86e154d9bfdc2df0e74"
+    },
+    {
+      "ticker": "TPL",
+      "snapshot_path": "data\\raw\\full\\TPL\\20261008T084556890193Z.parquet",
+      "snapshot_sha256": "bd8d23aad13fe111d5764384ed2c6e48ccb540c3c44f2b0260f87487a9e5faa7"
+    },
+    {
+      "ticker": "TPR",
+      "snapshot_path": "data\\raw\\full\\TPR\\20261008T084559172123Z.parquet",
+      "snapshot_sha256": "7f0981fa9f571129e11fc1439e7165da082a8319d40aea836abb228d13c02234"
+    },
+    {
+      "ticker": "TRGP",
+      "snapshot_path": "data\\raw\\full\\TRGP\\20261008T084601530506Z.parquet",
+      "snapshot_sha256": "2f2d974691de797b7939e6c9f4e0bcf86fac751bfd05e1fd2c4f7bc32b4d3536"
+    },
+    {
+      "ticker": "TRMB",
+      "snapshot_path": "data\\raw\\full\\TRMB\\20261008T084603852440Z.parquet",
+      "snapshot_sha256": "0337337e33d00e32d5fa265e78a042324f2c500ac7e10cbdaf8f96eba79bf5a0"
+    },
+    {
+      "ticker": "TROW",
+      "snapshot_path": "data\\raw\\full\\TROW\\20261008T084606142120Z.parquet",
+      "snapshot_sha256": "6c23ab877c75454893d89e69221aafd9251d59f31b690dd3703cc47c3674aa38"
+    },
+    {
+      "ticker": "TRV",
+      "snapshot_path": "data\\raw\\full\\TRV\\20261008T084608453427Z.parquet",
+      "snapshot_sha256": "957dd5c8533ce6db197004a43ec023fd11ad84c5ec9d5864271d229bb991f45d"
+    },
+    {
+      "ticker": "TSCO",
+      "snapshot_path": "data\\raw\\full\\TSCO\\20261008T084610687554Z.parquet",
+      "snapshot_sha256": "b36e1c5f45c694c0ebe6390656dcb2646f0d774011abe61b8741d78ddde21e85"
+    },
+    {
+      "ticker": "TSLA",
+      "snapshot_path": "data\\raw\\full\\TSLA\\20261008T084613616818Z.parquet",
+      "snapshot_sha256": "cefea9781b33e28cd67b02b4e805c03f927e1e651140774d656b1e09026835b3"
+    },
+    {
+      "ticker": "TSN",
+      "snapshot_path": "data\\raw\\full\\TSN\\20261008T084615859408Z.parquet",
+      "snapshot_sha256": "f6a75d62a272c392006443f7c7c8b84dbe0416a26bc991575907d46bc107d7ba"
+    },
+    {
+      "ticker": "TT",
+      "snapshot_path": "data\\raw\\full\\TT\\20261008T084618257872Z.parquet",
+      "snapshot_sha256": "c4a32bf0d07886445b4682f9fda67c4db329cc6d3a95178f86c385d410b793ea"
+    },
+    {
+      "ticker": "TTWO",
+      "snapshot_path": "data\\raw\\full\\TTWO\\20261008T084620484612Z.parquet",
+      "snapshot_sha256": "7d17a5f9f4e9b9279eab561eb42a2b7b606f95d861ad2e6680ed1db05fb1323b"
+    },
+    {
+      "ticker": "TWLO",
+      "snapshot_path": "data\\raw\\full\\TWLO\\20261008T084622698184Z.parquet",
+      "snapshot_sha256": "9b9c123ceff3a95a7ab06ed6ef9b257107794a90e98f030961490b815d49d0b3"
+    },
+    {
+      "ticker": "TXN",
+      "snapshot_path": "data\\raw\\full\\TXN\\20261008T084625077371Z.parquet",
+      "snapshot_sha256": "25c4a1736dc0fde14b59f1621d40a2f59324e4193b02577134fd81d78ccd1293"
+    },
+    {
+      "ticker": "TXT",
+      "snapshot_path": "data\\raw\\full\\TXT\\20261008T084627451957Z.parquet",
+      "snapshot_sha256": "59bd3953a25672ca5103f8736a571bf88bfcdd2b009fea6181c9592168f343ce"
+    },
+    {
+      "ticker": "TYL",
+      "snapshot_path": "data\\raw\\full\\TYL\\20261008T084629696732Z.parquet",
+      "snapshot_sha256": "89df1bb12d8b4c2603e1c789a6a201ed515317b3463d18e75d9ae69388c9e3eb"
+    },
+    {
+      "ticker": "UAL",
+      "snapshot_path": "data\\raw\\full\\UAL\\20261008T084631872702Z.parquet",
+      "snapshot_sha256": "30b8674f9f4ec410ec9493dc2ed2363fea18a0793669c57e14e568aa95b5ae6f"
+    },
+    {
+      "ticker": "UBER",
+      "snapshot_path": "data\\raw\\full\\UBER\\20261008T084633951625Z.parquet",
+      "snapshot_sha256": "1b12f61fdc6cde30f38f414f2046ec204ee1214e735e76e7c632f7c1a867adb5"
+    },
+    {
+      "ticker": "UDR",
+      "snapshot_path": "data\\raw\\full\\UDR\\20261008T084636386709Z.parquet",
+      "snapshot_sha256": "f72cd370c1c03597821127d44af02a5c3a73561452bb7eccc460d075e704c068"
+    },
+    {
+      "ticker": "UHS",
+      "snapshot_path": "data\\raw\\full\\UHS\\20261008T084638643567Z.parquet",
+      "snapshot_sha256": "5a4c1bad00b7261f17070e7324d92f64a6d8c785aa1771a9344e0f6fb6ff9df6"
+    },
+    {
+      "ticker": "ULTA",
+      "snapshot_path": "data\\raw\\full\\ULTA\\20261008T084642707000Z.parquet",
+      "snapshot_sha256": "bbf4af52bbbf32af760e0faee61c96b6caefb7aad5ea15b45421795ad40c3448"
+    },
+    {
+      "ticker": "UNH",
+      "snapshot_path": "data\\raw\\full\\UNH\\20261008T084646037426Z.parquet",
+      "snapshot_sha256": "5cbc383ae3483b015d267b489c8fe5e1d8ebee24e21258f00147fa92ac00dd4e"
+    },
+    {
+      "ticker": "UNP",
+      "snapshot_path": "data\\raw\\full\\UNP\\20261008T084648440119Z.parquet",
+      "snapshot_sha256": "bb9b40045fcc32bd8f89baa94f8fa1a65df365fd30c9ca01a60ff0b48e92fd96"
+    },
+    {
+      "ticker": "UPS",
+      "snapshot_path": "data\\raw\\full\\UPS\\20261008T084650729929Z.parquet",
+      "snapshot_sha256": "1cc5f3d32503891d11ced844035aa612916c9bb054e9809c652a2786f4366de8"
+    },
+    {
+      "ticker": "URI",
+      "snapshot_path": "data\\raw\\full\\URI\\20261008T084653008176Z.parquet",
+      "snapshot_sha256": "8a71f4d42c958fe0c2ed5dcde4d4bb04492db6aa1db0a8b547c25d121a72aa11"
+    },
+    {
+      "ticker": "USB",
+      "snapshot_path": "data\\raw\\full\\USB\\20261008T084655277700Z.parquet",
+      "snapshot_sha256": "e1bdda8249a7554c5578845b70f65aa142ff5f7cc07c8273a12c394f4bbc024c"
+    },
+    {
+      "ticker": "V",
+      "snapshot_path": "data\\raw\\full\\V\\20261008T084657698047Z.parquet",
+      "snapshot_sha256": "e64ee59f486dd6cb2b4d9d212122d62af5d6f417a076f5e938f7b30e990449a8"
+    },
+    {
+      "ticker": "VEEV",
+      "snapshot_path": "data\\raw\\full\\VEEV\\20261008T084659913087Z.parquet",
+      "snapshot_sha256": "bd47e2d6a194406e3917cd512b8abcd1605867fd6884634628afe9e42062cb41"
+    },
+    {
+      "ticker": "VICI",
+      "snapshot_path": "data\\raw\\full\\VICI\\20261008T084702017520Z.parquet",
+      "snapshot_sha256": "9bc006285e2085ef89d5c441ecd38b158cea9f9fb463a42de4d445795ae82845"
+    },
+    {
+      "ticker": "VLO",
+      "snapshot_path": "data\\raw\\full\\VLO\\20261008T084704325877Z.parquet",
+      "snapshot_sha256": "da94a3dc9645e528db16ee9fb770189d2185b8d06ee6cef823a09836aab97f2d"
+    },
+    {
+      "ticker": "VLTO",
+      "snapshot_path": "data\\raw\\full\\VLTO\\20261008T084706323571Z.parquet",
+      "snapshot_sha256": "2da9f96270ef4c0ca709ccfabbfb1a2c3f1b1d5bfab9ef7b2aeaf2e36d3af0eb"
+    },
+    {
+      "ticker": "VMC",
+      "snapshot_path": "data\\raw\\full\\VMC\\20261008T084708813424Z.parquet",
+      "snapshot_sha256": "02150fbd5eb180cbc113095c8063bb62cbeda47932b70443dd28b38f31eaf1f9"
+    },
+    {
+      "ticker": "VMRK",
+      "snapshot_path": "data\\raw\\full\\VMRK\\20261008T084711109842Z.parquet",
+      "snapshot_sha256": "ead40204a11f7192f3613731409ee35b30bb5d1fe2c86bad6d457768393e60a9"
+    },
+    {
+      "ticker": "VRSK",
+      "snapshot_path": "data\\raw\\full\\VRSK\\20261008T084713578788Z.parquet",
+      "snapshot_sha256": "ced1430fc7d7215b29b2d7e1b3dc729af0d1065400bb620ea6223e6e45a3ba4c"
+    },
+    {
+      "ticker": "VRSN",
+      "snapshot_path": "data\\raw\\full\\VRSN\\20261008T084715866745Z.parquet",
+      "snapshot_sha256": "4a2aa6fa0cdd7b4e962e30e276e5261feae2524e99e82df5857e931ac52aa31a"
+    },
+    {
+      "ticker": "VRT",
+      "snapshot_path": "data\\raw\\full\\VRT\\20261008T084718003834Z.parquet",
+      "snapshot_sha256": "3193200b2f75ea3932571c936c1eab153f5a0241e530b6e972bcd07f1a57a099"
+    },
+    {
+      "ticker": "VRTX",
+      "snapshot_path": "data\\raw\\full\\VRTX\\20261008T084720386839Z.parquet",
+      "snapshot_sha256": "fdf5f200976b4b5f76af5f612cbbca5561260e78f8a4d2e388596b131c1970bb"
+    },
+    {
+      "ticker": "VST",
+      "snapshot_path": "data\\raw\\full\\VST\\20261008T084723144104Z.parquet",
+      "snapshot_sha256": "52e4138e246100ffd8eb92e8ca3c03909039255581c58a8844676cf8a02e4c28"
+    },
+    {
+      "ticker": "VTR",
+      "snapshot_path": "data\\raw\\full\\VTR\\20261008T084725715675Z.parquet",
+      "snapshot_sha256": "ed3e3570db24638855ddaafb6318d275b345ea9623c1d1e1dfd1d049f3ef7c03"
+    },
+    {
+      "ticker": "VTRS",
+      "snapshot_path": "data\\raw\\full\\VTRS\\20261008T084728326161Z.parquet",
+      "snapshot_sha256": "024f00706a80d846bece3677377877409b0ba669000619419a56f02a13ca2d22"
+    },
+    {
+      "ticker": "VYLR",
+      "snapshot_path": "data\\raw\\full\\VYLR\\20261008T084730372786Z.parquet",
+      "snapshot_sha256": "edf08118b35b1666a5fc792ec3cd7328c55fcfa4e69415ac2971ecc75cf1c333"
+    },
+    {
+      "ticker": "VZ",
+      "snapshot_path": "data\\raw\\full\\VZ\\20261008T084733713925Z.parquet",
+      "snapshot_sha256": "0243f58e37466f7b03eb66e89a353e95c166c67b7d3954c2baafdd1f582d0b7f"
+    },
+    {
+      "ticker": "WAB",
+      "snapshot_path": "data\\raw\\full\\WAB\\20261008T084736407479Z.parquet",
+      "snapshot_sha256": "86429e990a9f250b24c8ebc262228b3f9b31fc4eacde623ef1aa2835df15d696"
+    },
+    {
+      "ticker": "WAT",
+      "snapshot_path": "data\\raw\\full\\WAT\\20261008T084738846411Z.parquet",
+      "snapshot_sha256": "9768b4e47efd5d604496c002df106abb597411523e7801d97af6a758dc7a3e6b"
+    },
+    {
+      "ticker": "WDAY",
+      "snapshot_path": "data\\raw\\full\\WDAY\\20261008T084741449945Z.parquet",
+      "snapshot_sha256": "1b6f9874b649ab9cf4b4bba375cf307eb2c609e68371d15eb79093936d1d1411"
+    },
+    {
+      "ticker": "WDC",
+      "snapshot_path": "data\\raw\\full\\WDC\\20261008T084743953248Z.parquet",
+      "snapshot_sha256": "2eece7076672b4b85e21debefecb8f2bd32f0134db6e8e1c294e93e8fcba68c3"
+    },
+    {
+      "ticker": "WEC",
+      "snapshot_path": "data\\raw\\full\\WEC\\20261008T084746369812Z.parquet",
+      "snapshot_sha256": "39b8fe4e274aa83acc7276f120a132fe3d5a03ac378528238c94cb7b56eeb2e6"
+    },
+    {
+      "ticker": "WELL",
+      "snapshot_path": "data\\raw\\full\\WELL\\20261008T084748775838Z.parquet",
+      "snapshot_sha256": "df72fb43a9133997035817b72cb11757915f74dcd1d56332f814ba71cb4971fc"
+    },
+    {
+      "ticker": "WFC",
+      "snapshot_path": "data\\raw\\full\\WFC\\20261008T084752468484Z.parquet",
+      "snapshot_sha256": "1e73409079ac14dd51c1ad5103bf985c81c361cd76c974e1c70ebfb1d33a00f5"
+    },
+    {
+      "ticker": "WM",
+      "snapshot_path": "data\\raw\\full\\WM\\20261008T084755018316Z.parquet",
+      "snapshot_sha256": "083e55ff6a02d1047c08f7e9eb66f790e5253c841d071b6a8d7a3ff77b022356"
+    },
+    {
+      "ticker": "WMB",
+      "snapshot_path": "data\\raw\\full\\WMB\\20261008T084758338233Z.parquet",
+      "snapshot_sha256": "b44f28f2b39cb4d73cb3209cfad28faa307d8eb01451078405a86a5e71c64e64"
+    },
+    {
+      "ticker": "WMT",
+      "snapshot_path": "data\\raw\\full\\WMT\\20261008T084801382365Z.parquet",
+      "snapshot_sha256": "fb157608a84c44f8bd3b07c0697fe7c112efa7aad24923bb3650d26534de4187"
+    },
+    {
+      "ticker": "WRB",
+      "snapshot_path": "data\\raw\\full\\WRB\\20261008T084804209264Z.parquet",
+      "snapshot_sha256": "72656df77a1a2be624c44ce5884baeeb757a16867f8b99eefc286da9803fa24b"
+    },
+    {
+      "ticker": "WSM",
+      "snapshot_path": "data\\raw\\full\\WSM\\20261008T084807708097Z.parquet",
+      "snapshot_sha256": "e7764842cfcf62695a17712f868ebf8a2d6de62fbe3504d36cd2836633d57f0f"
+    },
+    {
+      "ticker": "WST",
+      "snapshot_path": "data\\raw\\full\\WST\\20261008T084810278054Z.parquet",
+      "snapshot_sha256": "819c09e28c09a3e4b6f09f3e6a56d3184bdd3a5c1566bf610fd5879d259629e7"
+    },
+    {
+      "ticker": "WTW",
+      "snapshot_path": "data\\raw\\full\\WTW\\20261008T084813265981Z.parquet",
+      "snapshot_sha256": "d37aabb3a07933dc7c72c0a27b7beee23a059ac7427ab5c215630cfc70b4cb0b"
+    },
+    {
+      "ticker": "WY",
+      "snapshot_path": "data\\raw\\full\\WY\\20261008T084816119926Z.parquet",
+      "snapshot_sha256": "84d9046943185076cdd5e05fe49da174eab72c2dea4cafc48f469253f97c92f4"
+    },
+    {
+      "ticker": "WYNN",
+      "snapshot_path": "data\\raw\\full\\WYNN\\20261008T084818597015Z.parquet",
+      "snapshot_sha256": "422c55a3a6ecce0bc55125748cc6ddb9b166c1b13b40a2462e6c0a9a69ecfa38"
+    },
+    {
+      "ticker": "XEL",
+      "snapshot_path": "data\\raw\\full\\XEL\\20261008T084821662192Z.parquet",
+      "snapshot_sha256": "541e2144e627567a37b11b6e16e92e88e96622ae048ce7e0abac1fa7d0836f44"
+    },
+    {
+      "ticker": "XOM",
+      "snapshot_path": "data\\raw\\full\\XOM\\20261008T084824410552Z.parquet",
+      "snapshot_sha256": "98f7d2ffd826fca442e933a6a052b148a5219ba65fa6c46d5dc1e73595933923"
+    },
+    {
+      "ticker": "XYL",
+      "snapshot_path": "data\\raw\\full\\XYL\\20261008T084827619217Z.parquet",
+      "snapshot_sha256": "6848a51111893bb03fec686e7827ee1cfc9d42c36342c61865ea54e600d180b6"
+    },
+    {
+      "ticker": "XYZ",
+      "snapshot_path": "data\\raw\\full\\XYZ\\20261008T084830268845Z.parquet",
+      "snapshot_sha256": "a9b9d95408dd4c97b69571113588010656c8edcee2c77fc15828ab59a67b0fa7"
+    },
+    {
+      "ticker": "YUM",
+      "snapshot_path": "data\\raw\\full\\YUM\\20261008T084834177039Z.parquet",
+      "snapshot_sha256": "abe5adb519e5fe0c31b6e1365a766b3a7c3e6e600756f596b2b33b78e2ee4658"
+    },
+    {
+      "ticker": "ZBH",
+      "snapshot_path": "data\\raw\\full\\ZBH\\20261008T084836854250Z.parquet",
+      "snapshot_sha256": "9f441b17005d755d9f89c96149a437ab27c09f891c707d714989bcb852c96756"
+    },
+    {
+      "ticker": "ZBRA",
+      "snapshot_path": "data\\raw\\full\\ZBRA\\20261008T084839517703Z.parquet",
+      "snapshot_sha256": "3128107c7fa107f5e032abfc31cfdc9bb2991ea285d3ba53e5f6e5a66a4bf09d"
+    },
+    {
+      "ticker": "ZTS",
+      "snapshot_path": "data\\raw\\full\\ZTS\\20261008T084841933813Z.parquet",
+      "snapshot_sha256": "aa41ce56b915a10fe8aff4bdbb2f0c604d28aa259819fe55d104d296639c68f1"
+    }
+  ],
+  "code_sha256": {
+    "requirements-lock.txt": "2d09318a3ac6d9e8d1c6bc8aa4ea15c613d3f9cf5699e1a7205d7c3d3e122374",
+    "scripts\\audit_evidence.py": "98c5f4e3102f1557543fba3da19a2f99c844350eee9d5b007ef726569d8e4996",
+    "scripts\\build_panel.py": "bc01853b9a5011968e82ef4be6a2a37285d5d398302dad3af8b3cd070e3668f6",
+    "scripts\\download_full.py": "79e65d98119c4d2eb82f6986c63a579595d37f7a96d0db4d7d69a0b046028ee0",
+    "scripts\\environment_audit.py": "c870d1dd97562022970a1f4bd2f14a9df6933d7f0da13510ff3b4949caa8c707",
+    "scripts\\probe_sources.py": "9e8723b845c93ac12ba34fdb862c6bf3e9c23f58c100ce64dfb63f1dcd138d34",
+    "scripts\\probe_yahoo_chart.py": "7cb54814e4ee6d946a1455b3eb978cf6ef3c07e539ccb64ee318e21bba233dbe",
+    "scripts\\run_phase1.py": "bf252fa23417b71040da32e95d2984ef9b61c610cf55e88ea4d648bd30245ca1",
+    "scripts\\verify_phase2.py": "14ab6df5b49ce1070a6a282a969ffc35fb9678c635498e47791e56f7b215f9c8",
+    "src\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\data\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\data\\adjustments.py": "6d2d227c2519fa37f0de88b222b2edf8881309c7037db357a999b832bc943c63",
+    "src\\data\\download.py": "11c6354cdc58cb9263f4af350fc61e431c3b46a50903a5fd24e8b1e1d9d43a51",
+    "src\\data\\incremental.py": "9be19c4582febe63d2b7550834093484c13d5a906ba80aa0b8dd9c1142465425",
+    "src\\data\\panel.py": "92df3bd81d6a76f1c02f69a76d2716011962c54a82c2c024b7a97a77157bb9b6",
+    "src\\data\\universe.py": "d59f11114f0202e452b4fe364f07abf5cc3275d4e84078758f833222692a97b5",
+    "src\\data\\validation.py": "a59d3a977522fb738c324b8c8bfeae29df5cd64811746da6d44adddc373b39a0",
+    "tests\\test_data.py": "2086280ebc07bac9f1cafdba32eae62dd3deef94714c9fd29bef9467d888ef1e",
+    "tests\\test_phase2.py": "9520b33b7ba97a97e7c4e04e15c621d27e6916610ee58abd888ddbd90bd1cfb8",
+    "config.yaml": "d43092feacb05a1dc8d41e4f283c284619f68ff1d3ea5d569b4939717ea13b67",
+    "DATA_CONVENTIONS.md": "55de84d7c43ef69b8397877389877ad54bf0b2357b9157bf576ff9363d1c35be",
+    "DATA_LIMITATIONS.md": "973579f42cfee4f991a2293f37fb021a943f9c4af47f189e1fecd21e1463eb65",
+    "RESEARCH_PROTOCOL.md": "a0e969e7b6607671736d5f45e1b36d8bc1c6e0eba87e95ed3e2bbf8806b0a887"
+  },
+  "unattempted_tickers": [],
+  "panel_path": "data\\processed\\phase2\\20261008T085012128534Z\\research_panel.parquet",
+  "panel_sha256": "c7d672b8991802be43f024d4651564a4fe5f0a5e5f8b7c664ff42dc9fb5fae61"
+}

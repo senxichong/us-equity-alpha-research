@@ -126,7 +126,7 @@ def write_panel_parquet(frame, path, metadata):
     pq.write_table(table.replace_schema_metadata(embedded), path, compression='zstd')
 
 
-def load_research_panel(pointer='data/processed/phase2/research_panel.json'):
+def load_research_panel(pointer='data/processed/phase2/research_panel.json', *, with_eligibility=False):
     meta = json.loads(Path(pointer).read_text())
     if sha256(meta['panel_path']) != meta['panel_sha256']:
         raise ValueError('Panel checksum mismatch')
@@ -134,4 +134,18 @@ def load_research_panel(pointer='data/processed/phase2/research_panel.json'):
     embedded = json.loads(table.schema.metadata[b'research_metadata'])
     if not meta['survivorship_biased'] or not embedded['survivorship_biased']:
         raise ValueError('Prototype bias metadata missing')
-    return table.to_pandas(), meta
+    frame = table.to_pandas()
+    if with_eligibility:
+        from .eligibility import EligibilityRules, attach_eligibility
+        cfg = meta['config']['phase2']
+        rules = EligibilityRules(
+            minimum_valid_history=cfg['minimum_history_sessions'],
+            liquidity_window_sessions=cfg['liquidity_window_sessions'],
+            minimum_median_dollar_volume=cfg['minimum_median_daily_dollar_volume'],
+        )
+        # Fixed historical calendar; no dependency on a new download or latest date.
+        sessions = xcals.get_calendar(meta['config']['calendar'], start=cfg['start_date'], end=cfg['end_date']).sessions
+        sessions = sessions[(sessions >= pd.Timestamp(cfg['start_date'])) & (sessions < pd.Timestamp(cfg['end_date']))]
+        frame = attach_eligibility(frame, sessions, rules)
+        meta = {**meta, 'eligibility': rules.metadata()}
+    return frame, meta

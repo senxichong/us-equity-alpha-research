@@ -1,0 +1,489 @@
+{
+  "universe": {
+    "current_roster_count": 503,
+    "history_snapshot_rows": 2720,
+    "history_first": "1996-01-02",
+    "history_last": "2026-08-18",
+    "duplicate_dates": 0,
+    "dates_sorted": true,
+    "min_members": 487,
+    "max_members": 507,
+    "rows_with_duplicate_symbols": 0,
+    "latest_history_only": [
+      "BLDR",
+      "CTVA",
+      "PSKY",
+      "TAP",
+      "TTD",
+      "WBD"
+    ],
+    "current_roster_only": [
+      "BE",
+      "ILMN",
+      "P",
+      "SKYD",
+      "TWLO",
+      "VYLR"
+    ],
+    "spot_checks": [
+      {
+        "date": "2020-12-18",
+        "ticker": "TSLA",
+        "expected": false,
+        "observed": false,
+        "passed": true
+      },
+      {
+        "date": "2020-12-21",
+        "ticker": "TSLA",
+        "expected": true,
+        "observed": true,
+        "passed": true
+      },
+      {
+        "date": "2022-06-08",
+        "ticker": "FB",
+        "expected": true,
+        "observed": true,
+        "passed": true
+      },
+      {
+        "date": "2022-06-09",
+        "ticker": "META",
+        "expected": true,
+        "observed": true,
+        "passed": true
+      }
+    ],
+    "status": "CANDIDATE ONLY - NOT VERIFIED POINT-IN-TIME",
+    "sha256": "36326709d46d6cd25834de5df457b16f5f96fad3a06b9beac28f7b88aa0b0d54"
+  },
+  "alpha_vantage": {
+    "total_observations": 6774,
+    "first_date": "1999-11-01",
+    "last_date": "2026-10-07",
+    "sample_period_validation": {
+      "observations": 2203,
+      "stock_count": 1,
+      "missing_values": {
+        "ticker": 0,
+        "date": 0,
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "adj_close": 0,
+        "volume": 0
+      },
+      "duplicate_excess_rows": 0,
+      "unsorted_tickers": [
+        "IBM"
+      ],
+      "unexpected_tickers": [],
+      "missing_tickers": [],
+      "issue_counts": {},
+      "coverage": [
+        {
+          "ticker": "IBM",
+          "rows": 2203,
+          "first_date": "2018-01-02",
+          "last_date": "2026-10-07",
+          "expected_sessions": 2203,
+          "observed_sessions": 2203,
+          "missing_sessions": 0,
+          "missing_dates": []
+        }
+      ],
+      "issues": []
+    }
+  },
+  "ibm_yahoo_download": {
+    "request": {
+      "source": "yahoo_chart",
+      "ticker": "IBM",
+      "period1": 1514764800,
+      "period2": 1791417600,
+      "interval": "1d",
+      "events": "div,splits"
+    },
+    "source": "Yahoo Finance public chart endpoint (requests)",
+    "retrieved_at_utc": "2026-10-08T08:11:01.306102+00:00",
+    "status": "ok",
+    "attempts": [
+      {
+        "attempt": 1,
+        "ok": true,
+        "seconds": 4.844
+      }
+    ],
+    "http_status": 200,
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/IBM?period1=1514764800&period2=1791417600&interval=1d&events=div%2Csplits",
+    "response_file": "20261008T081101306102Z.response.json",
+    "response_sha256": "de102fa74cfe73611897d3507bec1fd06b78afbfc0c5cce38ab9a52debdc349f",
+    "file": "20261008T081101306102Z.parquet",
+    "sha256": "c8fa8b63afe5987a6b29df8dd7862036ff0c4fabc74b4858add26144ae3cc420",
+    "rows": 2203,
+    "first_timestamp": "2018-01-02 09:30:00-05:00",
+    "last_timestamp": "2026-10-07 09:30:00-04:00",
+    "timezone": "America/New_York",
+    "columns": [
+      "High",
+      "Close",
+      "Volume",
+      "Open",
+      "Low",
+      "Adj Close",
+      "Dividends",
+      "Stock Splits"
+    ],
+    "vendor_metadata": {
+      "currency": "USD",
+      "symbol": "IBM",
+      "exchangeName": "NYQ",
+      "fullExchangeName": "NYSE",
+      "instrumentType": "EQUITY",
+      "firstTradeDate": -252322200,
+      "regularMarketTime": 1791403203,
+      "hasPrePostMarketData": true,
+      "gmtoffset": -14400,
+      "timezone": "EDT",
+      "exchangeTimezoneName": "America/New_York",
+      "regularMarketPrice": 220.51,
+      "regularMarketChangePercent": -0.352,
+      "fulldayPrice": 219.61,
+      "fulldayChange": -0.86,
+      "fulldayChangePercent": -0.39,
+      "fiftyTwoWeekHigh": 332.46,
+      "fiftyTwoWeekLow": 199.19,
+      "regularMarketDayHigh": 222.41,
+      "regularMarketDayLow": 218.79,
+      "regularMarketVolume": 3864661,
+      "longName": "International Business Machines Corporation",
+      "shortName": "International Business Machines",
+      "chartPreviousClose": 146.673,
+      "priceHint": 2,
+      "currentTradingPeriod": {
+        "pre": {
+          "timezone": "EDT",
+          "start": 1791446400,
+          "end": 1791466200,
+          "gmtoffset": -14400
+        },
+        "regular": {
+          "timezone": "EDT",
+          "start": 1791466200,
+          "end": 1791489600,
+          "gmtoffset": -14400
+        },
+        "post": {
+          "timezone": "EDT",
+          "start": 1791489600,
+          "end": 1791504000,
+          "gmtoffset": -14400
+        }
+      },
+      "dataGranularity": "1d",
+      "range": "",
+      "validRanges": [
+        "1d",
+        "5d",
+        "1mo",
+        "3mo",
+        "6mo",
+        "1y",
+        "2y",
+        "5y",
+        "10y",
+        "ytd",
+        "max"
+      ]
+    },
+    "cache_hit": true
+  },
+  "ibm_mismatch_details": [
+    {
+      "date": "2018-02-08",
+      "close_av": 147.59,
+      "close_yahoo": 141.09942626953125,
+      "adj_close_av": 98.37394581235628,
+      "adj_close_yahoo": 98.48548126220703,
+      "dividends_av": 1.5,
+      "dividends_yahoo": 1.434034,
+      "av_return": -0.030939226519336893,
+      "yahoo_return": -0.03124379691036694,
+      "absolute_return_difference": 0.0003045703910300457
+    },
+    {
+      "date": "2019-02-07",
+      "close_av": 133.19,
+      "close_yahoo": 127.33269500732422,
+      "adj_close_av": 92.96407944637886,
+      "adj_close_yahoo": 93.06263732910156,
+      "dividends_av": 1.57,
+      "dividends_yahoo": 1.500956,
+      "av_return": -0.011443661971830998,
+      "yahoo_return": -0.011577067762999715,
+      "absolute_return_difference": 0.00013340579116871698
+    },
+    {
+      "date": "2019-08-08",
+      "close_av": 140.1,
+      "close_yahoo": 133.93881225585938,
+      "adj_close_av": 100.10188901321796,
+      "adj_close_yahoo": 100.22073364257812,
+      "dividends_av": 1.62,
+      "dividends_yahoo": 1.548757,
+      "av_return": 0.01876213068794441,
+      "yahoo_return": 0.018983101386946588,
+      "absolute_return_difference": 0.00022097069900217647
+    },
+    {
+      "date": "2019-08-12",
+      "close_av": 134.12,
+      "close_yahoo": 127.79158782958984,
+      "adj_close_av": 95.82916027446676,
+      "adj_close_yahoo": 95.62103271484375,
+      "dividends_av": 0.0,
+      "dividends_yahoo": 0.0,
+      "av_return": -0.014765297877029626,
+      "yahoo_return": -0.01807074064315639,
+      "absolute_return_difference": 0.003305442766126765
+    },
+    {
+      "date": "2019-08-13",
+      "close_av": 135.79,
+      "close_yahoo": 129.818359375,
+      "adj_close_av": 97.0223805075294,
+      "adj_close_yahoo": 97.13756561279297,
+      "dividends_av": 0.0,
+      "dividends_yahoo": 0.0,
+      "av_return": 0.012451535937966218,
+      "yahoo_return": 0.01585982555189247,
+      "absolute_return_difference": 0.003408289613926252
+    },
+    {
+      "date": "2020-02-07",
+      "close_av": 153.41,
+      "close_yahoo": 146.66348266601562,
+      "adj_close_av": 112.07268509905742,
+      "adj_close_yahoo": 112.19773864746094,
+      "dividends_av": 1.62,
+      "dividends_yahoo": 1.548757,
+      "av_return": -0.011035978565960614,
+      "yahoo_return": -0.011150625088590438,
+      "absolute_return_difference": 0.00011464652262982433
+    },
+    {
+      "date": "2020-11-09",
+      "close_av": 115.53,
+      "close_yahoo": 110.44933319091797,
+      "adj_close_av": 87.87275837318299,
+      "adj_close_yahoo": 88.00604248046875,
+      "dividends_av": 1.63,
+      "dividends_yahoo": 1.558317,
+      "av_return": 0.027358821466152206,
+      "yahoo_return": 0.027755505781517087,
+      "absolute_return_difference": 0.00039668431536488136
+    },
+    {
+      "date": "2021-11-09",
+      "close_av": 120.85,
+      "close_yahoo": 120.8499984741211,
+      "adj_close_av": 101.02610826710996,
+      "adj_close_yahoo": 101.13813018798828,
+      "dividends_av": 1.64,
+      "dividends_yahoo": 1.64,
+      "av_return": -0.016460574915689974,
+      "yahoo_return": -0.016680353578514828,
+      "absolute_return_difference": 0.00021977866282485436
+    },
+    {
+      "date": "2022-02-10",
+      "close_av": 133.52,
+      "close_yahoo": 133.52000427246094,
+      "adj_close_av": 112.98873639538752,
+      "adj_close_yahoo": 113.08750915527344,
+      "dividends_av": 1.64,
+      "dividends_yahoo": 1.64,
+      "av_return": -0.019087016474345075,
+      "yahoo_return": -0.019317049933590624,
+      "absolute_return_difference": 0.00023003345924554885
+    },
+    {
+      "date": "2022-05-09",
+      "close_av": 134.44,
+      "close_yahoo": 134.44000244140625,
+      "adj_close_av": 115.16354955099078,
+      "adj_close_yahoo": 115.24800109863281,
+      "dividends_av": 1.65,
+      "dividends_yahoo": 1.65,
+      "av_return": -0.011476719692016912,
+      "yahoo_return": -0.011615934657112414,
+      "absolute_return_difference": 0.00013921496509550213
+    },
+    {
+      "date": "2022-08-09",
+      "close_av": 129.47,
+      "close_yahoo": 129.47000122070312,
+      "adj_close_av": 112.3195820970389,
+      "adj_close_yahoo": 112.3858642578125,
+      "dividends_av": 1.65,
+      "dividends_yahoo": 1.65,
+      "av_return": -0.011235955056179914,
+      "yahoo_return": -0.01137752348681731,
+      "absolute_return_difference": 0.00014156843063739544
+    },
+    {
+      "date": "2023-08-09",
+      "close_av": 142.49,
+      "close_yahoo": 142.49000549316406,
+      "adj_close_av": 129.87328654573585,
+      "adj_close_yahoo": 129.90548706054688,
+      "dividends_av": 1.66,
+      "dividends_yahoo": 1.66,
+      "av_return": -0.012062230141868135,
+      "yahoo_return": -0.01220087946579973,
+      "absolute_return_difference": 0.00013864932393159446
+    },
+    {
+      "date": "2024-02-08",
+      "close_av": 184.36,
+      "close_yahoo": 184.36000061035156,
+      "adj_close_av": 171.4685386586775,
+      "adj_close_yahoo": 171.53346252441406,
+      "dividends_av": 1.66,
+      "dividends_yahoo": 1.66,
+      "av_return": 0.01240883857624886,
+      "yahoo_return": 0.012521759556528789,
+      "absolute_return_difference": 0.00011292098027992914
+    },
+    {
+      "date": "2024-05-09",
+      "close_av": 166.27,
+      "close_yahoo": 166.27000427246094,
+      "adj_close_av": 156.19671502678614,
+      "adj_close_yahoo": 156.23776245117188,
+      "dividends_av": 1.67,
+      "dividends_yahoo": 1.67,
+      "av_return": -0.01153619776339021,
+      "yahoo_return": -0.011650503055243067,
+      "absolute_return_difference": 0.00011430529185285643
+    },
+    {
+      "date": "2025-08-08",
+      "close_av": 242.27,
+      "close_yahoo": 242.27000427246094,
+      "adj_close_av": 236.1427555667263,
+      "adj_close_yahoo": 236.13133239746094,
+      "dividends_av": 1.68,
+      "dividends_yahoo": 1.68,
+      "av_return": -0.024824112567956358,
+      "yahoo_return": -0.02499192119038529,
+      "absolute_return_difference": 0.00016780862242893324
+    }
+  ],
+  "ibm_comparison": {
+    "overlapping_dates": 2203,
+    "adj_return_difference_max": 0.003408289613926252,
+    "adj_return_difference_median": 8.497336578816572e-08,
+    "dates_difference_above_1bp": [
+      "2018-02-08",
+      "2019-02-07",
+      "2019-08-08",
+      "2019-08-12",
+      "2019-08-13",
+      "2020-02-07",
+      "2020-11-09",
+      "2021-11-09",
+      "2022-02-10",
+      "2022-05-09",
+      "2022-08-09",
+      "2023-08-09",
+      "2024-02-08",
+      "2024-05-09",
+      "2025-08-08"
+    ],
+    "close_level_ratio_min": 0.9999999431437794,
+    "close_level_ratio_max": 1.049521351740688,
+    "note": "Return comparison only; AV raw close and Yahoo split/distribution-adjusted close do not have identical semantics. No mixing of sources."
+  },
+  "repeatability": {
+    "old_retrieved_at": "2026-10-08T08:07:16.909380+00:00",
+    "new_retrieved_at": "2026-10-08T08:11:06.194838+00:00",
+    "matching_index": true,
+    "rows": 2203,
+    "max_absolute_column_difference": {
+      "Open": 0.0,
+      "High": 0.0,
+      "Low": 0.0,
+      "Close": 0.0,
+      "Adj Close": 7.62939453125e-05,
+      "Volume": 0.0,
+      "Dividends": 0.0,
+      "Stock Splits": 0.0
+    },
+    "exact_table_equal": false
+  },
+  "cache_check": {
+    "hit": true,
+    "rows": 2203,
+    "hash_verified_by_adapter": true
+  },
+  "symbol_identity": [
+    {
+      "ticker": "FB",
+      "status": "ok",
+      "name": "ProShares S&P 500 Dynamic Daily Buffer ETF",
+      "instrument_type": "ETF",
+      "rows": 323
+    },
+    {
+      "ticker": "TWTR",
+      "status": "failed",
+      "name": null,
+      "instrument_type": null,
+      "rows": 0
+    },
+    {
+      "ticker": "SIVBQ",
+      "status": "failed",
+      "name": null,
+      "instrument_type": null,
+      "rows": 0
+    }
+  ],
+  "official_split_spot_checks": [
+    {
+      "ticker": "AAPL",
+      "date": "2020-08-31",
+      "expected_ratio": 4,
+      "vendor_event": [
+        {
+          "ticker": "AAPL",
+          "date": "2020-08-31",
+          "ratio": 4.0,
+          "close_return": 0.03391214827961697,
+          "adjusted_return": 0.0339122865667123
+        }
+      ],
+      "passed": true,
+      "reference": "https://infomemo.theocc.com/infomemos?number=47370"
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2024-06-10",
+      "expected_ratio": 10,
+      "vendor_event": [
+        {
+          "ticker": "NVDA",
+          "date": "2024-06-10",
+          "ratio": 10.0,
+          "close_return": 0.0074614554265337585,
+          "adjusted_return": 0.007461528904563641
+        }
+      ],
+      "passed": true,
+      "reference": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000144/nvda-20240607.htm"
+    }
+  ]
+}

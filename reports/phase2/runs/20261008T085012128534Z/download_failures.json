@@ -1,0 +1,40 @@
+{
+  "survivorship_biased": true,
+  "stocks": [
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "AMCR",
+      "status": "download_failed_or_not_attempted",
+      "details": {
+        "survivorship_biased": true,
+        "universe_mode": "prototype_current_sp500",
+        "security_identity_verified": false,
+        "ticker": "AMCR",
+        "start": "2010-01-01",
+        "end": "2026-10-08",
+        "status": "failed",
+        "attempts": [
+          {
+            "survivorship_biased": true,
+            "universe_mode": "prototype_current_sp500",
+            "security_identity_verified": false,
+            "ticker": "AMCR",
+            "start": "2010-01-01",
+            "end": "2026-10-08",
+            "retrieved_at_utc": "2026-10-08T08:48:59.087956+00:00",
+            "attempt": 1,
+            "status": "failed",
+            "http_status": 200,
+            "response_path": "data\\raw\\full\\AMCR\\responses\\20261008T084859087956Z.response.json",
+            "response_sha256": "43bd1c1ed1da956e1e9c9f46eb4b012329b3ccdb5dd76a98653860fc4492e96f",
+            "error": "ValueError: Ambiguous or unmatched dividends event on 2017-09-04 00:00:00"
+          }
+        ],
+        "rate_limited": false,
+        "cache_hit": false
+      }
+    }
+  ]
+}

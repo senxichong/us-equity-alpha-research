@@ -1,0 +1,53 @@
+data_source: yahoo_chart
+start_date: '2018-01-01'
+# Exclusive end. Freeze to the client date; never include an incomplete US session.
+end_date: '2026-10-08'
+ideal_start_date: '2010-01-01'
+universe_mode: prototype_current_sp500
+universe_label: SURVIVORSHIP-BIASED PROTOTYPE UNIVERSE
+# Deliberate stress sample, not an index selection or liquidity screen.
+tickers: [AAPL, MSFT, AMZN, GOOGL, META, JPM, XOM, JNJ, NVDA, WMT, TSLA, GME, GE, O]
+diagnostic_tickers: [FB, TWTR, SIVBQ]
+cache_directory: data/raw/sample
+processed_directory: data/processed
+adjustment_method: vendor_adj_close_ratio
+prediction_horizon: 5
+random_seed: 42
+calendar: XNYS
+exchange_timezone: America/New_York
+request_timeout_seconds: 25
+max_attempts: 2
+request_pause_seconds: 1.5
+extreme_return_threshold: 0.4
+ohlc_relative_tolerance: 0.000001
+dividend_factor_tolerance: 0.0001
+pit_verified: false
+pit_membership_path: null
+
+# Phase 2 is explicitly authorized as a biased prototype dataset.
+phase2:
+  start_date: '2010-01-01'
+  end_date: '2026-10-08'
+  survivorship_biased: true
+  raw_directory: data/raw/full
+  processed_directory: data/processed/phase2
+  roster_path: data/raw/probes/sp500_current.parquet
+  target_stocks: 450
+  minimum_stocks: 300
+  liquidity_window_sessions: 60
+  minimum_median_daily_dollar_volume: 10000000
+  minimum_history_sessions: 252
+  max_active_missing_rate: 0.005
+  max_trailing_missing_sessions: 2
+  first_trade_grace_days: 10
+  quarantine_extreme_changes: true
+  quarantine_complex_actions: true
+  known_unresolved_tickers: [IBM]
+  overlap_calendar_days: 45
+  full_refresh_after_days: 30
+  revision_relative_tolerance: 0.000005
+  max_attempts: 3
+  request_pause_seconds: 1.5
+  retry_base_seconds: 3
+  max_rate_limit_wait_seconds: 45
+  request_timeout_seconds: 30

@@ -1,0 +1,1542 @@
+{
+  "survivorship_biased": true,
+  "stocks": [
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "AMCR",
+      "status": "download_failed_or_not_attempted",
+      "details": {
+        "survivorship_biased": true,
+        "universe_mode": "prototype_current_sp500",
+        "security_identity_verified": false,
+        "ticker": "AMCR",
+        "start": "2010-01-01",
+        "end": "2026-10-08",
+        "status": "failed",
+        "attempts": [
+          {
+            "survivorship_biased": true,
+            "universe_mode": "prototype_current_sp500",
+            "security_identity_verified": false,
+            "ticker": "AMCR",
+            "start": "2010-01-01",
+            "end": "2026-10-08",
+            "retrieved_at_utc": "2026-10-08T08:28:04.954162+00:00",
+            "attempt": 1,
+            "status": "failed",
+            "http_status": 200,
+            "response_path": "data\\raw\\full\\AMCR\\responses\\20261008T082804954162Z.response.json",
+            "response_sha256": "b2fbdd5f98b70d605cebe5ab77195468ded50758ad988df15b463e93677436ac",
+            "error": "ValueError: Ambiguous or unmatched dividends event on 2017-09-04 00:00:00"
+          }
+        ],
+        "rate_limited": false,
+        "cache_hit": false
+      }
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "BBY",
+      "status": "download_failed_or_not_attempted",
+      "details": {
+        "survivorship_biased": true,
+        "universe_mode": "prototype_current_sp500",
+        "security_identity_verified": false,
+        "ticker": "BBY",
+        "start": "2010-01-01",
+        "end": "2026-10-08",
+        "status": "failed",
+        "attempts": [
+          {
+            "survivorship_biased": true,
+            "universe_mode": "prototype_current_sp500",
+            "security_identity_verified": false,
+            "ticker": "BBY",
+            "start": "2010-01-01",
+            "end": "2026-10-08",
+            "retrieved_at_utc": "2026-10-08T08:29:13.490911+00:00",
+            "attempt": 1,
+            "status": "failed",
+            "http_status": 200,
+            "response_path": "data\\raw\\full\\BBY\\responses\\20261008T082913490911Z.response.json",
+            "response_sha256": "f56978fe57a4e91ef6a5f01adfcc9f89a9feaebb902fbbb3456a57d505b0f4af",
+            "error": "ValueError: Ambiguous or unmatched dividends event on 2009-12-31 00:00:00"
+          }
+        ],
+        "rate_limited": false,
+        "cache_hit": false
+      }
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "ERIE",
+      "status": "download_failed_or_not_attempted",
+      "details": {
+        "survivorship_biased": true,
+        "universe_mode": "prototype_current_sp500",
+        "security_identity_verified": false,
+        "ticker": "ERIE",
+        "start": "2010-01-01",
+        "end": "2026-10-08",
+        "status": "failed",
+        "attempts": [
+          {
+            "survivorship_biased": true,
+            "universe_mode": "prototype_current_sp500",
+            "security_identity_verified": false,
+            "ticker": "ERIE",
+            "start": "2010-01-01",
+            "end": "2026-10-08",
+            "retrieved_at_utc": "2026-10-08T08:34:16.950127+00:00",
+            "attempt": 1,
+            "status": "failed",
+            "http_status": 200,
+            "response_path": "data\\raw\\full\\ERIE\\responses\\20261008T083416950127Z.response.json",
+            "response_sha256": "a33fcbdaf1b3cdd2ec48aba3125c4a12cb17f6de40231773ae79870ee3c86c65",
+            "error": "ValueError: Ambiguous or unmatched dividends event on 2009-12-31 00:00:00"
+          }
+        ],
+        "rate_limited": false,
+        "cache_hit": false
+      }
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NCLH",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NDAQ",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NDSN",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NEE",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NEM",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NFLX",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NI",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NKE",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NOC",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NOW",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NRG",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NSC",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NTAP",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NTRS",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NUE",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NVDA",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NVR",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NWS",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NWSA",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "NXPI",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "O",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "ODFL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "OKE",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "OMC",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "ON",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "ORCL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "ORLY",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "OTIS",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "OXY",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "P",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PANW",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PAYX",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PCAR",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PCG",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PEG",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PEP",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PFE",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PFG",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PG",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PGR",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PH",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PHM",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PKG",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PLD",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PLTR",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PM",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PNC",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PNR",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PNW",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PODD",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PPG",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PPL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PRU",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PSA",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PSX",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PTC",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PWR",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "PYPL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "Q",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "QCOM",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "RCL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "RDDT",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "REG",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "REGN",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "RF",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "RJF",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "RL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "RMD",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "ROK",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "ROL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "ROP",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "ROST",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "RSG",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "RTX",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "RVTY",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SBAC",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SBUX",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SCHW",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SHW",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SJM",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SKYD",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SLB",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SMCI",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SNA",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SNDK",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SNPS",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SO",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SOLV",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SPG",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SPGI",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SRE",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "STE",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "STLD",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "STT",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "STX",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "STZ",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SW",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SWK",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SWKS",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SYF",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SYK",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "SYY",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "T",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TDG",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TDY",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TECH",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TEL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TER",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TFC",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TGT",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TJX",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TKO",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TMO",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TMUS",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TPL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TPR",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TRGP",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TRMB",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TROW",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TRV",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TSCO",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TSLA",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TSN",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TT",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TTWO",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TWLO",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TXN",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TXT",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "TYL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "UAL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "UBER",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "UDR",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "UHS",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "ULTA",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "UNH",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "UNP",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "UPS",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "URI",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "USB",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "V",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VEEV",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VICI",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VLO",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VLTO",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VMC",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VMRK",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VRSK",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VRSN",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VRT",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VRTX",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VST",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VTR",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VTRS",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VYLR",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "VZ",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WAB",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WAT",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WDAY",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WDC",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WEC",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WELL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WFC",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WM",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WMB",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WMT",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WRB",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WSM",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WST",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WTW",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WY",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "WYNN",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "XEL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "XOM",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "XYL",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "XYZ",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "YUM",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "ZBH",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "ZBRA",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    },
+    {
+      "survivorship_biased": true,
+      "universe_mode": "prototype_current_sp500",
+      "security_identity_verified": false,
+      "ticker": "ZTS",
+      "status": "download_failed_or_not_attempted",
+      "details": {}
+    }
+  ]
+}

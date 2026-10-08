@@ -1,0 +1,2989 @@
+{
+  "split_events": [
+    {
+      "ticker": "AAPL",
+      "date": "2020-08-31",
+      "ratio": 4.0,
+      "close_return": 0.03391214827961697,
+      "adjusted_return": 0.0339122865667123
+    },
+    {
+      "ticker": "AMZN",
+      "date": "2022-06-06",
+      "ratio": 20.0,
+      "close_return": 0.01994280728922404,
+      "adjusted_return": 0.01994280728922404
+    },
+    {
+      "ticker": "GE",
+      "date": "2019-02-26",
+      "ratio": 1.04,
+      "close_return": 0.024621098985820877,
+      "adjusted_return": 0.024621107403788756
+    },
+    {
+      "ticker": "GE",
+      "date": "2021-08-02",
+      "ratio": 0.125,
+      "close_return": -0.02895756409912409,
+      "adjusted_return": -0.028957523222757242
+    },
+    {
+      "ticker": "GE",
+      "date": "2023-01-04",
+      "ratio": 1.281,
+      "close_return": 0.058204279936263204,
+      "adjusted_return": 0.058204412156905194
+    },
+    {
+      "ticker": "GE",
+      "date": "2024-04-02",
+      "ratio": 1.253,
+      "close_return": -0.02488077173087977,
+      "adjusted_return": -0.02488075804101797
+    },
+    {
+      "ticker": "GME",
+      "date": "2022-07-22",
+      "ratio": 4.0,
+      "close_return": -0.06743992976602264,
+      "adjusted_return": -0.06743992976602264
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2022-07-18",
+      "ratio": 20.0,
+      "close_return": -0.024580059928059006,
+      "adjusted_return": -0.024580024214484908
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2021-07-20",
+      "ratio": 4.0,
+      "close_return": -0.008932563260727888,
+      "adjusted_return": -0.008932575172993507
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2024-06-10",
+      "ratio": 10.0,
+      "close_return": 0.0074614554265337585,
+      "adjusted_return": 0.007461528904563641
+    },
+    {
+      "ticker": "O",
+      "date": "2021-11-15",
+      "ratio": 1.032,
+      "close_return": 0.009299950295198034,
+      "adjusted_return": 0.00930014294785897
+    },
+    {
+      "ticker": "TSLA",
+      "date": "2020-08-31",
+      "ratio": 5.0,
+      "close_return": 0.1256890549105465,
+      "adjusted_return": 0.1256890549105465
+    },
+    {
+      "ticker": "TSLA",
+      "date": "2022-08-25",
+      "ratio": 3.0,
+      "close_return": -0.003455684406709514,
+      "adjusted_return": -0.003455684406709514
+    },
+    {
+      "ticker": "WMT",
+      "date": "2024-02-26",
+      "ratio": 3.0,
+      "close_return": 0.018455194940350417,
+      "adjusted_return": 0.018455280978279864
+    }
+  ],
+  "dividend_events": [
+    {
+      "ticker": "AAPL",
+      "date": "2018-02-09",
+      "dividend": 0.1575,
+      "factor_residual": -1.7799544449470517e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2018-05-11",
+      "dividend": 0.1825,
+      "factor_residual": 3.0218542701465623e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2018-08-10",
+      "dividend": 0.1825,
+      "factor_residual": -2.327334166496442e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2018-11-08",
+      "dividend": 0.1825,
+      "factor_residual": -7.522493705724997e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2019-02-08",
+      "dividend": 0.1825,
+      "factor_residual": -4.417607727402739e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2019-05-10",
+      "dividend": 0.1925,
+      "factor_residual": 7.55292839382804e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2019-08-09",
+      "dividend": 0.1925,
+      "factor_residual": 1.9204846068987536e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2019-11-07",
+      "dividend": 0.1925,
+      "factor_residual": -1.4585879726247697e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2020-02-07",
+      "dividend": 0.1925,
+      "factor_residual": 4.49444854000447e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2020-05-08",
+      "dividend": 0.205,
+      "factor_residual": -1.8149567304615033e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2020-08-07",
+      "dividend": 0.205,
+      "factor_residual": -1.054094626029567e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2020-11-06",
+      "dividend": 0.205,
+      "factor_residual": -4.896833960543745e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2021-02-05",
+      "dividend": 0.205,
+      "factor_residual": -1.706926237021733e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2021-05-07",
+      "dividend": 0.22,
+      "factor_residual": -2.7439060157341544e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2021-08-06",
+      "dividend": 0.22,
+      "factor_residual": 1.8879282603911918e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2021-11-05",
+      "dividend": 0.22,
+      "factor_residual": 3.8311143479852205e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2022-02-04",
+      "dividend": 0.22,
+      "factor_residual": -1.5438705425196986e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2022-05-06",
+      "dividend": 0.23,
+      "factor_residual": 9.46580054339563e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2022-08-05",
+      "dividend": 0.23,
+      "factor_residual": -8.2377731858152e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2022-11-04",
+      "dividend": 0.23,
+      "factor_residual": -2.7117787337882504e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2023-02-10",
+      "dividend": 0.23,
+      "factor_residual": -5.894032839570684e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2023-05-12",
+      "dividend": 0.24,
+      "factor_residual": -2.8317073907935253e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2023-08-11",
+      "dividend": 0.24,
+      "factor_residual": 1.0196085986624581e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2023-11-10",
+      "dividend": 0.24,
+      "factor_residual": 5.487368870404907e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2024-02-09",
+      "dividend": 0.24,
+      "factor_residual": 3.6229249378294526e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2024-05-10",
+      "dividend": 0.25,
+      "factor_residual": -8.589232880495956e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2024-08-12",
+      "dividend": 0.25,
+      "factor_residual": -8.904589665625906e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2024-11-08",
+      "dividend": 0.25,
+      "factor_residual": 1.00147264814332e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2025-02-10",
+      "dividend": 0.25,
+      "factor_residual": 5.622333298926918e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2025-05-12",
+      "dividend": 0.26,
+      "factor_residual": -1.3862952674692508e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2025-08-11",
+      "dividend": 0.26,
+      "factor_residual": 3.2315149445238944e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2025-11-10",
+      "dividend": 0.26,
+      "factor_residual": 1.317988617133281e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2026-02-09",
+      "dividend": 0.26,
+      "factor_residual": -2.1557878260303198e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2026-05-11",
+      "dividend": 0.27,
+      "factor_residual": -2.0035797021478174e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2026-08-10",
+      "dividend": 0.27,
+      "factor_residual": 3.506312384882193e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2018-02-23",
+      "dividend": 0.575092,
+      "factor_residual": 2.0867195649199033e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2018-06-15",
+      "dividend": 0.575092,
+      "factor_residual": -1.7091587778406137e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2018-09-14",
+      "dividend": 0.575092,
+      "factor_residual": 1.3777861918029544e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2018-12-19",
+      "dividend": 0.047924,
+      "factor_residual": -2.4717064617263418e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2019-03-08",
+      "dividend": 0.049841,
+      "factor_residual": 7.636796306442761e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2019-06-28",
+      "dividend": 0.049841,
+      "factor_residual": 5.8512732770132914e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2019-09-13",
+      "dividend": 0.049841,
+      "factor_residual": 7.389862222151322e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2019-12-20",
+      "dividend": 0.049841,
+      "factor_residual": -3.333898568325111e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2020-03-06",
+      "dividend": 0.049841,
+      "factor_residual": -1.5303673417399466e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2020-06-26",
+      "dividend": 0.049841,
+      "factor_residual": -3.018363781137623e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2020-09-25",
+      "dividend": 0.049841,
+      "factor_residual": 2.8121829820371147e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2020-12-18",
+      "dividend": 0.049841,
+      "factor_residual": 1.6573395766883436e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2021-03-05",
+      "dividend": 0.049841,
+      "factor_residual": 4.57503946060811e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2021-06-25",
+      "dividend": 0.049841,
+      "factor_residual": -5.501558331122425e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2021-09-24",
+      "dividend": 0.049841,
+      "factor_residual": -6.834927224197429e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2021-12-20",
+      "dividend": 0.049841,
+      "factor_residual": 1.6150612369703055e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2022-03-07",
+      "dividend": 0.049841,
+      "factor_residual": 1.801306537263514e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2022-06-27",
+      "dividend": 0.049841,
+      "factor_residual": -8.088073599754608e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2022-09-26",
+      "dividend": 0.049841,
+      "factor_residual": -5.893188692596141e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2022-12-14",
+      "dividend": 0.049841,
+      "factor_residual": 4.3728592524772125e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2023-03-06",
+      "dividend": 0.063847,
+      "factor_residual": 2.4338898585440916e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2023-07-10",
+      "dividend": 0.063847,
+      "factor_residual": -3.021726302510075e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2023-09-25",
+      "dividend": 0.063847,
+      "factor_residual": -2.0160145142167352e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2023-12-27",
+      "dividend": 0.063847,
+      "factor_residual": 5.06752793061338e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2024-04-12",
+      "dividend": 0.28,
+      "factor_residual": 4.821093191331727e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2024-07-11",
+      "dividend": 0.28,
+      "factor_residual": -8.062199796654568e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2024-09-26",
+      "dividend": 0.28,
+      "factor_residual": 9.174123571931148e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2024-12-27",
+      "dividend": 0.28,
+      "factor_residual": 9.680990298299719e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2025-03-10",
+      "dividend": 0.36,
+      "factor_residual": 2.5610375042894873e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2025-07-07",
+      "dividend": 0.36,
+      "factor_residual": -1.3828275524652156e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2025-09-29",
+      "dividend": 0.36,
+      "factor_residual": -1.0191377419754843e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2025-12-29",
+      "dividend": 0.36,
+      "factor_residual": 1.311233899237152e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2026-03-09",
+      "dividend": 0.47,
+      "factor_residual": 1.1403685662436658e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2026-07-06",
+      "dividend": 0.47,
+      "factor_residual": -1.0975551023584273e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GE",
+      "date": "2026-10-05",
+      "dividend": 0.47,
+      "factor_residual": -3.943348980683936e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GME",
+      "date": "2018-03-02",
+      "dividend": 0.095,
+      "factor_residual": -1.188985080391447e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GME",
+      "date": "2018-06-11",
+      "dividend": 0.095,
+      "factor_residual": 2.8522196271474343e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GME",
+      "date": "2018-09-17",
+      "dividend": 0.095,
+      "factor_residual": -1.3486041505750279e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GME",
+      "date": "2018-12-10",
+      "dividend": 0.095,
+      "factor_residual": -1.043810398115852e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GME",
+      "date": "2019-03-14",
+      "dividend": 0.095,
+      "factor_residual": -9.882635376712301e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2024-06-10",
+      "dividend": 0.2,
+      "factor_residual": 6.865653368048896e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2024-09-09",
+      "dividend": 0.2,
+      "factor_residual": 1.7916417383023742e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2024-12-09",
+      "dividend": 0.2,
+      "factor_residual": 1.1667476740306881e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2025-03-10",
+      "dividend": 0.2,
+      "factor_residual": -3.594449959898327e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2025-06-09",
+      "dividend": 0.21,
+      "factor_residual": -7.489480202682586e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2025-09-08",
+      "dividend": 0.21,
+      "factor_residual": 6.891352022364572e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2025-12-08",
+      "dividend": 0.21,
+      "factor_residual": 2.409335775332977e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2026-03-09",
+      "dividend": 0.21,
+      "factor_residual": 1.4901136324851905e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2026-06-08",
+      "dividend": 0.22,
+      "factor_residual": 1.663291659959043e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2026-09-04",
+      "dividend": 0.22,
+      "factor_residual": -3.564304740244495e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2018-02-26",
+      "dividend": 0.84,
+      "factor_residual": -2.396806811910679e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2018-05-25",
+      "dividend": 0.9,
+      "factor_residual": -1.4897899369703538e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2018-08-27",
+      "dividend": 0.9,
+      "factor_residual": -3.161085226910387e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2018-11-26",
+      "dividend": 0.9,
+      "factor_residual": -2.464587289807696e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2019-02-25",
+      "dividend": 0.9,
+      "factor_residual": -1.3103434393091362e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2019-05-24",
+      "dividend": 0.95,
+      "factor_residual": -4.153160904074582e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2019-08-26",
+      "dividend": 0.95,
+      "factor_residual": 6.19948877789156e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2019-11-25",
+      "dividend": 0.95,
+      "factor_residual": 4.4642773810998904e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2020-02-24",
+      "dividend": 0.95,
+      "factor_residual": -5.851369555553987e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2020-05-22",
+      "dividend": 1.01,
+      "factor_residual": -4.458178559652026e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2020-08-24",
+      "dividend": 1.01,
+      "factor_residual": 2.1192205656994645e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2020-11-23",
+      "dividend": 1.01,
+      "factor_residual": -1.2340064903249015e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2021-02-22",
+      "dividend": 1.01,
+      "factor_residual": 2.691366018936492e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2021-05-24",
+      "dividend": 1.06,
+      "factor_residual": -1.976370977985198e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2021-08-23",
+      "dividend": 1.06,
+      "factor_residual": 6.103161664938739e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2021-11-22",
+      "dividend": 1.06,
+      "factor_residual": -1.1144144829167146e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2022-02-18",
+      "dividend": 1.06,
+      "factor_residual": -1.2073358834907566e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2022-05-23",
+      "dividend": 1.13,
+      "factor_residual": 2.495210182917873e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2022-08-22",
+      "dividend": 1.13,
+      "factor_residual": 1.603662758142832e-10,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2022-11-21",
+      "dividend": 1.13,
+      "factor_residual": -1.4960330507740593e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2023-02-17",
+      "dividend": 1.13,
+      "factor_residual": -9.55945630431998e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2023-05-22",
+      "dividend": 1.19,
+      "factor_residual": -1.2095989954108433e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2023-08-25",
+      "dividend": 1.19,
+      "factor_residual": -1.773361917312144e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2023-11-20",
+      "dividend": 1.19,
+      "factor_residual": 3.378202373394146e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2024-02-16",
+      "dividend": 1.19,
+      "factor_residual": -1.8985038574559354e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2024-05-20",
+      "dividend": 1.24,
+      "factor_residual": 1.930453574772173e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2024-08-27",
+      "dividend": 1.24,
+      "factor_residual": 2.148019521142075e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2024-11-26",
+      "dividend": 1.24,
+      "factor_residual": 7.040832283866649e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2025-02-18",
+      "dividend": 1.24,
+      "factor_residual": 1.458650161767494e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2025-05-27",
+      "dividend": 1.3,
+      "factor_residual": -1.526885045066706e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2025-08-26",
+      "dividend": 1.3,
+      "factor_residual": -6.181568190655184e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2025-11-25",
+      "dividend": 1.3,
+      "factor_residual": 7.184776495972045e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2026-02-24",
+      "dividend": 1.3,
+      "factor_residual": -4.385668628259509e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2026-05-26",
+      "dividend": 1.34,
+      "factor_residual": 1.572651187053964e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JNJ",
+      "date": "2026-08-25",
+      "dividend": 1.34,
+      "factor_residual": 1.3412354449293673e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2018-01-04",
+      "dividend": 0.56,
+      "factor_residual": 4.3219827716711734e-10,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2018-04-05",
+      "dividend": 0.56,
+      "factor_residual": 1.0924296878211948e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2018-07-05",
+      "dividend": 0.56,
+      "factor_residual": -6.927617757224169e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2018-10-04",
+      "dividend": 0.8,
+      "factor_residual": -1.1868653393420914e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2019-01-03",
+      "dividend": 0.8,
+      "factor_residual": 4.8336509572699526e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2019-04-04",
+      "dividend": 0.8,
+      "factor_residual": 1.2828480888682492e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2019-07-03",
+      "dividend": 0.8,
+      "factor_residual": 3.17167443419919e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2019-10-03",
+      "dividend": 0.9,
+      "factor_residual": 6.510687022842632e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2020-01-03",
+      "dividend": 0.9,
+      "factor_residual": 1.2858760611855757e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2020-04-03",
+      "dividend": 0.9,
+      "factor_residual": 7.670382751179261e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2020-07-02",
+      "dividend": 0.9,
+      "factor_residual": -7.489175024577577e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2020-10-05",
+      "dividend": 0.9,
+      "factor_residual": 6.996939694303705e-10,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2021-01-05",
+      "dividend": 0.9,
+      "factor_residual": 3.0361803293743606e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2021-04-05",
+      "dividend": 0.9,
+      "factor_residual": -1.6353359311160887e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2021-07-02",
+      "dividend": 0.9,
+      "factor_residual": -5.7809907305639285e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2021-10-05",
+      "dividend": 1.0,
+      "factor_residual": -3.0216189772502844e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2022-01-05",
+      "dividend": 1.0,
+      "factor_residual": 2.9780863886053055e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2022-04-05",
+      "dividend": 1.0,
+      "factor_residual": -9.396986855314537e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2022-07-05",
+      "dividend": 1.0,
+      "factor_residual": 1.8006914759283177e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2022-10-05",
+      "dividend": 1.0,
+      "factor_residual": -3.077078214452911e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2023-01-05",
+      "dividend": 1.0,
+      "factor_residual": -1.7798852391948117e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2023-04-05",
+      "dividend": 1.0,
+      "factor_residual": -3.34479509644936e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2023-07-05",
+      "dividend": 1.0,
+      "factor_residual": 5.5414836275247126e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2023-10-05",
+      "dividend": 1.05,
+      "factor_residual": -1.129190766446797e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2024-01-04",
+      "dividend": 1.05,
+      "factor_residual": -1.5241312523173178e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2024-04-04",
+      "dividend": 1.15,
+      "factor_residual": -1.2341302757512551e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2024-07-05",
+      "dividend": 1.15,
+      "factor_residual": -7.760845510684788e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2024-10-04",
+      "dividend": 1.25,
+      "factor_residual": 8.373128201899505e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2025-01-06",
+      "dividend": 1.25,
+      "factor_residual": -1.0772227543309754e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2025-04-04",
+      "dividend": 1.4,
+      "factor_residual": 6.013141518046439e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2025-07-03",
+      "dividend": 1.4,
+      "factor_residual": -3.059405395688941e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2025-10-06",
+      "dividend": 1.5,
+      "factor_residual": 5.408034242648796e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2026-01-06",
+      "dividend": 1.5,
+      "factor_residual": 4.5569108375609346e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2026-04-06",
+      "dividend": 1.5,
+      "factor_residual": 1.0778547276935058e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2026-07-06",
+      "dividend": 1.5,
+      "factor_residual": 3.029071948823514e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "JPM",
+      "date": "2026-10-06",
+      "dividend": 1.65,
+      "factor_residual": 1.836306495750506e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "META",
+      "date": "2024-02-21",
+      "dividend": 0.5,
+      "factor_residual": 7.139879421025341e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "META",
+      "date": "2024-06-14",
+      "dividend": 0.5,
+      "factor_residual": 1.3815675670159067e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "META",
+      "date": "2024-09-16",
+      "dividend": 0.5,
+      "factor_residual": 9.677058809831607e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "META",
+      "date": "2024-12-16",
+      "dividend": 0.5,
+      "factor_residual": -1.1835164015483457e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "META",
+      "date": "2025-03-14",
+      "dividend": 0.525,
+      "factor_residual": -8.095098702476378e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "META",
+      "date": "2025-06-16",
+      "dividend": 0.525,
+      "factor_residual": 4.281934273819843e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "META",
+      "date": "2025-09-22",
+      "dividend": 0.525,
+      "factor_residual": -2.036795898607835e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "META",
+      "date": "2025-12-15",
+      "dividend": 0.525,
+      "factor_residual": -4.5504962908893276e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "META",
+      "date": "2026-03-16",
+      "dividend": 0.525,
+      "factor_residual": -9.392712674305415e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "META",
+      "date": "2026-06-15",
+      "dividend": 0.525,
+      "factor_residual": -6.182533851539773e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "META",
+      "date": "2026-09-21",
+      "dividend": 0.525,
+      "factor_residual": 5.500727562335328e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2018-02-14",
+      "dividend": 0.42,
+      "factor_residual": -2.996964965085169e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2018-05-16",
+      "dividend": 0.42,
+      "factor_residual": 3.285330576474621e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2018-08-15",
+      "dividend": 0.42,
+      "factor_residual": -7.832035797683545e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2018-11-14",
+      "dividend": 0.46,
+      "factor_residual": 2.0876956496884702e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2019-02-20",
+      "dividend": 0.46,
+      "factor_residual": 1.134708749184199e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2019-05-15",
+      "dividend": 0.46,
+      "factor_residual": 1.0994367904970659e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2019-08-14",
+      "dividend": 0.46,
+      "factor_residual": -3.337982142914697e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2019-11-20",
+      "dividend": 0.51,
+      "factor_residual": 2.3373056301512207e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2020-02-19",
+      "dividend": 0.51,
+      "factor_residual": -6.787374140504454e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2020-05-20",
+      "dividend": 0.51,
+      "factor_residual": 2.7398733037919953e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2020-08-19",
+      "dividend": 0.51,
+      "factor_residual": -2.08103930754433e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2020-11-18",
+      "dividend": 0.56,
+      "factor_residual": -1.0319209320375222e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2021-02-17",
+      "dividend": 0.56,
+      "factor_residual": 5.1968338077301723e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2021-05-19",
+      "dividend": 0.56,
+      "factor_residual": 1.6252423729046228e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2021-08-18",
+      "dividend": 0.56,
+      "factor_residual": 2.610651672618758e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2021-11-17",
+      "dividend": 0.62,
+      "factor_residual": -1.031932828077231e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2022-02-16",
+      "dividend": 0.62,
+      "factor_residual": 1.0949143369742842e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2022-05-18",
+      "dividend": 0.62,
+      "factor_residual": 1.0041297993090836e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2022-08-17",
+      "dividend": 0.62,
+      "factor_residual": 5.115953682910401e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2022-11-16",
+      "dividend": 0.68,
+      "factor_residual": 3.989713759366964e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2023-02-15",
+      "dividend": 0.68,
+      "factor_residual": -1.6312690254149942e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2023-05-17",
+      "dividend": 0.68,
+      "factor_residual": 1.6011227066403677e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2023-08-16",
+      "dividend": 0.68,
+      "factor_residual": 1.1332695670773774e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2023-11-15",
+      "dividend": 0.75,
+      "factor_residual": -3.1612512740863963e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2024-02-14",
+      "dividend": 0.75,
+      "factor_residual": 5.038987715977328e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2024-05-15",
+      "dividend": 0.75,
+      "factor_residual": -4.5786775149103676e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2024-08-15",
+      "dividend": 0.75,
+      "factor_residual": 6.171935662546701e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2024-11-21",
+      "dividend": 0.83,
+      "factor_residual": 7.576649951879233e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2025-02-20",
+      "dividend": 0.83,
+      "factor_residual": -8.977504972751404e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2025-05-15",
+      "dividend": 0.83,
+      "factor_residual": -4.9162276583025744e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2025-08-21",
+      "dividend": 0.83,
+      "factor_residual": 1.5485265625336808e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2025-11-20",
+      "dividend": 0.91,
+      "factor_residual": 2.4762971673197853e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2026-02-19",
+      "dividend": 0.91,
+      "factor_residual": 2.303453860985627e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2026-05-21",
+      "dividend": 0.91,
+      "factor_residual": 1.0591967747330955e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2026-08-20",
+      "dividend": 0.91,
+      "factor_residual": -7.561498538422029e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2018-02-22",
+      "dividend": 0.00375,
+      "factor_residual": 1.7523950501807661e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2018-05-23",
+      "dividend": 0.00375,
+      "factor_residual": -8.875335644198401e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2018-08-29",
+      "dividend": 0.00375,
+      "factor_residual": -6.23985604297772e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2018-11-29",
+      "dividend": 0.004,
+      "factor_residual": 5.688484439048125e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2019-02-28",
+      "dividend": 0.004,
+      "factor_residual": 2.515268182623487e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2019-05-30",
+      "dividend": 0.004,
+      "factor_residual": -5.35908889487402e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2019-08-28",
+      "dividend": 0.004,
+      "factor_residual": 3.3774313645817955e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2019-11-27",
+      "dividend": 0.004,
+      "factor_residual": -3.5286626620667505e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2020-02-27",
+      "dividend": 0.004,
+      "factor_residual": 1.389272229479488e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2020-06-04",
+      "dividend": 0.004,
+      "factor_residual": 1.4198217390681833e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2020-09-01",
+      "dividend": 0.004,
+      "factor_residual": -1.3342583982112188e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2020-12-03",
+      "dividend": 0.004,
+      "factor_residual": 6.713015587855864e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2021-03-09",
+      "dividend": 0.004,
+      "factor_residual": 9.679508050641772e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2021-06-09",
+      "dividend": 0.004,
+      "factor_residual": -2.513971048001551e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2021-08-31",
+      "dividend": 0.004,
+      "factor_residual": -2.0459428529129298e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2021-12-01",
+      "dividend": 0.004,
+      "factor_residual": -1.6238362143816687e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2022-03-02",
+      "dividend": 0.004,
+      "factor_residual": -8.903857995345987e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2022-06-08",
+      "dividend": 0.004,
+      "factor_residual": -1.0304138531314067e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2022-09-07",
+      "dividend": 0.004,
+      "factor_residual": -1.6442541350691897e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2022-11-30",
+      "dividend": 0.004,
+      "factor_residual": -1.2268539628657038e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2023-03-07",
+      "dividend": 0.004,
+      "factor_residual": 2.9699973502772536e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2023-06-07",
+      "dividend": 0.004,
+      "factor_residual": -1.9576948973032415e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2023-09-06",
+      "dividend": 0.004,
+      "factor_residual": 1.7426396059505578e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2023-12-05",
+      "dividend": 0.004,
+      "factor_residual": 4.042996493147655e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2024-03-05",
+      "dividend": 0.004,
+      "factor_residual": -3.692913456143643e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2024-06-11",
+      "dividend": 0.01,
+      "factor_residual": -2.4774755580381225e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2024-09-12",
+      "dividend": 0.01,
+      "factor_residual": 1.9216372937336246e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2024-12-05",
+      "dividend": 0.01,
+      "factor_residual": -1.7692439713279384e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2025-03-12",
+      "dividend": 0.01,
+      "factor_residual": -2.0911754516905745e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2025-06-11",
+      "dividend": 0.01,
+      "factor_residual": -9.00858632135737e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2025-09-11",
+      "dividend": 0.01,
+      "factor_residual": 1.6014279990983482e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2025-12-04",
+      "dividend": 0.01,
+      "factor_residual": 1.6705731542554503e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-03-11",
+      "dividend": 0.01,
+      "factor_residual": -3.750215593623096e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-06-04",
+      "dividend": 0.25,
+      "factor_residual": 1.9688825791952524e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-09-10",
+      "dividend": 0.25,
+      "factor_residual": 0.0,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2018-01-31",
+      "dividend": 0.212209,
+      "factor_residual": -5.757814660611871e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2018-02-28",
+      "dividend": 0.212209,
+      "factor_residual": 2.897348808650335e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2018-03-29",
+      "dividend": 0.213178,
+      "factor_residual": -5.724519884786616e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2018-04-30",
+      "dividend": 0.213178,
+      "factor_residual": 5.753815880416013e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2018-05-31",
+      "dividend": 0.213178,
+      "factor_residual": -2.2717467185184859e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2018-06-29",
+      "dividend": 0.213178,
+      "factor_residual": -1.8625885422896005e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2018-07-31",
+      "dividend": 0.213178,
+      "factor_residual": 3.135826487365989e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2018-08-31",
+      "dividend": 0.213178,
+      "factor_residual": 2.535395847713673e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2018-09-28",
+      "dividend": 0.214147,
+      "factor_residual": -1.1594248827684339e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2018-10-31",
+      "dividend": 0.214147,
+      "factor_residual": -1.651878909214588e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2018-11-30",
+      "dividend": 0.214147,
+      "factor_residual": 5.88614007535071e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2018-12-31",
+      "dividend": 0.214147,
+      "factor_residual": 6.947649392463617e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2019-01-31",
+      "dividend": 0.218992,
+      "factor_residual": -6.564453123303338e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2019-02-28",
+      "dividend": 0.218992,
+      "factor_residual": -6.680925087598766e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2019-03-29",
+      "dividend": 0.218992,
+      "factor_residual": -3.201688515419576e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2019-04-30",
+      "dividend": 0.218992,
+      "factor_residual": -1.9543623175355407e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2019-05-31",
+      "dividend": 0.218992,
+      "factor_residual": 3.9073521118648813e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2019-06-28",
+      "dividend": 0.219961,
+      "factor_residual": -1.4261439928997532e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2019-07-31",
+      "dividend": 0.219961,
+      "factor_residual": 3.5242568297011445e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2019-08-30",
+      "dividend": 0.219961,
+      "factor_residual": -1.123822501725158e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2019-09-30",
+      "dividend": 0.219961,
+      "factor_residual": 8.41257776773574e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2019-10-31",
+      "dividend": 0.219961,
+      "factor_residual": 4.3337977762014646e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2019-11-29",
+      "dividend": 0.219961,
+      "factor_residual": 3.1756749807598794e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2019-12-31",
+      "dividend": 0.22093,
+      "factor_residual": -1.903296953376099e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2020-01-31",
+      "dividend": 0.225775,
+      "factor_residual": -4.6422794774958476e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2020-02-28",
+      "dividend": 0.225775,
+      "factor_residual": 3.0169598130846964e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2020-03-31",
+      "dividend": 0.225775,
+      "factor_residual": -1.5647501361293337e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2020-04-30",
+      "dividend": 0.225775,
+      "factor_residual": -4.3849041919674647e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2020-05-29",
+      "dividend": 0.225775,
+      "factor_residual": -9.754036367493057e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2020-06-30",
+      "dividend": 0.226744,
+      "factor_residual": 2.3776315083434696e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2020-07-31",
+      "dividend": 0.226744,
+      "factor_residual": -1.4138299919697062e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2020-08-31",
+      "dividend": 0.226744,
+      "factor_residual": -3.250637421459146e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2020-09-30",
+      "dividend": 0.226744,
+      "factor_residual": -2.924545648985699e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2020-10-30",
+      "dividend": 0.226744,
+      "factor_residual": 2.405895698220917e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2020-11-30",
+      "dividend": 0.226744,
+      "factor_residual": -1.6381716738678165e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2020-12-31",
+      "dividend": 0.227713,
+      "factor_residual": 1.3178044488970642e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2021-01-29",
+      "dividend": 0.227713,
+      "factor_residual": -3.988294583479046e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2021-02-26",
+      "dividend": 0.227713,
+      "factor_residual": 5.239730335171444e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2021-03-31",
+      "dividend": 0.227713,
+      "factor_residual": 2.6293242139097117e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2021-04-30",
+      "dividend": 0.227713,
+      "factor_residual": -8.6908431895516e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2021-05-28",
+      "dividend": 0.227713,
+      "factor_residual": 3.499318823596553e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2021-06-30",
+      "dividend": 0.228682,
+      "factor_residual": 1.826023435791413e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2021-07-30",
+      "dividend": 0.228682,
+      "factor_residual": 3.837241318027651e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2021-08-31",
+      "dividend": 0.228682,
+      "factor_residual": 1.5653590024200525e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2021-09-30",
+      "dividend": 0.228682,
+      "factor_residual": -3.1314178250418934e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2021-11-01",
+      "dividend": 0.228682,
+      "factor_residual": -8.889818592372478e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2021-11-30",
+      "dividend": 0.246,
+      "factor_residual": -5.5959773481717434e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2021-12-31",
+      "dividend": 0.247,
+      "factor_residual": 5.223691892375371e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2022-01-31",
+      "dividend": 0.247,
+      "factor_residual": 1.786278109872086e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2022-02-28",
+      "dividend": 0.247,
+      "factor_residual": -1.2163226537076355e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2022-03-31",
+      "dividend": 0.247,
+      "factor_residual": -4.961554513904787e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2022-04-29",
+      "dividend": 0.247,
+      "factor_residual": -9.514087118134285e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2022-05-31",
+      "dividend": 0.247,
+      "factor_residual": 7.03457631034965e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2022-06-30",
+      "dividend": 0.248,
+      "factor_residual": -2.0348204043951768e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2022-07-29",
+      "dividend": 0.248,
+      "factor_residual": -1.88738859874249e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2022-08-31",
+      "dividend": 0.248,
+      "factor_residual": -1.1762513185686885e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2022-09-30",
+      "dividend": 0.248,
+      "factor_residual": -2.7878700015193658e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2022-10-31",
+      "dividend": 0.248,
+      "factor_residual": 3.958121186364849e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2022-11-30",
+      "dividend": 0.248,
+      "factor_residual": -6.43393079924337e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2022-12-30",
+      "dividend": 0.249,
+      "factor_residual": 1.1899475738097465e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2023-01-31",
+      "dividend": 0.249,
+      "factor_residual": -9.01312366963225e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2023-02-28",
+      "dividend": 0.255,
+      "factor_residual": 2.7317925266334697e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2023-03-31",
+      "dividend": 0.255,
+      "factor_residual": -2.8267605522991346e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2023-04-28",
+      "dividend": 0.255,
+      "factor_residual": 4.11467586669545e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2023-05-31",
+      "dividend": 0.255,
+      "factor_residual": 1.1671599275953071e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2023-06-30",
+      "dividend": 0.256,
+      "factor_residual": -1.8609618923637328e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2023-07-31",
+      "dividend": 0.256,
+      "factor_residual": -1.4763720668220515e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2023-08-31",
+      "dividend": 0.256,
+      "factor_residual": 2.310463576016275e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2023-09-29",
+      "dividend": 0.256,
+      "factor_residual": -4.5481621058218735e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2023-10-31",
+      "dividend": 0.256,
+      "factor_residual": -1.560404367939583e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2023-11-30",
+      "dividend": 0.256,
+      "factor_residual": -1.8263200796120316e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2023-12-29",
+      "dividend": 0.257,
+      "factor_residual": -1.0035649755657516e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2024-01-31",
+      "dividend": 0.257,
+      "factor_residual": -3.4645032764846206e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2024-02-29",
+      "dividend": 0.257,
+      "factor_residual": 6.451346745706132e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2024-03-28",
+      "dividend": 0.257,
+      "factor_residual": -2.06626317167391e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2024-04-30",
+      "dividend": 0.257,
+      "factor_residual": 2.5422649585493673e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2024-06-03",
+      "dividend": 0.263,
+      "factor_residual": 3.065381526390354e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2024-07-01",
+      "dividend": 0.263,
+      "factor_residual": 1.7797989226853161e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2024-08-01",
+      "dividend": 0.263,
+      "factor_residual": -1.6371110500568165e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2024-09-03",
+      "dividend": 0.263,
+      "factor_residual": -1.610188082867836e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2024-10-01",
+      "dividend": 0.264,
+      "factor_residual": -7.23721365059049e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2024-11-01",
+      "dividend": 0.264,
+      "factor_residual": 1.9542675022687916e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2024-12-02",
+      "dividend": 0.264,
+      "factor_residual": 7.811368263332952e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2025-01-02",
+      "dividend": 0.264,
+      "factor_residual": 5.8601693497806195e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2025-02-03",
+      "dividend": 0.264,
+      "factor_residual": -1.034708029257203e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2025-03-03",
+      "dividend": 0.268,
+      "factor_residual": 5.7624565452663035e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2025-04-01",
+      "dividend": 0.269,
+      "factor_residual": -8.181153421382703e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2025-05-01",
+      "dividend": 0.269,
+      "factor_residual": -1.5752450832628995e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2025-06-02",
+      "dividend": 0.269,
+      "factor_residual": -4.541945897162947e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2025-07-01",
+      "dividend": 0.269,
+      "factor_residual": -1.3778443963552434e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2025-08-01",
+      "dividend": 0.269,
+      "factor_residual": -6.959920006988085e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2025-09-02",
+      "dividend": 0.269,
+      "factor_residual": -6.052622714136646e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2025-10-01",
+      "dividend": 0.27,
+      "factor_residual": -2.7310519512546705e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2025-10-31",
+      "dividend": 0.27,
+      "factor_residual": 1.63919747220298e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2025-11-28",
+      "dividend": 0.27,
+      "factor_residual": 6.667265750603946e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2025-12-31",
+      "dividend": 0.27,
+      "factor_residual": -1.061077289365997e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2026-01-30",
+      "dividend": 0.27,
+      "factor_residual": 2.5943154180474437e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2026-02-27",
+      "dividend": 0.27,
+      "factor_residual": 1.257108205310331e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2026-03-31",
+      "dividend": 0.271,
+      "factor_residual": 1.3642658969192922e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2026-04-30",
+      "dividend": 0.271,
+      "factor_residual": 6.34878116745341e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2026-05-29",
+      "dividend": 0.271,
+      "factor_residual": 1.0568735353544412e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2026-06-30",
+      "dividend": 0.271,
+      "factor_residual": -2.5078737309058852e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2026-07-31",
+      "dividend": 0.271,
+      "factor_residual": 2.1257720805856195e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2026-08-31",
+      "dividend": 0.271,
+      "factor_residual": 4.810397746801698e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "O",
+      "date": "2026-09-30",
+      "dividend": 0.272,
+      "factor_residual": 1.162258156384155e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2018-03-08",
+      "dividend": 0.173333,
+      "factor_residual": -6.207288605342143e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2018-05-10",
+      "dividend": 0.173333,
+      "factor_residual": 1.8548256341954783e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2018-08-09",
+      "dividend": 0.173333,
+      "factor_residual": -7.727371253984927e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2018-12-06",
+      "dividend": 0.173333,
+      "factor_residual": 9.897994990293313e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2019-03-14",
+      "dividend": 0.176667,
+      "factor_residual": 3.5351600657929083e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2019-05-09",
+      "dividend": 0.176667,
+      "factor_residual": 2.1026764784881635e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2019-08-08",
+      "dividend": 0.176667,
+      "factor_residual": 1.7302679367059426e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2019-12-05",
+      "dividend": 0.176667,
+      "factor_residual": -1.53527417889876e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2020-03-19",
+      "dividend": 0.18,
+      "factor_residual": 5.9217447390125244e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2020-05-07",
+      "dividend": 0.18,
+      "factor_residual": 2.639356790901104e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2020-08-13",
+      "dividend": 0.18,
+      "factor_residual": 5.2223569690923455e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2020-12-10",
+      "dividend": 0.18,
+      "factor_residual": -5.020919668918822e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2021-03-18",
+      "dividend": 0.183333,
+      "factor_residual": -1.3722280034489387e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2021-05-06",
+      "dividend": 0.183333,
+      "factor_residual": -7.881615515792362e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2021-08-12",
+      "dividend": 0.183333,
+      "factor_residual": -2.6899695859672335e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2021-12-09",
+      "dividend": 0.183333,
+      "factor_residual": 9.486782748258094e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2022-03-17",
+      "dividend": 0.186667,
+      "factor_residual": -2.4905001383412895e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2022-05-05",
+      "dividend": 0.186667,
+      "factor_residual": -3.5125285235970694e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2022-08-11",
+      "dividend": 0.186667,
+      "factor_residual": -6.046603884257706e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2022-12-08",
+      "dividend": 0.186667,
+      "factor_residual": -6.760140192074715e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2023-03-16",
+      "dividend": 0.19,
+      "factor_residual": -9.227722919114001e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2023-05-04",
+      "dividend": 0.19,
+      "factor_residual": -3.895978040180381e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2023-08-10",
+      "dividend": 0.19,
+      "factor_residual": 8.03184196929152e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2023-12-07",
+      "dividend": 0.19,
+      "factor_residual": 1.2214610878302778e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2024-03-14",
+      "dividend": 0.208,
+      "factor_residual": -3.9443114663306744e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2024-05-09",
+      "dividend": 0.208,
+      "factor_residual": -1.2326568676890304e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2024-08-16",
+      "dividend": 0.208,
+      "factor_residual": -5.583135176401299e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2024-12-13",
+      "dividend": 0.208,
+      "factor_residual": 1.083281203628772e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2025-03-21",
+      "dividend": 0.235,
+      "factor_residual": 3.2780369418894395e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2025-05-09",
+      "dividend": 0.235,
+      "factor_residual": 4.7691299354113426e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2025-08-15",
+      "dividend": 0.235,
+      "factor_residual": -3.8349803332948795e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2025-12-12",
+      "dividend": 0.235,
+      "factor_residual": 8.682581786878529e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2026-03-20",
+      "dividend": 0.248,
+      "factor_residual": 9.613038143285735e-10,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2026-05-08",
+      "dividend": 0.248,
+      "factor_residual": 1.3128040876608793e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "WMT",
+      "date": "2026-08-21",
+      "dividend": 0.248,
+      "factor_residual": -1.0580054388142912e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2018-02-09",
+      "dividend": 0.77,
+      "factor_residual": 2.006829536993493e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2018-05-11",
+      "dividend": 0.82,
+      "factor_residual": -2.1496124913422676e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2018-08-10",
+      "dividend": 0.82,
+      "factor_residual": -3.478619248209469e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2018-11-09",
+      "dividend": 0.82,
+      "factor_residual": -1.0766890301550092e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2019-02-08",
+      "dividend": 0.82,
+      "factor_residual": 3.377017406824834e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2019-05-10",
+      "dividend": 0.87,
+      "factor_residual": -1.7827919907009715e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2019-08-12",
+      "dividend": 0.87,
+      "factor_residual": 2.1279004891461284e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2019-11-08",
+      "dividend": 0.87,
+      "factor_residual": 9.633028041911018e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2020-02-10",
+      "dividend": 0.87,
+      "factor_residual": 1.5051482060712829e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2020-05-12",
+      "dividend": 0.87,
+      "factor_residual": 8.314556210198276e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2020-08-12",
+      "dividend": 0.87,
+      "factor_residual": -1.4332311448761459e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2020-11-10",
+      "dividend": 0.87,
+      "factor_residual": -5.197321739647265e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2021-02-09",
+      "dividend": 0.87,
+      "factor_residual": -2.0512581688780784e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2021-05-12",
+      "dividend": 0.87,
+      "factor_residual": -1.1876299943480717e-09,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2021-08-12",
+      "dividend": 0.87,
+      "factor_residual": -2.9506205212470604e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2021-11-10",
+      "dividend": 0.88,
+      "factor_residual": 1.7021756637536356e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2022-02-09",
+      "dividend": 0.88,
+      "factor_residual": 7.726470796498575e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2022-05-12",
+      "dividend": 0.88,
+      "factor_residual": 1.725904182903193e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2022-08-11",
+      "dividend": 0.88,
+      "factor_residual": -1.7340566293988502e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2022-11-14",
+      "dividend": 0.91,
+      "factor_residual": 1.216845797458177e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2023-02-13",
+      "dividend": 0.91,
+      "factor_residual": 2.9753307151381136e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2023-05-15",
+      "dividend": 0.91,
+      "factor_residual": 9.038221138180091e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2023-08-15",
+      "dividend": 0.91,
+      "factor_residual": -8.648487104245817e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2023-11-14",
+      "dividend": 0.95,
+      "factor_residual": -1.3496816719804627e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2024-02-13",
+      "dividend": 0.95,
+      "factor_residual": 1.1983348591204646e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2024-05-14",
+      "dividend": 0.95,
+      "factor_residual": 8.469090584384276e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2024-08-15",
+      "dividend": 0.95,
+      "factor_residual": -1.0439974085230119e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2024-11-14",
+      "dividend": 0.99,
+      "factor_residual": -1.2114876601909685e-07,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2025-02-12",
+      "dividend": 0.99,
+      "factor_residual": 8.436381793153203e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2025-05-15",
+      "dividend": 0.99,
+      "factor_residual": 8.176552734884268e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2025-08-15",
+      "dividend": 0.99,
+      "factor_residual": -6.604758817640999e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2025-11-14",
+      "dividend": 1.03,
+      "factor_residual": -4.485332383286078e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2026-02-12",
+      "dividend": 1.03,
+      "factor_residual": 8.771591331058204e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2026-05-15",
+      "dividend": 1.03,
+      "factor_residual": -3.470399800864499e-08,
+      "within_tolerance": true
+    },
+    {
+      "ticker": "XOM",
+      "date": "2026-08-17",
+      "dividend": 1.03,
+      "factor_residual": 7.624628817204382e-09,
+      "within_tolerance": true
+    }
+  ],
+  "dividend_tolerance": 0.0001
+}
