@@ -1,0 +1,123 @@
+{
+  "survivorship_biased": true,
+  "candidate_selection_biased": true,
+  "point_in_time_membership": false,
+  "phase": 4,
+  "run_id": "20261008T144500219618Z",
+  "status": "RUNNING",
+  "source_dataset_id": "20261008T141100218333Z",
+  "source_panel_path": "data\\processed\\phase3\\20261008T141100218333Z\\research_matrix.parquet",
+  "source_panel_sha256": "0da610d74a63cfd48c003dce4372933eb14c5e4b365b0dbe11ae10df0b3470cf",
+  "source_rows": 1563421,
+  "source_stocks": 393,
+  "source_sessions": 4216,
+  "protocol_sha256_before_results": "336ff7cdea068a7abfff22670f32c43c8f3873608455174b4582225c7485dbcc",
+  "upstream_inventory_before": "4282cbbcd8a522a19a663623eec383360bed962963bf34379a8346f2719b0785",
+  "primary_horizon": 5,
+  "minimum_cross_section": 50,
+  "primary_hac_lag": 5,
+  "sensitivity_hac_lag": 20,
+  "features": [
+    "RET_5",
+    "RET_10",
+    "RET_20",
+    "RET_60",
+    "VOL_10",
+    "VOL_20",
+    "VOL_60",
+    "ILLIQ_20",
+    "DOLLAR_VOLUME_20",
+    "VOLUME_RATIO_20",
+    "VOLUME_SURPRISE_20",
+    "PRICE_MA20",
+    "PRICE_MA60",
+    "DIST_52W_HIGH",
+    "INTRADAY_RANGE",
+    "OPEN_CLOSE_RETURN"
+  ],
+  "groups": {
+    "Momentum_Reversal": [
+      "RET_5",
+      "RET_10",
+      "RET_20",
+      "RET_60"
+    ],
+    "Volatility": [
+      "VOL_10",
+      "VOL_20",
+      "VOL_60"
+    ],
+    "Liquidity_Volume": [
+      "ILLIQ_20",
+      "DOLLAR_VOLUME_20",
+      "VOLUME_RATIO_20",
+      "VOLUME_SURPRISE_20"
+    ],
+    "Price_Position_Intraday": [
+      "PRICE_MA20",
+      "PRICE_MA60",
+      "DIST_52W_HIGH",
+      "INTRADAY_RANGE",
+      "OPEN_CLOSE_RETURN"
+    ],
+    "All": [
+      "RET_5",
+      "RET_10",
+      "RET_20",
+      "RET_60",
+      "VOL_10",
+      "VOL_20",
+      "VOL_60",
+      "ILLIQ_20",
+      "DOLLAR_VOLUME_20",
+      "VOLUME_RATIO_20",
+      "VOLUME_SURPRISE_20",
+      "PRICE_MA20",
+      "PRICE_MA60",
+      "DIST_52W_HIGH",
+      "INTRADAY_RANGE",
+      "OPEN_CLOSE_RETURN"
+    ]
+  },
+  "grids": {
+    "OLS": [
+      0.0
+    ],
+    "EqualWeight": [
+      0.0
+    ],
+    "Ridge": [
+      0.001,
+      0.1,
+      10.0
+    ],
+    "Lasso": [
+      1e-05,
+      0.0001,
+      0.001
+    ],
+    "ElasticNet": [
+      1e-05,
+      0.0001,
+      0.001
+    ]
+  },
+  "tests": {
+    "tests": 87,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 87,
+    "warnings": 37,
+    "returncode": 0
+  },
+  "model_directory": "data\\processed\\phase4\\20261008T144500219618Z",
+  "code_sha256": {
+    "scripts/run_phase4.py": "867a78e2202423f9eb0d6438c37ede15851c560af2a4aad0e119e3d28cab1504",
+    "src/evaluation/single_factor.py": "d13325a1e8711636ece55e2b6fc05f43ba9169bb0af188ec3bf964e0a2f1d7b2",
+    "src/evaluation/statistics.py": "d5cffc54c980e6b5455a6a416f029f08c9cabd628d6a9df4847a1f9aeb386aba",
+    "src/models/linear_baselines.py": "5280c7440a8064dce22ab17bdce5a4d7d0e70ae2b2d8252ebf591776a085ceaa",
+    "tests/test_phase4.py": "2ccae5b173d238916d362a52656a45962fc37405ffca4822fe992c4e8b797f18",
+    "requirements-phase4-lock.txt": "0a20a80965730d36226506635de2ed86814fee6f38965fc3036dd4787403eb35"
+  }
+}

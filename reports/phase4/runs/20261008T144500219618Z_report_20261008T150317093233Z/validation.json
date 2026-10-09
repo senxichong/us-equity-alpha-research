@@ -1,0 +1,249 @@
+{
+  "survivorship_biased": true,
+  "candidate_selection_biased": true,
+  "point_in_time_membership": false,
+  "phase": 4,
+  "run_id": "20261008T144500219618Z",
+  "status": "PASS",
+  "source_dataset_id": "20261008T141100218333Z",
+  "source_panel_path": "data\\processed\\phase3\\20261008T141100218333Z\\research_matrix.parquet",
+  "source_panel_sha256": "0da610d74a63cfd48c003dce4372933eb14c5e4b365b0dbe11ae10df0b3470cf",
+  "source_rows": 1563421,
+  "source_stocks": 393,
+  "source_sessions": 4216,
+  "protocol_sha256_before_results": "336ff7cdea068a7abfff22670f32c43c8f3873608455174b4582225c7485dbcc",
+  "upstream_inventory_before": "4282cbbcd8a522a19a663623eec383360bed962963bf34379a8346f2719b0785",
+  "primary_horizon": 5,
+  "minimum_cross_section": 50,
+  "primary_hac_lag": 5,
+  "sensitivity_hac_lag": 20,
+  "features": [
+    "RET_5",
+    "RET_10",
+    "RET_20",
+    "RET_60",
+    "VOL_10",
+    "VOL_20",
+    "VOL_60",
+    "ILLIQ_20",
+    "DOLLAR_VOLUME_20",
+    "VOLUME_RATIO_20",
+    "VOLUME_SURPRISE_20",
+    "PRICE_MA20",
+    "PRICE_MA60",
+    "DIST_52W_HIGH",
+    "INTRADAY_RANGE",
+    "OPEN_CLOSE_RETURN"
+  ],
+  "groups": {
+    "Momentum_Reversal": [
+      "RET_5",
+      "RET_10",
+      "RET_20",
+      "RET_60"
+    ],
+    "Volatility": [
+      "VOL_10",
+      "VOL_20",
+      "VOL_60"
+    ],
+    "Liquidity_Volume": [
+      "ILLIQ_20",
+      "DOLLAR_VOLUME_20",
+      "VOLUME_RATIO_20",
+      "VOLUME_SURPRISE_20"
+    ],
+    "Price_Position_Intraday": [
+      "PRICE_MA20",
+      "PRICE_MA60",
+      "DIST_52W_HIGH",
+      "INTRADAY_RANGE",
+      "OPEN_CLOSE_RETURN"
+    ],
+    "All": [
+      "RET_5",
+      "RET_10",
+      "RET_20",
+      "RET_60",
+      "VOL_10",
+      "VOL_20",
+      "VOL_60",
+      "ILLIQ_20",
+      "DOLLAR_VOLUME_20",
+      "VOLUME_RATIO_20",
+      "VOLUME_SURPRISE_20",
+      "PRICE_MA20",
+      "PRICE_MA60",
+      "DIST_52W_HIGH",
+      "INTRADAY_RANGE",
+      "OPEN_CLOSE_RETURN"
+    ]
+  },
+  "grids": {
+    "OLS": [
+      0.0
+    ],
+    "EqualWeight": [
+      0.0
+    ],
+    "Ridge": [
+      0.001,
+      0.1,
+      10.0
+    ],
+    "Lasso": [
+      1e-05,
+      0.0001,
+      0.001
+    ],
+    "ElasticNet": [
+      1e-05,
+      0.0001,
+      0.001
+    ]
+  },
+  "tests": {
+    "tests": 87,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 87,
+    "warnings": 37,
+    "returncode": 0
+  },
+  "model_directory": "data\\processed\\phase4\\20261008T144500219618Z",
+  "code_sha256": {
+    "scripts/run_phase4.py": "867a78e2202423f9eb0d6438c37ede15851c560af2a4aad0e119e3d28cab1504",
+    "src/evaluation/single_factor.py": "d13325a1e8711636ece55e2b6fc05f43ba9169bb0af188ec3bf964e0a2f1d7b2",
+    "src/evaluation/statistics.py": "d5cffc54c980e6b5455a6a416f029f08c9cabd628d6a9df4847a1f9aeb386aba",
+    "src/models/linear_baselines.py": "5280c7440a8064dce22ab17bdce5a4d7d0e70ae2b2d8252ebf591776a085ceaa",
+    "tests/test_phase4.py": "2ccae5b173d238916d362a52656a45962fc37405ffca4822fe992c4e8b797f18",
+    "requirements-phase4-lock.txt": "0a20a80965730d36226506635de2ed86814fee6f38965fc3036dd4787403eb35"
+  },
+  "prediction_files": [
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2017.parquet",
+      "sha256": "4c3c4e444fb67c80e7638ecf22aafc52bca0df3dc5e40c69fd10b15a7f8d2934",
+      "rows": 819135
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2018.parquet",
+      "sha256": "03d3ff7889f637d2dc6786d568ed13ef2c55c60a3a4272af1bd8263a2750bbea",
+      "rows": 826767
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2019.parquet",
+      "sha256": "89d12b4e448446c1733acb51ed30a7ba045d4aa2c97c36eb924fb111befbc750",
+      "rows": 837846
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2020.parquet",
+      "sha256": "fd506740d96a8616c049e8740330547317bb8377fe9aaa99f788fa1054917f1b",
+      "rows": 845919
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2021.parquet",
+      "sha256": "dfc08fb76381ecfd376593b48858c6c85ab913f78ffeebfafcc46f665cad825e",
+      "rows": 861813
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2022.parquet",
+      "sha256": "16a2748ed8a4cc906233cc7f787de166dadea9010aef46a23996289d19154838",
+      "rows": 870723
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2023.parquet",
+      "sha256": "f00b4d1b40270ee437eaef946aeecb1bd2fdfd4d9a7454a2a3dbf28df1bcdc86",
+      "rows": 870741
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2024.parquet",
+      "sha256": "317feb202fb58c0cddd6507b77a815ac94869a0370488da01ce867c23c4a83ce",
+      "rows": 882045
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2025.parquet",
+      "sha256": "14cbd9743cf91007bb70ec230dd36ee8d4c5e21e62ac161efab09ab4e0c732f3",
+      "rows": 880965
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2026.parquet",
+      "sha256": "64b775c282770ca984886c2f3215f0cb4f60462f5d8faafdd6eb037b0e03f715",
+      "rows": 678843
+    }
+  ],
+  "checks": {
+    "all_17_factors_retained": true,
+    "all_10_folds": true,
+    "source_panel_unchanged": true,
+    "upstream_inventory_unchanged": true,
+    "preregistration_unchanged": true,
+    "all_tests_passed": true,
+    "bias_flags_present": true,
+    "no_solver_convergence_warnings": true,
+    "analysis_finished": true,
+    "source_hash_unchanged_at_reporting": true,
+    "source_inventory_unchanged_at_reporting": true,
+    "protocol_unchanged_at_reporting": true,
+    "analysis_code_unchanged": true,
+    "prediction_roundtrip_tags_samples_metrics_2017": true,
+    "prediction_roundtrip_tags_samples_metrics_2018": true,
+    "prediction_roundtrip_tags_samples_metrics_2019": true,
+    "prediction_roundtrip_tags_samples_metrics_2020": true,
+    "prediction_roundtrip_tags_samples_metrics_2021": true,
+    "prediction_roundtrip_tags_samples_metrics_2022": true,
+    "prediction_roundtrip_tags_samples_metrics_2023": true,
+    "prediction_roundtrip_tags_samples_metrics_2024": true,
+    "prediction_roundtrip_tags_samples_metrics_2025": true,
+    "prediction_roundtrip_tags_samples_metrics_2026": true,
+    "one_validation_selected_configuration_per_model_fold": true,
+    "all_predeclared_configurations_recorded": true,
+    "all_csv_bias_columns_present": true,
+    "eight_predeclared_figures_rendered": true,
+    "all_required_tables_present": true
+  },
+  "upstream_inventory_after": "4282cbbcd8a522a19a663623eec383360bed962963bf34379a8346f2719b0785",
+  "reporting_code_sha256": {
+    "scripts\\report_phase4.py": "5da67354fe810aeab80cec8115f166f97374519042c1dc3a275187d95e031565",
+    "src/evaluation/phase4_figures.py": "5f287407c5478a15c59edf87e3b9a99b1068595c0d2c98d2161887d9541b5bd2"
+  },
+  "artifact_sha256": {
+    "reports\\phase4\\ablation_results.csv": "13558a1886fe5882d501a95db8576be0750386c98c749c663244b2d4e0cc4120",
+    "reports\\phase4\\coefficient_stability.csv": "726ab660844d8803e3a6f300ce9747abc99d2c26f77186076cc2e0d473272df5",
+    "reports\\phase4\\factor_correlation.csv": "28477426f02b2270053dd9b852a22be3e7f1b27d5b47293993dcc62817e3da0b",
+    "reports\\phase4\\factor_correlation_date_counts.csv": "e5de1d6f890586ef67796df1e5c513de74536a35ca9c458afb714d5546dba732",
+    "reports\\phase4\\factor_correlation_pairs.csv": "72fdbb41b14d2fffba8b967e762942713dbfcce57f91771605b70f4e8c659f5d",
+    "reports\\phase4\\factor_stability.csv": "b4a373b18a879d2b986ceb570e5092f2d021e62c2e2ca303d972222d18844138",
+    "reports\\phase4\\factor_statistics.csv": "3245e15f89a5885e1f9b2468848df0c98b529f479ad3eed67eb6a4d948471f77",
+    "reports\\phase4\\horizon_robustness.csv": "5702ae82f995a0c167e3d96e31034add29030c4ea3aa7690c51f4f476f821c65",
+    "reports\\phase4\\ic_extreme_dates.csv": "cd77722c7539fc60508ba4bf469492bc45840e66063181d0bb6d9b2b190aee2b",
+    "reports\\phase4\\matched_oos_factor_daily_ic.csv": "901d93aec89d3f5db57157f753e7491c2e0e803a87ddbe2ba9a46a4fbcd9531a",
+    "reports\\phase4\\matched_oos_factor_metrics.csv": "bb13e591cdd35f4b6f5524bba928add81745c98a14e3b5dc238f91341770b16e",
+    "reports\\phase4\\model_coefficients.csv": "cecf27a04ba56f8ceb56c37e80bc55bc97f27a8bc4d74d96576d9c19b14efa50",
+    "reports\\phase4\\model_configurations.csv": "1800e2a4accf8cec117e5e2623be8d1be6ad22254bc54a1afc00aeaf3a986bbb",
+    "reports\\phase4\\model_daily_ic.csv": "231d44e4b2abfaac2dacf7d6fa193cbd97a38993a363cd2f37f4568f301b2247",
+    "reports\\phase4\\model_error_moments.csv": "5af79b8b2854ed5df05811eacd1bb722a4fb98d062692149d61164f2c8397bf1",
+    "reports\\phase4\\model_oos_metrics.csv": "47244ed4e411c6bac91a29b4253c41c25dfe86aacc29845ea6598404462a9ed9",
+    "reports\\phase4\\model_yearly_metrics.csv": "3f69d6a5bd68d6d5913cf5cfe40dbd1e2d80681701cec87a79f6487712731939",
+    "reports\\phase4\\quantile_daily.csv": "7b6195eea2ce2f52dba2d6966339bddec05b84b7eb9d56a8fd6ff7a4c401a63b",
+    "reports\\phase4\\quantile_diagnostics.csv": "5b7a0b7c140df3436f2572bd3164fefb69390f97446181f3a2baa03bbf942fb6",
+    "reports\\phase4\\quantile_stability.csv": "78fe12ac9d69f353b05d607048d31c5c032c91d81ee4bdef55509c1afe5230a0",
+    "reports\\phase4\\quantile_yearly.csv": "df92acbab7f9a33d15a208889c9626d2f518ee1c63a76b234457da363d4cdff6",
+    "reports\\phase4\\rolling_factor_statistics.csv": "0b6cb9181fc304d0b1d3d738a3a92cc4a69d9a6b1d7aaf791246289f39ebbabc",
+    "reports\\phase4\\single_factor_ic.csv": "6bc1b4b66eb7b5a6af82fe6d9843f578809d02aab1a0f6fe6c33f45037509d9c",
+    "reports\\phase4\\single_factor_rankic.csv": "a5c773aa7034991f242f01c1de032b10e7d783d8b6a444ba6982b8ebc90c0078",
+    "reports\\phase4\\walk_forward_folds.csv": "172b7cc6cfdfe7578984ff34a11d5d79fd87827eb2bda7675efa43e2540d40df",
+    "reports\\phase4\\yearly_factor_statistics.csv": "a111c852b340d7c651fe90e0e5e63fdbda0182e03397095a15b8c90c9cb5b668",
+    "reports\\phase4\\figures\\factor_correlation.png": "d4ac69fa5c6a6dcfb07ca6f3dab705a4d2c0bb6e906ceaa3216256baccb61eae",
+    "reports\\phase4\\figures\\rolling_rankic.png": "c83242d61faca325c8cb7ba4268ed4f75eaebd47052f2d24c48af9928a43a371",
+    "reports\\phase4\\figures\\factor_ic_comparison.png": "3b23fe304d5a911db47e4b8fd26cb7f22d1e839696eb1ca947e7e024cc1ede32",
+    "reports\\phase4\\figures\\quantile_forward_returns.png": "c073b4c25de20a9ceeb68cc6d9973348987835b4b4e7deabc4e1a75fed9dce39",
+    "reports\\phase4\\figures\\yearly_rankic.png": "d6b79b61cd4281dfa665c15507580fbb8ea1d07aa88d277b69c803c63b39f1cc",
+    "reports\\phase4\\figures\\ic_distributions.png": "ab02b93aaf05ce1bef0b6600980e1e5999b087e2cf5094022e2ddb602d034e0d",
+    "reports\\phase4\\figures\\model_oos_ic.png": "150bac195fe82aba7c0d83d4721e70e3b2076529fec381753d24aafa3fe6bcf7",
+    "reports\\phase4\\figures\\coefficient_stability.png": "6996261dcaa871c7dde8cb1793c117676c2e9a6996f4a6ded2682750acc88e49",
+    "reports\\single_factor_report.md": "c5709e189cb56bb8dd7cd3b6c8ee48e9c27ace7c80d8458c4de639ad55b17cc4",
+    "reports\\baseline_report.md": "5067f20df6d881659c2cf1782fdecd4e1557d7d236ba874ad313374b192d6aec",
+    "PHASE4_REPORT.md": "4ed462126758e58c163eaf672d21b4a73647c3e24112e13193b7ebac880b960a"
+  }
+}

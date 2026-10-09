@@ -1,0 +1,186 @@
+{
+  "survivorship_biased": true,
+  "candidate_selection_biased": true,
+  "point_in_time_membership": false,
+  "phase": 4,
+  "run_id": "20261008T144500219618Z",
+  "status": "RESEARCH_COMPLETE",
+  "source_dataset_id": "20261008T141100218333Z",
+  "source_panel_path": "data\\processed\\phase3\\20261008T141100218333Z\\research_matrix.parquet",
+  "source_panel_sha256": "0da610d74a63cfd48c003dce4372933eb14c5e4b365b0dbe11ae10df0b3470cf",
+  "source_rows": 1563421,
+  "source_stocks": 393,
+  "source_sessions": 4216,
+  "protocol_sha256_before_results": "336ff7cdea068a7abfff22670f32c43c8f3873608455174b4582225c7485dbcc",
+  "upstream_inventory_before": "4282cbbcd8a522a19a663623eec383360bed962963bf34379a8346f2719b0785",
+  "primary_horizon": 5,
+  "minimum_cross_section": 50,
+  "primary_hac_lag": 5,
+  "sensitivity_hac_lag": 20,
+  "features": [
+    "RET_5",
+    "RET_10",
+    "RET_20",
+    "RET_60",
+    "VOL_10",
+    "VOL_20",
+    "VOL_60",
+    "ILLIQ_20",
+    "DOLLAR_VOLUME_20",
+    "VOLUME_RATIO_20",
+    "VOLUME_SURPRISE_20",
+    "PRICE_MA20",
+    "PRICE_MA60",
+    "DIST_52W_HIGH",
+    "INTRADAY_RANGE",
+    "OPEN_CLOSE_RETURN"
+  ],
+  "groups": {
+    "Momentum_Reversal": [
+      "RET_5",
+      "RET_10",
+      "RET_20",
+      "RET_60"
+    ],
+    "Volatility": [
+      "VOL_10",
+      "VOL_20",
+      "VOL_60"
+    ],
+    "Liquidity_Volume": [
+      "ILLIQ_20",
+      "DOLLAR_VOLUME_20",
+      "VOLUME_RATIO_20",
+      "VOLUME_SURPRISE_20"
+    ],
+    "Price_Position_Intraday": [
+      "PRICE_MA20",
+      "PRICE_MA60",
+      "DIST_52W_HIGH",
+      "INTRADAY_RANGE",
+      "OPEN_CLOSE_RETURN"
+    ],
+    "All": [
+      "RET_5",
+      "RET_10",
+      "RET_20",
+      "RET_60",
+      "VOL_10",
+      "VOL_20",
+      "VOL_60",
+      "ILLIQ_20",
+      "DOLLAR_VOLUME_20",
+      "VOLUME_RATIO_20",
+      "VOLUME_SURPRISE_20",
+      "PRICE_MA20",
+      "PRICE_MA60",
+      "DIST_52W_HIGH",
+      "INTRADAY_RANGE",
+      "OPEN_CLOSE_RETURN"
+    ]
+  },
+  "grids": {
+    "OLS": [
+      0.0
+    ],
+    "EqualWeight": [
+      0.0
+    ],
+    "Ridge": [
+      0.001,
+      0.1,
+      10.0
+    ],
+    "Lasso": [
+      1e-05,
+      0.0001,
+      0.001
+    ],
+    "ElasticNet": [
+      1e-05,
+      0.0001,
+      0.001
+    ]
+  },
+  "tests": {
+    "tests": 87,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 87,
+    "warnings": 37,
+    "returncode": 0
+  },
+  "model_directory": "data\\processed\\phase4\\20261008T144500219618Z",
+  "code_sha256": {
+    "scripts/run_phase4.py": "867a78e2202423f9eb0d6438c37ede15851c560af2a4aad0e119e3d28cab1504",
+    "src/evaluation/single_factor.py": "d13325a1e8711636ece55e2b6fc05f43ba9169bb0af188ec3bf964e0a2f1d7b2",
+    "src/evaluation/statistics.py": "d5cffc54c980e6b5455a6a416f029f08c9cabd628d6a9df4847a1f9aeb386aba",
+    "src/models/linear_baselines.py": "5280c7440a8064dce22ab17bdce5a4d7d0e70ae2b2d8252ebf591776a085ceaa",
+    "tests/test_phase4.py": "2ccae5b173d238916d362a52656a45962fc37405ffca4822fe992c4e8b797f18",
+    "requirements-phase4-lock.txt": "0a20a80965730d36226506635de2ed86814fee6f38965fc3036dd4787403eb35"
+  },
+  "prediction_files": [
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2017.parquet",
+      "sha256": "4c3c4e444fb67c80e7638ecf22aafc52bca0df3dc5e40c69fd10b15a7f8d2934",
+      "rows": 819135
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2018.parquet",
+      "sha256": "03d3ff7889f637d2dc6786d568ed13ef2c55c60a3a4272af1bd8263a2750bbea",
+      "rows": 826767
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2019.parquet",
+      "sha256": "89d12b4e448446c1733acb51ed30a7ba045d4aa2c97c36eb924fb111befbc750",
+      "rows": 837846
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2020.parquet",
+      "sha256": "fd506740d96a8616c049e8740330547317bb8377fe9aaa99f788fa1054917f1b",
+      "rows": 845919
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2021.parquet",
+      "sha256": "dfc08fb76381ecfd376593b48858c6c85ab913f78ffeebfafcc46f665cad825e",
+      "rows": 861813
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2022.parquet",
+      "sha256": "16a2748ed8a4cc906233cc7f787de166dadea9010aef46a23996289d19154838",
+      "rows": 870723
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2023.parquet",
+      "sha256": "f00b4d1b40270ee437eaef946aeecb1bd2fdfd4d9a7454a2a3dbf28df1bcdc86",
+      "rows": 870741
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2024.parquet",
+      "sha256": "317feb202fb58c0cddd6507b77a815ac94869a0370488da01ce867c23c4a83ce",
+      "rows": 882045
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2025.parquet",
+      "sha256": "14cbd9743cf91007bb70ec230dd36ee8d4c5e21e62ac161efab09ab4e0c732f3",
+      "rows": 880965
+    },
+    {
+      "path": "data\\processed\\phase4\\20261008T144500219618Z\\oos_predictions_2026.parquet",
+      "sha256": "64b775c282770ca984886c2f3215f0cb4f60462f5d8faafdd6eb037b0e03f715",
+      "rows": 678843
+    }
+  ],
+  "checks": {
+    "all_17_factors_retained": true,
+    "all_10_folds": true,
+    "source_panel_unchanged": true,
+    "upstream_inventory_unchanged": true,
+    "preregistration_unchanged": true,
+    "all_tests_passed": true,
+    "bias_flags_present": true,
+    "no_solver_convergence_warnings": true
+  },
+  "upstream_inventory_after": "4282cbbcd8a522a19a663623eec383360bed962963bf34379a8346f2719b0785"
+}

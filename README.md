@@ -103,3 +103,17 @@ matrix, metadata = load_factor_panel()
 ```
 
 Raw and winsorized factors, z-scores, signal/entry/exit timestamps and independent eligibility/availability flags remain accessible. Missing sessions are not filled. The matrix preserves all source keys, including warm-up and terminal rows with unavailable labels. No IC, RankIC, predictive evaluation, models or portfolios are implemented in Phase 3.
+
+## Phase 4 — single-factor research and linear baselines
+
+The separately authorized Phase 4 evaluates the frozen Phase 3 matrix. `survivorship_biased=true` and `candidate_selection_biased=true` remain mandatory. The [preregistered protocol](PHASE4_PROTOCOL.md) fixes the primary 5D label, minimum cross section, HAC inference, feature set, model folds and small regularization grids before results. The [research log](RESEARCH_LOG.md) retains pending hypotheses, implementation failures and completed outcomes.
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements-phase4-lock.txt
+.\.venv\Scripts\python.exe scripts/run_phase4.py
+.\.venv\Scripts\python.exe scripts/report_phase4.py
+```
+
+The analysis runner executes the complete repository tests, reads frozen inputs without downloads/rebuilds, and saves every tried model configuration and test-only prediction. It refuses to overwrite an existing Phase 4 analysis manifest; reproduce in an isolated copy with a fresh Phase 4 output directory while preserving the recorded upstream snapshots. The report command reads existing results and validates saved predictions; it never fits models. Reports/figures are archived by run and rendering timestamp.
+
+See [Phase 4 decision](PHASE4_REPORT.md), [single-factor findings](reports/single_factor_report.md), and [baseline results](reports/baseline_report.md). CSV evidence and source/protocol/code hashes are in `reports/phase4/`; per-fold OOS prediction Parquets are in the directory recorded by `analysis_manifest.json`. Fold coefficients include training scaler statistics, composite orientations and selected penalties. Quantile plots describe overlapping forward labels, not capital-aware portfolio returns. This phase does not train complex models or compute strategy Sharpe.

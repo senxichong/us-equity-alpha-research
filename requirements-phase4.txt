@@ -1,0 +1,5 @@
+-r requirements.txt
+scipy>=1.15,<2
+scikit-learn>=1.6,<2
+statsmodels>=0.14,<0.16
+matplotlib>=3.10,<4
