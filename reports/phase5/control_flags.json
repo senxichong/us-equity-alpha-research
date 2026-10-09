@@ -1,0 +1,8 @@
+{
+  "survivorship_biased": true,
+  "candidate_selection_biased": true,
+  "point_in_time_membership": false,
+  "random_label_requires_investigation": false,
+  "random_feature_importance_requires_investigation": false,
+  "random_feature_rankic_requires_investigation": false
+}

@@ -1,0 +1,51 @@
+{
+  "survivorship_biased": true,
+  "candidate_selection_biased": true,
+  "point_in_time_membership": false,
+  "model_name": "ValidationWinner",
+  "model_family": "LightGBM",
+  "role": "ablation",
+  "group": "Volatility",
+  "fold_id": 2018,
+  "train_start": "2011-01-01",
+  "train_end": "2016-12-31",
+  "validation_start": "2017-01-01",
+  "validation_end": "2017-12-31",
+  "test_start": "2018-01-01",
+  "test_end": "2018-12-31",
+  "seed": 2060,
+  "parameters": {
+    "n_estimators": 150,
+    "learning_rate": 0.05,
+    "num_leaves": 15,
+    "max_depth": 4,
+    "min_child_samples": 200,
+    "max_bin": 63,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 1.0
+  },
+  "features": [
+    "VOL_10",
+    "VOL_20",
+    "VOL_60"
+  ],
+  "preprocessing": "complete-case identity for trees; frozen Phase 4 scaler for reused linear models",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "scipy": "1.18.1",
+    "pyarrow": "23.0.1",
+    "joblib": "1.6.0"
+  },
+  "source_phase3_dataset_id": "20261008T141100218333Z",
+  "source_phase4_run_id": "20261008T144500219618Z",
+  "protocol_sha256": "26c7043868408e434cbbe61ee0ef8247fa393629e1f6bcf9a4c333237e57a668",
+  "train_sample_sha256": "5a066e664c798e2f7cf8104ee94a2c70eb094fac57c61c0b22ceeb37eed2fe0c",
+  "validation_sample_sha256": "1c2147ff20364c1f4c027af7e4db5bbf053c51cfb1c5b61b8064a9b612da9d28",
+  "model_path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_ValidationWinner_Volatility\\model.joblib",
+  "model_sha256": "0952138812de95dd30ee6338c88b32a4d35e5db9adf73065ccbff8404e856868"
+}

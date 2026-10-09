@@ -1,0 +1,11 @@
+fold,validation_winner,survivorship_biased,candidate_selection_biased,point_in_time_membership
+2017,RandomForest,True,True,False
+2018,LightGBM,True,True,False
+2019,RandomForest,True,True,False
+2020,RandomForest,True,True,False
+2021,LightGBM,True,True,False
+2022,RandomForest,True,True,False
+2023,LightGBM,True,True,False
+2024,RandomForest,True,True,False
+2025,LightGBM,True,True,False
+2026,RandomForest,True,True,False

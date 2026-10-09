@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": {
+    "identical_test_keys_and_labels": true,
+    "saved_full_metrics_recomputed": true,
+    "saved_yearly_metrics_recomputed": true,
+    "saved_paired_metrics_recomputed": true
+  },
+  "survivorship_biased": true,
+  "candidate_selection_biased": true,
+  "point_in_time_membership": false
+}

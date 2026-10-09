@@ -1,0 +1,136 @@
+{
+  "survivorship_biased": true,
+  "candidate_selection_biased": true,
+  "point_in_time_membership": false,
+  "phase": 5,
+  "status": "RUNNING",
+  "run_id": "20261009T033111412374Z",
+  "directory": "experiments\\phase5\\20261009T033111412374Z",
+  "source_phase3_dataset_id": "20261008T141100218333Z",
+  "source_panel_path": "data\\processed\\phase3\\20261008T141100218333Z\\research_matrix.parquet",
+  "source_panel_sha256": "0da610d74a63cfd48c003dce4372933eb14c5e4b365b0dbe11ae10df0b3470cf",
+  "source_phase4_run_id": "20261008T144500219618Z",
+  "verified_phase4_RankIC": {
+    "EqualWeight": 0.0193064047365755,
+    "OLS": 0.0222028202212378,
+    "Ridge": 0.0201353636918419,
+    "Lasso": 0.0223780230972612,
+    "ElasticNet": 0.0200077578037463
+  },
+  "upstream_inventory_before": "4f35825ede5c43507f767de1c93177d0e050fe390154f0e199e0ba5374b3e9bc",
+  "upstream_docs_sha256": {
+    "PHASE1_REPORT.md": "b5fe7bc49a4e5cee01ddaa0a6caf6afcdda94ffb5f8d8da7bcfae2a05f866347",
+    "PHASE2_REPORT.md": "de437c31872aab880ffe613acc8562c68f632a50c68424bae837c31b4b0232f4",
+    "PHASE2_5_REPORT.md": "b01dbec9d7cb4f595295fb90b0141e5c0b7ba1e2c10f040d166d1a3458c1becb",
+    "PHASE3_REPORT.md": "7788d8ea8efd8f46f7efee73d6bf04f1a36ed11d487685b3ad47b9fd4b90daee",
+    "PHASE4_REPORT.md": "4ed462126758e58c163eaf672d21b4a73647c3e24112e13193b7ebac880b960a",
+    "DATA_CONVENTIONS.md": "55de84d7c43ef69b8397877389877ad54bf0b2357b9157bf576ff9363d1c35be",
+    "RESEARCH_PROTOCOL.md": "a0e969e7b6607671736d5f45e1b36d8bc1c6e0eba87e95ed3e2bbf8806b0a887",
+    "POINT_IN_TIME_ELIGIBILITY.md": "b088f28d28903bbda99576d2f0d00272a62c3d6e28df0f6d35a8329470e5006d",
+    "FACTOR_DEFINITIONS.md": "29e4bf9727adcc7a3de8ca3407524c45d5a5c54c4b815d956591394db1b6a5af",
+    "TIMING_CONVENTION.md": "0441a7bc2da78b9b13cf1396444c6da2066e3480fe3f3512f99ef7c9ff7ddc36",
+    "TIMING_AUDIT.md": "6f8a21c7ba667bfd6c075434f8260632b7bf582b937512668cf6fc1b47bc4044",
+    "DATA_LIMITATIONS.md": "973579f42cfee4f991a2293f37fb021a943f9c4af47f189e1fecd21e1463eb65",
+    "PHASE4_PROTOCOL.md": "336ff7cdea068a7abfff22670f32c43c8f3873608455174b4582225c7485dbcc",
+    "config.yaml": "d43092feacb05a1dc8d41e4f283c284619f68ff1d3ea5d569b4939717ea13b67",
+    "reports/single_factor_report.md": "c5709e189cb56bb8dd7cd3b6c8ee48e9c27ace7c80d8458c4de639ad55b17cc4",
+    "reports/baseline_report.md": "5067f20df6d881659c2cf1782fdecd4e1557d7d236ba874ad313374b192d6aec",
+    "requirements-lock.txt": "2d09318a3ac6d9e8d1c6bc8aa4ea15c613d3f9cf5699e1a7205d7c3d3e122374",
+    "requirements-phase4-lock.txt": "0a20a80965730d36226506635de2ed86814fee6f38965fc3036dd4787403eb35"
+  },
+  "research_log_prefix_bytes": 7043,
+  "research_log_prefix_sha256": "228a31625a80f6ad7dde8e37891adc81e04fee0f7562785a3d686d3941f6bdd2",
+  "protocol_sha256": "26c7043868408e434cbbe61ee0ef8247fa393629e1f6bcf9a4c333237e57a668",
+  "code_sha256": {
+    "scripts\\run_phase5.py": "8869321e796d3287514da7e6d6aad7ca15f51d4fa359e00b7f292921e8317017",
+    "src\\models\\ml_walkforward.py": "6ccb7d73234b91a37c7d1dee2d69c073a0c58efd62ace72eaed9b32725c1f86c",
+    "tests\\test_phase5.py": "e74e99ca0a58ace7aa3b546925b81c287a2d4580495fcdaf3991a9eb2a84b09b",
+    "requirements-phase5-lock.txt": "884e04bdfdb28f6aa2d8d04d5ea34fd6d37874d9e7f179344cb746100f70fb06",
+    "PHASE5_FEATURE_SET.md": "a31939483f428b873cf711839ca80f18b90af0fca1b739790e2207f304c0f446"
+  },
+  "features": [
+    "RET_5",
+    "RET_10",
+    "RET_20",
+    "RET_60",
+    "VOL_10",
+    "VOL_20",
+    "VOL_60",
+    "ILLIQ_20",
+    "DOLLAR_VOLUME_20",
+    "VOLUME_RATIO_20",
+    "VOLUME_SURPRISE_20",
+    "PRICE_MA20",
+    "PRICE_MA60",
+    "DIST_52W_HIGH",
+    "INTRADAY_RANGE",
+    "OPEN_CLOSE_RETURN"
+  ],
+  "grids": {
+    "RandomForest": [
+      {
+        "n_estimators": 64,
+        "max_depth": 4,
+        "min_samples_leaf": 100,
+        "max_features": 0.75,
+        "bootstrap": true,
+        "max_samples": 0.1
+      },
+      {
+        "n_estimators": 64,
+        "max_depth": 6,
+        "min_samples_leaf": 100,
+        "max_features": 0.75,
+        "bootstrap": true,
+        "max_samples": 0.1
+      }
+    ],
+    "LightGBM": [
+      {
+        "n_estimators": 150,
+        "learning_rate": 0.05,
+        "num_leaves": 7,
+        "max_depth": 3,
+        "min_child_samples": 200,
+        "max_bin": 63,
+        "subsample": 0.8,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0
+      },
+      {
+        "n_estimators": 150,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "max_depth": 4,
+        "min_child_samples": 200,
+        "max_bin": 63,
+        "subsample": 0.8,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0
+      }
+    ]
+  },
+  "seed": 42,
+  "seed_rule": "42 + test year",
+  "tests": {
+    "tests": 95,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 95,
+    "warnings": 37
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "scipy": "1.18.1",
+    "pyarrow": "23.0.1",
+    "joblib": "1.6.0"
+  },
+  "prediction_files": [],
+  "model_artifacts": []
+}

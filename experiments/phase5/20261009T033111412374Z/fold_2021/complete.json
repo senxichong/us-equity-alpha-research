@@ -1,0 +1,27 @@
+{
+  "fold": 2021,
+  "validation_winner": "LightGBM",
+  "sample_audit": {
+    "train_start": "2011-01-01",
+    "train_end": "2019-12-31",
+    "validation_start": "2020-01-01",
+    "validation_end": "2020-12-31",
+    "test_start": "2021-01-01",
+    "test_end": "2021-12-31",
+    "fold": 2021,
+    "train_rows": 783780,
+    "validation_rows": 91737,
+    "test_feature_rows": 95757,
+    "train_purged_rows": 2206,
+    "validation_purged_rows": 2252,
+    "train_latest_label_timestamp": "2019-12-31 14:30:00+00:00",
+    "validation_latest_label_timestamp": "2020-12-31 14:30:00+00:00",
+    "train_hash": "bee99afa7b961e8ba16875e4e0c7536f9c758187f769d8058bded7527c2e6db4",
+    "validation_hash": "08137c9b90d3f7e2deea318515e3662859102a59a0628e524531e8a604eb45c6",
+    "test_features_hash": "b87245835a960975c486a28c374b8c140e4b67cf3e47d944cc0376505b293d29"
+  },
+  "complete": true,
+  "survivorship_biased": true,
+  "candidate_selection_biased": true,
+  "point_in_time_membership": false
+}

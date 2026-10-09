@@ -57,3 +57,23 @@ Stage C/D COMPLETE. Result: 10 annual folds, all five primary models, four Ridge
 ## 20261008T150317091718Z
 
 Phase 4 FINAL outcomes. Result: Highest raw signed mean RankIC: ILLIQ_20 (0.01395); largest absolute primary RankIC HAC t: ILLIQ_20 (4.23). The weakest magnitude is VOLUME_RATIO_20 (0.00048, HAC t=0.27). Negative means are retained and are not automatically failures. Equal Weight OOS RankIC is 0.01931, versus the strongest raw-signed individual factor on the identical OOS sample, VOL_20 (0.01805). Thus Equal Weight exceeds that individual-factor ranking mean. Ridge has RankIC 0.02014, above Equal Weight. Lasso has the highest observed OOS RankIC (0.02238) among the five fixed baselines. These are observed comparisons, not proof that differences are statistically significant. Tests: 87 passed, 0 failed. Interpretation: overlapping-label, survivorship/candidate-selection-biased prototype associations; no strategy profitability claim. Next step: STOP; Phase 5 requires a new instruction. Decision: PASS. Negative/inconclusive factors and all attempted grids remain saved.
+
+## Phase 5 preregistration — separately authorized, before ML outcomes
+
+Hypothesis: constrained RF/LightGBM may capture nonlinear ranking structure, but may not reliably beat frozen Ridge or observed Lasso. Method: PHASE5_PROTOCOL.md fixes exact Phase 4 folds/samples, two candidates per nonlinear family, training-only operations, validation RankIC selection, paired HAC comparisons and the fixed decision thresholds. Saved Phase 4 facts and 10-fold identity were programmatically verified. LightGBM 4.7.0 is available. Expected interpretation: negative/inconclusive evidence is valid; no outcome-dependent new factors or trials.
+
+Primary experiment: run all ten folds and preserve every trial/model/test prediction; results pending. Next step: audit saved outputs, never retune a tested fold.
+
+Controlled diagnostics: validation-only fold importance and validation-winning-family group ablations, fixed random-label and random-feature controls in every fold; results pending. Expected interpretation: correlated features and unstable importance are not causal discoveries; suspicious controls trigger investigation. Next step: year/2022/disagreement analysis without selecting cases by target profitability, then stop after Phase 5.
+
+## 20261009T033111731269Z — Phase 5
+
+PRIMARY/CONTROLS BEGIN. Hypothesis: nonlinear value may be weak or absent. Fixed two-candidate RF/LightGBM grids, exact Phase 4 samples/folds, reused Ridge, training-only fit and validation-only selection. Controls and validation-winner group diagnostics are predeclared. Results pending; no test-based retuning.
+
+## 20261009T034015323250Z — Phase 5
+
+EXPERIMENTS COMPLETE. Result: ten frozen folds, selected RF/LightGBM and reused linear predictions, fixed controls and validation-winner ablations saved. Interpretation pending disk-based evaluation and paired HAC audit. Next: evaluate artifacts and report; no retuning or new factors.
+
+## 20261009T034434556909Z — Phase 5 completed
+
+Hypothesis: nonlinear ranking may not improve on frozen Ridge. Result: NO RELIABLE IMPROVEMENT; RandomForest RankIC 0.0163758779, paired Ridge gain -0.0037594858, lag-5 HAC CI [-0.0123500864, 0.0048311148], wins 4/10 years. Fixed experiments retained; no test retuning. Controls: 0 investigation flags. Full suite 97 passed/37 warnings. Upstream unchanged. Interpretation: bounded biased-prototype evidence, not strategy performance. Runtime metadata origin corrected in derived summary; native LightGBM stopping warnings retained descriptively. Next: stop; Phase 6 requires a new instruction.

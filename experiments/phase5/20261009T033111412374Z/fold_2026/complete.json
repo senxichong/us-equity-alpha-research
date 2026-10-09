@@ -1,0 +1,27 @@
+{
+  "fold": 2026,
+  "validation_winner": "RandomForest",
+  "sample_audit": {
+    "train_start": "2011-01-01",
+    "train_end": "2024-12-31",
+    "validation_start": "2025-01-01",
+    "validation_end": "2025-12-31",
+    "test_start": "2026-01-01",
+    "test_end": "2026-12-31",
+    "fold": 2026,
+    "train_rows": 1264893,
+    "validation_rows": 95533,
+    "test_feature_rows": 75427,
+    "train_purged_rows": 2340,
+    "validation_purged_rows": 2352,
+    "train_latest_label_timestamp": "2024-12-31 14:30:00+00:00",
+    "validation_latest_label_timestamp": "2025-12-31 14:30:00+00:00",
+    "train_hash": "35fc605d0bfed6e65ac71df57b6507806cbe5ad58f55973b4c83f1a56038b378",
+    "validation_hash": "2c5a325d2d49c69137f5c45b31a50d51059361431b4ab9fb40a9a6ea78f3d3cc",
+    "test_features_hash": "00ed5628a2582638bc31d725d172cf129f6fcfface07c958a8a5077309912a29"
+  },
+  "complete": true,
+  "survivorship_biased": true,
+  "candidate_selection_biased": true,
+  "point_in_time_membership": false
+}

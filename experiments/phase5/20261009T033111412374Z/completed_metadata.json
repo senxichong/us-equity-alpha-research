@@ -1,0 +1,2392 @@
+{
+  "survivorship_biased": true,
+  "candidate_selection_biased": true,
+  "point_in_time_membership": false,
+  "phase": 5,
+  "status": "EXPERIMENTS_COMPLETE",
+  "run_id": "20261009T033111412374Z",
+  "directory": "experiments\\phase5\\20261009T033111412374Z",
+  "source_phase3_dataset_id": "20261008T141100218333Z",
+  "source_panel_path": "data\\processed\\phase3\\20261008T141100218333Z\\research_matrix.parquet",
+  "source_panel_sha256": "0da610d74a63cfd48c003dce4372933eb14c5e4b365b0dbe11ae10df0b3470cf",
+  "source_phase4_run_id": "20261008T144500219618Z",
+  "verified_phase4_RankIC": {
+    "EqualWeight": 0.0193064047365755,
+    "OLS": 0.0222028202212378,
+    "Ridge": 0.0201353636918419,
+    "Lasso": 0.0223780230972612,
+    "ElasticNet": 0.0200077578037463
+  },
+  "upstream_inventory_before": "4f35825ede5c43507f767de1c93177d0e050fe390154f0e199e0ba5374b3e9bc",
+  "upstream_docs_sha256": {
+    "PHASE1_REPORT.md": "b5fe7bc49a4e5cee01ddaa0a6caf6afcdda94ffb5f8d8da7bcfae2a05f866347",
+    "PHASE2_REPORT.md": "de437c31872aab880ffe613acc8562c68f632a50c68424bae837c31b4b0232f4",
+    "PHASE2_5_REPORT.md": "b01dbec9d7cb4f595295fb90b0141e5c0b7ba1e2c10f040d166d1a3458c1becb",
+    "PHASE3_REPORT.md": "7788d8ea8efd8f46f7efee73d6bf04f1a36ed11d487685b3ad47b9fd4b90daee",
+    "PHASE4_REPORT.md": "4ed462126758e58c163eaf672d21b4a73647c3e24112e13193b7ebac880b960a",
+    "DATA_CONVENTIONS.md": "55de84d7c43ef69b8397877389877ad54bf0b2357b9157bf576ff9363d1c35be",
+    "RESEARCH_PROTOCOL.md": "a0e969e7b6607671736d5f45e1b36d8bc1c6e0eba87e95ed3e2bbf8806b0a887",
+    "POINT_IN_TIME_ELIGIBILITY.md": "b088f28d28903bbda99576d2f0d00272a62c3d6e28df0f6d35a8329470e5006d",
+    "FACTOR_DEFINITIONS.md": "29e4bf9727adcc7a3de8ca3407524c45d5a5c54c4b815d956591394db1b6a5af",
+    "TIMING_CONVENTION.md": "0441a7bc2da78b9b13cf1396444c6da2066e3480fe3f3512f99ef7c9ff7ddc36",
+    "TIMING_AUDIT.md": "6f8a21c7ba667bfd6c075434f8260632b7bf582b937512668cf6fc1b47bc4044",
+    "DATA_LIMITATIONS.md": "973579f42cfee4f991a2293f37fb021a943f9c4af47f189e1fecd21e1463eb65",
+    "PHASE4_PROTOCOL.md": "336ff7cdea068a7abfff22670f32c43c8f3873608455174b4582225c7485dbcc",
+    "config.yaml": "d43092feacb05a1dc8d41e4f283c284619f68ff1d3ea5d569b4939717ea13b67",
+    "reports/single_factor_report.md": "c5709e189cb56bb8dd7cd3b6c8ee48e9c27ace7c80d8458c4de639ad55b17cc4",
+    "reports/baseline_report.md": "5067f20df6d881659c2cf1782fdecd4e1557d7d236ba874ad313374b192d6aec",
+    "requirements-lock.txt": "2d09318a3ac6d9e8d1c6bc8aa4ea15c613d3f9cf5699e1a7205d7c3d3e122374",
+    "requirements-phase4-lock.txt": "0a20a80965730d36226506635de2ed86814fee6f38965fc3036dd4787403eb35"
+  },
+  "research_log_prefix_bytes": 7043,
+  "research_log_prefix_sha256": "228a31625a80f6ad7dde8e37891adc81e04fee0f7562785a3d686d3941f6bdd2",
+  "protocol_sha256": "26c7043868408e434cbbe61ee0ef8247fa393629e1f6bcf9a4c333237e57a668",
+  "code_sha256": {
+    "scripts\\run_phase5.py": "8869321e796d3287514da7e6d6aad7ca15f51d4fa359e00b7f292921e8317017",
+    "src\\models\\ml_walkforward.py": "6ccb7d73234b91a37c7d1dee2d69c073a0c58efd62ace72eaed9b32725c1f86c",
+    "tests\\test_phase5.py": "e74e99ca0a58ace7aa3b546925b81c287a2d4580495fcdaf3991a9eb2a84b09b",
+    "requirements-phase5-lock.txt": "884e04bdfdb28f6aa2d8d04d5ea34fd6d37874d9e7f179344cb746100f70fb06",
+    "PHASE5_FEATURE_SET.md": "a31939483f428b873cf711839ca80f18b90af0fca1b739790e2207f304c0f446"
+  },
+  "features": [
+    "RET_5",
+    "RET_10",
+    "RET_20",
+    "RET_60",
+    "VOL_10",
+    "VOL_20",
+    "VOL_60",
+    "ILLIQ_20",
+    "DOLLAR_VOLUME_20",
+    "VOLUME_RATIO_20",
+    "VOLUME_SURPRISE_20",
+    "PRICE_MA20",
+    "PRICE_MA60",
+    "DIST_52W_HIGH",
+    "INTRADAY_RANGE",
+    "OPEN_CLOSE_RETURN"
+  ],
+  "grids": {
+    "RandomForest": [
+      {
+        "n_estimators": 64,
+        "max_depth": 4,
+        "min_samples_leaf": 100,
+        "max_features": 0.75,
+        "bootstrap": true,
+        "max_samples": 0.1
+      },
+      {
+        "n_estimators": 64,
+        "max_depth": 6,
+        "min_samples_leaf": 100,
+        "max_features": 0.75,
+        "bootstrap": true,
+        "max_samples": 0.1
+      }
+    ],
+    "LightGBM": [
+      {
+        "n_estimators": 150,
+        "learning_rate": 0.05,
+        "num_leaves": 7,
+        "max_depth": 3,
+        "min_child_samples": 200,
+        "max_bin": 63,
+        "subsample": 0.8,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0
+      },
+      {
+        "n_estimators": 150,
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "max_depth": 4,
+        "min_child_samples": 200,
+        "max_bin": 63,
+        "subsample": 0.8,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0
+      }
+    ]
+  },
+  "seed": 42,
+  "seed_rule": "42 + test year",
+  "tests": {
+    "tests": 95,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 95,
+    "warnings": 37
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "scipy": "1.18.1",
+    "pyarrow": "23.0.1",
+    "joblib": "1.6.0"
+  },
+  "prediction_files": [
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\primary_Ridge_All\\oos_predictions.parquet",
+      "sha256": "8fcf3a7bd4612614e420a5165787cab1e834abdf7402ab239b70a457a3a92b6d",
+      "rows": 91015,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "All",
+      "role": "primary",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\secondary_Lasso_All\\oos_predictions.parquet",
+      "sha256": "eabbb33bb5280fc75c1a29d33eb42040e5d7886f1655c9055c6b23eb8f685e64",
+      "rows": 91015,
+      "model": "Lasso",
+      "family": "Lasso",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\secondary_OLS_All\\oos_predictions.parquet",
+      "sha256": "ed6add0733bf99fc3d20f0b96681db3d8ecee563dcf099bd3e8f2104c7b96c0e",
+      "rows": 91015,
+      "model": "OLS",
+      "family": "OLS",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_Ridge_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "f698f7cbbf4b37e7d2edfe8a1aaf74e10ac7cc6793ee5c03990911d0dbda0e0b",
+      "rows": 91015,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_Ridge_Volatility\\oos_predictions.parquet",
+      "sha256": "dac98e3da558d743103f7fc69d782314dcf819543d9ceed384a7477a2b75e59b",
+      "rows": 91015,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_Ridge_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "351a884bbdbaff9efbb8740328309ec5d292cd13720873f06b215eb863d30734",
+      "rows": 91015,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_Ridge_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "27cb56075de092a044aedad82857880a9ce8dea3c3357e8372b6fdb0d8dbfd1a",
+      "rows": 91015,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\primary_RandomForest_All\\oos_predictions.parquet",
+      "sha256": "5d62f07a62cf683736db3f0e73863bfdc912ed1c7a25187b3d93a731a9cf3c87",
+      "rows": 91015,
+      "model": "RandomForest",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "primary",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\primary_LightGBM_All\\oos_predictions.parquet",
+      "sha256": "26abf43193bb03abc0438f20753631ac92d49b4a320f94a4f90807623735af57",
+      "rows": 91015,
+      "model": "LightGBM",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "primary",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_ValidationWinner_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "e135d4be0f73ea83f9d64cf3deea97baff519add408031e353a87e7baf7fed28",
+      "rows": 91015,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_ValidationWinner_Volatility\\oos_predictions.parquet",
+      "sha256": "17076009e2aac4a5ec8729dc17787493dc23f9e9683fd7896aafdd950f58585d",
+      "rows": 91015,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_ValidationWinner_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "9ae44629ac81509382c6cbeda7cc3d637de9bf0ddcfbca230d179a2531558d13",
+      "rows": 91015,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_ValidationWinner_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "18331e6d88371eea4e9fc7cbba4a89ac0069b4ab8990c2ecd02162938dd94038",
+      "rows": 91015,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_ValidationWinner_All\\oos_predictions.parquet",
+      "sha256": "3bb68f9bcad0e7dba255be6396e54f979d5dfc9f1777d1f6bcac642339859a57",
+      "rows": 91015,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "ablation",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\control_RandomLabelControl_All\\oos_predictions.parquet",
+      "sha256": "26f4b9305628f07991861561d6b4179296b68efcf700f463f7327ea60d994253",
+      "rows": 91015,
+      "model": "RandomLabelControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\control_RandomFeatureControl_All\\oos_predictions.parquet",
+      "sha256": "4945b8e763adcdea0d260ad1719760ac29a9079e49602b0e1e06ecbacc3f3355",
+      "rows": 91015,
+      "model": "RandomFeatureControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2017
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\primary_Ridge_All\\oos_predictions.parquet",
+      "sha256": "19dbaa300e1f0b0ca04227365e7f0a2ac94768936ce6d71db41f13e644126de3",
+      "rows": 91863,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "All",
+      "role": "primary",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\secondary_Lasso_All\\oos_predictions.parquet",
+      "sha256": "5c2715f11095e15ac3a7ac6c29ca302e8863893eb6e1f5fe109d4759a67ac35b",
+      "rows": 91863,
+      "model": "Lasso",
+      "family": "Lasso",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\secondary_OLS_All\\oos_predictions.parquet",
+      "sha256": "22d98a7a07e5ad29ebd80ef9f1f131948a07d14cc5a0085b080bea0013db490a",
+      "rows": 91863,
+      "model": "OLS",
+      "family": "OLS",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_Ridge_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "27b756d962b6e2b9023cda3bc4a3931f847996cb926ebfb43dbbef3628205191",
+      "rows": 91863,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_Ridge_Volatility\\oos_predictions.parquet",
+      "sha256": "6f380a89028d898965d6cd732844ec604246046313b40f8c5eccb56e7dfa72b2",
+      "rows": 91863,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_Ridge_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "d8f83d4725008efab8696151254a8a9b4ec1f048fba5c20d4dbd21e19830c9bf",
+      "rows": 91863,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_Ridge_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "1693b625752f9235a721a88ee1ec770df8846888ac2dc82b3836ede6cf9ea214",
+      "rows": 91863,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\primary_RandomForest_All\\oos_predictions.parquet",
+      "sha256": "28afdfa5f2467957e1526e656b077f9d1c4b2da18c54f3e30fb7d15d4face66f",
+      "rows": 91863,
+      "model": "RandomForest",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "primary",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\primary_LightGBM_All\\oos_predictions.parquet",
+      "sha256": "3aee821ec7002b90c9a2ed00cac34164b69ab6e35e6d084667327b5ac83e55a0",
+      "rows": 91863,
+      "model": "LightGBM",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "primary",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_ValidationWinner_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "8e2410443d1cc080db1a462257f7f53410873ababb59a0baa6ce6a4ee2fe5d69",
+      "rows": 91863,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_ValidationWinner_Volatility\\oos_predictions.parquet",
+      "sha256": "344915a03347fb79794df66f5bc61e13ab198221c309111eca43950cd8191b82",
+      "rows": 91863,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_ValidationWinner_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "3906c1468dabf0e37a8e09f865be60e94e7ca849916946f221c977241563358c",
+      "rows": 91863,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_ValidationWinner_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "9b49725eb3f39fba672b39a498066052fab63ca4c06e1ef0b259f7d255a9b045",
+      "rows": 91863,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_ValidationWinner_All\\oos_predictions.parquet",
+      "sha256": "fd6b94f06a8414c6953af832babe0d0ebc4ce1e2b0ecb60e26f671c72b842df8",
+      "rows": 91863,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "ablation",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\control_RandomLabelControl_All\\oos_predictions.parquet",
+      "sha256": "87b53f3a8dcb6312fdcc1d0657e14c2e710519928ebc6d91620da013399e5d72",
+      "rows": 91863,
+      "model": "RandomLabelControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\control_RandomFeatureControl_All\\oos_predictions.parquet",
+      "sha256": "396f52a320a26c73d842b8e6d7f3fe8f5231556eada2f49bf80d01b7416d7d4f",
+      "rows": 91863,
+      "model": "RandomFeatureControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2018
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\primary_Ridge_All\\oos_predictions.parquet",
+      "sha256": "792e0696e4cd0cd1bc425ea0b215500b0fc93a78c89067b9e0c9ec2ea4f5a74f",
+      "rows": 93094,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "All",
+      "role": "primary",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\secondary_Lasso_All\\oos_predictions.parquet",
+      "sha256": "2b12d31e3b7f37e0cca9b5d296fc63f4f0874785cea530b7e98b510192fd259a",
+      "rows": 93094,
+      "model": "Lasso",
+      "family": "Lasso",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\secondary_OLS_All\\oos_predictions.parquet",
+      "sha256": "39afa105c89a9cfd245b847b75ffe14837a461f34ba55932c98eeee575291f99",
+      "rows": 93094,
+      "model": "OLS",
+      "family": "OLS",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_Ridge_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "c602235933e4558f53dd7bd3f71133e50722c30ac4efff7d8cd9b4fba4a94ad0",
+      "rows": 93094,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_Ridge_Volatility\\oos_predictions.parquet",
+      "sha256": "bc7531773d5c0dc391977de3549677ad6e330ffa06f21eb74b208b137030ca04",
+      "rows": 93094,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_Ridge_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "f875ead5a5f457fe08027d23287a200657440b9bfed9d3b5591f8059a62fde22",
+      "rows": 93094,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_Ridge_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "ff4e50cb3fc5341e368ced3c81f9d50db9e219bd63fd7e7f2f13140485bf405f",
+      "rows": 93094,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\primary_RandomForest_All\\oos_predictions.parquet",
+      "sha256": "463b7260280a3bf8bdf69d82ad1193ee33bbd3f6778d86982c5e446f7ec61325",
+      "rows": 93094,
+      "model": "RandomForest",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "primary",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\primary_LightGBM_All\\oos_predictions.parquet",
+      "sha256": "4a53983434a1c94f27e13b2bc085a62f7e4e7b596885d8e700b16281ecba7e08",
+      "rows": 93094,
+      "model": "LightGBM",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "primary",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_ValidationWinner_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "a10e96e0e0a3885e5a4391e20c9393bba0e34123ba7d3d28bb55cfd273d3981b",
+      "rows": 93094,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_ValidationWinner_Volatility\\oos_predictions.parquet",
+      "sha256": "0b39d24d34474d51c208e9c140786d5d274703839e1679b091657cb0f1bb96dd",
+      "rows": 93094,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_ValidationWinner_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "abf7b991cb7bb559638b6870f368c8ca751b30a12c675fd22fd192c06168d0d2",
+      "rows": 93094,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_ValidationWinner_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "2d063543803641ff2029c79636ff7b3f6a8c5ce252bee83f39cd32859096676e",
+      "rows": 93094,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_ValidationWinner_All\\oos_predictions.parquet",
+      "sha256": "b5bf5895e7ac9e72080c7e8ba57a782e73102fc10b3fb6dd40bc9f926957f41f",
+      "rows": 93094,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "ablation",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\control_RandomLabelControl_All\\oos_predictions.parquet",
+      "sha256": "5b34313e36cc92aa9e5196ae228d2c3264253033299987493317a2e1da76dbdc",
+      "rows": 93094,
+      "model": "RandomLabelControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\control_RandomFeatureControl_All\\oos_predictions.parquet",
+      "sha256": "1be5252b6ba7456b877785769a79df8b76a698ec225fbaad7b42d4a4d9c3cbce",
+      "rows": 93094,
+      "model": "RandomFeatureControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2019
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\primary_Ridge_All\\oos_predictions.parquet",
+      "sha256": "50ee21a0b622c694b14c847285458e98444b8ef8bd5690e2936a799e3ebf5c9f",
+      "rows": 93991,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "All",
+      "role": "primary",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\secondary_Lasso_All\\oos_predictions.parquet",
+      "sha256": "e4b12a324e826a94e6cf834bdabb796666416d6bdbdc2d67889504d9a7384541",
+      "rows": 93991,
+      "model": "Lasso",
+      "family": "Lasso",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\secondary_OLS_All\\oos_predictions.parquet",
+      "sha256": "5f4a0c4ba5780d5a33ce968d928dafbbb4a170bac6ac3548a4cc99f0d3b25a17",
+      "rows": 93991,
+      "model": "OLS",
+      "family": "OLS",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_Ridge_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "fc55b31dc2d7c69d8f8757c560f636a4a305b70b1f808509f0f23fc585383f2d",
+      "rows": 93991,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_Ridge_Volatility\\oos_predictions.parquet",
+      "sha256": "5779c145113ac6f5dd589888facd9bc28e92ff249f6934b93481fc2e60feba78",
+      "rows": 93991,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_Ridge_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "8112602861607a0f4b7daaab97281dcfa2bc3e181a9dcfbe9d207f7571650e56",
+      "rows": 93991,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_Ridge_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "7431057493db27d6cf4f6f3032d016fee288b70f58888dc9b8a765721a40c780",
+      "rows": 93991,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\primary_RandomForest_All\\oos_predictions.parquet",
+      "sha256": "2dd8d129dc88183f0b5ee2d0447028df30e65e5356e05f01e0501c2daedeb16a",
+      "rows": 93991,
+      "model": "RandomForest",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "primary",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\primary_LightGBM_All\\oos_predictions.parquet",
+      "sha256": "be006741105f2b186536f867b238008926d5a5176565746175d503215b9e0cce",
+      "rows": 93991,
+      "model": "LightGBM",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "primary",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_ValidationWinner_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "76f7b7ec6c19f3f657a32aa4f5cd42d1f6abc7ab241df9806cc39704f80821e2",
+      "rows": 93991,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_ValidationWinner_Volatility\\oos_predictions.parquet",
+      "sha256": "5135921235fd29f13d29c48cbfc427a5d7adba5dd464b5353d3b195ac4bc625d",
+      "rows": 93991,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_ValidationWinner_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "7b307d68d6829c1a90051ace7c3a4b92f5773498fc1621a28d1499c8d4ccff45",
+      "rows": 93991,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_ValidationWinner_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "491a2a7e4e5c6f260f839caa51ae11060a9aa71af1fbd5736b472e9917066081",
+      "rows": 93991,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_ValidationWinner_All\\oos_predictions.parquet",
+      "sha256": "776848d94a977d0a9a2f42653fbe1d9a718ca5115eeeddc99640cab57adf670d",
+      "rows": 93991,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "ablation",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\control_RandomLabelControl_All\\oos_predictions.parquet",
+      "sha256": "9fa5cbb23be0a8a96f949d3a9d99caa163a755d29dd8f19d62012a7c25831a07",
+      "rows": 93991,
+      "model": "RandomLabelControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\control_RandomFeatureControl_All\\oos_predictions.parquet",
+      "sha256": "b1866218452a01a793c6b06b7c569d0e259f9dad47e6c339e555f3529f88ead2",
+      "rows": 93991,
+      "model": "RandomFeatureControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2020
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\primary_Ridge_All\\oos_predictions.parquet",
+      "sha256": "26ca2253a2edc81b61d974c01c83fb302c3814c56f9293d2d19e30965275318b",
+      "rows": 95757,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "All",
+      "role": "primary",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\secondary_Lasso_All\\oos_predictions.parquet",
+      "sha256": "311b15cae44c9db08f883318c529d3292c23fd037fbe71658d692f96d73c02f3",
+      "rows": 95757,
+      "model": "Lasso",
+      "family": "Lasso",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\secondary_OLS_All\\oos_predictions.parquet",
+      "sha256": "cc770be831a7694a9aa9671ce8e04db3d4f782753ccbd66640569cc000f64b47",
+      "rows": 95757,
+      "model": "OLS",
+      "family": "OLS",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_Ridge_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "42ffeac03f3f922c0a27800e050cb0602948534ef6b14695cb6a088ee3c123c9",
+      "rows": 95757,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_Ridge_Volatility\\oos_predictions.parquet",
+      "sha256": "252703832b9964f789602dcb0d7fdc7030dcfb8788e21ee851786f15209b67d5",
+      "rows": 95757,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_Ridge_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "94a785ffc47645a6315cfd279f105c57d645babf79eacae662b375d1225076f1",
+      "rows": 95757,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_Ridge_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "70a6694918bfd696b4b517fb44eed83cacbfad2dcd02004ce35444f544020f87",
+      "rows": 95757,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\primary_RandomForest_All\\oos_predictions.parquet",
+      "sha256": "c2a30bcf72ce269e6580975e8c0276d95fdb29e5b00a3d9413d27ff5bda745bf",
+      "rows": 95757,
+      "model": "RandomForest",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "primary",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\primary_LightGBM_All\\oos_predictions.parquet",
+      "sha256": "85e091ce68edd14298c1233ff507d5d884acec5d3cd88007ceed4c13661872c4",
+      "rows": 95757,
+      "model": "LightGBM",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "primary",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_ValidationWinner_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "b57de267b27f5f2f38293195f9fe1f7bd3a86da8bceb0086779db2c4116ed46d",
+      "rows": 95757,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_ValidationWinner_Volatility\\oos_predictions.parquet",
+      "sha256": "4d2f65dae7c13ac19f16ac5a6016591a4b1823f81fd6136c759dadb443932927",
+      "rows": 95757,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_ValidationWinner_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "5717cc496659d0e6700b6593569d53efe2cff8e41edfa6b67cfbfd1eba5d586c",
+      "rows": 95757,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_ValidationWinner_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "16422b13988899afdb9273eec386c973f4934e681c17bfda1884bb7b3640260c",
+      "rows": 95757,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_ValidationWinner_All\\oos_predictions.parquet",
+      "sha256": "62d618bee94cc8a7757ae635dec25cf82c291cce255b4f196cda1bbe1cd41bb9",
+      "rows": 95757,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "ablation",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\control_RandomLabelControl_All\\oos_predictions.parquet",
+      "sha256": "c6d5543528502b62cb5cd126e3d5f6e8eb1548a158ffec9a87393f034d848234",
+      "rows": 95757,
+      "model": "RandomLabelControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\control_RandomFeatureControl_All\\oos_predictions.parquet",
+      "sha256": "623ecc6efa5b7fe2784bf3b1372d44305d8fbd1fbe8b9aef1221d762d1a8574f",
+      "rows": 95757,
+      "model": "RandomFeatureControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2021
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\primary_Ridge_All\\oos_predictions.parquet",
+      "sha256": "6c7c021d286e068138fd21864b2137b9d38318e8c16b8d671a70dea143141183",
+      "rows": 96747,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "All",
+      "role": "primary",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\secondary_Lasso_All\\oos_predictions.parquet",
+      "sha256": "2d13037654e9da6289ccac89e2f96b997520e2768e98c8e9546ef8f1586c1cb8",
+      "rows": 96747,
+      "model": "Lasso",
+      "family": "Lasso",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\secondary_OLS_All\\oos_predictions.parquet",
+      "sha256": "f45247418e09c3dc48a8987e1ef8e391bb7f6240585804dce46b1bc0e2c105d9",
+      "rows": 96747,
+      "model": "OLS",
+      "family": "OLS",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_Ridge_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "0c6200f578434e49fa19d3de3120389ae2b8d93ed0ef3e4e12866ec902f536dd",
+      "rows": 96747,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_Ridge_Volatility\\oos_predictions.parquet",
+      "sha256": "9858ec5f2b001ce38a04ee14b5c813b5399fc36edbbb7b00c20b42ba8963bd96",
+      "rows": 96747,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_Ridge_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "0fa90524c6afe9c5834b3d6788d80697059c7c98a7b8fd5fe767bab5f2bef17a",
+      "rows": 96747,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_Ridge_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "8a409d66235067e91fd5c026dfc00f1bae72b0d13068b353f8e8ac01c4bc5dc4",
+      "rows": 96747,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\primary_RandomForest_All\\oos_predictions.parquet",
+      "sha256": "f323122b23c267c89753d3550db27a61c74fd0db50b02afbc616299c1cbd0bc8",
+      "rows": 96747,
+      "model": "RandomForest",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "primary",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\primary_LightGBM_All\\oos_predictions.parquet",
+      "sha256": "9fdcec7121506cfee6f38a6dd34dec04a73031d40f27bae77c2059ba81560f14",
+      "rows": 96747,
+      "model": "LightGBM",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "primary",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_ValidationWinner_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "f5a92ff4987a7863a84d9a0ad3dd7bb25d84580c27648e4487642e7c22bc969d",
+      "rows": 96747,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_ValidationWinner_Volatility\\oos_predictions.parquet",
+      "sha256": "4e641cc4c88078377f6e0efba5ef08fb1e15476b321df4caa4981dc4cf74fef9",
+      "rows": 96747,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_ValidationWinner_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "f4a969e4de99e5169ca7448e6e1292441050a79ac1b0dab7aae9ac82ee62e520",
+      "rows": 96747,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_ValidationWinner_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "ae9e2fa1fe0dd3d0c70d504dbd8fc21756b6c9e615ad9dfc75c4ea7866acc343",
+      "rows": 96747,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_ValidationWinner_All\\oos_predictions.parquet",
+      "sha256": "26f0b6a973ba50df12d4cd8aac1037a2eb8646787425d45696ac8b32c7adc918",
+      "rows": 96747,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "ablation",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\control_RandomLabelControl_All\\oos_predictions.parquet",
+      "sha256": "12a682e57e203f9ee4e49f111a61e219a356a4dd98d4b64e0f07b56418ca5662",
+      "rows": 96747,
+      "model": "RandomLabelControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\control_RandomFeatureControl_All\\oos_predictions.parquet",
+      "sha256": "ab4b5ea8f6e342aee8ffa0192919183071aa02787da770968e625eab1b4d2dbb",
+      "rows": 96747,
+      "model": "RandomFeatureControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2022
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\primary_Ridge_All\\oos_predictions.parquet",
+      "sha256": "53324375011ca62e41fc58d56e3e10c6f5b47f2f2320b967a5089dd5cb3fcfe7",
+      "rows": 96749,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "All",
+      "role": "primary",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\secondary_Lasso_All\\oos_predictions.parquet",
+      "sha256": "52a8b566ec0db72b5254b4334edec21d6fbcb963a0a27a6043a301e3f16987a8",
+      "rows": 96749,
+      "model": "Lasso",
+      "family": "Lasso",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\secondary_OLS_All\\oos_predictions.parquet",
+      "sha256": "a042953094f67de5d72f3c9390db78b47c0ea2b2e26cdffab65da7940912a1ae",
+      "rows": 96749,
+      "model": "OLS",
+      "family": "OLS",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_Ridge_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "3a31d554636f8a229cfc71bf0248b153b966fa10c9eee383e44103d6fc55772d",
+      "rows": 96749,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_Ridge_Volatility\\oos_predictions.parquet",
+      "sha256": "9148d84686911bc8df9bd7d5d6bbde4643a50184dad95582551515adbafa7970",
+      "rows": 96749,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_Ridge_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "4116e06f3a0ef9da92e14fa658800d7257565e3754972753c2125b1bea8ee3e6",
+      "rows": 96749,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_Ridge_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "918cd9d963a6d29296d198d2603995e636c301a2718ef45529a785b34958bd43",
+      "rows": 96749,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\primary_RandomForest_All\\oos_predictions.parquet",
+      "sha256": "c3a2b740e1e68f11d74edf1db07e3e38ebd195de86bbaf87a1f4e0964ad98d7f",
+      "rows": 96749,
+      "model": "RandomForest",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "primary",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\primary_LightGBM_All\\oos_predictions.parquet",
+      "sha256": "86ec562e8dda65843787d941808ec68912925273ee41a24c9ec3355500e3c258",
+      "rows": 96749,
+      "model": "LightGBM",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "primary",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_ValidationWinner_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "3a0f08f150722f83e49618001c1fc0ff73f7838fbb3fa8bfaddca7a17c910a31",
+      "rows": 96749,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_ValidationWinner_Volatility\\oos_predictions.parquet",
+      "sha256": "772a8014e934faa8e15f7803261c3cf960d87ffd271153e1ba977945789c31cf",
+      "rows": 96749,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_ValidationWinner_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "435b6d3e6456e0a168efe828f8a257f796c42ede5523feaa6d75ede28cb7369d",
+      "rows": 96749,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_ValidationWinner_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "6b6c7eb81e150607261d99f0a6925dee8db12e74abf83691227779cee9df72bc",
+      "rows": 96749,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_ValidationWinner_All\\oos_predictions.parquet",
+      "sha256": "b1d438eb09733a910d3ecd289ed084f573b2672cb37575de50c1009a925d4f35",
+      "rows": 96749,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "ablation",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\control_RandomLabelControl_All\\oos_predictions.parquet",
+      "sha256": "78c9c425b4ae24a359ef20f9ea730535cf98568b825dbbad39c8e4d44f36c04a",
+      "rows": 96749,
+      "model": "RandomLabelControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\control_RandomFeatureControl_All\\oos_predictions.parquet",
+      "sha256": "18dd298ef545f4813ea503b03af995429a8a5ae0f861d8e61052568df9217627",
+      "rows": 96749,
+      "model": "RandomFeatureControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2023
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\primary_Ridge_All\\oos_predictions.parquet",
+      "sha256": "f8c3bf8568555c2199645b24a4c123061459468691e914f3583fb8ecf0507cd0",
+      "rows": 98005,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "All",
+      "role": "primary",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\secondary_Lasso_All\\oos_predictions.parquet",
+      "sha256": "65555dc8a8eb5012f2106f3d85d5a0acd80bd761ba2c506ee9ddd71137b5c818",
+      "rows": 98005,
+      "model": "Lasso",
+      "family": "Lasso",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\secondary_OLS_All\\oos_predictions.parquet",
+      "sha256": "8c56d56a031395c3dbf509bee00f05dba25e24b34492437d087af030b7e4e76d",
+      "rows": 98005,
+      "model": "OLS",
+      "family": "OLS",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_Ridge_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "592dde0685a1f9a7cd16653005b2d85ae3dcf2e7cb2f706ab8db73b2375a29a8",
+      "rows": 98005,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_Ridge_Volatility\\oos_predictions.parquet",
+      "sha256": "27dd96be282bf829220784d30c33c0b331c9993fa292d95e2cede7953f06b016",
+      "rows": 98005,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_Ridge_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "5ee364ef652f21cf369f364933322ed7c91b2f9c3ade6a97d90325c8af3e60f7",
+      "rows": 98005,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_Ridge_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "4e320976e970e5ac090687fbea1571dae4fdea9fccaa8c2bc1ff52d10113bcad",
+      "rows": 98005,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\primary_RandomForest_All\\oos_predictions.parquet",
+      "sha256": "abe014a07a83e2870223b7ab25170bd4c71d71356d7655e1d04aa89358e46e2b",
+      "rows": 98005,
+      "model": "RandomForest",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "primary",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\primary_LightGBM_All\\oos_predictions.parquet",
+      "sha256": "ba122d69273139b3b9669fff099cf930c5d41c526f3db2fdca67cd2dbce70564",
+      "rows": 98005,
+      "model": "LightGBM",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "primary",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_ValidationWinner_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "cc96d3a7345aaf959cdec9066281ea0fa24d3a0369da0f6cbaa7616f179a7535",
+      "rows": 98005,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_ValidationWinner_Volatility\\oos_predictions.parquet",
+      "sha256": "1c15e94c149ff1215ee065e2c25a1840ce08358db9deab07129626ad1d85a75b",
+      "rows": 98005,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_ValidationWinner_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "929738768c258ee6303f72ab195cb576b245717b70c519581b76dca59fab786b",
+      "rows": 98005,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_ValidationWinner_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "91d907a7be0df2c67800257289cc902c8cf88519c7f0d7e1882306d64a6213ff",
+      "rows": 98005,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_ValidationWinner_All\\oos_predictions.parquet",
+      "sha256": "6e1b8eac3760db8b966f7536bbd33e40389552c218e1b2329eed2011b74a1148",
+      "rows": 98005,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "ablation",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\control_RandomLabelControl_All\\oos_predictions.parquet",
+      "sha256": "3fa57c8676163b55dd4e4009a1ddf17c5fb33b211a5532c18a5d00b5835527c7",
+      "rows": 98005,
+      "model": "RandomLabelControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\control_RandomFeatureControl_All\\oos_predictions.parquet",
+      "sha256": "a0017b74d0f43fca356d0d94068d016095d69c71a2dee9dffb67fca368f3bbb5",
+      "rows": 98005,
+      "model": "RandomFeatureControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2024
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\primary_Ridge_All\\oos_predictions.parquet",
+      "sha256": "19d69196917e052a0cdee7175d394e2918c8774d540028c85dba54d274820056",
+      "rows": 97885,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "All",
+      "role": "primary",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\secondary_Lasso_All\\oos_predictions.parquet",
+      "sha256": "e4509805c4c652ed883073ca84933dda193e074c50a843a998975d98d06f464a",
+      "rows": 97885,
+      "model": "Lasso",
+      "family": "Lasso",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\secondary_OLS_All\\oos_predictions.parquet",
+      "sha256": "53a5df107059e3f9a5c62028ffb074c6f725c6f51c45e04ed317529c11b9d73d",
+      "rows": 97885,
+      "model": "OLS",
+      "family": "OLS",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_Ridge_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "2a7b5a805df4cf8dc8cc384078eb985a90cb4958871fd7b84a8a8d9277cc2074",
+      "rows": 97885,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_Ridge_Volatility\\oos_predictions.parquet",
+      "sha256": "32235098644b1949ca10a97107765c4cc6b6ea6270eef46f77352b35a8f4640a",
+      "rows": 97885,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_Ridge_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "88ac7c411cd2326be1eb0d71448f37e5463028379e1fccea4451c7114afc3b7a",
+      "rows": 97885,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_Ridge_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "9768ff96edb94adaa86bf5a7a235d47e6f7fe9603cfb65528d66f8a1207f56b0",
+      "rows": 97885,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\primary_RandomForest_All\\oos_predictions.parquet",
+      "sha256": "bb17d7f480ff364bdf4ac4e4382ca9f40791913e7cfe8b5eabf46f4ddca1399d",
+      "rows": 97885,
+      "model": "RandomForest",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "primary",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\primary_LightGBM_All\\oos_predictions.parquet",
+      "sha256": "721d3692dfee78ec678fb4ef0b4f212e26998b2d1e6dabd16f1ddc0823272357",
+      "rows": 97885,
+      "model": "LightGBM",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "primary",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_ValidationWinner_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "2d58ad8eb2094a601667ee14c481294415d1ade73acee8310da2bcfc7f408401",
+      "rows": 97885,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_ValidationWinner_Volatility\\oos_predictions.parquet",
+      "sha256": "12639bf976115f1b76bf0ea7c6ba1eb9558bcf4981245d816e58088bcd3a3780",
+      "rows": 97885,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_ValidationWinner_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "a38f2e0a3345122cb7d1c1a9fc875eaf7867d59334991494984a3a5291948b99",
+      "rows": 97885,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_ValidationWinner_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "e399b557d75a2f1f5c9ebd57cf30af0a87c4278ec5285db908b5c8dc04bcea6c",
+      "rows": 97885,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_ValidationWinner_All\\oos_predictions.parquet",
+      "sha256": "d90e89388cb25bbdc075d8380328f57c029c784eba5f842128bc6f0e73f094cd",
+      "rows": 97885,
+      "model": "ValidationWinner",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "ablation",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\control_RandomLabelControl_All\\oos_predictions.parquet",
+      "sha256": "d85653bc09d86267a25baafb0432511ac6221ad39ea56ab24212d1fbbd90220b",
+      "rows": 97885,
+      "model": "RandomLabelControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\control_RandomFeatureControl_All\\oos_predictions.parquet",
+      "sha256": "a6ed8790941dcaae5ce352ec908cd8e4c240a405a5b425bbcd4e0159cfbe76c4",
+      "rows": 97885,
+      "model": "RandomFeatureControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2025
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\primary_Ridge_All\\oos_predictions.parquet",
+      "sha256": "5303043f2cc5a403cf5351f172864d899cd445ffd51010f32d1f9c27dbed8e7f",
+      "rows": 75427,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "All",
+      "role": "primary",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\secondary_Lasso_All\\oos_predictions.parquet",
+      "sha256": "501cc1bfc872d37ed25e4f0ba7912e18b90ad4efe13c674440153be547fab6d8",
+      "rows": 75427,
+      "model": "Lasso",
+      "family": "Lasso",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\secondary_OLS_All\\oos_predictions.parquet",
+      "sha256": "87fc82b3e621e8cd13b818c82abccb9138303bc8b8c5bd4d19bb786e25119189",
+      "rows": 75427,
+      "model": "OLS",
+      "family": "OLS",
+      "group": "All",
+      "role": "secondary",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_Ridge_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "d19266da0507809fe289d30e3e2d541570dfeaef2c7c4d4f332e207a31ee01cc",
+      "rows": 75427,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_Ridge_Volatility\\oos_predictions.parquet",
+      "sha256": "9a00d4ca3872fd41a3e188376645e6ea03a170be94b2cbe8eb482e6b6e95aef6",
+      "rows": 75427,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_Ridge_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "ef4e3e303d5583e187d495d56b26ea4687285857b8cdbd058ee86cb38882b9a7",
+      "rows": 75427,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_Ridge_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "7a27c01a795e3967f37d705b9de6a17e12ebf2c4f634234e15e16600a8ade235",
+      "rows": 75427,
+      "model": "Ridge",
+      "family": "Ridge",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\primary_RandomForest_All\\oos_predictions.parquet",
+      "sha256": "68465b49ea3fc2b001eaacaf7885c3318899b45b451de386940a1014eb30c5a6",
+      "rows": 75427,
+      "model": "RandomForest",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "primary",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\primary_LightGBM_All\\oos_predictions.parquet",
+      "sha256": "c3fe625b9c2d3172b1742573dbf672522698f2254ee76c0faccf23addbea932f",
+      "rows": 75427,
+      "model": "LightGBM",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "primary",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_ValidationWinner_Momentum_Reversal\\oos_predictions.parquet",
+      "sha256": "42a0707ff52d3c9fca8909d41e8dd7f2fb3ca437f865e68d64eade0c4e023aae",
+      "rows": 75427,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Momentum_Reversal",
+      "role": "ablation",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_ValidationWinner_Volatility\\oos_predictions.parquet",
+      "sha256": "8226ec5f40d9a4a4ac1e866d4f522b8cb5f4d64ecdd182dc3f57251d5f27327a",
+      "rows": 75427,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Volatility",
+      "role": "ablation",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_ValidationWinner_Liquidity_Volume\\oos_predictions.parquet",
+      "sha256": "5f513d7e59854eed9cd99ea3933ca41506ad7efebe4733e83f6f6348a6cbaf14",
+      "rows": 75427,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Liquidity_Volume",
+      "role": "ablation",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_ValidationWinner_Price_Position_Intraday\\oos_predictions.parquet",
+      "sha256": "eca8b43de4d7d0b99c3ab1ef825a9bcc50ff9ca6ab45155fa2c88735be0caa7d",
+      "rows": 75427,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "Price_Position_Intraday",
+      "role": "ablation",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_ValidationWinner_All\\oos_predictions.parquet",
+      "sha256": "8986b5ae41f3bf2552c7309bf7cee59e3875bf3f208fba5d6d863f48263baab8",
+      "rows": 75427,
+      "model": "ValidationWinner",
+      "family": "RandomForest",
+      "group": "All",
+      "role": "ablation",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\control_RandomLabelControl_All\\oos_predictions.parquet",
+      "sha256": "a6c0b982871dff60c7fa32aadd56940aaf4826cbb482fbbe5bb156f61e3bc5cb",
+      "rows": 75427,
+      "model": "RandomLabelControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2026
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\control_RandomFeatureControl_All\\oos_predictions.parquet",
+      "sha256": "bd307ec0dffb21234c3cc46f25f15bfe67a414ce57396d529d00b2bb2d02a490",
+      "rows": 75427,
+      "model": "RandomFeatureControl",
+      "family": "LightGBM",
+      "group": "All",
+      "role": "control",
+      "fold": 2026
+    }
+  ],
+  "model_artifacts": [
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\primary_Ridge_All\\metadata.json",
+      "sha256": "f85264f38c9487cd6ee0e963a8ee2469cec57d3bd6523c3b5f0f18d4291ef950"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\secondary_Lasso_All\\metadata.json",
+      "sha256": "f45a3aba6b84410181da69c8ee33085ce9bc92a4a7cc9ef6c9bb86951835620d"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\secondary_OLS_All\\metadata.json",
+      "sha256": "fa72b37026a856ea6152d0b37c4643c3e8fdec741235d2cab20797db29411966"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_Ridge_Momentum_Reversal\\metadata.json",
+      "sha256": "7fc0513ea3bfb50df09c1d8552bde98623667f85dc4d26c8b01fdcd3cedfefc0"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_Ridge_Volatility\\metadata.json",
+      "sha256": "9024000929b0d662152726dc2664f80933d73de2f77b44f2e8806bfc1fd7c862"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_Ridge_Liquidity_Volume\\metadata.json",
+      "sha256": "baf4b18b2fb866bd586279df5afd5e938d3dfd8831e55eb6ffeaad328462f590"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_Ridge_Price_Position_Intraday\\metadata.json",
+      "sha256": "845273cac8848fa84a9275c897fe0ddb75d8d321a600bcb8a302c4cfc63212a9"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\primary_RandomForest_All\\metadata.json",
+      "sha256": "8282346f65a37ad70c5b1112c86c8e1b1dcf0ba6f1776ac8c5bd75676fb7027e"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\primary_LightGBM_All\\metadata.json",
+      "sha256": "f70cfcaae65a4e6da59699c966552b6d6da757e5c7cb84eba61d98a727d5006d"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_ValidationWinner_Momentum_Reversal\\metadata.json",
+      "sha256": "3abad254f57e3f398d25fbe4536a99930e0b57c3134356445f89566ac025e324"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_ValidationWinner_Volatility\\metadata.json",
+      "sha256": "353927346f9c2d4390177620f81f2b75ff8b964082e5dd2684e4823d9f9ed2eb"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_ValidationWinner_Liquidity_Volume\\metadata.json",
+      "sha256": "2cad16b3cdf791685aa0c9f46584385398b0896711140ce924db41b4d1920654"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_ValidationWinner_Price_Position_Intraday\\metadata.json",
+      "sha256": "723a0272e165e783684659b6319a892fc1fae183517efecc07aaad4284851637"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\ablation_ValidationWinner_All\\metadata.json",
+      "sha256": "eeec5651ae4eed69c1e75a9e768b12b7e587dc3ec6efc752004e00ab57b68a00"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\control_RandomLabelControl_All\\metadata.json",
+      "sha256": "7724dfa31a1d73e4260b0336af009008acb849f47bde92f56c34b21e601a588e"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2017\\control_RandomFeatureControl_All\\metadata.json",
+      "sha256": "40b0f9d14b709c38592bdd0441fc44a7030291ca4d23599d342161ab5ccff809"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\primary_Ridge_All\\metadata.json",
+      "sha256": "deb8f7f0cd3996744b5be69596a0e9e9e786028e68829619ccfd96562875d2f6"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\secondary_Lasso_All\\metadata.json",
+      "sha256": "79cdff47ac2d31964cccea7262edecac59a1cec9fd84bdd4bcf533e752cd6447"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\secondary_OLS_All\\metadata.json",
+      "sha256": "4763ad48a4ef9718dcb918aef166d9b86317ec68b62f7f941d2999ad17fa7618"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_Ridge_Momentum_Reversal\\metadata.json",
+      "sha256": "9eef0e47f114309a9fff55bb0c11d4945e282d47824f9682a3d8b897f9ca7c5a"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_Ridge_Volatility\\metadata.json",
+      "sha256": "c5da1932778632f0400f43fa9fc3307950e0ca771230b2d04cd87345c79c6760"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_Ridge_Liquidity_Volume\\metadata.json",
+      "sha256": "2e1f66aaacbb7f559c7f9fc6f22bffe8dc680fa737f4a2f2668d533e0acd1550"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_Ridge_Price_Position_Intraday\\metadata.json",
+      "sha256": "7cb48228b7f76ff514b9120c9db6195b22d42e2b56e3cf2e0b8517419b524ef5"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\primary_RandomForest_All\\metadata.json",
+      "sha256": "1f3784413a4762917b14f5df6cf508e95351f9eecc0e6b4eeb92e4f62da68d6d"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\primary_LightGBM_All\\metadata.json",
+      "sha256": "a6ff0bbc375221de60a9fcc6ee0f51de0017a64b182fb21269c69d2fc4b5865c"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_ValidationWinner_Momentum_Reversal\\metadata.json",
+      "sha256": "f16da831cc17a30a8030f70e2898a9a7255ddadc08deb0e97604a8918dada2c4"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_ValidationWinner_Volatility\\metadata.json",
+      "sha256": "880f9e74a32563617aaf78352ee98f6a7ef6cb6fb20aa8f63dde1698e408afdd"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_ValidationWinner_Liquidity_Volume\\metadata.json",
+      "sha256": "fce0925be579e164cd90fe312436194ecefbdff96746888ab8578ec1fb778c79"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_ValidationWinner_Price_Position_Intraday\\metadata.json",
+      "sha256": "129bb74e93b7cbba81bbc44db315c020e575e60a08129ef340f8a86cca26f4df"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\ablation_ValidationWinner_All\\metadata.json",
+      "sha256": "6d9ce0fe5053fd16a165cc8874c1cd780e53537f2aa8dd71d9dad1c2878dfca2"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\control_RandomLabelControl_All\\metadata.json",
+      "sha256": "c83dbff0d59d25d2c4deca5e40f3bad91feb4cdb222d42f6293cb2cc408961b8"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2018\\control_RandomFeatureControl_All\\metadata.json",
+      "sha256": "c9937f3a9ea44a5c554bc31df3376785d3788a77b228380dfcc0b5973ae4915c"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\primary_Ridge_All\\metadata.json",
+      "sha256": "5a78c5c91148e660a48354c8eaa9ff929e8eaffb2a3aadc2c9f798a0c43edaa0"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\secondary_Lasso_All\\metadata.json",
+      "sha256": "271253c55487f8677aae0dee2f719c53839fd2d7de6184a2e6efef6690ebdf97"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\secondary_OLS_All\\metadata.json",
+      "sha256": "b1908a5621dd7d80ce2e238b498748822975fdd60974050cf7b714640af84862"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_Ridge_Momentum_Reversal\\metadata.json",
+      "sha256": "d0280818d5fa2aee1828f55ad59fbb7fd644e9c89ede17ba928668e1cf1ba55d"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_Ridge_Volatility\\metadata.json",
+      "sha256": "ba3ee4df1a92e5e1af3543fc503258004787b8e5a2504d5b94d0a713843853a4"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_Ridge_Liquidity_Volume\\metadata.json",
+      "sha256": "56d5282ac959f87617611c2b0d9b1732ee31ae88270217eec583f0d3ed08f411"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_Ridge_Price_Position_Intraday\\metadata.json",
+      "sha256": "4d8c8169dd0ed6f5b1b25f6fd44870e3d33b791b51a5026bb071126e2367963d"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\primary_RandomForest_All\\metadata.json",
+      "sha256": "bd5b3c4e5b5a453d4afd9424f51f1b34e0b446c3e8dadcdecd0f0a8bd0912b1a"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\primary_LightGBM_All\\metadata.json",
+      "sha256": "dcdf6ecfddd85a5e387543ebd1743642edeae4ef151d6dc57c10dc07a85db219"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_ValidationWinner_Momentum_Reversal\\metadata.json",
+      "sha256": "f1678c9a90163e218f8a0352fbb5b7c702bc3ff02990f34ffcc241b812d590a0"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_ValidationWinner_Volatility\\metadata.json",
+      "sha256": "e4f379e98e5f9344eff6c2ad84486af143a4fdf33cdc2aff12236238b4d9befc"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_ValidationWinner_Liquidity_Volume\\metadata.json",
+      "sha256": "b4589d6d8085dd207b93f45a04be32ab4f895dfecad6183471603c8c760bb707"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_ValidationWinner_Price_Position_Intraday\\metadata.json",
+      "sha256": "78a50434c2dd1826f24d746a8bfcbe95c9a3738dd2a58905b7cf488ed14f8649"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\ablation_ValidationWinner_All\\metadata.json",
+      "sha256": "21a1a4fa17902521a8a5f950918a862abacac444cff70a8c70de657290767033"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\control_RandomLabelControl_All\\metadata.json",
+      "sha256": "7dc87eb6371723806be29a5b698862372fe765a80ca3b071efdbe3c19b61425f"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2019\\control_RandomFeatureControl_All\\metadata.json",
+      "sha256": "11df1f82b2fc09a8c46eb7eb4e44e2288d83eb0463a9a9ad814d335f742b0d92"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\primary_Ridge_All\\metadata.json",
+      "sha256": "9cc6c242f3c3bc50012f592e396964587cb4eb4905930dd7f3289f0ccbe6e11c"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\secondary_Lasso_All\\metadata.json",
+      "sha256": "b71f32e8d0025bf0a9e2ae4836fbcdc8a672377d8eb68eb607b9451d90bcd663"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\secondary_OLS_All\\metadata.json",
+      "sha256": "a96f1998d738890f494db8c179a85f64e9519b0355cbc72eb02674ff71e09fe5"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_Ridge_Momentum_Reversal\\metadata.json",
+      "sha256": "a569e4430939697488c37c0d3aefc81807aaeed37d689d0f2b54616132ae02b9"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_Ridge_Volatility\\metadata.json",
+      "sha256": "6905bdd94507919503e43afd3860751a639541d31ea1fa943a04d96e5d1ea5b8"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_Ridge_Liquidity_Volume\\metadata.json",
+      "sha256": "7d4c63637b01c9b69d9eab053e1b1db82ed3540f6cf38e51fa04ff46785124cc"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_Ridge_Price_Position_Intraday\\metadata.json",
+      "sha256": "54773068806ee374c5aa75aef71054d9e3c34e1d129c226f2ff5d9a11d8270b6"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\primary_RandomForest_All\\metadata.json",
+      "sha256": "e4953514e07aba46949c2b777a467c5bca2c55f4574c23a4dd6fa959954508e8"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\primary_LightGBM_All\\metadata.json",
+      "sha256": "8e4efcad9fc7205e3dc6d54a768794e0bc7279fb7c0c162c058ba4abe32d1bfe"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_ValidationWinner_Momentum_Reversal\\metadata.json",
+      "sha256": "5a148a4ccf0c4cbc0290e97c622f97c75958363ccc8eb51a7809ff6874ac6fae"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_ValidationWinner_Volatility\\metadata.json",
+      "sha256": "c463ea0dbacc7490fd12ce101bd1bc114c4ac2bc9ace9643db6a8ef4382604b6"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_ValidationWinner_Liquidity_Volume\\metadata.json",
+      "sha256": "d854fcaf4b8c97b8b226dd512c10557c0458fa8621ae3dc4227fc1af0d459540"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_ValidationWinner_Price_Position_Intraday\\metadata.json",
+      "sha256": "8dfc96f4a473bfff78ee83fa17fd768e96f1526a453246ae92d1d146b62fe074"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\ablation_ValidationWinner_All\\metadata.json",
+      "sha256": "fa285d177ebbf97e60dd15a0ec87655cb7a5ca338667e1ea553014075b1d1c3d"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\control_RandomLabelControl_All\\metadata.json",
+      "sha256": "70aa5106972db64d65a3866c091de0656ef317e72187b51d0c5b61e821750a0c"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2020\\control_RandomFeatureControl_All\\metadata.json",
+      "sha256": "89a3161da4694b1ada531376a4a9334afae06a5f2e1bbd5ba15967d11f076783"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\primary_Ridge_All\\metadata.json",
+      "sha256": "3a83a51bd2671956ceed24def7e303eccfd6bf503c0da53d2835686fcd35a0ad"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\secondary_Lasso_All\\metadata.json",
+      "sha256": "77ad4e75c32e787c6b8d458da6f63620adcda2285b05ca91ba3b0888ccc78ea8"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\secondary_OLS_All\\metadata.json",
+      "sha256": "bdd27bc0ed4047e9c7a7132b47f967826c906671dd215e1d1dfaf46ece675fe3"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_Ridge_Momentum_Reversal\\metadata.json",
+      "sha256": "fb111fa24eda4822b06cf301d7b9ece7ebcd2e42dea38d8a86af8c00519fd03a"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_Ridge_Volatility\\metadata.json",
+      "sha256": "7b112d63a5942aba6e6781558a2a66d96ec74e533cf00ce8b674fd4a1dd82eeb"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_Ridge_Liquidity_Volume\\metadata.json",
+      "sha256": "c8041e3b05948859469848cd26e321e4393bc31de56c4086b7836944a3758f43"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_Ridge_Price_Position_Intraday\\metadata.json",
+      "sha256": "ea1901569529b4abdfa9fccf779e563a491faf324814347455a82daa708da60a"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\primary_RandomForest_All\\metadata.json",
+      "sha256": "8a76760a356e4c05dc4b4f8f79aafb733c30ac517191b99557e10af5f273c1b6"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\primary_LightGBM_All\\metadata.json",
+      "sha256": "233eda3b3d580e9f3e1782f6ad83fbee6c51213778b5c88fc747b43ec1199c35"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_ValidationWinner_Momentum_Reversal\\metadata.json",
+      "sha256": "4a2ed41f7661493e35b32a7b4eb147a23b16b36878df8fa0342d87312c6733f9"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_ValidationWinner_Volatility\\metadata.json",
+      "sha256": "c9da33c00faf349788613cad78f42e0d6c8c0afc127cab487ba265ba9f3c527b"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_ValidationWinner_Liquidity_Volume\\metadata.json",
+      "sha256": "215e7d5bebe56d3568382c4847d5792f26e7676315d815606c140b7cc1a37c8a"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_ValidationWinner_Price_Position_Intraday\\metadata.json",
+      "sha256": "3bf43799462823c17b5df3c1233d12156c03753ce2c1022854580143a772ad5e"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\ablation_ValidationWinner_All\\metadata.json",
+      "sha256": "dde3aa1b6eaa04f2fbd1e5ef6bfd865511c84a12ab3091ab8f593a869eab0efd"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\control_RandomLabelControl_All\\metadata.json",
+      "sha256": "1ad6b0a039f7b9f8bb12dabd12ff1bd651299bd3e56c6e48c8f4f90bfcdf3a4f"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2021\\control_RandomFeatureControl_All\\metadata.json",
+      "sha256": "a0e783379c92815e7cdce33de03eab1701456353f5acfa06b4dcccc52da20ef7"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\primary_Ridge_All\\metadata.json",
+      "sha256": "35add8e6a8f11054d0b57d6873cc1fb69815d5f353437225fb61b435812eaa79"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\secondary_Lasso_All\\metadata.json",
+      "sha256": "376cc494ebd961bc5406ab82756a15df3bc3a4ae2de8814382f7cc2f25856c8a"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\secondary_OLS_All\\metadata.json",
+      "sha256": "fb4925624ebb9d9002ca22e607f9e0ce471b83f55fa73edfe498fc59e49ed18f"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_Ridge_Momentum_Reversal\\metadata.json",
+      "sha256": "c550323123ffbd2b721f088f6f96f604409daf7079f677460002a107dbe02643"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_Ridge_Volatility\\metadata.json",
+      "sha256": "925c3c7a7607e166f07f5d29fe771bd007cb65bb8e5b322255a189d39e77373a"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_Ridge_Liquidity_Volume\\metadata.json",
+      "sha256": "77494e75abe2689d736a1d6eee0b9d1ebb8ff124aa9fbb0de52289669270a33f"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_Ridge_Price_Position_Intraday\\metadata.json",
+      "sha256": "56c75453935991efd65ce851c45fac02be52db2405e2e7da87036891dabf7dbc"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\primary_RandomForest_All\\metadata.json",
+      "sha256": "637bc3d89de3b03f67af6da7c8bdee8d541e9438a3172b524f9a2bf4b8570771"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\primary_LightGBM_All\\metadata.json",
+      "sha256": "26c827334d7240e00e147f0afc1f3f230936c9a5951fb7268e53dec16b7060d8"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_ValidationWinner_Momentum_Reversal\\metadata.json",
+      "sha256": "70c160a408d4622c44f30d1aae8197d759631071b231c58217a2b3d51d2c378f"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_ValidationWinner_Volatility\\metadata.json",
+      "sha256": "740c1e5067cbba64d24e12569cadcde88d63069a13158c6ec33fe87fcca184df"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_ValidationWinner_Liquidity_Volume\\metadata.json",
+      "sha256": "d855c4b11923dbd2af83309286039e3520b905257a3b759a778b5fe77a2f8100"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_ValidationWinner_Price_Position_Intraday\\metadata.json",
+      "sha256": "473558062cb87b6c397e5ed707e814d44f407a529ccccf569673d9877cd5dadc"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\ablation_ValidationWinner_All\\metadata.json",
+      "sha256": "fac99d518d4f2ee7c5346beb4fa356de8a3d2eddb8bb78e07d8e71216c82ff81"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\control_RandomLabelControl_All\\metadata.json",
+      "sha256": "636810e33ebe94c657e891f86be922b3cf7d1328ff59fe24a3e53be2dc61d0e6"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2022\\control_RandomFeatureControl_All\\metadata.json",
+      "sha256": "f9863cae3282c3fe378cb62e6990d0451ca10f376c357c122e48f01d3d37dbdf"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\primary_Ridge_All\\metadata.json",
+      "sha256": "0544b7d454109104bece7d277cd045551a6c04a0ed73bdba82883e66bb371399"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\secondary_Lasso_All\\metadata.json",
+      "sha256": "a1632a021521d2478a59f7c69b5cf46eecbeed56425dd698678ea06dc7f5b950"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\secondary_OLS_All\\metadata.json",
+      "sha256": "ab27726b67ffa181f060fc05fc5301e86f0ea729c821714bd4f968a954a8168d"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_Ridge_Momentum_Reversal\\metadata.json",
+      "sha256": "7bafb8bb151512076af7f5b756c327779799edb522ab21761fca9db8decbcfe7"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_Ridge_Volatility\\metadata.json",
+      "sha256": "03c32635a6d33df147f33cf0d10dd97204683ebac1b89102b87c57c2a2e92eb1"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_Ridge_Liquidity_Volume\\metadata.json",
+      "sha256": "a99c9d98794764a507a885835eff389d4499866c453d92bde000d8eaea216b81"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_Ridge_Price_Position_Intraday\\metadata.json",
+      "sha256": "369db6af23f11c8a25aba8899eb93e9f2465e7c85aafb104ecbab48e62fc1645"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\primary_RandomForest_All\\metadata.json",
+      "sha256": "ca545e7b3ba3ba53fbfa598307080aa5b6dafc80e43c34b9665f396b7251224d"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\primary_LightGBM_All\\metadata.json",
+      "sha256": "e0c3812de70e85434f5c4e82a2b064b161a7fc2873f84261a9e483f50576803f"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_ValidationWinner_Momentum_Reversal\\metadata.json",
+      "sha256": "353c58946c00f031eae6ddc4c4115e4e317f495aac412cec88fdfc2815dbdd50"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_ValidationWinner_Volatility\\metadata.json",
+      "sha256": "e16ba1b598989dbfc9f3a8ca8a319990fd00d02e85d990a8ec6879c0ba7bb342"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_ValidationWinner_Liquidity_Volume\\metadata.json",
+      "sha256": "527fd2c6abbb98e3a0c838585ff9b23ccea4498ff9e1bccc7c6056639a6046d6"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_ValidationWinner_Price_Position_Intraday\\metadata.json",
+      "sha256": "6f258152d6e907f519ae33816f535024d472c9d9040af2bae5f33ed25792b388"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\ablation_ValidationWinner_All\\metadata.json",
+      "sha256": "a2d3fc1ef60d72d34056c508204e0e753bc803a36a4da70b2de4e9a205d6f6f6"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\control_RandomLabelControl_All\\metadata.json",
+      "sha256": "d0454a36ec829fab75019ad9c0362e9b3383fd8b8e92f2052fd3c31c97a17799"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2023\\control_RandomFeatureControl_All\\metadata.json",
+      "sha256": "b85f070d77f8dede6517d5a9ffe714840757e154a1436ab572444336b7ed2a0d"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\primary_Ridge_All\\metadata.json",
+      "sha256": "f5082dd6c179805f8786e3cb8225c9362fe415c939bd9d6f82553f75442832df"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\secondary_Lasso_All\\metadata.json",
+      "sha256": "b0f2504f8d89249cc6d2c95be640f831b3a0bfc790dccf9cf9cc851f9eeaa005"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\secondary_OLS_All\\metadata.json",
+      "sha256": "24c5e38db2b7e314bce6eedb0be6cd6a2fe4b6056c8e943ce26d866f1a4b6fef"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_Ridge_Momentum_Reversal\\metadata.json",
+      "sha256": "9521e07a58cae964d6891374d86369d71219952166af3d6f012d70689873465f"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_Ridge_Volatility\\metadata.json",
+      "sha256": "a0ccc0308d223b18c2799633c4de1407c7651fc2f70080eb347c0c1e41356309"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_Ridge_Liquidity_Volume\\metadata.json",
+      "sha256": "3360f0d2a7068d0ede2b83015a1a62d9aa196a3dbcc64eceb583cbb755d4c5c1"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_Ridge_Price_Position_Intraday\\metadata.json",
+      "sha256": "0bb358d627f9a166eec0e976989600766b6ad6ad2c6f749bc59f1c817139295e"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\primary_RandomForest_All\\metadata.json",
+      "sha256": "8cefcb50cb33c674bff8c2a9d00b1b62abef7502c72d1221075cd37da6ba399d"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\primary_LightGBM_All\\metadata.json",
+      "sha256": "dd97c839d4e27a2a4555318dd91183a31ae3671088628a0901a48a999a991630"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_ValidationWinner_Momentum_Reversal\\metadata.json",
+      "sha256": "98be67b5dc5878c66c07e946ad46321f5f225a3eae8cfa5ed5e1ecb0a94b268f"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_ValidationWinner_Volatility\\metadata.json",
+      "sha256": "5d07227f8c0c136a538d37aeec3c78ed4ee3ca0d4dbf690d5dc9d641d66a51f7"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_ValidationWinner_Liquidity_Volume\\metadata.json",
+      "sha256": "6c8176c18655068eb65b3052b201c946db7c93a61609a5b7c6aa362ef9933ff1"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_ValidationWinner_Price_Position_Intraday\\metadata.json",
+      "sha256": "9e75a4a227b6f084be8e75b7c3b30a25dfe0809e42a7228768e4321c60e4f0af"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\ablation_ValidationWinner_All\\metadata.json",
+      "sha256": "f67d40b49cfbeadcf40e46e3a0b644d87548e2295f972800bfca5574c32a7d26"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\control_RandomLabelControl_All\\metadata.json",
+      "sha256": "7519419593587a6a5d5a6bb2ebaa9361a216223d241999d86ce7d088a366eccc"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2024\\control_RandomFeatureControl_All\\metadata.json",
+      "sha256": "48d5fcaa3e559e3ae64e0f8dd95020329205b7951bbac0b92873a28162de960c"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\primary_Ridge_All\\metadata.json",
+      "sha256": "bfcf0c217f915ac429fa4e47a31971c2a3d676357457b0b1b44ba7b422e2d9b3"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\secondary_Lasso_All\\metadata.json",
+      "sha256": "2c816eddd163459b153d71a665d4988f1235567d08e702ff57433b7d158fa48b"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\secondary_OLS_All\\metadata.json",
+      "sha256": "3dfe839ec2378a8dd9188f517829fe4a4fb623efe71e860788b52aae524d7ca4"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_Ridge_Momentum_Reversal\\metadata.json",
+      "sha256": "6a3d90ccb88f6719948c635ae19139ca8c2f2ab7791f86d930ce8a710b395848"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_Ridge_Volatility\\metadata.json",
+      "sha256": "4851be55aaf2fa2c1a88575a86909577b78d3372cd42af4311d447ee7cc618c8"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_Ridge_Liquidity_Volume\\metadata.json",
+      "sha256": "43a1e33a6a40c5f343e1ec4058397a097bd0af409ced30aa18e6659993662a39"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_Ridge_Price_Position_Intraday\\metadata.json",
+      "sha256": "9ad262a3064a2e71293fb00c6d7bbcc0affb212c91f9c319a6893a3f060292fa"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\primary_RandomForest_All\\metadata.json",
+      "sha256": "590118a32a6440890d6dbc686293c36a62dc20d516b5a63520a25e5ac161c98b"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\primary_LightGBM_All\\metadata.json",
+      "sha256": "74274c800d4d95b6cde514edc379039079fc6b112f0fd17c4dae29d457d926fe"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_ValidationWinner_Momentum_Reversal\\metadata.json",
+      "sha256": "e54d0308172449e024f4d348425384e95cf906bcff95a9fce8f87a925990ce8f"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_ValidationWinner_Volatility\\metadata.json",
+      "sha256": "a96bfc3ee98f92c0fad87c5d2ab4568fc88218d8fccb5c636a533ab10f02e90c"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_ValidationWinner_Liquidity_Volume\\metadata.json",
+      "sha256": "e71b118296a73f345f06f87347564de1293e8a603bf6c57be9790292588eb535"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_ValidationWinner_Price_Position_Intraday\\metadata.json",
+      "sha256": "07ceb08b1ee5a4dc48bb449b2ab9888e21d78049dcd41b4909d79b468822de47"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\ablation_ValidationWinner_All\\metadata.json",
+      "sha256": "dfc7f92accbdec9c0a81fbb6be574940179ce0013de300f60b46d1aaa5c76873"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\control_RandomLabelControl_All\\metadata.json",
+      "sha256": "3b2ffe6c9b7b08c1b0fde2e8935fce8584f947dc9ef3d938afe95535873cbeb1"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2025\\control_RandomFeatureControl_All\\metadata.json",
+      "sha256": "f4b7df373b398a7004c0874fdced9974dddf58c746d58cebc98a863177292f1a"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\primary_Ridge_All\\metadata.json",
+      "sha256": "615a3b05fcce45b48f02721140c821089c50d935e8483c0fb67fe3178988acbe"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\secondary_Lasso_All\\metadata.json",
+      "sha256": "f9b82f4a59dd4ffa436f8dbe9524036fb52629d046fa4f3c6c655347ea1a8e29"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\secondary_OLS_All\\metadata.json",
+      "sha256": "58d715df0289e574f2a47fbebfb862cdd028cca7d089e6971b0348d443076dd2"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_Ridge_Momentum_Reversal\\metadata.json",
+      "sha256": "e4b769ba75389771ff88f53f0ee1ea96f02e249348e4fc19fe6965597d3ccd72"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_Ridge_Volatility\\metadata.json",
+      "sha256": "5e9b66a8b1d91a958454013f9dd99fd85e5883f9a5b3a15eb5a5e1b83a2a9425"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_Ridge_Liquidity_Volume\\metadata.json",
+      "sha256": "cc9ea736dfe26ba1845e042643b66e751e3ac652785271a1b94682e7fd83799c"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_Ridge_Price_Position_Intraday\\metadata.json",
+      "sha256": "ece7a5d2a9b60eac05683dffae7e98f807fc735b3c1cd29fb0a4cc6b2c576ee6"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\primary_RandomForest_All\\metadata.json",
+      "sha256": "4c08bf88f37048ee2717ca8c87989322328cf02836b9fd1e0f636e355f7f2707"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\primary_LightGBM_All\\metadata.json",
+      "sha256": "23e44328fb8ef80975d98b03270fb5b237d415999ff7e70840fdd68f3d0ba9fb"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_ValidationWinner_Momentum_Reversal\\metadata.json",
+      "sha256": "cd25cca748e4c59c451427e32d537bb364a5150a84436ad3cc090b5b11e3a6b6"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_ValidationWinner_Volatility\\metadata.json",
+      "sha256": "154955c480cd81f7f498297fe956a831a6070b6676bdbd46f37e1dc9d617df8a"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_ValidationWinner_Liquidity_Volume\\metadata.json",
+      "sha256": "5129a267b418be87b71798d8737434141a69ae3093d8d0bacc7744b9f8111f15"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_ValidationWinner_Price_Position_Intraday\\metadata.json",
+      "sha256": "07d0f9d3e5e9a092b59c9765994c64f2915b4736898b9da19b60c8b2d0c004f8"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\ablation_ValidationWinner_All\\metadata.json",
+      "sha256": "41de70f9a596c0858605601557f859b316adc76be0d2019913a9f304af753049"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\control_RandomLabelControl_All\\metadata.json",
+      "sha256": "a5455ed3425e6ac79be159898a80ed4738273efb74cfb9b332aa2a53b6cc25ad"
+    },
+    {
+      "path": "experiments\\phase5\\20261009T033111412374Z\\fold_2026\\control_RandomFeatureControl_All\\metadata.json",
+      "sha256": "d37c24967ae9b1ccb980c4efb895d2628ecd653e4df7ee5f247d09553541069e"
+    }
+  ],
+  "checks": {
+    "phase4_values_verified": true,
+    "fold_boundaries_identical": true,
+    "fold_sample_counts_identical": true,
+    "upstream_inventory_unchanged": true,
+    "source_panel_unchanged": true,
+    "upstream_documents_unchanged": true,
+    "preregistration_unchanged": true,
+    "research_log_prefix_unchanged": true,
+    "full_tests_passed": true,
+    "forty_primary_trials_recorded": true
+  },
+  "total_experiment_seconds": 577.301811,
+  "upstream_inventory_after": "4f35825ede5c43507f767de1c93177d0e050fe390154f0e199e0ba5374b3e9bc"
+}
